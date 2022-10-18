@@ -58,6 +58,6 @@ function load(file) {
 
 $(document).ready(function(){
     $("#text2").click(function(){
-        $("#textShown").load("https://typantheon.github.io/magazine/issues/dyonisus.html");
+        $("#textShown").load("https://sebastiano-g.github.io/texts/text2.html");
     });
 });
