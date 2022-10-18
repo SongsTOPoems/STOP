@@ -410,5 +410,9 @@ body > hr {
 #textShown {
     margin-top: 220px;
     margin-left: 60px;
-    font-size: 20px;
+    font-size: 18px;
+}
+
+.subtitle {
+    margin-top: -20px;
 }
