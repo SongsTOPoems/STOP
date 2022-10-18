@@ -6,11 +6,6 @@ html, body {
     padding: 0;
     font-family: 'Lora', sans-serif;
 }
-
-body {
-    overflow: hidden;
-}
-
 #navbar {
     text-align: right;
     width: 100%;
@@ -322,7 +317,7 @@ body > hr {
 /* Reader */
 
 .menu-wrapper {
-    width: 100%;
+    width: calc(100% - 50px);
     position: relative;
     overflow: hidden;
     border-bottom: #838383 1pt solid;
@@ -330,7 +325,7 @@ body > hr {
 }
 .menu-wrapper .menu-item {
     padding-left: -200px;
-    width: calc(100% - 100px);
+    width: calc(100% - 50px);
     height: 100%;
     white-space: nowrap;
     overflow: hidden;
@@ -406,7 +401,7 @@ body > hr {
     left: 0;
 }
 .menu-wrapper .right-pointer {
-    right: 50px;
+    right: 0px;
 }
 .menu-wrapper .dis i {
     color: #ccc;
