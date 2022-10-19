@@ -368,7 +368,7 @@ body > hr {
 
 #songList, #poemList {
     white-space: nowrap;
-    position: absolute;
+    position: fixed;
     margin: 0;
     overflow: hidden;
     background-color: #333;
@@ -416,4 +416,20 @@ body > hr {
 
 .subtitle {
     margin-top: -20px;
+}
+
+#topics {
+    width: 30vw;
+    position: fixed;
+    bottom: 0;
+    width: 20%;
+    height: 100%;
+    top: 260px;
+    right: 10px;
+}
+
+#topics a {
+    display: block;
+    padding-bottom: 10px;
+    padding-top: 10px;
 }
