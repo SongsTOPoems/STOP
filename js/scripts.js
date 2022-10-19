@@ -64,7 +64,7 @@ $(document).ready(function(){
     });
     $("#text2").click(function(){
         $("#songText").load("https://sebastiano-g.github.io/Workin-pro-g-ress-/texts/text2.html");
-        console.log(this.attr('id');
+        console.log(this.attr('id'));
         var attr = $("#poemText").attr('class');
         if (typeof attr !== 'undefined' && attr !== false) {
             $("#songText").addClass("activeSecond");
