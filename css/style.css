@@ -406,7 +406,34 @@ body > hr {
     display: inline-block;
     text-align: center;
     vertical-align: middle;
+    position: relative;
 }
+
+a:hover {
+    cursor: pointer;
+}
+
+.menu-item a:after {    
+    bottom: 0;
+    content: "";
+    display: block;
+    height: 2px;
+    left: 50%;
+    position: absolute;
+    background: #ffce00;
+    transition: width 0.3s ease 0s, left 0.3s ease 0s;
+    width: 0;
+}
+.menu-item a:hover:after { 
+    width: 70%; 
+    left: 15%; 
+}
+
+#text1:hover:after, #poem1:hover:after { 
+    width: 70%; 
+    left: 10%; 
+}
+
 
 .menu-wrapper .pointer {
     height: 40px;
