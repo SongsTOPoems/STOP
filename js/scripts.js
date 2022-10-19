@@ -48,6 +48,7 @@ $(document).ready(function(){
     });
     $("#songList .left-pointer").click(function(){
         $("#text1").addClass("reverseMarginLeft");
+        $("#songList .left-pointer").hide();
     });
     $("#poemList .right-pointer").click(function(){
         $("#poem1").removeClass("reverseMarginLeft");
@@ -56,12 +57,14 @@ $(document).ready(function(){
     });
     $("#poemList .left-pointer").click(function(){
         $("#poem1").addClass("reverseMarginLeft");
+        $("#poemList .left-pointer").hide();
     });
     $("a").click(function(){
         $("#select").hide();
     });
     $("#text2").click(function(){
         $("#songText").load("https://sebastiano-g.github.io/Workin-pro-g-ress-/texts/text2.html");
+        console.log(this.attr('id');
         var attr = $("#poemText").attr('class');
         if (typeof attr !== 'undefined' && attr !== false) {
             $("#songText").addClass("activeSecond");
