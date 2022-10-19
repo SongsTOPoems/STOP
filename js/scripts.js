@@ -61,7 +61,7 @@ $(document).ready(function(){
     });
     $("#songList a").click(function(){
         $("#select").hide();
-        var name = this.attr('id');
+        var name = $(this).attr('id');
         var url = "https://sebastiano-g.github.io/Workin-pro-g-ress-/texts/" + name + ".html";
         $("#songText").load(url);
         console.log($(this).attr('id'));
