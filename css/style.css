@@ -381,12 +381,12 @@ body > hr {
 
 #songList {
     top: 65px;
-    z-index: 1;
+    z-index: 3;
 }
 
 #poemList {
     top: 120px;
-    z-index: 0;
+    z-index: 2;
 }
 
 #songList, #poemList {
@@ -481,6 +481,7 @@ a:hover {
     border-left: #333 1pt solid;
     background: url('back.jpg') repeat;
     filter: grayscale(80%);
+    z-index: 1;
 }
 
 #topics a {
