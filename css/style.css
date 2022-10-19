@@ -420,10 +420,9 @@ body > hr {
 
 #topics {
     display: block;
-    width: 30vw;
     position: fixed;
     bottom: 0;
-    width: 20%;
+    width: 16%;
     height: 100%;
     top: 177px;
     right: 0px;
@@ -439,4 +438,11 @@ body > hr {
     padding-top: 10px;
     margin-right: 20px;
     border-bottom: #838383 1pt solid;
+}
+
+#textShown .active, #textShown .activeSecond  {
+    vertical-align: top;
+    height: 100%;
+    display: inline-block;
+    width: 38vw;
 }
