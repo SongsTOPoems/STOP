@@ -429,7 +429,8 @@ body > hr {
     padding-left: 20px;
     padding-top: 80px;
     border-left: #333 1pt solid;
-    background-color: #f7f7f7;
+    background: url('back.jpg') repeat;
+    filter: grayscale(80%);
 }
 
 #topics a {
