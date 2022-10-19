@@ -337,7 +337,29 @@ body > hr {
 }
 
 .menu-wrapper .menu-item a:first-child{
-    margin-left: -200px;
+    margin-left: 0px;
+}
+
+.left-pointer {
+    display: none;
+}
+
+.marginLeft {
+    animation: moveRight 2s ease-in-out forwards;
+}
+
+.reverseMarginLeft {
+    animation: reverseMoveRight 2s ease-in-out forwards;
+}
+
+@keyframes moveRight {
+    from {margin-left: 0px;}
+    to {margin-left: -50vw;}
+}
+
+@keyframes reverseMoveRight {
+    from {margin-left: -50vw;}
+    to {margin-left: 0px;}
 }
 
 .menu-wrapper .menu-item a.active {
