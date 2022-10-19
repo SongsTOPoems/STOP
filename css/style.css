@@ -37,7 +37,7 @@ html, body {
     padding-bottom: 10px;
 }
 
-#logo {
+#logo, #logo a{
     position: fixed;
     left: 30px;
     text-decoration: underline;
