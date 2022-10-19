@@ -40,24 +40,46 @@ $(document).ready(function(){
 
 /* textShown */ 
 
-function load(file) {
-    $.ajax({
-        method: 'GET',
-        url: file,
-        success: function (d) {
-            $('#file').html(d)
-            $('.show').prop("checked", false)
-            addIds()
-            filltabs()
-        },
-        error: function () {
-            alert('Could not load file ' + file)
+$(document).ready(function(){
+    $("#songList .right-pointer").click(function(){
+        $("#text1").removeClass("reverseMarginLeft");
+        $("#text1").addClass("marginLeft");
+        $("#songList .left-pointer").fadeIn(500);
+    });
+    $("#songList .left-pointer").click(function(){
+        $("#text1").addClass("reverseMarginLeft");
+    });
+    $("#poemList .right-pointer").click(function(){
+        $("#poem1").removeClass("reverseMarginLeft");
+        $("#poem1").addClass("marginLeft");
+        $("#poemList .left-pointer").fadeIn(500);
+    });
+    $("#poemList .left-pointer").click(function(){
+        $("#poem1").addClass("reverseMarginLeft");
+    });
+    $("a").click(function(){
+        $("#select").hide();
+    });
+    $("#text2").click(function(){
+        $("#songText").load("https://sebastiano-g.github.io/Workin-pro-g-ress-/texts/text2.html");
+        var attr = $("#poemText").attr('class');
+        if (typeof attr !== 'undefined' && attr !== false) {
+            $("#songText").addClass("activeSecond");
+        }
+        else {
+            $("#songText").addClass("active");
         }
     });
-}
-
-$(document).ready(function(){
-    $("#text2").click(function(){
-        $("#textShown").load("https://sebastiano-g.github.io/Workin-pro-g-ress-/texts/text2.html");
+    $("#poem2").click(function(){
+        $("#poemText").load("https://sebastiano-g.github.io/Workin-pro-g-ress-/texts/poem2.html");
+        var attr = $("#songText").attr('class');
+        if (typeof attr !== 'undefined' && attr !== false) {
+            $("#poemText").addClass("activeSecond");
+        }
+        else {
+            $("#poemText").addClass("active");
+        }
     });
 });
+
+
