@@ -64,17 +64,19 @@ $(document).ready(function(){
         var name = $(this).attr('id');
         var url = "https://sebastiano-g.github.io/Workin-pro-g-ress-/texts/" + name + ".html";
         $("#songText").load(url);
-        console.log($(this).attr('id'));
+        var attr = $("#poemText").attr('class');
+        if (typeof attr !== 'undefined' && attr !== false) {
+            $("#songText").addClass("activeSecond");
+        }
+        else {
+            $("#songText").addClass("active");
+        }
     });
     $("#poemList a").click(function(){
         $("#select").hide();
         var name = $(this).attr('id');
         var url = "https://sebastiano-g.github.io/Workin-pro-g-ress-/texts/" + name + ".html";
         $("#poemText").load(url);
-        console.log($(this).attr('id'));
-    });
-    $("#poem2").click(function(){
-        $("#poemText").load("https://sebastiano-g.github.io/Workin-pro-g-ress-/texts/poem2.html");
         var attr = $("#songText").attr('class');
         if (typeof attr !== 'undefined' && attr !== false) {
             $("#poemText").addClass("activeSecond");
