@@ -1,5 +1,5 @@
 document.addEventListener("DOMContentLoaded", function(event) {
-    document.addEventListener("scroll", function(event) {
+    document.addEventListener("scroll", function(event) { 
         const animatedNav = document.getElementById("navbar");
         const animatedCov = document.getElementsByClassName("cov");
         const windowOffsetTop = window.innerHeight - 60;
