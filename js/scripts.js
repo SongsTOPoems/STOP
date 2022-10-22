@@ -41,6 +41,9 @@ $(document).ready(function(){
 /* textShown */ 
 
 $(document).ready(function(){
+    $(".menu-item a").click(function(){
+        $("#topics").addClass("entrance");
+    });
     $("#songList .right-pointer").click(function(){
         $("#text1").removeClass("reverseMarginLeft");
         $("#text1").addClass("marginLeft");
