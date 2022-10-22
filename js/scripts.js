@@ -101,6 +101,7 @@ $(document).ready(function(){
         var x = $(this).text();
         var newX = x.toLowerCase();
         var newClass = "." + newX;
+        console.log(newClass);
         var className = "highlight" + newX
         $(newClass).addClass(className);
     });
