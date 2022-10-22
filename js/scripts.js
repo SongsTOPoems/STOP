@@ -42,7 +42,7 @@ $(document).ready(function(){
 
 $(document).ready(function(){
     $(".menu-item a").click(function(){
-        $("#topics").addClass("entrance");
+        $("#topics").addClass("topicsEntry");
     });
     $("#songList .right-pointer").click(function(){
         $("#text1").removeClass("reverseMarginLeft");
