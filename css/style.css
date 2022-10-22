@@ -489,8 +489,8 @@ a:hover {
 }
 
 @keyframes entrance {
-    from {right: calc(-16% - 20px)};
-    to {right: 0px};
+    from {right: calc(-16% - 20px)}
+    to {right: 0px}
 }
 
 #topics a {
