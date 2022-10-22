@@ -484,6 +484,15 @@ a:hover {
     z-index: 1;
 }
 
+.topicsEntry {
+    animation: entrance 2s forwards;
+}
+
+@keyframes entrance {
+    from {right: calc(-16% - 20px)};
+    to {right: 0px};
+}
+
 #topics a {
     display: block;
     padding-bottom: 10px;
