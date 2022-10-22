@@ -29,6 +29,17 @@ function addClass(element, className) {
     }
 }
 
+function top(el) {
+    var x = el.innerText();
+    var newX = x.toLowerCase();
+    var className = "highlight" + newX;
+    const classes = document.getElementsByClass(newX);
+    for (let i = 0; i < classes.length; i++) {
+        classes[i].classList.add(className);
+    }
+}
+
+
 $(document).ready(function(){
     $("#start").click(function() {
         $('html, body').animate({
@@ -92,19 +103,10 @@ $(document).ready(function(){
         $("#songTopics").html("<a></a>") ;
     });
     $("#poem1").click(function(){
-        $("#poemTopics").html("<a class='top'>Death</a><a>Family</a><a>Music</a><a>Nature</a><a>Salvation</a><a>Sickness</a>") ;
+        $("#poemTopics").html("<a onclick='top(this)'>Death</a><a>Family</a><a>Music</a><a>Nature</a><a>Salvation</a><a>Sickness</a>") ;
     });
     $(".menu-item a").click(function(){
         $("#topics").addClass("topicsEntry");
-    });
-    $(".top").click(function(){
-        console.log($(this));
-        var x = $(this).text();
-        var newX = x.toLowerCase();
-        var newClass = "." + newX;
-        console.log(newClass);
-        var className = "highlight" + newX
-        $(newClass).addClass(className);
     });
 });
 
