@@ -507,3 +507,7 @@ a:hover {
     display: inline-block;
     width: 38vw;
 }
+
+.highlightdeath {
+    background-color: yellow;
+}
