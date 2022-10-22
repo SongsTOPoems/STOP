@@ -98,7 +98,7 @@ $(document).ready(function(){
         $("#topics").addClass("topicsEntry");
     });
     $("#topics a").click(function(){
-        console.log($(this);
+        console.log($(this));
         var x = $(this).text();
         var newX = x.toLowerCase();
         var newClass = "." + newX;
