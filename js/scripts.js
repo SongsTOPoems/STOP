@@ -88,6 +88,22 @@ $(document).ready(function(){
             $("#poemText").addClass("active");
         }
     });
+    $("#text1").click(function(){
+        $("#songTopics").html("<a></a>") ;
+    });
+    $("#poem1").click(function(){
+        $("#poemTopics").html("<a>Death</a><a>Family</a><a>Music</a><a>Nature</a><a>Salvation</a><a>Sickness</a>") ;
+    });
+    $(".menu-item a").click(function(){
+        $("#topics").addClass("topicsEntry");
+    });
+    $("#topics a").click(function(){
+        var x = $(this).text();
+        var newX = x.toLowerCase();
+        var newClass = "." + newX;
+        var className = "highlight" + newX
+        $(newClass).addClass(className);
+    });
 });
 
 
