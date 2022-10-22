@@ -92,12 +92,12 @@ $(document).ready(function(){
         $("#songTopics").html("<a></a>") ;
     });
     $("#poem1").click(function(){
-        $("#poemTopics").html("<a>Death</a><a>Family</a><a>Music</a><a>Nature</a><a>Salvation</a><a>Sickness</a>") ;
+        $("#poemTopics").html("<a class='top'>Death</a><a>Family</a><a>Music</a><a>Nature</a><a>Salvation</a><a>Sickness</a>") ;
     });
     $(".menu-item a").click(function(){
         $("#topics").addClass("topicsEntry");
     });
-    $(".listTop a").click(function(){
+    $(".top").click(function(){
         console.log($(this));
         var x = $(this).text();
         var newX = x.toLowerCase();
