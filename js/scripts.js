@@ -95,7 +95,7 @@ $(document).ready(function(){
         $("#songTopics").html("<a></a>") ;
     });
     $("#poem1").click(function(){
-        $("#poemTopics").html("<a onclick='topss(this)'>Death</a><a>Family</a><a>Music</a><a>Nature</a><a>Salvation</a><a>Sickness</a>") ;
+        $("#poemTopics").html("<a onclick='topss(this)'>Death</a><a onclick='topss(this)'>Family</a><a onclick='topss(this)'>Music</a><a onclick='topss(this)'>Nature</a><a onclick='topss(this)'>Salvation</a><a onclick='topss(this)'>Sickness</a>") ;
     });
     $(".menu-item a").click(function(){
         $("#topics").addClass("topicsEntry");
