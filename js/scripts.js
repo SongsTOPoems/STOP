@@ -105,6 +105,12 @@ $(document).ready(function(){
 
 
 function topss(el) {
+    const spans = document.getElementsByTagName('span');
+    for (let s = 0; s < spans.length; s++) {
+        if (spans[s].classList.length > 1) {
+            spans[s].classList.remove(spans[s].classList[1]);
+        }
+    }   
     var x = el.innerText;
     var newX = x.toLowerCase();
     var className = "highlight" + newX;
