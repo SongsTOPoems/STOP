@@ -510,4 +510,34 @@ a:hover {
 
 .highlightdeath {
     background-color: yellow;
+    opacity: 0.1;
+    animation: bgOp 1s forwards;
+}
+
+.highlightsalvation {
+    background-color: #ffc14d;
+    opacity: 0.1;
+    animation: bgOp 1s forwards;
+}
+
+.highlightnature {
+    background-color: #c12c40;
+    opacity: 0.1;
+    animation: bgOp 1s forwards;
+}
+
+.highlightmusic {
+    background-color: #4dfff4;
+    opacity: 0.1;
+    animation: bgOp 1s forwards;
+}
+.highlightfamily {
+    background-color: #4dff4d;
+    opacity: 0.1;
+    animation: bgOp 1s forwards;
+}
+
+@keyframes bgOp {
+    from {opacity: 0.1}
+    to {opacity: 1}
 }
