@@ -107,7 +107,7 @@ $(document).ready(function(){
 function topss(el) {
     const spans = document.getElementsByTagName('span');
     for (let s = 0; s < spans.length; s++) {
-        if (spans[s].classList.length > 1) {
+        if (spans[s].classList.length == 2) {
             spans[s].classList.remove(spans[s].classList[1]);
         }
     }   
@@ -115,7 +115,11 @@ function topss(el) {
     var newX = x.toLowerCase();
     var className = "highlight" + newX;
     const classes = document.getElementsByClassName(newX);
+    var a = 1
     for (let i = 0; i < classes.length; i++) {
+        if (i < a) {
+            classes[i].scrollIntoView({ behavior: 'smooth', block: "center" }, true);
+        }
         classes[i].classList.add(className);
     }
 }
