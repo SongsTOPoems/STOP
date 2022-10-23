@@ -108,7 +108,7 @@ function topss(el) {
     var x = el.innerText;
     var newX = x.toLowerCase();
     var className = "highlight" + newX;
-    const classes = document.getElementsByClass(newX);
+    const classes = document.getElementsByClassName(newX);
     for (let i = 0; i < classes.length; i++) {
         classes[i].classList.add(className);
     }
