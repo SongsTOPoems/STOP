@@ -536,6 +536,11 @@ a:hover {
     opacity: 0.1;
     animation: bgOp 1s forwards;
 }
+.highlightsickness {
+    background-color: #a8c2e3;
+    opacity: 0.1;
+    animation: bgOp 1s forwards;
+}
 
 @keyframes bgOp {
     from {opacity: 0.1}
