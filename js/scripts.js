@@ -86,8 +86,7 @@ $(document).ready(function(){
         $("#songText").load(url);
         $("#songList .active").removeClass("active");
         $(this).addClass('active');
-        var identifier = $(this).getAttribute("id");
-        var newString = generatorS(getList(identifier));
+        var newString = generatorS(getList(name));
         $("#topics").html(newString) ;
     });
     $("#poemList a").click(function(){
@@ -97,8 +96,7 @@ $(document).ready(function(){
         $("#poemText").load(url);
         $("#poemList .activeSecond").removeClass("activeSecond");
         $(this).addClass('activeSecond');
-        var identifier = $(this).attr();
-        var newString = generatorP(getList(identifier));
+        var newString = generatorP(getList(name));
         $("#topics").html(newString) ;
     });
     $(".menu-item a").click(function(){
