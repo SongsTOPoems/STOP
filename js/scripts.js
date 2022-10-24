@@ -133,7 +133,7 @@ function generatorP(l) {
     var end = "</a>";
     var oldList = activeList('poem');
     var newString = "";
-    var final = (oldList.concat(l)).sort();
+    var final = removeDuplicates((oldList.concat(l)).sort());
     for (let i = 0; i < final.length; i++) {
         newString = newString + start + final[i] + end;
     }
@@ -150,6 +150,11 @@ function generatorS(l) {
         newString = newString + start + final[i] + end;
     }
     return newString;   
+}
+
+function removeDuplicates(arr) {
+    return arr.filter((item,
+        index) => arr.indexOf(item) === index);
 }
 
 function activeList(genre) {
