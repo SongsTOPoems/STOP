@@ -43,30 +43,26 @@ $(document).ready(function(){
 
 /* textShown */ 
 
-const poem1 = ["Death", "Family", "Music", "Nature", "Salvation", "Sickness"];
-const poem2 = [];
-const poem3 = [];
-const poem4 = [];
-const poem5 = [];
-const poem6 = [];
-const poem7 = [];
-const poem8 = [];
-const poem9 = [];
-const song1 = [];
-const song2 = [];
-const song3 = [];
-const song4 = [];
-const song5 = [];
-const song6 = [];
-const song7 = [];
-const song8 = [];
-const song9 = [];
+function getList(entry) {
+    switch (entry) {
+        case 'poem1':
+            return (["Death", "Family", "Music", "Nature", "Salvation", "Sickness"]);
+            break;
+        case 'poem2':
+            return (["Death", "Family", "Music", "Nature", "Salvation", "Sickness"]);
+            break;
+        case 'text1':
+            return (["Ciao", "Vita", "Music", "Nature", "Salvation", "Sickness"]);
+            break;
+    }
+}
+
 
 
 function generatorP(l) {
     var start = "<a onclick='topss(this)'>";
     var end = "</a>";
-    var newString = "<h4>Poem</h4>";
+    var newString = activeList('poem');
     for (let i = 0; i < l.length; i++) {
         newString = newString + start + l[i] + end;
     }
@@ -76,12 +72,26 @@ function generatorP(l) {
 function generatorS(l) {
     var start = "<a onclick='topss(this)'>";
     var end = "</a>";
-    var newString = "<h4>Song</h4>";
-    for (let i = 0; i < l.length; i++) {
-        newString = newString + start + l[i] + end;
+    var oldList = activeList('song');
+    var newString = "";
+    var final = (oldList.concat(l)).sort();
+    for (let i = 0; i < final.length; i++) {
+        newString = newString + start + final[i] + end;
     }
     return newString;   
 }
+
+function activeList(genre) {
+    if (genre == 'poem') {
+        var el = document.getElementsByClassName('active');
+    }
+    else if (genre == 'song') {
+        var el = document.getElementsByClassName('activeSecond');
+    }
+    var elId = el.getAttribute("id");
+    var result = getList(elId);
+    return result
+    
 
 $(document).ready(function(){
     $(".menu-item a").click(function(){
@@ -125,7 +135,7 @@ $(document).ready(function(){
         $("#songTopics").html("<a></a>") ;
     });
     $("#poem1").click(function(){
-        var newString = generatorP(poem1);
+        var newString = generatorP(getList("poem1"));
         $("#poemTopics").html(newString) ;
     });
     $(".menu-item a").click(function(){
