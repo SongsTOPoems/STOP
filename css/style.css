@@ -501,7 +501,7 @@ a:hover {
     border-bottom: #838383 1pt solid;
 }
 
-#textShown .active, #textShown .activeSecond  {
+#textShown div  {
     vertical-align: top;
     height: 100%;
     display: inline-block;
