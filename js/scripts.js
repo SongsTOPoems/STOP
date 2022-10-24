@@ -63,15 +63,6 @@ function generatorS(l) {
     return newString;   
 }
 
-function checkListP(lst) {
-    var topics = $("#songTopics a");
-    for (let x = 0; x < topics.length; x++) {
-        if (lst.includes(topics[x])) {
-            lst = lst;
-        else {
-            
-    }
-
 $(document).ready(function(){
     $(".menu-item a").click(function(){
         $("#topics").addClass("topicsEntry");
