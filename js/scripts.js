@@ -43,16 +43,34 @@ $(document).ready(function(){
 
 /* textShown */ 
 
-
-function generator(l) {
+function generatorP(l) {
     var start = "<a onclick='topss(this)'>";
     var end = "</a>";
-    var newString = ""
+    var newString = "<h4>Poem</h4>";
     for (let i = 0; i < l.length; i++) {
         newString = newString + start + l[i] + end;
     }
     return newString;   
 }
+
+function generatorS(l) {
+    var start = "<a onclick='topss(this)'>";
+    var end = "</a>";
+    var newString = "<h4>Song</h4>";
+    for (let i = 0; i < l.length; i++) {
+        newString = newString + start + l[i] + end;
+    }
+    return newString;   
+}
+
+function checkListP(lst) {
+    var topics = $("#songTopics a");
+    for (let x = 0; x < topics.length; x++) {
+        if (lst.includes(topics[x])) {
+            lst = lst;
+        else {
+            
+    }
 
 $(document).ready(function(){
     $(".menu-item a").click(function(){
@@ -107,7 +125,7 @@ $(document).ready(function(){
     });
     $("#poem1").click(function(){
         const l = ["Death", "Family", "Music", "Nature", "Salvation", "Sickness"];
-        var newString = generator(l);
+        var newString = generatorP(l);
         $("#poemTopics").html(newString) ;
     });
     $(".menu-item a").click(function(){
