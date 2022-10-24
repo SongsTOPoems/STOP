@@ -62,9 +62,11 @@ function getList(entry) {
 function generatorP(l) {
     var start = "<a onclick='topss(this)'>";
     var end = "</a>";
-    var newString = activeList('poem');
-    for (let i = 0; i < l.length; i++) {
-        newString = newString + start + l[i] + end;
+    var oldList = activeList('poem');
+    var newString = "";
+    var final = (oldList.concat(l)).sort();
+    for (let i = 0; i < final.length; i++) {
+        newString = newString + start + final[i] + end;
     }
     return newString;   
 }
@@ -90,7 +92,8 @@ function activeList(genre) {
     }
     var elId = el.getAttribute("id");
     var result = getList(elId);
-    return result
+    return result;
+}
     
 
 $(document).ready(function(){
