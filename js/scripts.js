@@ -84,10 +84,11 @@ function generatorS(l) {
 }
 
 function activeList(genre) {
-    if (genre == 'poem') {
+    console.log(genre);
+    if (genre = 'poem') {
         var el = document.getElementsByClassName('active');
     }
-    else if (genre == 'song') {
+    else if (genre = 'song') {
         var el = document.getElementsByClassName('activeSecond');
     }
     var elId = el.getAttribute("id");
