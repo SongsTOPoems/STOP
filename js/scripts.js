@@ -57,47 +57,6 @@ function getList(entry) {
     }
 }
 
-
-
-function generatorP(l) {
-    var start = "<a onclick='topss(this)'>";
-    var end = "</a>";
-    var oldList = activeList('poem');
-    var newString = "";
-    var final = (oldList.concat(l)).sort();
-    for (let i = 0; i < final.length; i++) {
-        newString = newString + start + final[i] + end;
-    }
-    return newString;   
-}
-
-function generatorS(l) {
-    var start = "<a onclick='topss(this)'>";
-    var end = "</a>";
-    var oldList = activeList('song');
-    var newString = "";
-    var final = (oldList.concat(l)).sort();
-    for (let i = 0; i < final.length; i++) {
-        newString = newString + start + final[i] + end;
-    }
-    return newString;   
-}
-
-function activeList(genre) {
-    console.log(genre);
-    if (genre = 'poem') {
-        var el = document.getElementsByClassName('active');
-        console.log(el);
-    }
-    else if (genre = 'song') {
-        var el = document.getElementsByClassName('activeSecond');
-    }
-    var elId = el.getAttribute("id");
-    var result = getList(elId);
-    return result;
-}
-    
-
 $(document).ready(function(){
     $(".menu-item a").click(function(){
         $("#topics").addClass("topicsEntry");
@@ -168,4 +127,42 @@ function topss(el) {
     }
 }
 
+
+function generatorP(l) {
+    var start = "<a onclick='topss(this)'>";
+    var end = "</a>";
+    var oldList = activeList('poem');
+    var newString = "";
+    var final = (oldList.concat(l)).sort();
+    for (let i = 0; i < final.length; i++) {
+        newString = newString + start + final[i] + end;
+    }
+    return newString;   
+}
+
+function generatorS(l) {
+    var start = "<a onclick='topss(this)'>";
+    var end = "</a>";
+    var oldList = activeList('song');
+    var newString = "";
+    var final = (oldList.concat(l)).sort();
+    for (let i = 0; i < final.length; i++) {
+        newString = newString + start + final[i] + end;
+    }
+    return newString;   
+}
+
+function activeList(genre) {
+    console.log(genre);
+    if (genre = 'poem') {
+        var el = document.getElementsByClassName('active');
+        console.log(el);
+    }
+    else if (genre = 'song') {
+        var el = document.getElementsByClassName('activeSecond');
+    }
+    var elId = el.getAttribute("id");
+    var result = getList(elId);
+    return result;
+}
 
