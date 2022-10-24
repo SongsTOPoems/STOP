@@ -363,8 +363,8 @@ body > hr {
     to {margin-left: 0px;}
 }
 
-.menu-wrapper .menu-item a.active {
-    background-color: #f6f6f6;
+.menu-wrapper .menu-item a.active, .menu-wrapper .menu-item a.activeSecond {
+    background-color: #404040;
 }
 .menu-wrapper .menu-item a:hover {
     text-decoration: none;
