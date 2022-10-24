@@ -110,8 +110,7 @@ $(document).ready(function(){
         var name = $(this).attr('id');
         var url = "https://sebastiano-g.github.io/Workin-pro-g-ress-/texts/" + name + ".html";
         $("#songText").load(url);
-        $("#poemList .active").addClass("activeSecond");
-        $("#poemList .active").removeClass("active");
+        $("#songList .active").removeClass("active");
         $(this).addClass('active');
     });
     $("#poemList a").click(function(){
@@ -119,9 +118,8 @@ $(document).ready(function(){
         var name = $(this).attr('id');
         var url = "https://sebastiano-g.github.io/Workin-pro-g-ress-/texts/" + name + ".html";
         $("#poemText").load(url);
-        $("#songList .active").addClass("activeSecond");
-        $("#songList .active").removeClass("active");
-        $(this).addClass('active');
+        $("#poemList .activeSecond").removeClass("activeSecond");
+        $(this).addClass('activeSecond');
     });
     $("#text1").click(function(){
         $("#songTopics").html("<a></a>") ;
