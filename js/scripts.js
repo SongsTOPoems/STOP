@@ -97,7 +97,7 @@ $(document).ready(function(){
         $("#poemText").load(url);
         $("#poemList .activeSecond").removeClass("activeSecond");
         $(this).addClass('activeSecond');
-        var identifier = $(this).attr("id");
+        var identifier = $(this).attr();
         var newString = generatorP(getList(identifier));
         $("#topics").html(newString) ;
     });
