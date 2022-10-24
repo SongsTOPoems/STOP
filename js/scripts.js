@@ -162,7 +162,7 @@ function activeList(genre) {
         var el = document.getElementsByClassName('activeSecond');
     }
     if (el.length > 0) {
-        var elId = el.getAttribute("id");
+        var elId = el[0].getAttribute("id");
         var result = getList(elId);
     }
     else {
