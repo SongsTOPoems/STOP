@@ -87,6 +87,7 @@ function activeList(genre) {
     console.log(genre);
     if (genre = 'poem') {
         var el = document.getElementsByClassName('active');
+        console.log(el);
     }
     else if (genre = 'song') {
         var el = document.getElementsByClassName('activeSecond');
