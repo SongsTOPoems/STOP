@@ -43,6 +43,17 @@ $(document).ready(function(){
 
 /* textShown */ 
 
+
+function generator(l) {
+    var start = "<a onclick='topss(this)'>";
+    var end = "</a>;
+    var newString = ""
+    for (let i = 0; i < l.length; i++) {
+        newString = newString + start + l[i] + end;
+    }
+    return newString;   
+}
+
 $(document).ready(function(){
     $(".menu-item a").click(function(){
         $("#topics").addClass("topicsEntry");
@@ -95,14 +106,14 @@ $(document).ready(function(){
         $("#songTopics").html("<a></a>") ;
     });
     $("#poem1").click(function(){
-        $("#poemTopics").html("<a onclick='topss(this)'>Death</a><a onclick='topss(this)'>Family</a><a onclick='topss(this)'>Music</a><a onclick='topss(this)'>Nature</a><a onclick='topss(this)'>Salvation</a><a onclick='topss(this)'>Sickness</a>") ;
+        const l = ["Death", "Family", "Music", "Nature", "Salvation", "Sickness"];
+        var newString = generator(l);
+        $("#poemTopics").html(newString) ;
     });
     $(".menu-item a").click(function(){
         $("#topics").addClass("topicsEntry");
     });
 });
-
-
 
 function topss(el) {
     const spans = document.getElementsByTagName('span');
