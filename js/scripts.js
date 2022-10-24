@@ -96,11 +96,12 @@ $(document).ready(function(){
         $(this).addClass('activeSecond');
     });
     $("#text1").click(function(){
-        $("#songTopics").html("<a></a>") ;
+        var newString = generatorS(getList("text1"));
+        $("#topics").html(newString) ;
     });
     $("#poem1").click(function(){
         var newString = generatorP(getList("poem1"));
-        $("#poemTopics").html(newString) ;
+        $("#topics").html(newString) ;
     });
     $(".menu-item a").click(function(){
         $("#topics").addClass("topicsEntry");
