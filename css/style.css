@@ -363,9 +363,6 @@ body > hr {
     to {margin-left: 0px;}
 }
 
-.menu-wrapper .menu-item a.active, .menu-wrapper .menu-item a.activeSecond {
-    background-color: #404040;
-}
 .menu-wrapper .menu-item a:hover {
     text-decoration: none;
 }
@@ -501,7 +498,7 @@ a:hover {
     border-bottom: #838383 1pt solid;
 }
 
-#textShown div  {
+#textShown #poemText, #textShown .activated  {
     vertical-align: top;
     height: 100%;
     display: inline-block;
