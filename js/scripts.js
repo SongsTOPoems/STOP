@@ -46,7 +46,7 @@ $(document).ready(function(){
 
 function generator(l) {
     var start = "<a onclick='topss(this)'>";
-    var end = "</a>;
+    var end = "</a>";
     var newString = ""
     for (let i = 0; i < l.length; i++) {
         newString = newString + start + l[i] + end;
