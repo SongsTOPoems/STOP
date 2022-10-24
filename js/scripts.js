@@ -146,7 +146,7 @@ function generatorS(l) {
     var end = "</a>";
     var oldList = activeList('song');
     var newString = "";
-    var final = (oldList.concat(l)).sort();
+    var final = removeDuplicates((oldList.concat(l)).sort());
     for (let i = 0; i < final.length; i++) {
         newString = newString + start + final[i] + end;
     }
