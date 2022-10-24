@@ -161,8 +161,13 @@ function activeList(genre) {
     else if (genre = 'song') {
         var el = document.getElementsByClassName('activeSecond');
     }
-    var elId = el.getAttribute("id");
-    var result = getList(elId);
-    return result;
+    if (el.length > 0) {
+        var elId = el.getAttribute("id");
+        var result = getList(elId);
+    }
+    else {
+        var result = [];
+    }
+    return result
 }
 
