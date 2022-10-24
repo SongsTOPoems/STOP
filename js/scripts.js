@@ -52,7 +52,7 @@ function getList(entry) {
             return (["Death", "Family", "Music", "Nature", "Salvation", "Sickness"]);
             break;
         case 'text1':
-            return (["Ciao", "Vita", "Music", "Nature", "Salvation", "Sickness"]);
+            return (["Death", "Family", "Music", "Nature", "Salvation", "Sickness"]);
             break;
     }
 }
