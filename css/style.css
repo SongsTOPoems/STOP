@@ -568,6 +568,11 @@ a:hover {
     opacity: 0.1;
     animation: bgOp 1s forwards;
 }
+.highlightreligion {
+    background-color: #f7589e;
+    opacity: 0.1;
+    animation: bgOp 1s forwards;
+}
 @keyframes bgOp {
     from {opacity: 0.1}
     to {opacity: 1}
