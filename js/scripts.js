@@ -114,8 +114,13 @@ function topss(el) {
         if (spans[s].classList.length == 2) {
             spans[s].classList.remove(spans[s].classList[1]);
         }
-    }   
-    var x = el.innerText;
+    } 
+    if (el.innerText == "Darkness vs Light") {
+        var x = "DarknessvsLight;
+    }
+    else {
+        var x = el.innerText;
+    }
     var newX = x.toLowerCase();
     var className = "highlight" + newX;
     const classes = document.getElementsByClassName(newX);
