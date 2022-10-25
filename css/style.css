@@ -543,7 +543,11 @@ a:hover {
     opacity: 0.1;
     animation: bgOp 1s forwards;
 }
-
+.highlightdarknessvslight {
+    background-color: #e99e8e;
+    opacity: 0.1;
+    animation: bgOp 1s forwards;
+}
 @keyframes bgOp {
     from {opacity: 0.1}
     to {opacity: 1}
