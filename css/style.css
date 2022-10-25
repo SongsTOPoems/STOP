@@ -548,6 +548,26 @@ a:hover {
     opacity: 0.1;
     animation: bgOp 1s forwards;
 }
+.highlightsecret {
+    background-color: #cf2a26;
+    opacity: 0.1;
+    animation: bgOp 1s forwards;
+}
+.highlighteternalsleep {
+    background-color: #a7d5b0;
+    opacity: 0.1;
+    animation: bgOp 1s forwards;
+}
+.highlightmemory {
+    background-color: #5ebac4;
+    opacity: 0.1;
+    animation: bgOp 1s forwards;
+}
+.highlightsuffering {
+    background-color: #f3da66;
+    opacity: 0.1;
+    animation: bgOp 1s forwards;
+}
 @keyframes bgOp {
     from {opacity: 0.1}
     to {opacity: 1}
