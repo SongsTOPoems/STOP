@@ -54,6 +54,9 @@ function getList(entry) {
         case 'text1':
             return (["Death", "Family", "Music", "Nature", "Salvation", "Sickness"]);
             break;
+        case 'text2':
+            return (["Death", "Writing", "Darkness vs Light", "Nature", "Salvation"]);
+            break;
     }
 }
 
