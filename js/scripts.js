@@ -60,6 +60,9 @@ function getList(entry) {
         case 'text2':
             return (["Death", "Writing", "Darkness vs Light", "Nature", "Salvation"]);
             break;
+        case 'text3':
+            return ([ "Family", "Sight", "Darkness vs Light", "Love", "Salvation", "Church", "Hate", "Justice"]);
+            break;
     }
 }
 
