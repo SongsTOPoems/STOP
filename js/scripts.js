@@ -116,7 +116,7 @@ function topss(el) {
         }
     } 
     if (el.innerText == "Darkness vs Light") {
-        var x = "DarknessvsLight;
+        var x = "DarknessvsLight";
     }
     else {
         var x = el.innerText;
