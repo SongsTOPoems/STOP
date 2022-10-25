@@ -479,6 +479,7 @@ a:hover {
     background: url('back.jpg') repeat;
     filter: grayscale(80%);
     z-index: 1;
+    overflow: auto;
 }
 
 .topicsEntry {
