@@ -49,7 +49,7 @@ function getList(entry) {
             return (["Death", "Family", "Music", "Nature", "Salvation", "Sickness"]);
             break;
         case 'poem2':
-            return (["Death", "Family", "Music", "Nature", "Salvation", "Sickness"]);
+            return (["Eternal Sleep", "Secret", "Suffering", "Nature", "Salvation", "Memory", "Writing", "Religion"]);
             break;
         case 'text1':
             return (["Death", "Family", "Music", "Nature", "Salvation", "Sickness"]);
