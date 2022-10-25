@@ -506,7 +506,7 @@ a:hover {
 }
 
 .highlightdeath {
-    background-color: yellow;
+    background-color: #e9a600;
     opacity: 0.1;
     animation: bgOp 1s forwards;
 }
@@ -518,7 +518,7 @@ a:hover {
 }
 
 .highlightnature {
-    background-color: #c12c40;
+    background-color: #efbbea;
     opacity: 0.1;
     animation: bgOp 1s forwards;
 }
@@ -535,6 +535,11 @@ a:hover {
 }
 .highlightsickness {
     background-color: #a8c2e3;
+    opacity: 0.1;
+    animation: bgOp 1s forwards;
+}
+.highlightwriting  {
+    background-color: #bca98c;
     opacity: 0.1;
     animation: bgOp 1s forwards;
 }
