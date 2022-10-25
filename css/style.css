@@ -574,6 +574,16 @@ a:hover {
     opacity: 0.1;
     animation: bgOp 1s forwards;
 }
+.highlightjustice {
+    background-color: #b0b7a8;
+    opacity: 0.1;
+    animation: bgOp 1s forwards;
+}
+.highlightknowledge {
+    background-color: #fdec7f;
+    opacity: 0.1;
+    animation: bgOp 1s forwards;
+}
 @keyframes bgOp {
     from {opacity: 0.1}
     to {opacity: 1}
