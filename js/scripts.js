@@ -150,6 +150,7 @@ function generatorS(l) {
     var start = "<a onclick='topss(this)'>";
     var end = "</a>";
     var oldList = activeList('song');
+    console.log(oldList);
     var newString = "";
     var final = removeDuplicates((oldList.concat(l)).sort());
     for (let i = 0; i < final.length; i++) {
@@ -164,12 +165,10 @@ function removeDuplicates(arr) {
 }
 
 function activeList(genre) {
-    console.log(genre);
-    if (genre = 'poem') {
+    if (genre == 'poem') {
         var el = document.getElementsByClassName('active');
-        console.log(el);
     }
-    else if (genre = 'song') {
+    else if (genre == 'song') {
         var el = document.getElementsByClassName('activeSecond');
     }
     if (el.length > 0) {
