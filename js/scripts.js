@@ -122,6 +122,9 @@ function topss(el) {
     if (el.innerText == "Darkness vs Light") {
         var x = "DarknessvsLight";
     }
+    else if (el.innerText == "Eternal Sleep") {
+        var x = "Eternalsleep";
+    }
     else {
         var x = el.innerText;
     }
