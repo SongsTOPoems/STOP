@@ -584,6 +584,21 @@ a:hover {
     opacity: 0.1;
     animation: bgOp 1s forwards;
 }
+.highlightchurch {
+    background-color: #b8944e;
+    opacity: 0.1;
+    animation: bgOp 1s forwards;
+}
+.highlighthate {
+    background-color: #85dfc9;
+    opacity: 0.1;
+    animation: bgOp 1s forwards;
+}
+.highlightjustice {
+    background-color: #e8c8b8;
+    opacity: 0.1;
+    animation: bgOp 1s forwards;
+}
 @keyframes bgOp {
     from {opacity: 0.1}
     to {opacity: 1}
