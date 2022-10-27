@@ -119,11 +119,23 @@ html, body {
 }
 
 
-#sectionOne, #sectionTwo {
+#sectionTwo {
     margin-left: 8%;
     margin-right: 8%;
     margin-top: 90px;
     margin-bottom: 90px;
+}
+
+#sectionOne {
+    padding-top: 40px;
+    padding-bottom: 40px;
+    background-color: #f5f7fa;
+    margin-top: 90px;
+    margin-bottom: 90px;
+}
+
+#sectionOne h2 {
+    padding-bottom: -20px;
 }
 
 #subHero {
@@ -131,6 +143,11 @@ html, body {
     margin-right: 8%;
     padding-top: 130px;
     margin-bottom: 60px;
+}
+
+#cloud {
+    height: 80vh;
+    margin-left: 16vw;
 }
 
 #subHero h1 {
@@ -266,9 +283,7 @@ h1::after {
     padding-right: 20px;
     font-size: 1.2em;
     padding-bottom: 8px;
-    text-decoration: underline;
-    text-decoration-thickness: 5px;
-    text-decoration-color: #ffce00;
+
 }
 
 .highlight, h2 {
@@ -611,4 +626,51 @@ a:hover {
 @keyframes bgOp {
     from {opacity: 0.1}
     to {opacity: 1}
+}
+
+.cards-container {
+    width: 100%;
+    margin-top: 10vh;
+}
+
+.small-cards {
+    display: inline-block;
+    width: 19.5%;
+    margin-left: 5%;
+    margin-top: 30px;
+    transition: transform .3s ease-out;
+    padding-top: 10px;
+    border-radius: 10px;
+}
+
+.small-cards:hover {
+    cursor: pointer;
+    transform: translateY(-5px) scale(1.005) translateZ(0);
+    box-shadow: 0 24px 36px rgba(0,0,0,0.11);
+    background-color: #fefefe77;
+    border: solid 1pt #ffce00;
+}
+
+.icon {
+    width: 30%;
+    margin-left: 38%;
+    display: block;
+}
+
+.icon-tit {
+    width: 70%;
+    display: inline-block;
+    margin-left: 15%;
+    text-align: center;
+}
+
+/* ontology */
+
+#ontology1 {
+    display: block;
+    margin-top: 100px
+}
+
+#ontology1 iframe{
+    margin-left: 5vw;
 }
