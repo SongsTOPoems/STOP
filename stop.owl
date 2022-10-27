@@ -1,0 +1,2610 @@
+<?xml version="1.0"?>
+<Ontology xmlns="http://www.w3.org/2002/07/owl#"
+     xml:base="http://www.semanticweb.org/martinapensalfini/ontologies/2022/9/stop"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     ontologyIRI="http://www.semanticweb.org/martinapensalfini/ontologies/2022/9/stop">
+    <Prefix name="" IRI="http://www.semanticweb.org/martinapensalfini/ontologies/2022/9/stop#"/>
+    <Prefix name="owl" IRI="http://www.w3.org/2002/07/owl#"/>
+    <Prefix name="rdf" IRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#"/>
+    <Prefix name="xml" IRI="http://www.w3.org/XML/1998/namespace"/>
+    <Prefix name="xsd" IRI="http://www.w3.org/2001/XMLSchema#"/>
+    <Prefix name="rdfs" IRI="http://www.w3.org/2000/01/rdf-schema#"/>
+    <Prefix name="stop" IRI="http://www.semanticweb.org/martinapensalfini/ontologies/2022/9/stop#"/>
+    <Prefix name="schema" IRI="http://schema.org/"/>
+    <Declaration>
+        <Class IRI="#Anthology_Poem"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Author"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Character"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Musical_Album"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Poem"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Song"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Topic"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Unit"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Work"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty abbreviatedIRI="schema:hasPart"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty abbreviatedIRI="schema:isPartOf"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#appears_in"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#has_author"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#has_character"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#inspires"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#is_about"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#is_in"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#is_inspired_by"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#is_written_by"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#related_to"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#writes"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty abbreviatedIRI="rdf:type"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#have_name"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Aunt_Emily"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Bert"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Charley"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Church"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Damnation"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Dancing"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Darkness_VS_Light"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Death"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Devastation"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#DippoldTheOptician"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Dippold_the_optician"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#DoctorSiegfriedIseman"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Doctor_Siegfried_Iseman"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Dormono_sulla_collina"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Dream"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Drinking"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Edgar_Lee_Masters"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Edith"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Ella"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Elmer"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Eternal_Sleep"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Fabrizio_De_Andrè"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Family"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#FiddlerJones"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Fiddler_Jones"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#FrancisTurner"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Francis_Turner"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#FrankDrummer"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Frank_Drummer"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Hate"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Herman"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Il_suonatore_Jones"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#JonesIlSuonatore"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#JudgeSelahLively"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Judge_Selah_Lively"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Justice"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Kate"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Knowledge"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Lizzie"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Love"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Maggie"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Major_Walker"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Marriage"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Memory"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Music"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Nature"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Night"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Religion"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Salvation"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Secret"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Sevigne_Houghton"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Sickness"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Sight"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Sky"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Spoon_River_Anthology"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Suffering"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#The_Hill"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Tom"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Towny_Kincaid"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#TrainorTheDruggist"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Trainor_the_druggist"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#UnBlasfemo"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#UnChimico"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#UnGiudice"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#UnMalatoDiCuore"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#UnMatto"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#UnMedico"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#UnOttico"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Un_chimico"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Un_giudice"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Un_malato_di_cuore"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Un_medico"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Un_ottico"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Uncle_Isaac"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#WendellPBloyd"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Wendell_P._Bloyd"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Writing"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Non_al_denaro_non_all&apos;amore_né_al_cielo"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Un_blasfemo_(dietro_ogni_blasfemo_c&apos;è_un_giardino_incantato)"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Un_matto(Dietro_ogni_scemo_c&apos;è_un_villaggio)"/>
+    </Declaration>
+    <SubClassOf>
+        <Class IRI="#Anthology_Poem"/>
+        <Class IRI="#Work"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Musical_Album"/>
+        <Class IRI="#Work"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Poem"/>
+        <Class IRI="#Unit"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Song"/>
+        <Class IRI="#Unit"/>
+    </SubClassOf>
+    <ClassAssertion>
+        <Class IRI="#Character"/>
+        <NamedIndividual IRI="#Aunt_Emily"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Character"/>
+        <NamedIndividual IRI="#Bert"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Character"/>
+        <NamedIndividual IRI="#Charley"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Topic"/>
+        <NamedIndividual IRI="#Church"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Topic"/>
+        <NamedIndividual IRI="#Damnation"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Topic"/>
+        <NamedIndividual IRI="#Dancing"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Topic"/>
+        <NamedIndividual IRI="#Darkness_VS_Light"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Topic"/>
+        <NamedIndividual IRI="#Death"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Topic"/>
+        <NamedIndividual IRI="#Devastation"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Character"/>
+        <NamedIndividual IRI="#DippoldTheOptician"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Poem"/>
+        <NamedIndividual IRI="#Dippold_the_optician"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Character"/>
+        <NamedIndividual IRI="#DoctorSiegfriedIseman"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Poem"/>
+        <NamedIndividual IRI="#Doctor_Siegfried_Iseman"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Song"/>
+        <NamedIndividual IRI="#Dormono_sulla_collina"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Unit"/>
+        <NamedIndividual IRI="#Dormono_sulla_collina"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Topic"/>
+        <NamedIndividual IRI="#Dream"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Topic"/>
+        <NamedIndividual IRI="#Drinking"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Author"/>
+        <NamedIndividual IRI="#Edgar_Lee_Masters"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Character"/>
+        <NamedIndividual IRI="#Edith"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Character"/>
+        <NamedIndividual IRI="#Ella"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Character"/>
+        <NamedIndividual IRI="#Elmer"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Topic"/>
+        <NamedIndividual IRI="#Eternal_Sleep"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Author"/>
+        <NamedIndividual IRI="#Fabrizio_De_Andrè"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Topic"/>
+        <NamedIndividual IRI="#Family"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Character"/>
+        <NamedIndividual IRI="#FiddlerJones"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Poem"/>
+        <NamedIndividual IRI="#Fiddler_Jones"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Character"/>
+        <NamedIndividual IRI="#FrancisTurner"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Poem"/>
+        <NamedIndividual IRI="#Francis_Turner"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Character"/>
+        <NamedIndividual IRI="#FrankDrummer"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Poem"/>
+        <NamedIndividual IRI="#Frank_Drummer"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Topic"/>
+        <NamedIndividual IRI="#Hate"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Character"/>
+        <NamedIndividual IRI="#Herman"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Song"/>
+        <NamedIndividual IRI="#Il_suonatore_Jones"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Character"/>
+        <NamedIndividual IRI="#JonesIlSuonatore"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Character"/>
+        <NamedIndividual IRI="#JudgeSelahLively"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Poem"/>
+        <NamedIndividual IRI="#Judge_Selah_Lively"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Topic"/>
+        <NamedIndividual IRI="#Justice"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Character"/>
+        <NamedIndividual IRI="#Kate"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Topic"/>
+        <NamedIndividual IRI="#Knowledge"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Character"/>
+        <NamedIndividual IRI="#Lizzie"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Topic"/>
+        <NamedIndividual IRI="#Love"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Character"/>
+        <NamedIndividual IRI="#Maggie"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Character"/>
+        <NamedIndividual IRI="#Major_Walker"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Topic"/>
+        <NamedIndividual IRI="#Marriage"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Topic"/>
+        <NamedIndividual IRI="#Memory"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Topic"/>
+        <NamedIndividual IRI="#Music"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Topic"/>
+        <NamedIndividual IRI="#Nature"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Topic"/>
+        <NamedIndividual IRI="#Night"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Topic"/>
+        <NamedIndividual IRI="#Religion"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Topic"/>
+        <NamedIndividual IRI="#Salvation"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Topic"/>
+        <NamedIndividual IRI="#Secret"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Character"/>
+        <NamedIndividual IRI="#Sevigne_Houghton"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Topic"/>
+        <NamedIndividual IRI="#Sickness"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Topic"/>
+        <NamedIndividual IRI="#Sight"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Topic"/>
+        <NamedIndividual IRI="#Sky"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Anthology_Poem"/>
+        <NamedIndividual IRI="#Spoon_River_Anthology"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Work"/>
+        <NamedIndividual IRI="#Spoon_River_Anthology"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Topic"/>
+        <NamedIndividual IRI="#Suffering"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Poem"/>
+        <NamedIndividual IRI="#The_Hill"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Unit"/>
+        <NamedIndividual IRI="#The_Hill"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Character"/>
+        <NamedIndividual IRI="#Tom"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Character"/>
+        <NamedIndividual IRI="#Towny_Kincaid"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Character"/>
+        <NamedIndividual IRI="#TrainorTheDruggist"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Poem"/>
+        <NamedIndividual IRI="#Trainor_the_druggist"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Character"/>
+        <NamedIndividual IRI="#UnBlasfemo"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Character"/>
+        <NamedIndividual IRI="#UnChimico"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Character"/>
+        <NamedIndividual IRI="#UnGiudice"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Character"/>
+        <NamedIndividual IRI="#UnMalatoDiCuore"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Character"/>
+        <NamedIndividual IRI="#UnMatto"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Character"/>
+        <NamedIndividual IRI="#UnMedico"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Character"/>
+        <NamedIndividual IRI="#UnOttico"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Song"/>
+        <NamedIndividual IRI="#Un_chimico"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Song"/>
+        <NamedIndividual IRI="#Un_giudice"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Song"/>
+        <NamedIndividual IRI="#Un_malato_di_cuore"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Song"/>
+        <NamedIndividual IRI="#Un_medico"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Song"/>
+        <NamedIndividual IRI="#Un_ottico"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Character"/>
+        <NamedIndividual IRI="#Uncle_Isaac"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Character"/>
+        <NamedIndividual IRI="#WendellPBloyd"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Poem"/>
+        <NamedIndividual IRI="#Wendell_P._Bloyd"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Topic"/>
+        <NamedIndividual IRI="#Writing"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Musical_Album"/>
+        <NamedIndividual IRI="#Non_al_denaro_non_all&apos;amore_né_al_cielo"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Work"/>
+        <NamedIndividual IRI="#Non_al_denaro_non_all&apos;amore_né_al_cielo"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Song"/>
+        <NamedIndividual IRI="#Un_blasfemo_(dietro_ogni_blasfemo_c&apos;è_un_giardino_incantato)"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Song"/>
+        <NamedIndividual IRI="#Un_matto(Dietro_ogni_scemo_c&apos;è_un_villaggio)"/>
+    </ClassAssertion>
+    <SameIndividual>
+        <NamedIndividual IRI="#DippoldTheOptician"/>
+        <NamedIndividual IRI="#UnOttico"/>
+    </SameIndividual>
+    <SameIndividual>
+        <NamedIndividual IRI="#DoctorSiegfriedIseman"/>
+        <NamedIndividual IRI="#UnMedico"/>
+    </SameIndividual>
+    <SameIndividual>
+        <NamedIndividual IRI="#FiddlerJones"/>
+        <NamedIndividual IRI="#JonesIlSuonatore"/>
+    </SameIndividual>
+    <SameIndividual>
+        <NamedIndividual IRI="#FrancisTurner"/>
+        <NamedIndividual IRI="#UnMalatoDiCuore"/>
+    </SameIndividual>
+    <SameIndividual>
+        <NamedIndividual IRI="#FrankDrummer"/>
+        <NamedIndividual IRI="#UnMatto"/>
+    </SameIndividual>
+    <SameIndividual>
+        <NamedIndividual IRI="#JudgeSelahLively"/>
+        <NamedIndividual IRI="#UnGiudice"/>
+    </SameIndividual>
+    <SameIndividual>
+        <NamedIndividual IRI="#TrainorTheDruggist"/>
+        <NamedIndividual IRI="#UnChimico"/>
+    </SameIndividual>
+    <SameIndividual>
+        <NamedIndividual IRI="#UnBlasfemo"/>
+        <NamedIndividual IRI="#WendellPBloyd"/>
+    </SameIndividual>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#is_in"/>
+        <NamedIndividual IRI="#Aunt_Emily"/>
+        <NamedIndividual IRI="#The_Hill"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#is_in"/>
+        <NamedIndividual IRI="#Bert"/>
+        <NamedIndividual IRI="#The_Hill"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#is_in"/>
+        <NamedIndividual IRI="#Charley"/>
+        <NamedIndividual IRI="#The_Hill"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#appears_in"/>
+        <NamedIndividual IRI="#Church"/>
+        <NamedIndividual IRI="#Doctor_Siegfried_Iseman"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#appears_in"/>
+        <NamedIndividual IRI="#Damnation"/>
+        <NamedIndividual IRI="#Un_giudice"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#appears_in"/>
+        <NamedIndividual IRI="#Damnation"/>
+        <NamedIndividual IRI="#Un_medico"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#appears_in"/>
+        <NamedIndividual IRI="#Damnation"/>
+        <NamedIndividual IRI="#Wendell_P._Bloyd"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#appears_in"/>
+        <NamedIndividual IRI="#Damnation"/>
+        <NamedIndividual IRI="#Un_blasfemo_(dietro_ogni_blasfemo_c&apos;è_un_giardino_incantato)"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#appears_in"/>
+        <NamedIndividual IRI="#Dancing"/>
+        <NamedIndividual IRI="#Il_suonatore_Jones"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#appears_in"/>
+        <NamedIndividual IRI="#Darkness_VS_Light"/>
+        <NamedIndividual IRI="#Dippold_the_optician"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#appears_in"/>
+        <NamedIndividual IRI="#Darkness_VS_Light"/>
+        <NamedIndividual IRI="#Frank_Drummer"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#appears_in"/>
+        <NamedIndividual IRI="#Darkness_VS_Light"/>
+        <NamedIndividual IRI="#Un_ottico"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#appears_in"/>
+        <NamedIndividual IRI="#Death"/>
+        <NamedIndividual IRI="#Dormono_sulla_collina"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#appears_in"/>
+        <NamedIndividual IRI="#Death"/>
+        <NamedIndividual IRI="#The_Hill"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#appears_in"/>
+        <NamedIndividual IRI="#Death"/>
+        <NamedIndividual IRI="#Un_matto(Dietro_ogni_scemo_c&apos;è_un_villaggio)"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#appears_in"/>
+        <NamedIndividual IRI="#Devastation"/>
+        <NamedIndividual IRI="#Un_chimico"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#is_in"/>
+        <NamedIndividual IRI="#DippoldTheOptician"/>
+        <NamedIndividual IRI="#Dippold_the_optician"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty abbreviatedIRI="schema:isPartOf"/>
+        <NamedIndividual IRI="#Dippold_the_optician"/>
+        <NamedIndividual IRI="#Spoon_River_Anthology"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#has_character"/>
+        <NamedIndividual IRI="#Dippold_the_optician"/>
+        <NamedIndividual IRI="#DippoldTheOptician"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#is_about"/>
+        <NamedIndividual IRI="#Dippold_the_optician"/>
+        <NamedIndividual IRI="#Darkness_VS_Light"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#is_about"/>
+        <NamedIndividual IRI="#Dippold_the_optician"/>
+        <NamedIndividual IRI="#Night"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#is_about"/>
+        <NamedIndividual IRI="#Dippold_the_optician"/>
+        <NamedIndividual IRI="#Sight"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#is_about"/>
+        <NamedIndividual IRI="#Dippold_the_optician"/>
+        <NamedIndividual IRI="#Sky"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#is_in"/>
+        <NamedIndividual IRI="#DoctorSiegfriedIseman"/>
+        <NamedIndividual IRI="#Doctor_Siegfried_Iseman"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty abbreviatedIRI="schema:isPartOf"/>
+        <NamedIndividual IRI="#Doctor_Siegfried_Iseman"/>
+        <NamedIndividual IRI="#Spoon_River_Anthology"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#has_character"/>
+        <NamedIndividual IRI="#Doctor_Siegfried_Iseman"/>
+        <NamedIndividual IRI="#DoctorSiegfriedIseman"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#is_about"/>
+        <NamedIndividual IRI="#Doctor_Siegfried_Iseman"/>
+        <NamedIndividual IRI="#Church"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#is_about"/>
+        <NamedIndividual IRI="#Doctor_Siegfried_Iseman"/>
+        <NamedIndividual IRI="#Justice"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#is_about"/>
+        <NamedIndividual IRI="#Doctor_Siegfried_Iseman"/>
+        <NamedIndividual IRI="#Knowledge"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#is_about"/>
+        <NamedIndividual IRI="#Doctor_Siegfried_Iseman"/>
+        <NamedIndividual IRI="#Religion"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#is_about"/>
+        <NamedIndividual IRI="#Doctor_Siegfried_Iseman"/>
+        <NamedIndividual IRI="#Suffering"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty abbreviatedIRI="schema:isPartOf"/>
+        <NamedIndividual IRI="#Dormono_sulla_collina"/>
+        <NamedIndividual IRI="#Non_al_denaro_non_all&apos;amore_né_al_cielo"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#has_character"/>
+        <NamedIndividual IRI="#Dormono_sulla_collina"/>
+        <NamedIndividual IRI="#Bert"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#has_character"/>
+        <NamedIndividual IRI="#Dormono_sulla_collina"/>
+        <NamedIndividual IRI="#Charley"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#has_character"/>
+        <NamedIndividual IRI="#Dormono_sulla_collina"/>
+        <NamedIndividual IRI="#Ella"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#has_character"/>
+        <NamedIndividual IRI="#Dormono_sulla_collina"/>
+        <NamedIndividual IRI="#Elmer"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#has_character"/>
+        <NamedIndividual IRI="#Dormono_sulla_collina"/>
+        <NamedIndividual IRI="#Herman"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#has_character"/>
+        <NamedIndividual IRI="#Dormono_sulla_collina"/>
+        <NamedIndividual IRI="#JonesIlSuonatore"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#has_character"/>
+        <NamedIndividual IRI="#Dormono_sulla_collina"/>
+        <NamedIndividual IRI="#Kate"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#has_character"/>
+        <NamedIndividual IRI="#Dormono_sulla_collina"/>
+        <NamedIndividual IRI="#Lizzie"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#has_character"/>
+        <NamedIndividual IRI="#Dormono_sulla_collina"/>
+        <NamedIndividual IRI="#Maggie"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#has_character"/>
+        <NamedIndividual IRI="#Dormono_sulla_collina"/>
+        <NamedIndividual IRI="#Tom"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#is_about"/>
+        <NamedIndividual IRI="#Dormono_sulla_collina"/>
+        <NamedIndividual IRI="#Death"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#is_about"/>
+        <NamedIndividual IRI="#Dormono_sulla_collina"/>
+        <NamedIndividual IRI="#Eternal_Sleep"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#is_about"/>
+        <NamedIndividual IRI="#Dormono_sulla_collina"/>
+        <NamedIndividual IRI="#Nature"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#related_to"/>
+        <NamedIndividual IRI="#Dormono_sulla_collina"/>
+        <NamedIndividual IRI="#The_Hill"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#appears_in"/>
+        <NamedIndividual IRI="#Dream"/>
+        <NamedIndividual IRI="#Dippold_the_optician"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#appears_in"/>
+        <NamedIndividual IRI="#Dream"/>
+        <NamedIndividual IRI="#Frank_Drummer"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#appears_in"/>
+        <NamedIndividual IRI="#Dream"/>
+        <NamedIndividual IRI="#Il_suonatore_Jones"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#appears_in"/>
+        <NamedIndividual IRI="#Dream"/>
+        <NamedIndividual IRI="#Un_malato_di_cuore"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#appears_in"/>
+        <NamedIndividual IRI="#Dream"/>
+        <NamedIndividual IRI="#Un_ottico"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#appears_in"/>
+        <NamedIndividual IRI="#Dream"/>
+        <NamedIndividual IRI="#Un_blasfemo_(dietro_ogni_blasfemo_c&apos;è_un_giardino_incantato)"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#appears_in"/>
+        <NamedIndividual IRI="#Dream"/>
+        <NamedIndividual IRI="#Un_matto(Dietro_ogni_scemo_c&apos;è_un_villaggio)"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#appears_in"/>
+        <NamedIndividual IRI="#Drinking"/>
+        <NamedIndividual IRI="#Francis_Turner"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#writes"/>
+        <NamedIndividual IRI="#Edgar_Lee_Masters"/>
+        <NamedIndividual IRI="#Spoon_River_Anthology"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#is_in"/>
+        <NamedIndividual IRI="#Edith"/>
+        <NamedIndividual IRI="#The_Hill"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#is_in"/>
+        <NamedIndividual IRI="#Ella"/>
+        <NamedIndividual IRI="#Dormono_sulla_collina"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#is_in"/>
+        <NamedIndividual IRI="#Ella"/>
+        <NamedIndividual IRI="#The_Hill"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#is_in"/>
+        <NamedIndividual IRI="#Elmer"/>
+        <NamedIndividual IRI="#Dormono_sulla_collina"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#is_in"/>
+        <NamedIndividual IRI="#Elmer"/>
+        <NamedIndividual IRI="#The_Hill"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#appears_in"/>
+        <NamedIndividual IRI="#Eternal_Sleep"/>
+        <NamedIndividual IRI="#Dormono_sulla_collina"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#appears_in"/>
+        <NamedIndividual IRI="#Eternal_Sleep"/>
+        <NamedIndividual IRI="#The_Hill"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#writes"/>
+        <NamedIndividual IRI="#Fabrizio_De_Andrè"/>
+        <NamedIndividual IRI="#Non_al_denaro_non_all&apos;amore_né_al_cielo"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#appears_in"/>
+        <NamedIndividual IRI="#Family"/>
+        <NamedIndividual IRI="#Trainor_the_druggist"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#is_in"/>
+        <NamedIndividual IRI="#FiddlerJones"/>
+        <NamedIndividual IRI="#Fiddler_Jones"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty abbreviatedIRI="schema:isPartOf"/>
+        <NamedIndividual IRI="#Fiddler_Jones"/>
+        <NamedIndividual IRI="#Spoon_River_Anthology"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#has_character"/>
+        <NamedIndividual IRI="#Fiddler_Jones"/>
+        <NamedIndividual IRI="#FiddlerJones"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#is_about"/>
+        <NamedIndividual IRI="#Fiddler_Jones"/>
+        <NamedIndividual IRI="#Dancing"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#is_about"/>
+        <NamedIndividual IRI="#Fiddler_Jones"/>
+        <NamedIndividual IRI="#Music"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#is_about"/>
+        <NamedIndividual IRI="#Fiddler_Jones"/>
+        <NamedIndividual IRI="#Nature"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#is_about"/>
+        <NamedIndividual IRI="#Fiddler_Jones"/>
+        <NamedIndividual IRI="#Sky"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#is_in"/>
+        <NamedIndividual IRI="#FrancisTurner"/>
+        <NamedIndividual IRI="#Francis_Turner"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty abbreviatedIRI="schema:isPartOf"/>
+        <NamedIndividual IRI="#Francis_Turner"/>
+        <NamedIndividual IRI="#Spoon_River_Anthology"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#has_character"/>
+        <NamedIndividual IRI="#Francis_Turner"/>
+        <NamedIndividual IRI="#FrancisTurner"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#is_about"/>
+        <NamedIndividual IRI="#Francis_Turner"/>
+        <NamedIndividual IRI="#Drinking"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#is_about"/>
+        <NamedIndividual IRI="#Francis_Turner"/>
+        <NamedIndividual IRI="#Nature"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#is_about"/>
+        <NamedIndividual IRI="#Francis_Turner"/>
+        <NamedIndividual IRI="#Secret"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#is_about"/>
+        <NamedIndividual IRI="#Francis_Turner"/>
+        <NamedIndividual IRI="#Suffering"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#is_in"/>
+        <NamedIndividual IRI="#FrankDrummer"/>
+        <NamedIndividual IRI="#Frank_Drummer"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty abbreviatedIRI="schema:isPartOf"/>
+        <NamedIndividual IRI="#Frank_Drummer"/>
+        <NamedIndividual IRI="#Spoon_River_Anthology"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#has_character"/>
+        <NamedIndividual IRI="#Frank_Drummer"/>
+        <NamedIndividual IRI="#FrankDrummer"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#is_about"/>
+        <NamedIndividual IRI="#Frank_Drummer"/>
+        <NamedIndividual IRI="#Darkness_VS_Light"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#is_about"/>
+        <NamedIndividual IRI="#Frank_Drummer"/>
+        <NamedIndividual IRI="#Dream"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#is_about"/>
+        <NamedIndividual IRI="#Frank_Drummer"/>
+        <NamedIndividual IRI="#Memory"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#is_about"/>
+        <NamedIndividual IRI="#Frank_Drummer"/>
+        <NamedIndividual IRI="#Music"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#appears_in"/>
+        <NamedIndividual IRI="#Hate"/>
+        <NamedIndividual IRI="#Judge_Selah_Lively"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#appears_in"/>
+        <NamedIndividual IRI="#Hate"/>
+        <NamedIndividual IRI="#Un_giudice"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#appears_in"/>
+        <NamedIndividual IRI="#Hate"/>
+        <NamedIndividual IRI="#Wendell_P._Bloyd"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#is_in"/>
+        <NamedIndividual IRI="#Herman"/>
+        <NamedIndividual IRI="#Dormono_sulla_collina"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#is_in"/>
+        <NamedIndividual IRI="#Herman"/>
+        <NamedIndividual IRI="#The_Hill"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty abbreviatedIRI="schema:isPartOf"/>
+        <NamedIndividual IRI="#Il_suonatore_Jones"/>
+        <NamedIndividual IRI="#Non_al_denaro_non_all&apos;amore_né_al_cielo"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#has_character"/>
+        <NamedIndividual IRI="#Il_suonatore_Jones"/>
+        <NamedIndividual IRI="#JonesIlSuonatore"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#is_about"/>
+        <NamedIndividual IRI="#Il_suonatore_Jones"/>
+        <NamedIndividual IRI="#Dancing"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#is_about"/>
+        <NamedIndividual IRI="#Il_suonatore_Jones"/>
+        <NamedIndividual IRI="#Dream"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#is_about"/>
+        <NamedIndividual IRI="#Il_suonatore_Jones"/>
+        <NamedIndividual IRI="#Music"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#is_about"/>
+        <NamedIndividual IRI="#Il_suonatore_Jones"/>
+        <NamedIndividual IRI="#Nature"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#is_about"/>
+        <NamedIndividual IRI="#Il_suonatore_Jones"/>
+        <NamedIndividual IRI="#Suffering"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#related_to"/>
+        <NamedIndividual IRI="#Il_suonatore_Jones"/>
+        <NamedIndividual IRI="#Fiddler_Jones"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#is_in"/>
+        <NamedIndividual IRI="#JonesIlSuonatore"/>
+        <NamedIndividual IRI="#Il_suonatore_Jones"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#is_in"/>
+        <NamedIndividual IRI="#JudgeSelahLively"/>
+        <NamedIndividual IRI="#Judge_Selah_Lively"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty abbreviatedIRI="schema:isPartOf"/>
+        <NamedIndividual IRI="#Judge_Selah_Lively"/>
+        <NamedIndividual IRI="#Spoon_River_Anthology"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#has_character"/>
+        <NamedIndividual IRI="#Judge_Selah_Lively"/>
+        <NamedIndividual IRI="#JudgeSelahLively"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#is_about"/>
+        <NamedIndividual IRI="#Judge_Selah_Lively"/>
+        <NamedIndividual IRI="#Hate"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#is_about"/>
+        <NamedIndividual IRI="#Judge_Selah_Lively"/>
+        <NamedIndividual IRI="#Justice"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#is_about"/>
+        <NamedIndividual IRI="#Judge_Selah_Lively"/>
+        <NamedIndividual IRI="#Religion"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#appears_in"/>
+        <NamedIndividual IRI="#Justice"/>
+        <NamedIndividual IRI="#Doctor_Siegfried_Iseman"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#appears_in"/>
+        <NamedIndividual IRI="#Justice"/>
+        <NamedIndividual IRI="#Judge_Selah_Lively"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#appears_in"/>
+        <NamedIndividual IRI="#Justice"/>
+        <NamedIndividual IRI="#Un_giudice"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#is_in"/>
+        <NamedIndividual IRI="#Kate"/>
+        <NamedIndividual IRI="#Dormono_sulla_collina"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#is_in"/>
+        <NamedIndividual IRI="#Kate"/>
+        <NamedIndividual IRI="#The_Hill"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#appears_in"/>
+        <NamedIndividual IRI="#Knowledge"/>
+        <NamedIndividual IRI="#Doctor_Siegfried_Iseman"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#appears_in"/>
+        <NamedIndividual IRI="#Knowledge"/>
+        <NamedIndividual IRI="#Un_giudice"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#appears_in"/>
+        <NamedIndividual IRI="#Knowledge"/>
+        <NamedIndividual IRI="#Un_medico"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#is_in"/>
+        <NamedIndividual IRI="#Lizzie"/>
+        <NamedIndividual IRI="#Dormono_sulla_collina"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#is_in"/>
+        <NamedIndividual IRI="#Lizzie"/>
+        <NamedIndividual IRI="#The_Hill"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#appears_in"/>
+        <NamedIndividual IRI="#Love"/>
+        <NamedIndividual IRI="#Un_chimico"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#is_in"/>
+        <NamedIndividual IRI="#Maggie"/>
+        <NamedIndividual IRI="#Dormono_sulla_collina"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#is_in"/>
+        <NamedIndividual IRI="#Maggie"/>
+        <NamedIndividual IRI="#The_Hill"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#is_in"/>
+        <NamedIndividual IRI="#Major_Walker"/>
+        <NamedIndividual IRI="#The_Hill"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#appears_in"/>
+        <NamedIndividual IRI="#Marriage"/>
+        <NamedIndividual IRI="#Trainor_the_druggist"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#appears_in"/>
+        <NamedIndividual IRI="#Memory"/>
+        <NamedIndividual IRI="#Frank_Drummer"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#appears_in"/>
+        <NamedIndividual IRI="#Memory"/>
+        <NamedIndividual IRI="#Un_matto(Dietro_ogni_scemo_c&apos;è_un_villaggio)"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#appears_in"/>
+        <NamedIndividual IRI="#Music"/>
+        <NamedIndividual IRI="#Fiddler_Jones"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#appears_in"/>
+        <NamedIndividual IRI="#Music"/>
+        <NamedIndividual IRI="#Frank_Drummer"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#appears_in"/>
+        <NamedIndividual IRI="#Music"/>
+        <NamedIndividual IRI="#Il_suonatore_Jones"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#appears_in"/>
+        <NamedIndividual IRI="#Nature"/>
+        <NamedIndividual IRI="#Dormono_sulla_collina"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#appears_in"/>
+        <NamedIndividual IRI="#Nature"/>
+        <NamedIndividual IRI="#Fiddler_Jones"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#appears_in"/>
+        <NamedIndividual IRI="#Nature"/>
+        <NamedIndividual IRI="#Francis_Turner"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#appears_in"/>
+        <NamedIndividual IRI="#Nature"/>
+        <NamedIndividual IRI="#Il_suonatore_Jones"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#appears_in"/>
+        <NamedIndividual IRI="#Nature"/>
+        <NamedIndividual IRI="#The_Hill"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#appears_in"/>
+        <NamedIndividual IRI="#Nature"/>
+        <NamedIndividual IRI="#Un_chimico"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#appears_in"/>
+        <NamedIndividual IRI="#Night"/>
+        <NamedIndividual IRI="#Dippold_the_optician"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#appears_in"/>
+        <NamedIndividual IRI="#Religion"/>
+        <NamedIndividual IRI="#Doctor_Siegfried_Iseman"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#appears_in"/>
+        <NamedIndividual IRI="#Religion"/>
+        <NamedIndividual IRI="#Judge_Selah_Lively"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#appears_in"/>
+        <NamedIndividual IRI="#Religion"/>
+        <NamedIndividual IRI="#Un_giudice"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#appears_in"/>
+        <NamedIndividual IRI="#Religion"/>
+        <NamedIndividual IRI="#Wendell_P._Bloyd"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#appears_in"/>
+        <NamedIndividual IRI="#Religion"/>
+        <NamedIndividual IRI="#Un_blasfemo_(dietro_ogni_blasfemo_c&apos;è_un_giardino_incantato)"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#appears_in"/>
+        <NamedIndividual IRI="#Salvation"/>
+        <NamedIndividual IRI="#Un_chimico"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#appears_in"/>
+        <NamedIndividual IRI="#Salvation"/>
+        <NamedIndividual IRI="#Un_malato_di_cuore"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#appears_in"/>
+        <NamedIndividual IRI="#Salvation"/>
+        <NamedIndividual IRI="#Un_medico"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#appears_in"/>
+        <NamedIndividual IRI="#Salvation"/>
+        <NamedIndividual IRI="#Wendell_P._Bloyd"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#appears_in"/>
+        <NamedIndividual IRI="#Salvation"/>
+        <NamedIndividual IRI="#Un_blasfemo_(dietro_ogni_blasfemo_c&apos;è_un_giardino_incantato)"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#appears_in"/>
+        <NamedIndividual IRI="#Secret"/>
+        <NamedIndividual IRI="#Francis_Turner"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#is_in"/>
+        <NamedIndividual IRI="#Sevigne_Houghton"/>
+        <NamedIndividual IRI="#The_Hill"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#appears_in"/>
+        <NamedIndividual IRI="#Sickness"/>
+        <NamedIndividual IRI="#Un_malato_di_cuore"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#appears_in"/>
+        <NamedIndividual IRI="#Sickness"/>
+        <NamedIndividual IRI="#Un_medico"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#appears_in"/>
+        <NamedIndividual IRI="#Sight"/>
+        <NamedIndividual IRI="#Dippold_the_optician"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#appears_in"/>
+        <NamedIndividual IRI="#Sight"/>
+        <NamedIndividual IRI="#Un_ottico"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#appears_in"/>
+        <NamedIndividual IRI="#Sky"/>
+        <NamedIndividual IRI="#Dippold_the_optician"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#appears_in"/>
+        <NamedIndividual IRI="#Sky"/>
+        <NamedIndividual IRI="#Fiddler_Jones"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#appears_in"/>
+        <NamedIndividual IRI="#Sky"/>
+        <NamedIndividual IRI="#Un_ottico"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty abbreviatedIRI="schema:hasPart"/>
+        <NamedIndividual IRI="#Spoon_River_Anthology"/>
+        <NamedIndividual IRI="#Dippold_the_optician"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty abbreviatedIRI="schema:hasPart"/>
+        <NamedIndividual IRI="#Spoon_River_Anthology"/>
+        <NamedIndividual IRI="#Doctor_Siegfried_Iseman"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty abbreviatedIRI="schema:hasPart"/>
+        <NamedIndividual IRI="#Spoon_River_Anthology"/>
+        <NamedIndividual IRI="#Fiddler_Jones"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty abbreviatedIRI="schema:hasPart"/>
+        <NamedIndividual IRI="#Spoon_River_Anthology"/>
+        <NamedIndividual IRI="#Francis_Turner"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty abbreviatedIRI="schema:hasPart"/>
+        <NamedIndividual IRI="#Spoon_River_Anthology"/>
+        <NamedIndividual IRI="#Frank_Drummer"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty abbreviatedIRI="schema:hasPart"/>
+        <NamedIndividual IRI="#Spoon_River_Anthology"/>
+        <NamedIndividual IRI="#Judge_Selah_Lively"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty abbreviatedIRI="schema:hasPart"/>
+        <NamedIndividual IRI="#Spoon_River_Anthology"/>
+        <NamedIndividual IRI="#The_Hill"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty abbreviatedIRI="schema:hasPart"/>
+        <NamedIndividual IRI="#Spoon_River_Anthology"/>
+        <NamedIndividual IRI="#Trainor_the_druggist"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty abbreviatedIRI="schema:hasPart"/>
+        <NamedIndividual IRI="#Spoon_River_Anthology"/>
+        <NamedIndividual IRI="#Wendell_P._Bloyd"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#inspires"/>
+        <NamedIndividual IRI="#Spoon_River_Anthology"/>
+        <NamedIndividual IRI="#Non_al_denaro_non_all&apos;amore_né_al_cielo"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#appears_in"/>
+        <NamedIndividual IRI="#Suffering"/>
+        <NamedIndividual IRI="#Doctor_Siegfried_Iseman"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#appears_in"/>
+        <NamedIndividual IRI="#Suffering"/>
+        <NamedIndividual IRI="#Francis_Turner"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#appears_in"/>
+        <NamedIndividual IRI="#Suffering"/>
+        <NamedIndividual IRI="#Il_suonatore_Jones"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#appears_in"/>
+        <NamedIndividual IRI="#Suffering"/>
+        <NamedIndividual IRI="#Un_chimico"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#appears_in"/>
+        <NamedIndividual IRI="#Suffering"/>
+        <NamedIndividual IRI="#Un_malato_di_cuore"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#appears_in"/>
+        <NamedIndividual IRI="#Suffering"/>
+        <NamedIndividual IRI="#Un_medico"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#appears_in"/>
+        <NamedIndividual IRI="#Suffering"/>
+        <NamedIndividual IRI="#Un_ottico"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty abbreviatedIRI="schema:isPartOf"/>
+        <NamedIndividual IRI="#The_Hill"/>
+        <NamedIndividual IRI="#Spoon_River_Anthology"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#has_character"/>
+        <NamedIndividual IRI="#The_Hill"/>
+        <NamedIndividual IRI="#Aunt_Emily"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#has_character"/>
+        <NamedIndividual IRI="#The_Hill"/>
+        <NamedIndividual IRI="#Bert"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#has_character"/>
+        <NamedIndividual IRI="#The_Hill"/>
+        <NamedIndividual IRI="#Charley"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#has_character"/>
+        <NamedIndividual IRI="#The_Hill"/>
+        <NamedIndividual IRI="#Edith"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#has_character"/>
+        <NamedIndividual IRI="#The_Hill"/>
+        <NamedIndividual IRI="#Ella"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#has_character"/>
+        <NamedIndividual IRI="#The_Hill"/>
+        <NamedIndividual IRI="#Elmer"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#has_character"/>
+        <NamedIndividual IRI="#The_Hill"/>
+        <NamedIndividual IRI="#Herman"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#has_character"/>
+        <NamedIndividual IRI="#The_Hill"/>
+        <NamedIndividual IRI="#Kate"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#has_character"/>
+        <NamedIndividual IRI="#The_Hill"/>
+        <NamedIndividual IRI="#Lizzie"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#has_character"/>
+        <NamedIndividual IRI="#The_Hill"/>
+        <NamedIndividual IRI="#Maggie"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#has_character"/>
+        <NamedIndividual IRI="#The_Hill"/>
+        <NamedIndividual IRI="#Major_Walker"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#has_character"/>
+        <NamedIndividual IRI="#The_Hill"/>
+        <NamedIndividual IRI="#Sevigne_Houghton"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#has_character"/>
+        <NamedIndividual IRI="#The_Hill"/>
+        <NamedIndividual IRI="#Tom"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#has_character"/>
+        <NamedIndividual IRI="#The_Hill"/>
+        <NamedIndividual IRI="#Towny_Kincaid"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#has_character"/>
+        <NamedIndividual IRI="#The_Hill"/>
+        <NamedIndividual IRI="#Uncle_Isaac"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#is_about"/>
+        <NamedIndividual IRI="#The_Hill"/>
+        <NamedIndividual IRI="#Death"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#is_about"/>
+        <NamedIndividual IRI="#The_Hill"/>
+        <NamedIndividual IRI="#Eternal_Sleep"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#is_about"/>
+        <NamedIndividual IRI="#The_Hill"/>
+        <NamedIndividual IRI="#Nature"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#is_in"/>
+        <NamedIndividual IRI="#Tom"/>
+        <NamedIndividual IRI="#Dormono_sulla_collina"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#is_in"/>
+        <NamedIndividual IRI="#Tom"/>
+        <NamedIndividual IRI="#The_Hill"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#is_in"/>
+        <NamedIndividual IRI="#Towny_Kincaid"/>
+        <NamedIndividual IRI="#The_Hill"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#is_in"/>
+        <NamedIndividual IRI="#TrainorTheDruggist"/>
+        <NamedIndividual IRI="#Trainor_the_druggist"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty abbreviatedIRI="schema:isPartOf"/>
+        <NamedIndividual IRI="#Trainor_the_druggist"/>
+        <NamedIndividual IRI="#Spoon_River_Anthology"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#has_character"/>
+        <NamedIndividual IRI="#Trainor_the_druggist"/>
+        <NamedIndividual IRI="#TrainorTheDruggist"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#is_about"/>
+        <NamedIndividual IRI="#Trainor_the_druggist"/>
+        <NamedIndividual IRI="#Family"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#is_about"/>
+        <NamedIndividual IRI="#Trainor_the_druggist"/>
+        <NamedIndividual IRI="#Marriage"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#is_in"/>
+        <NamedIndividual IRI="#UnBlasfemo"/>
+        <NamedIndividual IRI="#Un_blasfemo_(dietro_ogni_blasfemo_c&apos;è_un_giardino_incantato)"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#is_in"/>
+        <NamedIndividual IRI="#UnChimico"/>
+        <NamedIndividual IRI="#Un_chimico"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#is_in"/>
+        <NamedIndividual IRI="#UnGiudice"/>
+        <NamedIndividual IRI="#Un_giudice"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#is_in"/>
+        <NamedIndividual IRI="#UnMalatoDiCuore"/>
+        <NamedIndividual IRI="#Un_malato_di_cuore"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#is_in"/>
+        <NamedIndividual IRI="#UnMatto"/>
+        <NamedIndividual IRI="#Un_matto(Dietro_ogni_scemo_c&apos;è_un_villaggio)"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#is_in"/>
+        <NamedIndividual IRI="#UnMedico"/>
+        <NamedIndividual IRI="#Un_medico"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#is_in"/>
+        <NamedIndividual IRI="#UnOttico"/>
+        <NamedIndividual IRI="#Un_ottico"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty abbreviatedIRI="schema:isPartOf"/>
+        <NamedIndividual IRI="#Un_chimico"/>
+        <NamedIndividual IRI="#Non_al_denaro_non_all&apos;amore_né_al_cielo"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#has_character"/>
+        <NamedIndividual IRI="#Un_chimico"/>
+        <NamedIndividual IRI="#UnChimico"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#is_about"/>
+        <NamedIndividual IRI="#Un_chimico"/>
+        <NamedIndividual IRI="#Devastation"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#is_about"/>
+        <NamedIndividual IRI="#Un_chimico"/>
+        <NamedIndividual IRI="#Love"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#is_about"/>
+        <NamedIndividual IRI="#Un_chimico"/>
+        <NamedIndividual IRI="#Nature"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#is_about"/>
+        <NamedIndividual IRI="#Un_chimico"/>
+        <NamedIndividual IRI="#Salvation"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#is_about"/>
+        <NamedIndividual IRI="#Un_chimico"/>
+        <NamedIndividual IRI="#Suffering"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#related_to"/>
+        <NamedIndividual IRI="#Un_chimico"/>
+        <NamedIndividual IRI="#Trainor_the_druggist"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty abbreviatedIRI="schema:isPartOf"/>
+        <NamedIndividual IRI="#Un_giudice"/>
+        <NamedIndividual IRI="#Non_al_denaro_non_all&apos;amore_né_al_cielo"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#has_character"/>
+        <NamedIndividual IRI="#Un_giudice"/>
+        <NamedIndividual IRI="#UnGiudice"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#is_about"/>
+        <NamedIndividual IRI="#Un_giudice"/>
+        <NamedIndividual IRI="#Damnation"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#is_about"/>
+        <NamedIndividual IRI="#Un_giudice"/>
+        <NamedIndividual IRI="#Hate"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#is_about"/>
+        <NamedIndividual IRI="#Un_giudice"/>
+        <NamedIndividual IRI="#Justice"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#is_about"/>
+        <NamedIndividual IRI="#Un_giudice"/>
+        <NamedIndividual IRI="#Knowledge"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#is_about"/>
+        <NamedIndividual IRI="#Un_giudice"/>
+        <NamedIndividual IRI="#Religion"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#related_to"/>
+        <NamedIndividual IRI="#Un_giudice"/>
+        <NamedIndividual IRI="#Judge_Selah_Lively"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty abbreviatedIRI="schema:isPartOf"/>
+        <NamedIndividual IRI="#Un_malato_di_cuore"/>
+        <NamedIndividual IRI="#Non_al_denaro_non_all&apos;amore_né_al_cielo"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#has_character"/>
+        <NamedIndividual IRI="#Un_malato_di_cuore"/>
+        <NamedIndividual IRI="#UnMalatoDiCuore"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#is_about"/>
+        <NamedIndividual IRI="#Un_malato_di_cuore"/>
+        <NamedIndividual IRI="#Salvation"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#is_about"/>
+        <NamedIndividual IRI="#Un_malato_di_cuore"/>
+        <NamedIndividual IRI="#Sickness"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#is_about"/>
+        <NamedIndividual IRI="#Un_malato_di_cuore"/>
+        <NamedIndividual IRI="#Suffering"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#related_to"/>
+        <NamedIndividual IRI="#Un_malato_di_cuore"/>
+        <NamedIndividual IRI="#Francis_Turner"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty abbreviatedIRI="schema:isPartOf"/>
+        <NamedIndividual IRI="#Un_medico"/>
+        <NamedIndividual IRI="#Non_al_denaro_non_all&apos;amore_né_al_cielo"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#has_character"/>
+        <NamedIndividual IRI="#Un_medico"/>
+        <NamedIndividual IRI="#UnMedico"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#is_about"/>
+        <NamedIndividual IRI="#Un_medico"/>
+        <NamedIndividual IRI="#Damnation"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#is_about"/>
+        <NamedIndividual IRI="#Un_medico"/>
+        <NamedIndividual IRI="#Knowledge"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#is_about"/>
+        <NamedIndividual IRI="#Un_medico"/>
+        <NamedIndividual IRI="#Salvation"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#is_about"/>
+        <NamedIndividual IRI="#Un_medico"/>
+        <NamedIndividual IRI="#Sickness"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#is_about"/>
+        <NamedIndividual IRI="#Un_medico"/>
+        <NamedIndividual IRI="#Suffering"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#related_to"/>
+        <NamedIndividual IRI="#Un_medico"/>
+        <NamedIndividual IRI="#Doctor_Siegfried_Iseman"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty abbreviatedIRI="schema:isPartOf"/>
+        <NamedIndividual IRI="#Un_ottico"/>
+        <NamedIndividual IRI="#Non_al_denaro_non_all&apos;amore_né_al_cielo"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#has_character"/>
+        <NamedIndividual IRI="#Un_ottico"/>
+        <NamedIndividual IRI="#UnOttico"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#is_about"/>
+        <NamedIndividual IRI="#Un_ottico"/>
+        <NamedIndividual IRI="#Darkness_VS_Light"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#is_about"/>
+        <NamedIndividual IRI="#Un_ottico"/>
+        <NamedIndividual IRI="#Dream"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#is_about"/>
+        <NamedIndividual IRI="#Un_ottico"/>
+        <NamedIndividual IRI="#Sight"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#is_about"/>
+        <NamedIndividual IRI="#Un_ottico"/>
+        <NamedIndividual IRI="#Sky"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#is_about"/>
+        <NamedIndividual IRI="#Un_ottico"/>
+        <NamedIndividual IRI="#Suffering"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#related_to"/>
+        <NamedIndividual IRI="#Un_ottico"/>
+        <NamedIndividual IRI="#Dippold_the_optician"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#is_in"/>
+        <NamedIndividual IRI="#Uncle_Isaac"/>
+        <NamedIndividual IRI="#The_Hill"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#is_in"/>
+        <NamedIndividual IRI="#WendellPBloyd"/>
+        <NamedIndividual IRI="#Wendell_P._Bloyd"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty abbreviatedIRI="schema:isPartOf"/>
+        <NamedIndividual IRI="#Wendell_P._Bloyd"/>
+        <NamedIndividual IRI="#Spoon_River_Anthology"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#has_character"/>
+        <NamedIndividual IRI="#Wendell_P._Bloyd"/>
+        <NamedIndividual IRI="#WendellPBloyd"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#is_about"/>
+        <NamedIndividual IRI="#Wendell_P._Bloyd"/>
+        <NamedIndividual IRI="#Damnation"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#is_about"/>
+        <NamedIndividual IRI="#Wendell_P._Bloyd"/>
+        <NamedIndividual IRI="#Hate"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#is_about"/>
+        <NamedIndividual IRI="#Wendell_P._Bloyd"/>
+        <NamedIndividual IRI="#Religion"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#is_about"/>
+        <NamedIndividual IRI="#Wendell_P._Bloyd"/>
+        <NamedIndividual IRI="#Salvation"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#appears_in"/>
+        <NamedIndividual IRI="#Writing"/>
+        <NamedIndividual IRI="#Un_matto(Dietro_ogni_scemo_c&apos;è_un_villaggio)"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty abbreviatedIRI="schema:hasPart"/>
+        <NamedIndividual IRI="#Non_al_denaro_non_all&apos;amore_né_al_cielo"/>
+        <NamedIndividual IRI="#Dormono_sulla_collina"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty abbreviatedIRI="schema:hasPart"/>
+        <NamedIndividual IRI="#Non_al_denaro_non_all&apos;amore_né_al_cielo"/>
+        <NamedIndividual IRI="#Il_suonatore_Jones"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty abbreviatedIRI="schema:hasPart"/>
+        <NamedIndividual IRI="#Non_al_denaro_non_all&apos;amore_né_al_cielo"/>
+        <NamedIndividual IRI="#Un_chimico"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty abbreviatedIRI="schema:hasPart"/>
+        <NamedIndividual IRI="#Non_al_denaro_non_all&apos;amore_né_al_cielo"/>
+        <NamedIndividual IRI="#Un_giudice"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty abbreviatedIRI="schema:hasPart"/>
+        <NamedIndividual IRI="#Non_al_denaro_non_all&apos;amore_né_al_cielo"/>
+        <NamedIndividual IRI="#Un_malato_di_cuore"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty abbreviatedIRI="schema:hasPart"/>
+        <NamedIndividual IRI="#Non_al_denaro_non_all&apos;amore_né_al_cielo"/>
+        <NamedIndividual IRI="#Un_medico"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty abbreviatedIRI="schema:hasPart"/>
+        <NamedIndividual IRI="#Non_al_denaro_non_all&apos;amore_né_al_cielo"/>
+        <NamedIndividual IRI="#Un_ottico"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty abbreviatedIRI="schema:hasPart"/>
+        <NamedIndividual IRI="#Non_al_denaro_non_all&apos;amore_né_al_cielo"/>
+        <NamedIndividual IRI="#Un_blasfemo_(dietro_ogni_blasfemo_c&apos;è_un_giardino_incantato)"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty abbreviatedIRI="schema:hasPart"/>
+        <NamedIndividual IRI="#Non_al_denaro_non_all&apos;amore_né_al_cielo"/>
+        <NamedIndividual IRI="#Un_matto(Dietro_ogni_scemo_c&apos;è_un_villaggio)"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#is_inspired_by"/>
+        <NamedIndividual IRI="#Non_al_denaro_non_all&apos;amore_né_al_cielo"/>
+        <NamedIndividual IRI="#Spoon_River_Anthology"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty abbreviatedIRI="schema:isPartOf"/>
+        <NamedIndividual IRI="#Un_blasfemo_(dietro_ogni_blasfemo_c&apos;è_un_giardino_incantato)"/>
+        <NamedIndividual IRI="#Non_al_denaro_non_all&apos;amore_né_al_cielo"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#has_character"/>
+        <NamedIndividual IRI="#Un_blasfemo_(dietro_ogni_blasfemo_c&apos;è_un_giardino_incantato)"/>
+        <NamedIndividual IRI="#UnBlasfemo"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#is_about"/>
+        <NamedIndividual IRI="#Un_blasfemo_(dietro_ogni_blasfemo_c&apos;è_un_giardino_incantato)"/>
+        <NamedIndividual IRI="#Damnation"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#is_about"/>
+        <NamedIndividual IRI="#Un_blasfemo_(dietro_ogni_blasfemo_c&apos;è_un_giardino_incantato)"/>
+        <NamedIndividual IRI="#Dream"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#is_about"/>
+        <NamedIndividual IRI="#Un_blasfemo_(dietro_ogni_blasfemo_c&apos;è_un_giardino_incantato)"/>
+        <NamedIndividual IRI="#Religion"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#is_about"/>
+        <NamedIndividual IRI="#Un_blasfemo_(dietro_ogni_blasfemo_c&apos;è_un_giardino_incantato)"/>
+        <NamedIndividual IRI="#Salvation"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#related_to"/>
+        <NamedIndividual IRI="#Un_blasfemo_(dietro_ogni_blasfemo_c&apos;è_un_giardino_incantato)"/>
+        <NamedIndividual IRI="#Wendell_P._Bloyd"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty abbreviatedIRI="schema:isPartOf"/>
+        <NamedIndividual IRI="#Un_matto(Dietro_ogni_scemo_c&apos;è_un_villaggio)"/>
+        <NamedIndividual IRI="#Non_al_denaro_non_all&apos;amore_né_al_cielo"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#has_character"/>
+        <NamedIndividual IRI="#Un_matto(Dietro_ogni_scemo_c&apos;è_un_villaggio)"/>
+        <NamedIndividual IRI="#UnMatto"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#is_about"/>
+        <NamedIndividual IRI="#Un_matto(Dietro_ogni_scemo_c&apos;è_un_villaggio)"/>
+        <NamedIndividual IRI="#Death"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#is_about"/>
+        <NamedIndividual IRI="#Un_matto(Dietro_ogni_scemo_c&apos;è_un_villaggio)"/>
+        <NamedIndividual IRI="#Dream"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#is_about"/>
+        <NamedIndividual IRI="#Un_matto(Dietro_ogni_scemo_c&apos;è_un_villaggio)"/>
+        <NamedIndividual IRI="#Memory"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#related_to"/>
+        <NamedIndividual IRI="#Un_matto(Dietro_ogni_scemo_c&apos;è_un_villaggio)"/>
+        <NamedIndividual IRI="#Frank_Drummer"/>
+    </ObjectPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#have_name"/>
+        <NamedIndividual IRI="#Aunt_Emily"/>
+        <Literal datatypeIRI="http://www.w3.org/2000/01/rdf-schema#Literal">Aunt Emily</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#have_name"/>
+        <NamedIndividual IRI="#Bert"/>
+        <Literal datatypeIRI="http://www.w3.org/2000/01/rdf-schema#Literal">Bert</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#have_name"/>
+        <NamedIndividual IRI="#Charley"/>
+        <Literal datatypeIRI="http://www.w3.org/2000/01/rdf-schema#Literal">Charley</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#have_name"/>
+        <NamedIndividual IRI="#Church"/>
+        <Literal>Church</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#have_name"/>
+        <NamedIndividual IRI="#Damnation"/>
+        <Literal>Damnation</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#have_name"/>
+        <NamedIndividual IRI="#Dancing"/>
+        <Literal>Dancing</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#have_name"/>
+        <NamedIndividual IRI="#Darkness_VS_Light"/>
+        <Literal>Darkness vs light</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#have_name"/>
+        <NamedIndividual IRI="#Death"/>
+        <Literal>Death</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#have_name"/>
+        <NamedIndividual IRI="#Devastation"/>
+        <Literal>Devastation</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#have_name"/>
+        <NamedIndividual IRI="#DippoldTheOptician"/>
+        <Literal datatypeIRI="http://www.w3.org/2000/01/rdf-schema#Literal">Dippold, The Optician</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#have_name"/>
+        <NamedIndividual IRI="#Dippold_the_optician"/>
+        <Literal datatypeIRI="http://www.w3.org/2000/01/rdf-schema#Literal">Dippold, The Optician</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#have_name"/>
+        <NamedIndividual IRI="#DoctorSiegfriedIseman"/>
+        <Literal datatypeIRI="http://www.w3.org/2000/01/rdf-schema#Literal">Doctor Siegfried Iseman</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#have_name"/>
+        <NamedIndividual IRI="#Doctor_Siegfried_Iseman"/>
+        <Literal datatypeIRI="http://www.w3.org/2000/01/rdf-schema#Literal">Doctor Siegfried Iseman</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#have_name"/>
+        <NamedIndividual IRI="#Dormono_sulla_collina"/>
+        <Literal datatypeIRI="http://www.w3.org/2000/01/rdf-schema#Literal">La collina</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#have_name"/>
+        <NamedIndividual IRI="#Dream"/>
+        <Literal>Dream</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#have_name"/>
+        <NamedIndividual IRI="#Drinking"/>
+        <Literal>Drinking</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#have_name"/>
+        <NamedIndividual IRI="#Edgar_Lee_Masters"/>
+        <Literal datatypeIRI="http://www.w3.org/2000/01/rdf-schema#Literal">Edgar Lee Masters</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#have_name"/>
+        <NamedIndividual IRI="#Edith"/>
+        <Literal datatypeIRI="http://www.w3.org/2000/01/rdf-schema#Literal">Edith</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#have_name"/>
+        <NamedIndividual IRI="#Ella"/>
+        <Literal datatypeIRI="http://www.w3.org/2000/01/rdf-schema#Literal">Ella</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#have_name"/>
+        <NamedIndividual IRI="#Elmer"/>
+        <Literal datatypeIRI="http://www.w3.org/2000/01/rdf-schema#Literal">Elmer</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#have_name"/>
+        <NamedIndividual IRI="#Eternal_Sleep"/>
+        <Literal>Eternal Sleep</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#have_name"/>
+        <NamedIndividual IRI="#Fabrizio_De_Andrè"/>
+        <Literal datatypeIRI="http://www.w3.org/2000/01/rdf-schema#Literal">Fabrizio De André</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#have_name"/>
+        <NamedIndividual IRI="#Family"/>
+        <Literal>Family</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#have_name"/>
+        <NamedIndividual IRI="#FiddlerJones"/>
+        <Literal datatypeIRI="http://www.w3.org/2000/01/rdf-schema#Literal">Fiddler Jones</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#have_name"/>
+        <NamedIndividual IRI="#Fiddler_Jones"/>
+        <Literal datatypeIRI="http://www.w3.org/2000/01/rdf-schema#Literal">Fiddler Jones</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#have_name"/>
+        <NamedIndividual IRI="#FrancisTurner"/>
+        <Literal datatypeIRI="http://www.w3.org/2000/01/rdf-schema#Literal">Francis Turner</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#have_name"/>
+        <NamedIndividual IRI="#Francis_Turner"/>
+        <Literal datatypeIRI="http://www.w3.org/2000/01/rdf-schema#Literal">Francis Turner</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#have_name"/>
+        <NamedIndividual IRI="#FrankDrummer"/>
+        <Literal datatypeIRI="http://www.w3.org/2000/01/rdf-schema#Literal">Frank Drummer</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#have_name"/>
+        <NamedIndividual IRI="#Frank_Drummer"/>
+        <Literal datatypeIRI="http://www.w3.org/2000/01/rdf-schema#Literal">Frank Drummer</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#have_name"/>
+        <NamedIndividual IRI="#Hate"/>
+        <Literal>Hate</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#have_name"/>
+        <NamedIndividual IRI="#Herman"/>
+        <Literal datatypeIRI="http://www.w3.org/2000/01/rdf-schema#Literal">Herman</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#have_name"/>
+        <NamedIndividual IRI="#Il_suonatore_Jones"/>
+        <Literal datatypeIRI="http://www.w3.org/2000/01/rdf-schema#Literal">Il suonatore Jones</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#have_name"/>
+        <NamedIndividual IRI="#JonesIlSuonatore"/>
+        <Literal datatypeIRI="http://www.w3.org/2000/01/rdf-schema#Literal">Il suonatore Jones</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#have_name"/>
+        <NamedIndividual IRI="#JudgeSelahLively"/>
+        <Literal datatypeIRI="http://www.w3.org/2000/01/rdf-schema#Literal">Judge Selah Lively</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#have_name"/>
+        <NamedIndividual IRI="#Judge_Selah_Lively"/>
+        <Literal datatypeIRI="http://www.w3.org/2000/01/rdf-schema#Literal">Judge Selah Lively</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#have_name"/>
+        <NamedIndividual IRI="#Justice"/>
+        <Literal>Justice</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#have_name"/>
+        <NamedIndividual IRI="#Kate"/>
+        <Literal datatypeIRI="http://www.w3.org/2000/01/rdf-schema#Literal">Kate</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#have_name"/>
+        <NamedIndividual IRI="#Knowledge"/>
+        <Literal>Knowledge</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#have_name"/>
+        <NamedIndividual IRI="#Lizzie"/>
+        <Literal datatypeIRI="http://www.w3.org/2000/01/rdf-schema#Literal">Lizzie</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#have_name"/>
+        <NamedIndividual IRI="#Love"/>
+        <Literal>Love</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#have_name"/>
+        <NamedIndividual IRI="#Maggie"/>
+        <Literal datatypeIRI="http://www.w3.org/2000/01/rdf-schema#Literal">Maggie</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#have_name"/>
+        <NamedIndividual IRI="#Major_Walker"/>
+        <Literal datatypeIRI="http://www.w3.org/2000/01/rdf-schema#Literal">Major Walker</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#have_name"/>
+        <NamedIndividual IRI="#Marriage"/>
+        <Literal>Marriage</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#have_name"/>
+        <NamedIndividual IRI="#Memory"/>
+        <Literal>Memory</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#have_name"/>
+        <NamedIndividual IRI="#Music"/>
+        <Literal>Music</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#have_name"/>
+        <NamedIndividual IRI="#Nature"/>
+        <Literal>Nature</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#have_name"/>
+        <NamedIndividual IRI="#Night"/>
+        <Literal>Night</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#have_name"/>
+        <NamedIndividual IRI="#Religion"/>
+        <Literal>Religion</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#have_name"/>
+        <NamedIndividual IRI="#Salvation"/>
+        <Literal>Salvation</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#have_name"/>
+        <NamedIndividual IRI="#Secret"/>
+        <Literal>Secret</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#have_name"/>
+        <NamedIndividual IRI="#Sevigne_Houghton"/>
+        <Literal datatypeIRI="http://www.w3.org/2000/01/rdf-schema#Literal">Sevigne Houghton</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#have_name"/>
+        <NamedIndividual IRI="#Sickness"/>
+        <Literal>Sickness</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#have_name"/>
+        <NamedIndividual IRI="#Sight"/>
+        <Literal>Sight</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#have_name"/>
+        <NamedIndividual IRI="#Sky"/>
+        <Literal>Sky</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#have_name"/>
+        <NamedIndividual IRI="#Spoon_River_Anthology"/>
+        <Literal datatypeIRI="http://www.w3.org/2000/01/rdf-schema#Literal">Spoon River Anthology</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#have_name"/>
+        <NamedIndividual IRI="#Suffering"/>
+        <Literal>Suffering</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#have_name"/>
+        <NamedIndividual IRI="#The_Hill"/>
+        <Literal datatypeIRI="http://www.w3.org/2000/01/rdf-schema#Literal">The Hill</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#have_name"/>
+        <NamedIndividual IRI="#Tom"/>
+        <Literal datatypeIRI="http://www.w3.org/2000/01/rdf-schema#Literal">Tom</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#have_name"/>
+        <NamedIndividual IRI="#Towny_Kincaid"/>
+        <Literal datatypeIRI="http://www.w3.org/2000/01/rdf-schema#Literal">Towny Kincaid</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#have_name"/>
+        <NamedIndividual IRI="#TrainorTheDruggist"/>
+        <Literal datatypeIRI="http://www.w3.org/2000/01/rdf-schema#Literal">Trainor, the druggist</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#have_name"/>
+        <NamedIndividual IRI="#Trainor_the_druggist"/>
+        <Literal datatypeIRI="http://www.w3.org/2000/01/rdf-schema#Literal">Trainor, the druggist</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#have_name"/>
+        <NamedIndividual IRI="#UnBlasfemo"/>
+        <Literal datatypeIRI="http://www.w3.org/2000/01/rdf-schema#Literal">Un blasfemo</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#have_name"/>
+        <NamedIndividual IRI="#UnChimico"/>
+        <Literal datatypeIRI="http://www.w3.org/2000/01/rdf-schema#Literal">Un chimico</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#have_name"/>
+        <NamedIndividual IRI="#UnGiudice"/>
+        <Literal datatypeIRI="http://www.w3.org/2000/01/rdf-schema#Literal">Un giudice</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#have_name"/>
+        <NamedIndividual IRI="#UnMalatoDiCuore"/>
+        <Literal datatypeIRI="http://www.w3.org/2000/01/rdf-schema#Literal">Un malato di cuore</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#have_name"/>
+        <NamedIndividual IRI="#UnMatto"/>
+        <Literal datatypeIRI="http://www.w3.org/2000/01/rdf-schema#Literal">Un matto</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#have_name"/>
+        <NamedIndividual IRI="#UnMedico"/>
+        <Literal datatypeIRI="http://www.w3.org/2000/01/rdf-schema#Literal">Un medico</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#have_name"/>
+        <NamedIndividual IRI="#UnOttico"/>
+        <Literal datatypeIRI="http://www.w3.org/2000/01/rdf-schema#Literal">Un ottico</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#have_name"/>
+        <NamedIndividual IRI="#Un_chimico"/>
+        <Literal datatypeIRI="http://www.w3.org/2000/01/rdf-schema#Literal">Un chimico</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#have_name"/>
+        <NamedIndividual IRI="#Un_giudice"/>
+        <Literal datatypeIRI="http://www.w3.org/2000/01/rdf-schema#Literal">Un giudice</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#have_name"/>
+        <NamedIndividual IRI="#Un_malato_di_cuore"/>
+        <Literal datatypeIRI="http://www.w3.org/2000/01/rdf-schema#Literal">Un malato di cuore</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#have_name"/>
+        <NamedIndividual IRI="#Un_medico"/>
+        <Literal datatypeIRI="http://www.w3.org/2000/01/rdf-schema#Literal">Un medico</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#have_name"/>
+        <NamedIndividual IRI="#Un_ottico"/>
+        <Literal datatypeIRI="http://www.w3.org/2000/01/rdf-schema#Literal">Un ottico</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#have_name"/>
+        <NamedIndividual IRI="#Uncle_Isaac"/>
+        <Literal datatypeIRI="http://www.w3.org/2000/01/rdf-schema#Literal">Uncle Isaac</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#have_name"/>
+        <NamedIndividual IRI="#WendellPBloyd"/>
+        <Literal datatypeIRI="http://www.w3.org/2000/01/rdf-schema#Literal">Wendell P. Bloyd</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#have_name"/>
+        <NamedIndividual IRI="#Wendell_P._Bloyd"/>
+        <Literal datatypeIRI="http://www.w3.org/2000/01/rdf-schema#Literal">Wendell P. Bloyd</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#have_name"/>
+        <NamedIndividual IRI="#Writing"/>
+        <Literal>Writing</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#have_name"/>
+        <NamedIndividual IRI="#Non_al_denaro_non_all&apos;amore_né_al_cielo"/>
+        <Literal datatypeIRI="http://www.w3.org/2000/01/rdf-schema#Literal">Non al denaro non all&apos;amore né al cielo</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#have_name"/>
+        <NamedIndividual IRI="#Un_blasfemo_(dietro_ogni_blasfemo_c&apos;è_un_giardino_incantato)"/>
+        <Literal datatypeIRI="http://www.w3.org/2000/01/rdf-schema#Literal">Un blasfemo (Dietro Ogni Blasfemo C&apos;è Un Giardino Incantato)</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#have_name"/>
+        <NamedIndividual IRI="#Un_matto(Dietro_ogni_scemo_c&apos;è_un_villaggio)"/>
+        <Literal datatypeIRI="http://www.w3.org/2000/01/rdf-schema#Literal">Un matto (Dietro Ogni Scemo C&apos;è Un Villaggio)</Literal>
+    </DataPropertyAssertion>
+    <InverseObjectProperties>
+        <ObjectProperty abbreviatedIRI="schema:hasPart"/>
+        <ObjectProperty abbreviatedIRI="schema:isPartOf"/>
+    </InverseObjectProperties>
+    <InverseObjectProperties>
+        <ObjectProperty IRI="#appears_in"/>
+        <ObjectProperty IRI="#is_about"/>
+    </InverseObjectProperties>
+    <InverseObjectProperties>
+        <ObjectProperty IRI="#has_character"/>
+        <ObjectProperty IRI="#is_in"/>
+    </InverseObjectProperties>
+    <InverseObjectProperties>
+        <ObjectProperty IRI="#inspires"/>
+        <ObjectProperty IRI="#is_inspired_by"/>
+    </InverseObjectProperties>
+    <InverseObjectProperties>
+        <ObjectProperty IRI="#is_written_by"/>
+        <ObjectProperty IRI="#writes"/>
+    </InverseObjectProperties>
+    <ObjectPropertyDomain>
+        <ObjectProperty abbreviatedIRI="schema:hasPart"/>
+        <Class IRI="#Work"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty abbreviatedIRI="schema:isPartOf"/>
+        <Class IRI="#Unit"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#appears_in"/>
+        <Class IRI="#Topic"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#has_author"/>
+        <Class IRI="#Work"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#has_character"/>
+        <Class IRI="#Unit"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#inspires"/>
+        <Class IRI="#Work"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#is_about"/>
+        <Class IRI="#Unit"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#is_in"/>
+        <Class IRI="#Character"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#is_inspired_by"/>
+        <Class IRI="#Work"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#is_written_by"/>
+        <Class IRI="#Work"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#related_to"/>
+        <Class IRI="#Song"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#writes"/>
+        <Class IRI="#Author"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty abbreviatedIRI="rdf:type"/>
+        <Class IRI="#Work"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyRange>
+        <ObjectProperty abbreviatedIRI="schema:hasPart"/>
+        <Class IRI="#Unit"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty abbreviatedIRI="schema:isPartOf"/>
+        <Class IRI="#Work"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#appears_in"/>
+        <Class IRI="#Unit"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#has_author"/>
+        <Class IRI="#Author"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#has_character"/>
+        <Class IRI="#Character"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#inspires"/>
+        <Class IRI="#Work"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#is_about"/>
+        <Class IRI="#Topic"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#is_in"/>
+        <Class IRI="#Unit"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#is_inspired_by"/>
+        <Class IRI="#Work"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#is_written_by"/>
+        <Class IRI="#Author"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#related_to"/>
+        <Class IRI="#Poem"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#writes"/>
+        <Class IRI="#Work"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty abbreviatedIRI="rdf:type"/>
+        <Class IRI="#Anthology_Poem"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty abbreviatedIRI="rdf:type"/>
+        <Class IRI="#Musical_Album"/>
+    </ObjectPropertyRange>
+    <DataPropertyDomain>
+        <DataProperty IRI="#have_name"/>
+        <Class abbreviatedIRI="owl:Thing"/>
+    </DataPropertyDomain>
+    <DataPropertyRange>
+        <DataProperty IRI="#have_name"/>
+        <Datatype abbreviatedIRI="rdfs:Literal"/>
+    </DataPropertyRange>
+</Ontology>
+
+
+
+<!-- Generated by the OWL API (version 4.5.9.2019-02-01T07:24:44Z) https://github.com/owlcs/owlapi -->
