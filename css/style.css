@@ -599,6 +599,16 @@ a:hover {
     opacity: 0.1;
     animation: bgOp 1s forwards;
 }
+.highlightlove {
+    background-color: #fb64a5;
+    opacity: 0.1;
+    animation: bgOp 1s forwards;
+}
+.highlightsight {
+    background-color: #c09be2;
+    opacity: 0.1;
+    animation: bgOp 1s forwards;
+}
 @keyframes bgOp {
     from {opacity: 0.1}
     to {opacity: 1}
