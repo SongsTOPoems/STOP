@@ -1,9 +1,9 @@
 <head>
-    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="css/style.css">
     <link rel='stylesheet' href='https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css'>
     <title>The HILL - Ontology Visualization</title>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
-    <script src="../js/scripts.js"></script>
+    <script src="js/scripts.js"></script>
 </head>
 <body>
     <nav id="navbar" class="innerNav">
@@ -17,7 +17,13 @@
     <section id="ontology1">
         <h2>The Ontology:</h2><br>
         <p class="para">The STOP Ontology has been developed on the basis of the results retrieved through BERTopic and KeyBERT.</p>
-        <iframe src="https://service.tib.eu/webvowl/#iri=https://songstopoems.github.io/STOP/stop.owl" style="border:1px #f7f7f7 solid;" name="myiFrame" scrolling="yes" frameborder="1" marginheight="0px" marginwidth="0px" height="80%" width="90%" allowfullscreen></iframe>
+        <iframe src="https://service.tib.eu/webvowl/#iri=https://songstopoems.github.io/STOP/spoon_river_ont.owl" style="border:1px #f7f7f7 solid;" name="myiFrame" scrolling="yes" frameborder="1" marginheight="0px" marginwidth="0px" height="80%" width="90%" allowfullscreen></iframe>
         <br><br><br>
         <h2>The Knowledge Graph:</h2><br>
+        <a href="renderKG.svg" target="_blank">
+            <div id="kgDiv">
+                <img src="renderKG.svg" id="kg">
+                <p id="caption">Click to open in a new a tab</p>
+            </div>
+        </a>
     </section>  
