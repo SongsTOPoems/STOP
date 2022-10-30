@@ -25,10 +25,9 @@ html, body {
     border-bottom: #ffce00 solid 1pt;
 }
 
-.navBg ul li, .innerNav ul li {
+.navBg ul li, .innerNav ul li, .innerNav a  {
     color:rgba(51, 51, 51, 0.85) !important;
 }
-
 
 #navbar ul {
     margin-top: 0px;
@@ -673,4 +672,47 @@ a:hover {
 
 #ontology1 iframe{
     margin-left: 5vw;
+}
+
+
+#kg {
+    width: 100%;
+    height: 80%;
+    object-fit: cover;
+    object-position: center left;
+}
+
+#kg:hover {
+    opacity: 0.2;
+    cursor: pointer;
+}
+
+
+#kgDiv {
+    margin-left: 5vw;
+    width: 90%;
+    height: 80%;
+}
+
+#caption {
+    display: none;
+    position: absolute;
+    top: calc(160%);
+    width: 200px;
+    left: calc(50% - 100px);
+}
+
+#kgDiv:hover #caption {   
+    font-size: 20px;
+    text-align: center;
+    display: inline-block !important;
+}
+
+#kgDiv:hover #kg{
+    opacity: 0.2;
+    cursor: pointer;
+    border-radius: 10px;
+    box-shadow: 6px 10px 28px 0px rgba(0,0,0,0.75);
+    -webkit-box-shadow: 6px 10px 28px 0px rgba(0,0,0,0.75);
+    -moz-box-shadow: 6px 10px 28px 0px rgba(0,0,0,0.75);
 }
