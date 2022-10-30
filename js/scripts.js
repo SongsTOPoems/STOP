@@ -20,6 +20,9 @@ function getList(entry) {
         case 'poem3':
             return (["Family", "Justice", "Darkness vs Light", "Knowledge"]);
             break;
+        case 'poem4':
+            return (["Damnation", "Church", "Death", "Religion", "Salvation", "Suffering", "Knowledge", "Nature"]);
+            break;
         case 'text1':
             return (["Death", "Family", "Music", "Nature", "Salvation", "Sickness"]);
             break;
