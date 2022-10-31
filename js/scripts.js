@@ -32,6 +32,9 @@ function getList(entry) {
         case 'text3':
             return ([ "Family", "Sight", "Darkness vs Light", "Love", "Salvation", "Church", "Hate", "Justice"]);
             break;
+        case 'text4':
+            return ([ "Death", "Nature", "Religion", "Suffering", "Salvation", "Church", "Hate", "Justice"]);
+            break;
     }
 }
 
