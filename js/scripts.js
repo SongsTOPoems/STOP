@@ -63,7 +63,7 @@ $(document).ready(function(){
     $("#songList a").click(function(){
         $("#select").hide();
         var name = $(this).attr('id');
-        var url = "https://sebastiano-g.github.io/Workin-pro-g-ress-/texts/" + name + ".html";
+        var url = "https://songstopoems.github.io/STOP/texts/" + name + ".html";
         $("#songText").load(url);
         $("#songText").hide();
         $("#songText").fadeIn(800);
