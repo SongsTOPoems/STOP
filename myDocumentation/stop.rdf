@@ -1,0 +1,1423 @@
+<?xml version="1.0"?>
+<rdf:RDF xmlns="http://www.semanticweb.org/martinapensalfini/ontologies/2022/9/stop#"
+     xml:base="http://www.semanticweb.org/martinapensalfini/ontologies/2022/9/stop"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     xmlns:stop="http://www.semanticweb.org/martinapensalfini/ontologies/2022/9/stop#"
+     xmlns:schema="http://schema.org/">
+    <owl:Ontology rdf:about="http://www.semanticweb.org/martinapensalfini/ontologies/2022/9/stop"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Object Properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+
+    
+
+
+    <!-- http://schema.org/hasPart -->
+
+
+    <owl:ObjectProperty rdf:about="http://schema.org/hasPart">
+        <owl:inverseOf rdf:resource="http://schema.org/isPartOf"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/martinapensalfini/ontologies/2022/9/stop#Work"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/martinapensalfini/ontologies/2022/9/stop#Unit"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://schema.org/isPartOf -->
+
+
+    <owl:ObjectProperty rdf:about="http://schema.org/isPartOf">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/martinapensalfini/ontologies/2022/9/stop#Unit"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/martinapensalfini/ontologies/2022/9/stop#Work"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/martinapensalfini/ontologies/2022/9/stop#appears_in -->
+
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/martinapensalfini/ontologies/2022/9/stop#appears_in">
+        <owl:inverseOf rdf:resource="http://www.semanticweb.org/martinapensalfini/ontologies/2022/9/stop#is_about"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/martinapensalfini/ontologies/2022/9/stop#Topic"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/martinapensalfini/ontologies/2022/9/stop#Unit"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/martinapensalfini/ontologies/2022/9/stop#has_author -->
+
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/martinapensalfini/ontologies/2022/9/stop#has_author">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/martinapensalfini/ontologies/2022/9/stop#Work"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/martinapensalfini/ontologies/2022/9/stop#Author"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/martinapensalfini/ontologies/2022/9/stop#has_character -->
+
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/martinapensalfini/ontologies/2022/9/stop#has_character">
+        <owl:inverseOf rdf:resource="http://www.semanticweb.org/martinapensalfini/ontologies/2022/9/stop#is_in"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/martinapensalfini/ontologies/2022/9/stop#Unit"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/martinapensalfini/ontologies/2022/9/stop#Character"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/martinapensalfini/ontologies/2022/9/stop#inspires -->
+
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/martinapensalfini/ontologies/2022/9/stop#inspires">
+        <owl:inverseOf rdf:resource="http://www.semanticweb.org/martinapensalfini/ontologies/2022/9/stop#is_inspired_by"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/martinapensalfini/ontologies/2022/9/stop#Work"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/martinapensalfini/ontologies/2022/9/stop#Work"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/martinapensalfini/ontologies/2022/9/stop#is_about -->
+
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/martinapensalfini/ontologies/2022/9/stop#is_about">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/martinapensalfini/ontologies/2022/9/stop#Unit"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/martinapensalfini/ontologies/2022/9/stop#Topic"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/martinapensalfini/ontologies/2022/9/stop#is_in -->
+
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/martinapensalfini/ontologies/2022/9/stop#is_in">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/martinapensalfini/ontologies/2022/9/stop#Character"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/martinapensalfini/ontologies/2022/9/stop#Unit"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/martinapensalfini/ontologies/2022/9/stop#is_inspired_by -->
+
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/martinapensalfini/ontologies/2022/9/stop#is_inspired_by">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/martinapensalfini/ontologies/2022/9/stop#Work"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/martinapensalfini/ontologies/2022/9/stop#Work"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/martinapensalfini/ontologies/2022/9/stop#is_written_by -->
+
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/martinapensalfini/ontologies/2022/9/stop#is_written_by">
+        <owl:inverseOf rdf:resource="http://www.semanticweb.org/martinapensalfini/ontologies/2022/9/stop#writes"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/martinapensalfini/ontologies/2022/9/stop#Work"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/martinapensalfini/ontologies/2022/9/stop#Author"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/martinapensalfini/ontologies/2022/9/stop#related_to -->
+
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/martinapensalfini/ontologies/2022/9/stop#related_to">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/martinapensalfini/ontologies/2022/9/stop#Song"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/martinapensalfini/ontologies/2022/9/stop#Poem"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/martinapensalfini/ontologies/2022/9/stop#writes -->
+
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/martinapensalfini/ontologies/2022/9/stop#writes">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/martinapensalfini/ontologies/2022/9/stop#Author"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/martinapensalfini/ontologies/2022/9/stop#Work"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.w3.org/1999/02/22-rdf-syntax-ns#type -->
+
+
+    <owl:ObjectProperty rdf:about="http://www.w3.org/1999/02/22-rdf-syntax-ns#type">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/martinapensalfini/ontologies/2022/9/stop#Work"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/martinapensalfini/ontologies/2022/9/stop#Anthology_Poem"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/martinapensalfini/ontologies/2022/9/stop#Musical_Album"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Data properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+
+    
+
+
+    <!-- http://www.semanticweb.org/martinapensalfini/ontologies/2022/9/stop#have_name -->
+
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/martinapensalfini/ontologies/2022/9/stop#have_name">
+        <rdfs:domain rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2000/01/rdf-schema#Literal"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Classes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+
+    
+
+
+    <!-- http://www.semanticweb.org/martinapensalfini/ontologies/2022/9/stop#Anthology_Poem -->
+
+
+    <owl:Class rdf:about="http://www.semanticweb.org/martinapensalfini/ontologies/2022/9/stop#Anthology_Poem">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/martinapensalfini/ontologies/2022/9/stop#Work"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/martinapensalfini/ontologies/2022/9/stop#Author -->
+
+
+    <owl:Class rdf:about="http://www.semanticweb.org/martinapensalfini/ontologies/2022/9/stop#Author"/>
+    
+
+
+    <!-- http://www.semanticweb.org/martinapensalfini/ontologies/2022/9/stop#Character -->
+
+
+    <owl:Class rdf:about="http://www.semanticweb.org/martinapensalfini/ontologies/2022/9/stop#Character"/>
+    
+
+
+    <!-- http://www.semanticweb.org/martinapensalfini/ontologies/2022/9/stop#Musical_Album -->
+
+
+    <owl:Class rdf:about="http://www.semanticweb.org/martinapensalfini/ontologies/2022/9/stop#Musical_Album">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/martinapensalfini/ontologies/2022/9/stop#Work"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/martinapensalfini/ontologies/2022/9/stop#Poem -->
+
+
+    <owl:Class rdf:about="http://www.semanticweb.org/martinapensalfini/ontologies/2022/9/stop#Poem">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/martinapensalfini/ontologies/2022/9/stop#Unit"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/martinapensalfini/ontologies/2022/9/stop#Song -->
+
+
+    <owl:Class rdf:about="http://www.semanticweb.org/martinapensalfini/ontologies/2022/9/stop#Song">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/martinapensalfini/ontologies/2022/9/stop#Unit"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/martinapensalfini/ontologies/2022/9/stop#Topic -->
+
+
+    <owl:Class rdf:about="http://www.semanticweb.org/martinapensalfini/ontologies/2022/9/stop#Topic"/>
+    
+
+
+    <!-- http://www.semanticweb.org/martinapensalfini/ontologies/2022/9/stop#Unit -->
+
+
+    <owl:Class rdf:about="http://www.semanticweb.org/martinapensalfini/ontologies/2022/9/stop#Unit"/>
+    
+
+
+    <!-- http://www.semanticweb.org/martinapensalfini/ontologies/2022/9/stop#Work -->
+
+
+    <owl:Class rdf:about="http://www.semanticweb.org/martinapensalfini/ontologies/2022/9/stop#Work"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Individuals
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+
+    
+
+
+    <!-- http://www.semanticweb.org/martinapensalfini/ontologies/2022/9/stop#Aunt_Emily -->
+
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/martinapensalfini/ontologies/2022/9/stop#Aunt_Emily">
+        <rdf:type rdf:resource="http://www.semanticweb.org/martinapensalfini/ontologies/2022/9/stop#Character"/>
+        <is_in rdf:resource="http://www.semanticweb.org/martinapensalfini/ontologies/2022/9/stop#The_Hill"/>
+        <have_name rdf:datatype="http://www.w3.org/2000/01/rdf-schema#Literal">Aunt Emily</have_name>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/martinapensalfini/ontologies/2022/9/stop#Bert -->
+
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/martinapensalfini/ontologies/2022/9/stop#Bert">
+        <rdf:type rdf:resource="http://www.semanticweb.org/martinapensalfini/ontologies/2022/9/stop#Character"/>
+        <is_in rdf:resource="http://www.semanticweb.org/martinapensalfini/ontologies/2022/9/stop#The_Hill"/>
+        <have_name rdf:datatype="http://www.w3.org/2000/01/rdf-schema#Literal">Bert</have_name>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/martinapensalfini/ontologies/2022/9/stop#Charley -->
+
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/martinapensalfini/ontologies/2022/9/stop#Charley">
+        <rdf:type rdf:resource="http://www.semanticweb.org/martinapensalfini/ontologies/2022/9/stop#Character"/>
+        <is_in rdf:resource="http://www.semanticweb.org/martinapensalfini/ontologies/2022/9/stop#The_Hill"/>
+        <have_name rdf:datatype="http://www.w3.org/2000/01/rdf-schema#Literal">Charley</have_name>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/martinapensalfini/ontologies/2022/9/stop#Church -->
+
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/martinapensalfini/ontologies/2022/9/stop#Church">
+        <rdf:type rdf:resource="http://www.semanticweb.org/martinapensalfini/ontologies/2022/9/stop#Topic"/>
+        <appears_in rdf:resource="http://www.semanticweb.org/martinapensalfini/ontologies/2022/9/stop#Doctor_Siegfried_Iseman"/>
+        <have_name>Church</have_name>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/martinapensalfini/ontologies/2022/9/stop#Damnation -->
+
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/martinapensalfini/ontologies/2022/9/stop#Damnation">
+        <rdf:type rdf:resource="http://www.semanticweb.org/martinapensalfini/ontologies/2022/9/stop#Topic"/>
+        <appears_in rdf:resource="http://www.semanticweb.org/martinapensalfini/ontologies/2022/9/stop#Un_giudice"/>
+        <appears_in rdf:resource="http://www.semanticweb.org/martinapensalfini/ontologies/2022/9/stop#Un_medico"/>
+        <appears_in rdf:resource="http://www.semanticweb.org/martinapensalfini/ontologies/2022/9/stop#Wendell_P._Bloyd"/>
+        <appears_in rdf:resource="http://www.semanticweb.org/martinapensalfini/ontologies/2022/9/stop#Un_blasfemo_(dietro_ogni_blasfemo_c&apos;è_un_giardino_incantato)"/>
+        <have_name>Damnation</have_name>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/martinapensalfini/ontologies/2022/9/stop#Dancing -->
+
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/martinapensalfini/ontologies/2022/9/stop#Dancing">
+        <rdf:type rdf:resource="http://www.semanticweb.org/martinapensalfini/ontologies/2022/9/stop#Topic"/>
+        <appears_in rdf:resource="http://www.semanticweb.org/martinapensalfini/ontologies/2022/9/stop#Il_suonatore_Jones"/>
+        <have_name>Dancing</have_name>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/martinapensalfini/ontologies/2022/9/stop#Darkness_VS_Light -->
+
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/martinapensalfini/ontologies/2022/9/stop#Darkness_VS_Light">
+        <rdf:type rdf:resource="http://www.semanticweb.org/martinapensalfini/ontologies/2022/9/stop#Topic"/>
+        <appears_in rdf:resource="http://www.semanticweb.org/martinapensalfini/ontologies/2022/9/stop#Dippold_the_optician"/>
+        <appears_in rdf:resource="http://www.semanticweb.org/martinapensalfini/ontologies/2022/9/stop#Frank_Drummer"/>
+        <appears_in rdf:resource="http://www.semanticweb.org/martinapensalfini/ontologies/2022/9/stop#Un_ottico"/>
+        <have_name>Darkness vs light</have_name>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/martinapensalfini/ontologies/2022/9/stop#Death -->
+
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/martinapensalfini/ontologies/2022/9/stop#Death">
+        <rdf:type rdf:resource="http://www.semanticweb.org/martinapensalfini/ontologies/2022/9/stop#Topic"/>
+        <appears_in rdf:resource="http://www.semanticweb.org/martinapensalfini/ontologies/2022/9/stop#Dormono_sulla_collina"/>
+        <appears_in rdf:resource="http://www.semanticweb.org/martinapensalfini/ontologies/2022/9/stop#The_Hill"/>
+        <appears_in rdf:resource="http://www.semanticweb.org/martinapensalfini/ontologies/2022/9/stop#Un_matto(Dietro_ogni_scemo_c&apos;è_un_villaggio)"/>
+        <have_name>Death</have_name>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/martinapensalfini/ontologies/2022/9/stop#Devastation -->
+
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/martinapensalfini/ontologies/2022/9/stop#Devastation">
+        <rdf:type rdf:resource="http://www.semanticweb.org/martinapensalfini/ontologies/2022/9/stop#Topic"/>
+        <appears_in rdf:resource="http://www.semanticweb.org/martinapensalfini/ontologies/2022/9/stop#Un_chimico"/>
+        <have_name>Devastation</have_name>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/martinapensalfini/ontologies/2022/9/stop#DippoldTheOptician -->
+
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/martinapensalfini/ontologies/2022/9/stop#DippoldTheOptician">
+        <rdf:type rdf:resource="http://www.semanticweb.org/martinapensalfini/ontologies/2022/9/stop#Character"/>
+        <owl:sameAs rdf:resource="http://www.semanticweb.org/martinapensalfini/ontologies/2022/9/stop#UnOttico"/>
+        <is_in rdf:resource="http://www.semanticweb.org/martinapensalfini/ontologies/2022/9/stop#Dippold_the_optician"/>
+        <have_name rdf:datatype="http://www.w3.org/2000/01/rdf-schema#Literal">Dippold, The Optician</have_name>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/martinapensalfini/ontologies/2022/9/stop#UnOttico -->
+
+
+    <rdf:Description rdf:about="http://www.semanticweb.org/martinapensalfini/ontologies/2022/9/stop#UnOttico"/>
+    
+
+
+    <!-- http://www.semanticweb.org/martinapensalfini/ontologies/2022/9/stop#Dippold_the_optician -->
+
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/martinapensalfini/ontologies/2022/9/stop#Dippold_the_optician">
+        <rdf:type rdf:resource="http://www.semanticweb.org/martinapensalfini/ontologies/2022/9/stop#Poem"/>
+        <schema:isPartOf rdf:resource="http://www.semanticweb.org/martinapensalfini/ontologies/2022/9/stop#Spoon_River_Anthology"/>
+        <has_character rdf:resource="http://www.semanticweb.org/martinapensalfini/ontologies/2022/9/stop#DippoldTheOptician"/>
+        <is_about rdf:resource="http://www.semanticweb.org/martinapensalfini/ontologies/2022/9/stop#Darkness_VS_Light"/>
+        <is_about rdf:resource="http://www.semanticweb.org/martinapensalfini/ontologies/2022/9/stop#Night"/>
+        <is_about rdf:resource="http://www.semanticweb.org/martinapensalfini/ontologies/2022/9/stop#Sight"/>
+        <is_about rdf:resource="http://www.semanticweb.org/martinapensalfini/ontologies/2022/9/stop#Sky"/>
+        <have_name rdf:datatype="http://www.w3.org/2000/01/rdf-schema#Literal">Dippold, The Optician</have_name>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/martinapensalfini/ontologies/2022/9/stop#DoctorSiegfriedIseman -->
+
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/martinapensalfini/ontologies/2022/9/stop#DoctorSiegfriedIseman">
+        <rdf:type rdf:resource="http://www.semanticweb.org/martinapensalfini/ontologies/2022/9/stop#Character"/>
+        <owl:sameAs rdf:resource="http://www.semanticweb.org/martinapensalfini/ontologies/2022/9/stop#UnMedico"/>
+        <is_in rdf:resource="http://www.semanticweb.org/martinapensalfini/ontologies/2022/9/stop#Doctor_Siegfried_Iseman"/>
+        <have_name rdf:datatype="http://www.w3.org/2000/01/rdf-schema#Literal">Doctor Siegfried Iseman</have_name>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/martinapensalfini/ontologies/2022/9/stop#UnMedico -->
+
+
+    <rdf:Description rdf:about="http://www.semanticweb.org/martinapensalfini/ontologies/2022/9/stop#UnMedico"/>
+    
+
+
+    <!-- http://www.semanticweb.org/martinapensalfini/ontologies/2022/9/stop#Doctor_Siegfried_Iseman -->
+
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/martinapensalfini/ontologies/2022/9/stop#Doctor_Siegfried_Iseman">
+        <rdf:type rdf:resource="http://www.semanticweb.org/martinapensalfini/ontologies/2022/9/stop#Poem"/>
+        <schema:isPartOf rdf:resource="http://www.semanticweb.org/martinapensalfini/ontologies/2022/9/stop#Spoon_River_Anthology"/>
+        <has_character rdf:resource="http://www.semanticweb.org/martinapensalfini/ontologies/2022/9/stop#DoctorSiegfriedIseman"/>
+        <is_about rdf:resource="http://www.semanticweb.org/martinapensalfini/ontologies/2022/9/stop#Church"/>
+        <is_about rdf:resource="http://www.semanticweb.org/martinapensalfini/ontologies/2022/9/stop#Justice"/>
+        <is_about rdf:resource="http://www.semanticweb.org/martinapensalfini/ontologies/2022/9/stop#Knowledge"/>
+        <is_about rdf:resource="http://www.semanticweb.org/martinapensalfini/ontologies/2022/9/stop#Religion"/>
+        <is_about rdf:resource="http://www.semanticweb.org/martinapensalfini/ontologies/2022/9/stop#Suffering"/>
+        <have_name rdf:datatype="http://www.w3.org/2000/01/rdf-schema#Literal">Doctor Siegfried Iseman</have_name>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/martinapensalfini/ontologies/2022/9/stop#Dormono_sulla_collina -->
+
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/martinapensalfini/ontologies/2022/9/stop#Dormono_sulla_collina">
+        <rdf:type rdf:resource="http://www.semanticweb.org/martinapensalfini/ontologies/2022/9/stop#Song"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/martinapensalfini/ontologies/2022/9/stop#Unit"/>
+        <schema:isPartOf rdf:resource="http://www.semanticweb.org/martinapensalfini/ontologies/2022/9/stop#Non_al_denaro_non_all&apos;amore_né_al_cielo"/>
+        <has_character rdf:resource="http://www.semanticweb.org/martinapensalfini/ontologies/2022/9/stop#Bert"/>
+        <has_character rdf:resource="http://www.semanticweb.org/martinapensalfini/ontologies/2022/9/stop#Charley"/>
+        <has_character rdf:resource="http://www.semanticweb.org/martinapensalfini/ontologies/2022/9/stop#Ella"/>
+        <has_character rdf:resource="http://www.semanticweb.org/martinapensalfini/ontologies/2022/9/stop#Elmer"/>
+        <has_character rdf:resource="http://www.semanticweb.org/martinapensalfini/ontologies/2022/9/stop#Herman"/>
+        <has_character rdf:resource="http://www.semanticweb.org/martinapensalfini/ontologies/2022/9/stop#JonesIlSuonatore"/>
+        <has_character rdf:resource="http://www.semanticweb.org/martinapensalfini/ontologies/2022/9/stop#Kate"/>
+        <has_character rdf:resource="http://www.semanticweb.org/martinapensalfini/ontologies/2022/9/stop#Lizzie"/>
+        <has_character rdf:resource="http://www.semanticweb.org/martinapensalfini/ontologies/2022/9/stop#Maggie"/>
+        <has_character rdf:resource="http://www.semanticweb.org/martinapensalfini/ontologies/2022/9/stop#Tom"/>
+        <is_about rdf:resource="http://www.semanticweb.org/martinapensalfini/ontologies/2022/9/stop#Death"/>
+        <is_about rdf:resource="http://www.semanticweb.org/martinapensalfini/ontologies/2022/9/stop#Eternal_Sleep"/>
+        <is_about rdf:resource="http://www.semanticweb.org/martinapensalfini/ontologies/2022/9/stop#Nature"/>
+        <related_to rdf:resource="http://www.semanticweb.org/martinapensalfini/ontologies/2022/9/stop#The_Hill"/>
+        <have_name rdf:datatype="http://www.w3.org/2000/01/rdf-schema#Literal">La collina</have_name>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/martinapensalfini/ontologies/2022/9/stop#Dream -->
+
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/martinapensalfini/ontologies/2022/9/stop#Dream">
+        <rdf:type rdf:resource="http://www.semanticweb.org/martinapensalfini/ontologies/2022/9/stop#Topic"/>
+        <appears_in rdf:resource="http://www.semanticweb.org/martinapensalfini/ontologies/2022/9/stop#Dippold_the_optician"/>
+        <appears_in rdf:resource="http://www.semanticweb.org/martinapensalfini/ontologies/2022/9/stop#Frank_Drummer"/>
+        <appears_in rdf:resource="http://www.semanticweb.org/martinapensalfini/ontologies/2022/9/stop#Il_suonatore_Jones"/>
+        <appears_in rdf:resource="http://www.semanticweb.org/martinapensalfini/ontologies/2022/9/stop#Un_malato_di_cuore"/>
+        <appears_in rdf:resource="http://www.semanticweb.org/martinapensalfini/ontologies/2022/9/stop#Un_ottico"/>
+        <appears_in rdf:resource="http://www.semanticweb.org/martinapensalfini/ontologies/2022/9/stop#Un_blasfemo_(dietro_ogni_blasfemo_c&apos;è_un_giardino_incantato)"/>
+        <appears_in rdf:resource="http://www.semanticweb.org/martinapensalfini/ontologies/2022/9/stop#Un_matto(Dietro_ogni_scemo_c&apos;è_un_villaggio)"/>
+        <have_name>Dream</have_name>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/martinapensalfini/ontologies/2022/9/stop#Drinking -->
+
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/martinapensalfini/ontologies/2022/9/stop#Drinking">
+        <rdf:type rdf:resource="http://www.semanticweb.org/martinapensalfini/ontologies/2022/9/stop#Topic"/>
+        <appears_in rdf:resource="http://www.semanticweb.org/martinapensalfini/ontologies/2022/9/stop#Francis_Turner"/>
+        <have_name>Drinking</have_name>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/martinapensalfini/ontologies/2022/9/stop#Edgar_Lee_Masters -->
+
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/martinapensalfini/ontologies/2022/9/stop#Edgar_Lee_Masters">
+        <rdf:type rdf:resource="http://www.semanticweb.org/martinapensalfini/ontologies/2022/9/stop#Author"/>
+        <writes rdf:resource="http://www.semanticweb.org/martinapensalfini/ontologies/2022/9/stop#Spoon_River_Anthology"/>
+        <have_name rdf:datatype="http://www.w3.org/2000/01/rdf-schema#Literal">Edgar Lee Masters</have_name>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/martinapensalfini/ontologies/2022/9/stop#Edith -->
+
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/martinapensalfini/ontologies/2022/9/stop#Edith">
+        <rdf:type rdf:resource="http://www.semanticweb.org/martinapensalfini/ontologies/2022/9/stop#Character"/>
+        <is_in rdf:resource="http://www.semanticweb.org/martinapensalfini/ontologies/2022/9/stop#The_Hill"/>
+        <have_name rdf:datatype="http://www.w3.org/2000/01/rdf-schema#Literal">Edith</have_name>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/martinapensalfini/ontologies/2022/9/stop#Ella -->
+
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/martinapensalfini/ontologies/2022/9/stop#Ella">
+        <rdf:type rdf:resource="http://www.semanticweb.org/martinapensalfini/ontologies/2022/9/stop#Character"/>
+        <is_in rdf:resource="http://www.semanticweb.org/martinapensalfini/ontologies/2022/9/stop#Dormono_sulla_collina"/>
+        <is_in rdf:resource="http://www.semanticweb.org/martinapensalfini/ontologies/2022/9/stop#The_Hill"/>
+        <have_name rdf:datatype="http://www.w3.org/2000/01/rdf-schema#Literal">Ella</have_name>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/martinapensalfini/ontologies/2022/9/stop#Elmer -->
+
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/martinapensalfini/ontologies/2022/9/stop#Elmer">
+        <rdf:type rdf:resource="http://www.semanticweb.org/martinapensalfini/ontologies/2022/9/stop#Character"/>
+        <is_in rdf:resource="http://www.semanticweb.org/martinapensalfini/ontologies/2022/9/stop#Dormono_sulla_collina"/>
+        <is_in rdf:resource="http://www.semanticweb.org/martinapensalfini/ontologies/2022/9/stop#The_Hill"/>
+        <have_name rdf:datatype="http://www.w3.org/2000/01/rdf-schema#Literal">Elmer</have_name>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/martinapensalfini/ontologies/2022/9/stop#Eternal_Sleep -->
+
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/martinapensalfini/ontologies/2022/9/stop#Eternal_Sleep">
+        <rdf:type rdf:resource="http://www.semanticweb.org/martinapensalfini/ontologies/2022/9/stop#Topic"/>
+        <appears_in rdf:resource="http://www.semanticweb.org/martinapensalfini/ontologies/2022/9/stop#Dormono_sulla_collina"/>
+        <appears_in rdf:resource="http://www.semanticweb.org/martinapensalfini/ontologies/2022/9/stop#The_Hill"/>
+        <have_name>Eternal Sleep</have_name>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/martinapensalfini/ontologies/2022/9/stop#Fabrizio_De_Andrè -->
+
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/martinapensalfini/ontologies/2022/9/stop#Fabrizio_De_Andrè">
+        <rdf:type rdf:resource="http://www.semanticweb.org/martinapensalfini/ontologies/2022/9/stop#Author"/>
+        <writes rdf:resource="http://www.semanticweb.org/martinapensalfini/ontologies/2022/9/stop#Non_al_denaro_non_all&apos;amore_né_al_cielo"/>
+        <have_name rdf:datatype="http://www.w3.org/2000/01/rdf-schema#Literal">Fabrizio De André</have_name>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/martinapensalfini/ontologies/2022/9/stop#Family -->
+
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/martinapensalfini/ontologies/2022/9/stop#Family">
+        <rdf:type rdf:resource="http://www.semanticweb.org/martinapensalfini/ontologies/2022/9/stop#Topic"/>
+        <appears_in rdf:resource="http://www.semanticweb.org/martinapensalfini/ontologies/2022/9/stop#Trainor_the_druggist"/>
+        <have_name>Family</have_name>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/martinapensalfini/ontologies/2022/9/stop#FiddlerJones -->
+
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/martinapensalfini/ontologies/2022/9/stop#FiddlerJones">
+        <rdf:type rdf:resource="http://www.semanticweb.org/martinapensalfini/ontologies/2022/9/stop#Character"/>
+        <owl:sameAs rdf:resource="http://www.semanticweb.org/martinapensalfini/ontologies/2022/9/stop#JonesIlSuonatore"/>
+        <is_in rdf:resource="http://www.semanticweb.org/martinapensalfini/ontologies/2022/9/stop#Fiddler_Jones"/>
+        <have_name rdf:datatype="http://www.w3.org/2000/01/rdf-schema#Literal">Fiddler Jones</have_name>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/martinapensalfini/ontologies/2022/9/stop#JonesIlSuonatore -->
+
+
+    <rdf:Description rdf:about="http://www.semanticweb.org/martinapensalfini/ontologies/2022/9/stop#JonesIlSuonatore"/>
+    
+
+
+    <!-- http://www.semanticweb.org/martinapensalfini/ontologies/2022/9/stop#Fiddler_Jones -->
+
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/martinapensalfini/ontologies/2022/9/stop#Fiddler_Jones">
+        <rdf:type rdf:resource="http://www.semanticweb.org/martinapensalfini/ontologies/2022/9/stop#Poem"/>
+        <schema:isPartOf rdf:resource="http://www.semanticweb.org/martinapensalfini/ontologies/2022/9/stop#Spoon_River_Anthology"/>
+        <has_character rdf:resource="http://www.semanticweb.org/martinapensalfini/ontologies/2022/9/stop#FiddlerJones"/>
+        <is_about rdf:resource="http://www.semanticweb.org/martinapensalfini/ontologies/2022/9/stop#Dancing"/>
+        <is_about rdf:resource="http://www.semanticweb.org/martinapensalfini/ontologies/2022/9/stop#Music"/>
+        <is_about rdf:resource="http://www.semanticweb.org/martinapensalfini/ontologies/2022/9/stop#Nature"/>
+        <is_about rdf:resource="http://www.semanticweb.org/martinapensalfini/ontologies/2022/9/stop#Sky"/>
+        <have_name rdf:datatype="http://www.w3.org/2000/01/rdf-schema#Literal">Fiddler Jones</have_name>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/martinapensalfini/ontologies/2022/9/stop#FrancisTurner -->
+
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/martinapensalfini/ontologies/2022/9/stop#FrancisTurner">
+        <rdf:type rdf:resource="http://www.semanticweb.org/martinapensalfini/ontologies/2022/9/stop#Character"/>
+        <owl:sameAs rdf:resource="http://www.semanticweb.org/martinapensalfini/ontologies/2022/9/stop#UnMalatoDiCuore"/>
+        <is_in rdf:resource="http://www.semanticweb.org/martinapensalfini/ontologies/2022/9/stop#Francis_Turner"/>
+        <have_name rdf:datatype="http://www.w3.org/2000/01/rdf-schema#Literal">Francis Turner</have_name>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/martinapensalfini/ontologies/2022/9/stop#UnMalatoDiCuore -->
+
+
+    <rdf:Description rdf:about="http://www.semanticweb.org/martinapensalfini/ontologies/2022/9/stop#UnMalatoDiCuore"/>
+    
+
+
+    <!-- http://www.semanticweb.org/martinapensalfini/ontologies/2022/9/stop#Francis_Turner -->
+
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/martinapensalfini/ontologies/2022/9/stop#Francis_Turner">
+        <rdf:type rdf:resource="http://www.semanticweb.org/martinapensalfini/ontologies/2022/9/stop#Poem"/>
+        <schema:isPartOf rdf:resource="http://www.semanticweb.org/martinapensalfini/ontologies/2022/9/stop#Spoon_River_Anthology"/>
+        <has_character rdf:resource="http://www.semanticweb.org/martinapensalfini/ontologies/2022/9/stop#FrancisTurner"/>
+        <is_about rdf:resource="http://www.semanticweb.org/martinapensalfini/ontologies/2022/9/stop#Drinking"/>
+        <is_about rdf:resource="http://www.semanticweb.org/martinapensalfini/ontologies/2022/9/stop#Nature"/>
+        <is_about rdf:resource="http://www.semanticweb.org/martinapensalfini/ontologies/2022/9/stop#Secret"/>
+        <is_about rdf:resource="http://www.semanticweb.org/martinapensalfini/ontologies/2022/9/stop#Suffering"/>
+        <have_name rdf:datatype="http://www.w3.org/2000/01/rdf-schema#Literal">Francis Turner</have_name>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/martinapensalfini/ontologies/2022/9/stop#FrankDrummer -->
+
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/martinapensalfini/ontologies/2022/9/stop#FrankDrummer">
+        <rdf:type rdf:resource="http://www.semanticweb.org/martinapensalfini/ontologies/2022/9/stop#Character"/>
+        <owl:sameAs rdf:resource="http://www.semanticweb.org/martinapensalfini/ontologies/2022/9/stop#UnMatto"/>
+        <is_in rdf:resource="http://www.semanticweb.org/martinapensalfini/ontologies/2022/9/stop#Frank_Drummer"/>
+        <have_name rdf:datatype="http://www.w3.org/2000/01/rdf-schema#Literal">Frank Drummer</have_name>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/martinapensalfini/ontologies/2022/9/stop#UnMatto -->
+
+
+    <rdf:Description rdf:about="http://www.semanticweb.org/martinapensalfini/ontologies/2022/9/stop#UnMatto"/>
+    
+
+
+    <!-- http://www.semanticweb.org/martinapensalfini/ontologies/2022/9/stop#Frank_Drummer -->
+
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/martinapensalfini/ontologies/2022/9/stop#Frank_Drummer">
+        <rdf:type rdf:resource="http://www.semanticweb.org/martinapensalfini/ontologies/2022/9/stop#Poem"/>
+        <schema:isPartOf rdf:resource="http://www.semanticweb.org/martinapensalfini/ontologies/2022/9/stop#Spoon_River_Anthology"/>
+        <has_character rdf:resource="http://www.semanticweb.org/martinapensalfini/ontologies/2022/9/stop#FrankDrummer"/>
+        <is_about rdf:resource="http://www.semanticweb.org/martinapensalfini/ontologies/2022/9/stop#Darkness_VS_Light"/>
+        <is_about rdf:resource="http://www.semanticweb.org/martinapensalfini/ontologies/2022/9/stop#Dream"/>
+        <is_about rdf:resource="http://www.semanticweb.org/martinapensalfini/ontologies/2022/9/stop#Memory"/>
+        <is_about rdf:resource="http://www.semanticweb.org/martinapensalfini/ontologies/2022/9/stop#Music"/>
+        <have_name rdf:datatype="http://www.w3.org/2000/01/rdf-schema#Literal">Frank Drummer</have_name>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/martinapensalfini/ontologies/2022/9/stop#Hate -->
+
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/martinapensalfini/ontologies/2022/9/stop#Hate">
+        <rdf:type rdf:resource="http://www.semanticweb.org/martinapensalfini/ontologies/2022/9/stop#Topic"/>
+        <appears_in rdf:resource="http://www.semanticweb.org/martinapensalfini/ontologies/2022/9/stop#Judge_Selah_Lively"/>
+        <appears_in rdf:resource="http://www.semanticweb.org/martinapensalfini/ontologies/2022/9/stop#Un_giudice"/>
+        <appears_in rdf:resource="http://www.semanticweb.org/martinapensalfini/ontologies/2022/9/stop#Wendell_P._Bloyd"/>
+        <have_name>Hate</have_name>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/martinapensalfini/ontologies/2022/9/stop#Herman -->
+
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/martinapensalfini/ontologies/2022/9/stop#Herman">
+        <rdf:type rdf:resource="http://www.semanticweb.org/martinapensalfini/ontologies/2022/9/stop#Character"/>
+        <is_in rdf:resource="http://www.semanticweb.org/martinapensalfini/ontologies/2022/9/stop#Dormono_sulla_collina"/>
+        <is_in rdf:resource="http://www.semanticweb.org/martinapensalfini/ontologies/2022/9/stop#The_Hill"/>
+        <have_name rdf:datatype="http://www.w3.org/2000/01/rdf-schema#Literal">Herman</have_name>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/martinapensalfini/ontologies/2022/9/stop#Il_suonatore_Jones -->
+
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/martinapensalfini/ontologies/2022/9/stop#Il_suonatore_Jones">
+        <rdf:type rdf:resource="http://www.semanticweb.org/martinapensalfini/ontologies/2022/9/stop#Song"/>
+        <schema:isPartOf rdf:resource="http://www.semanticweb.org/martinapensalfini/ontologies/2022/9/stop#Non_al_denaro_non_all&apos;amore_né_al_cielo"/>
+        <has_character rdf:resource="http://www.semanticweb.org/martinapensalfini/ontologies/2022/9/stop#JonesIlSuonatore"/>
+        <is_about rdf:resource="http://www.semanticweb.org/martinapensalfini/ontologies/2022/9/stop#Dancing"/>
+        <is_about rdf:resource="http://www.semanticweb.org/martinapensalfini/ontologies/2022/9/stop#Dream"/>
+        <is_about rdf:resource="http://www.semanticweb.org/martinapensalfini/ontologies/2022/9/stop#Music"/>
+        <is_about rdf:resource="http://www.semanticweb.org/martinapensalfini/ontologies/2022/9/stop#Nature"/>
+        <is_about rdf:resource="http://www.semanticweb.org/martinapensalfini/ontologies/2022/9/stop#Suffering"/>
+        <related_to rdf:resource="http://www.semanticweb.org/martinapensalfini/ontologies/2022/9/stop#Fiddler_Jones"/>
+        <have_name rdf:datatype="http://www.w3.org/2000/01/rdf-schema#Literal">Il suonatore Jones</have_name>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/martinapensalfini/ontologies/2022/9/stop#JonesIlSuonatore -->
+
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/martinapensalfini/ontologies/2022/9/stop#JonesIlSuonatore">
+        <rdf:type rdf:resource="http://www.semanticweb.org/martinapensalfini/ontologies/2022/9/stop#Character"/>
+        <is_in rdf:resource="http://www.semanticweb.org/martinapensalfini/ontologies/2022/9/stop#Il_suonatore_Jones"/>
+        <have_name rdf:datatype="http://www.w3.org/2000/01/rdf-schema#Literal">Il suonatore Jones</have_name>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/martinapensalfini/ontologies/2022/9/stop#JudgeSelahLively -->
+
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/martinapensalfini/ontologies/2022/9/stop#JudgeSelahLively">
+        <rdf:type rdf:resource="http://www.semanticweb.org/martinapensalfini/ontologies/2022/9/stop#Character"/>
+        <owl:sameAs rdf:resource="http://www.semanticweb.org/martinapensalfini/ontologies/2022/9/stop#UnGiudice"/>
+        <is_in rdf:resource="http://www.semanticweb.org/martinapensalfini/ontologies/2022/9/stop#Judge_Selah_Lively"/>
+        <have_name rdf:datatype="http://www.w3.org/2000/01/rdf-schema#Literal">Judge Selah Lively</have_name>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/martinapensalfini/ontologies/2022/9/stop#UnGiudice -->
+
+
+    <rdf:Description rdf:about="http://www.semanticweb.org/martinapensalfini/ontologies/2022/9/stop#UnGiudice"/>
+    
+
+
+    <!-- http://www.semanticweb.org/martinapensalfini/ontologies/2022/9/stop#Judge_Selah_Lively -->
+
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/martinapensalfini/ontologies/2022/9/stop#Judge_Selah_Lively">
+        <rdf:type rdf:resource="http://www.semanticweb.org/martinapensalfini/ontologies/2022/9/stop#Poem"/>
+        <schema:isPartOf rdf:resource="http://www.semanticweb.org/martinapensalfini/ontologies/2022/9/stop#Spoon_River_Anthology"/>
+        <has_character rdf:resource="http://www.semanticweb.org/martinapensalfini/ontologies/2022/9/stop#JudgeSelahLively"/>
+        <is_about rdf:resource="http://www.semanticweb.org/martinapensalfini/ontologies/2022/9/stop#Hate"/>
+        <is_about rdf:resource="http://www.semanticweb.org/martinapensalfini/ontologies/2022/9/stop#Justice"/>
+        <is_about rdf:resource="http://www.semanticweb.org/martinapensalfini/ontologies/2022/9/stop#Religion"/>
+        <have_name rdf:datatype="http://www.w3.org/2000/01/rdf-schema#Literal">Judge Selah Lively</have_name>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/martinapensalfini/ontologies/2022/9/stop#Justice -->
+
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/martinapensalfini/ontologies/2022/9/stop#Justice">
+        <rdf:type rdf:resource="http://www.semanticweb.org/martinapensalfini/ontologies/2022/9/stop#Topic"/>
+        <appears_in rdf:resource="http://www.semanticweb.org/martinapensalfini/ontologies/2022/9/stop#Doctor_Siegfried_Iseman"/>
+        <appears_in rdf:resource="http://www.semanticweb.org/martinapensalfini/ontologies/2022/9/stop#Judge_Selah_Lively"/>
+        <appears_in rdf:resource="http://www.semanticweb.org/martinapensalfini/ontologies/2022/9/stop#Un_giudice"/>
+        <have_name>Justice</have_name>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/martinapensalfini/ontologies/2022/9/stop#Kate -->
+
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/martinapensalfini/ontologies/2022/9/stop#Kate">
+        <rdf:type rdf:resource="http://www.semanticweb.org/martinapensalfini/ontologies/2022/9/stop#Character"/>
+        <is_in rdf:resource="http://www.semanticweb.org/martinapensalfini/ontologies/2022/9/stop#Dormono_sulla_collina"/>
+        <is_in rdf:resource="http://www.semanticweb.org/martinapensalfini/ontologies/2022/9/stop#The_Hill"/>
+        <have_name rdf:datatype="http://www.w3.org/2000/01/rdf-schema#Literal">Kate</have_name>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/martinapensalfini/ontologies/2022/9/stop#Knowledge -->
+
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/martinapensalfini/ontologies/2022/9/stop#Knowledge">
+        <rdf:type rdf:resource="http://www.semanticweb.org/martinapensalfini/ontologies/2022/9/stop#Topic"/>
+        <appears_in rdf:resource="http://www.semanticweb.org/martinapensalfini/ontologies/2022/9/stop#Doctor_Siegfried_Iseman"/>
+        <appears_in rdf:resource="http://www.semanticweb.org/martinapensalfini/ontologies/2022/9/stop#Un_giudice"/>
+        <appears_in rdf:resource="http://www.semanticweb.org/martinapensalfini/ontologies/2022/9/stop#Un_medico"/>
+        <have_name>Knowledge</have_name>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/martinapensalfini/ontologies/2022/9/stop#Lizzie -->
+
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/martinapensalfini/ontologies/2022/9/stop#Lizzie">
+        <rdf:type rdf:resource="http://www.semanticweb.org/martinapensalfini/ontologies/2022/9/stop#Character"/>
+        <is_in rdf:resource="http://www.semanticweb.org/martinapensalfini/ontologies/2022/9/stop#Dormono_sulla_collina"/>
+        <is_in rdf:resource="http://www.semanticweb.org/martinapensalfini/ontologies/2022/9/stop#The_Hill"/>
+        <have_name rdf:datatype="http://www.w3.org/2000/01/rdf-schema#Literal">Lizzie</have_name>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/martinapensalfini/ontologies/2022/9/stop#Love -->
+
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/martinapensalfini/ontologies/2022/9/stop#Love">
+        <rdf:type rdf:resource="http://www.semanticweb.org/martinapensalfini/ontologies/2022/9/stop#Topic"/>
+        <appears_in rdf:resource="http://www.semanticweb.org/martinapensalfini/ontologies/2022/9/stop#Un_chimico"/>
+        <have_name>Love</have_name>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/martinapensalfini/ontologies/2022/9/stop#Maggie -->
+
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/martinapensalfini/ontologies/2022/9/stop#Maggie">
+        <rdf:type rdf:resource="http://www.semanticweb.org/martinapensalfini/ontologies/2022/9/stop#Character"/>
+        <is_in rdf:resource="http://www.semanticweb.org/martinapensalfini/ontologies/2022/9/stop#Dormono_sulla_collina"/>
+        <is_in rdf:resource="http://www.semanticweb.org/martinapensalfini/ontologies/2022/9/stop#The_Hill"/>
+        <have_name rdf:datatype="http://www.w3.org/2000/01/rdf-schema#Literal">Maggie</have_name>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/martinapensalfini/ontologies/2022/9/stop#Major_Walker -->
+
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/martinapensalfini/ontologies/2022/9/stop#Major_Walker">
+        <rdf:type rdf:resource="http://www.semanticweb.org/martinapensalfini/ontologies/2022/9/stop#Character"/>
+        <is_in rdf:resource="http://www.semanticweb.org/martinapensalfini/ontologies/2022/9/stop#The_Hill"/>
+        <have_name rdf:datatype="http://www.w3.org/2000/01/rdf-schema#Literal">Major Walker</have_name>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/martinapensalfini/ontologies/2022/9/stop#Marriage -->
+
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/martinapensalfini/ontologies/2022/9/stop#Marriage">
+        <rdf:type rdf:resource="http://www.semanticweb.org/martinapensalfini/ontologies/2022/9/stop#Topic"/>
+        <appears_in rdf:resource="http://www.semanticweb.org/martinapensalfini/ontologies/2022/9/stop#Trainor_the_druggist"/>
+        <have_name>Marriage</have_name>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/martinapensalfini/ontologies/2022/9/stop#Memory -->
+
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/martinapensalfini/ontologies/2022/9/stop#Memory">
+        <rdf:type rdf:resource="http://www.semanticweb.org/martinapensalfini/ontologies/2022/9/stop#Topic"/>
+        <appears_in rdf:resource="http://www.semanticweb.org/martinapensalfini/ontologies/2022/9/stop#Frank_Drummer"/>
+        <appears_in rdf:resource="http://www.semanticweb.org/martinapensalfini/ontologies/2022/9/stop#Un_matto(Dietro_ogni_scemo_c&apos;è_un_villaggio)"/>
+        <have_name>Memory</have_name>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/martinapensalfini/ontologies/2022/9/stop#Music -->
+
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/martinapensalfini/ontologies/2022/9/stop#Music">
+        <rdf:type rdf:resource="http://www.semanticweb.org/martinapensalfini/ontologies/2022/9/stop#Topic"/>
+        <appears_in rdf:resource="http://www.semanticweb.org/martinapensalfini/ontologies/2022/9/stop#Fiddler_Jones"/>
+        <appears_in rdf:resource="http://www.semanticweb.org/martinapensalfini/ontologies/2022/9/stop#Frank_Drummer"/>
+        <appears_in rdf:resource="http://www.semanticweb.org/martinapensalfini/ontologies/2022/9/stop#Il_suonatore_Jones"/>
+        <have_name>Music</have_name>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/martinapensalfini/ontologies/2022/9/stop#Nature -->
+
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/martinapensalfini/ontologies/2022/9/stop#Nature">
+        <rdf:type rdf:resource="http://www.semanticweb.org/martinapensalfini/ontologies/2022/9/stop#Topic"/>
+        <appears_in rdf:resource="http://www.semanticweb.org/martinapensalfini/ontologies/2022/9/stop#Dormono_sulla_collina"/>
+        <appears_in rdf:resource="http://www.semanticweb.org/martinapensalfini/ontologies/2022/9/stop#Fiddler_Jones"/>
+        <appears_in rdf:resource="http://www.semanticweb.org/martinapensalfini/ontologies/2022/9/stop#Francis_Turner"/>
+        <appears_in rdf:resource="http://www.semanticweb.org/martinapensalfini/ontologies/2022/9/stop#Il_suonatore_Jones"/>
+        <appears_in rdf:resource="http://www.semanticweb.org/martinapensalfini/ontologies/2022/9/stop#The_Hill"/>
+        <appears_in rdf:resource="http://www.semanticweb.org/martinapensalfini/ontologies/2022/9/stop#Un_chimico"/>
+        <have_name>Nature</have_name>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/martinapensalfini/ontologies/2022/9/stop#Night -->
+
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/martinapensalfini/ontologies/2022/9/stop#Night">
+        <rdf:type rdf:resource="http://www.semanticweb.org/martinapensalfini/ontologies/2022/9/stop#Topic"/>
+        <appears_in rdf:resource="http://www.semanticweb.org/martinapensalfini/ontologies/2022/9/stop#Dippold_the_optician"/>
+        <have_name>Night</have_name>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/martinapensalfini/ontologies/2022/9/stop#Religion -->
+
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/martinapensalfini/ontologies/2022/9/stop#Religion">
+        <rdf:type rdf:resource="http://www.semanticweb.org/martinapensalfini/ontologies/2022/9/stop#Topic"/>
+        <appears_in rdf:resource="http://www.semanticweb.org/martinapensalfini/ontologies/2022/9/stop#Doctor_Siegfried_Iseman"/>
+        <appears_in rdf:resource="http://www.semanticweb.org/martinapensalfini/ontologies/2022/9/stop#Judge_Selah_Lively"/>
+        <appears_in rdf:resource="http://www.semanticweb.org/martinapensalfini/ontologies/2022/9/stop#Un_giudice"/>
+        <appears_in rdf:resource="http://www.semanticweb.org/martinapensalfini/ontologies/2022/9/stop#Wendell_P._Bloyd"/>
+        <appears_in rdf:resource="http://www.semanticweb.org/martinapensalfini/ontologies/2022/9/stop#Un_blasfemo_(dietro_ogni_blasfemo_c&apos;è_un_giardino_incantato)"/>
+        <have_name>Religion</have_name>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/martinapensalfini/ontologies/2022/9/stop#Salvation -->
+
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/martinapensalfini/ontologies/2022/9/stop#Salvation">
+        <rdf:type rdf:resource="http://www.semanticweb.org/martinapensalfini/ontologies/2022/9/stop#Topic"/>
+        <appears_in rdf:resource="http://www.semanticweb.org/martinapensalfini/ontologies/2022/9/stop#Un_chimico"/>
+        <appears_in rdf:resource="http://www.semanticweb.org/martinapensalfini/ontologies/2022/9/stop#Un_malato_di_cuore"/>
+        <appears_in rdf:resource="http://www.semanticweb.org/martinapensalfini/ontologies/2022/9/stop#Un_medico"/>
+        <appears_in rdf:resource="http://www.semanticweb.org/martinapensalfini/ontologies/2022/9/stop#Wendell_P._Bloyd"/>
+        <appears_in rdf:resource="http://www.semanticweb.org/martinapensalfini/ontologies/2022/9/stop#Un_blasfemo_(dietro_ogni_blasfemo_c&apos;è_un_giardino_incantato)"/>
+        <have_name>Salvation</have_name>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/martinapensalfini/ontologies/2022/9/stop#Secret -->
+
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/martinapensalfini/ontologies/2022/9/stop#Secret">
+        <rdf:type rdf:resource="http://www.semanticweb.org/martinapensalfini/ontologies/2022/9/stop#Topic"/>
+        <appears_in rdf:resource="http://www.semanticweb.org/martinapensalfini/ontologies/2022/9/stop#Francis_Turner"/>
+        <have_name>Secret</have_name>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/martinapensalfini/ontologies/2022/9/stop#Sevigne_Houghton -->
+
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/martinapensalfini/ontologies/2022/9/stop#Sevigne_Houghton">
+        <rdf:type rdf:resource="http://www.semanticweb.org/martinapensalfini/ontologies/2022/9/stop#Character"/>
+        <is_in rdf:resource="http://www.semanticweb.org/martinapensalfini/ontologies/2022/9/stop#The_Hill"/>
+        <have_name rdf:datatype="http://www.w3.org/2000/01/rdf-schema#Literal">Sevigne Houghton</have_name>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/martinapensalfini/ontologies/2022/9/stop#Sickness -->
+
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/martinapensalfini/ontologies/2022/9/stop#Sickness">
+        <rdf:type rdf:resource="http://www.semanticweb.org/martinapensalfini/ontologies/2022/9/stop#Topic"/>
+        <appears_in rdf:resource="http://www.semanticweb.org/martinapensalfini/ontologies/2022/9/stop#Un_malato_di_cuore"/>
+        <appears_in rdf:resource="http://www.semanticweb.org/martinapensalfini/ontologies/2022/9/stop#Un_medico"/>
+        <have_name>Sickness</have_name>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/martinapensalfini/ontologies/2022/9/stop#Sight -->
+
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/martinapensalfini/ontologies/2022/9/stop#Sight">
+        <rdf:type rdf:resource="http://www.semanticweb.org/martinapensalfini/ontologies/2022/9/stop#Topic"/>
+        <appears_in rdf:resource="http://www.semanticweb.org/martinapensalfini/ontologies/2022/9/stop#Dippold_the_optician"/>
+        <appears_in rdf:resource="http://www.semanticweb.org/martinapensalfini/ontologies/2022/9/stop#Un_ottico"/>
+        <have_name>Sight</have_name>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/martinapensalfini/ontologies/2022/9/stop#Sky -->
+
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/martinapensalfini/ontologies/2022/9/stop#Sky">
+        <rdf:type rdf:resource="http://www.semanticweb.org/martinapensalfini/ontologies/2022/9/stop#Topic"/>
+        <appears_in rdf:resource="http://www.semanticweb.org/martinapensalfini/ontologies/2022/9/stop#Dippold_the_optician"/>
+        <appears_in rdf:resource="http://www.semanticweb.org/martinapensalfini/ontologies/2022/9/stop#Fiddler_Jones"/>
+        <appears_in rdf:resource="http://www.semanticweb.org/martinapensalfini/ontologies/2022/9/stop#Un_ottico"/>
+        <have_name>Sky</have_name>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/martinapensalfini/ontologies/2022/9/stop#Spoon_River_Anthology -->
+
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/martinapensalfini/ontologies/2022/9/stop#Spoon_River_Anthology">
+        <rdf:type rdf:resource="http://www.semanticweb.org/martinapensalfini/ontologies/2022/9/stop#Anthology_Poem"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/martinapensalfini/ontologies/2022/9/stop#Work"/>
+        <schema:hasPart rdf:resource="http://www.semanticweb.org/martinapensalfini/ontologies/2022/9/stop#Dippold_the_optician"/>
+        <schema:hasPart rdf:resource="http://www.semanticweb.org/martinapensalfini/ontologies/2022/9/stop#Doctor_Siegfried_Iseman"/>
+        <schema:hasPart rdf:resource="http://www.semanticweb.org/martinapensalfini/ontologies/2022/9/stop#Fiddler_Jones"/>
+        <schema:hasPart rdf:resource="http://www.semanticweb.org/martinapensalfini/ontologies/2022/9/stop#Francis_Turner"/>
+        <schema:hasPart rdf:resource="http://www.semanticweb.org/martinapensalfini/ontologies/2022/9/stop#Frank_Drummer"/>
+        <schema:hasPart rdf:resource="http://www.semanticweb.org/martinapensalfini/ontologies/2022/9/stop#Judge_Selah_Lively"/>
+        <schema:hasPart rdf:resource="http://www.semanticweb.org/martinapensalfini/ontologies/2022/9/stop#The_Hill"/>
+        <schema:hasPart rdf:resource="http://www.semanticweb.org/martinapensalfini/ontologies/2022/9/stop#Trainor_the_druggist"/>
+        <schema:hasPart rdf:resource="http://www.semanticweb.org/martinapensalfini/ontologies/2022/9/stop#Wendell_P._Bloyd"/>
+        <inspires rdf:resource="http://www.semanticweb.org/martinapensalfini/ontologies/2022/9/stop#Non_al_denaro_non_all&apos;amore_né_al_cielo"/>
+        <have_name rdf:datatype="http://www.w3.org/2000/01/rdf-schema#Literal">Spoon River Anthology</have_name>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/martinapensalfini/ontologies/2022/9/stop#Suffering -->
+
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/martinapensalfini/ontologies/2022/9/stop#Suffering">
+        <rdf:type rdf:resource="http://www.semanticweb.org/martinapensalfini/ontologies/2022/9/stop#Topic"/>
+        <appears_in rdf:resource="http://www.semanticweb.org/martinapensalfini/ontologies/2022/9/stop#Doctor_Siegfried_Iseman"/>
+        <appears_in rdf:resource="http://www.semanticweb.org/martinapensalfini/ontologies/2022/9/stop#Francis_Turner"/>
+        <appears_in rdf:resource="http://www.semanticweb.org/martinapensalfini/ontologies/2022/9/stop#Il_suonatore_Jones"/>
+        <appears_in rdf:resource="http://www.semanticweb.org/martinapensalfini/ontologies/2022/9/stop#Un_chimico"/>
+        <appears_in rdf:resource="http://www.semanticweb.org/martinapensalfini/ontologies/2022/9/stop#Un_malato_di_cuore"/>
+        <appears_in rdf:resource="http://www.semanticweb.org/martinapensalfini/ontologies/2022/9/stop#Un_medico"/>
+        <appears_in rdf:resource="http://www.semanticweb.org/martinapensalfini/ontologies/2022/9/stop#Un_ottico"/>
+        <have_name>Suffering</have_name>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/martinapensalfini/ontologies/2022/9/stop#The_Hill -->
+
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/martinapensalfini/ontologies/2022/9/stop#The_Hill">
+        <rdf:type rdf:resource="http://www.semanticweb.org/martinapensalfini/ontologies/2022/9/stop#Poem"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/martinapensalfini/ontologies/2022/9/stop#Unit"/>
+        <schema:isPartOf rdf:resource="http://www.semanticweb.org/martinapensalfini/ontologies/2022/9/stop#Spoon_River_Anthology"/>
+        <has_character rdf:resource="http://www.semanticweb.org/martinapensalfini/ontologies/2022/9/stop#Aunt_Emily"/>
+        <has_character rdf:resource="http://www.semanticweb.org/martinapensalfini/ontologies/2022/9/stop#Bert"/>
+        <has_character rdf:resource="http://www.semanticweb.org/martinapensalfini/ontologies/2022/9/stop#Charley"/>
+        <has_character rdf:resource="http://www.semanticweb.org/martinapensalfini/ontologies/2022/9/stop#Edith"/>
+        <has_character rdf:resource="http://www.semanticweb.org/martinapensalfini/ontologies/2022/9/stop#Ella"/>
+        <has_character rdf:resource="http://www.semanticweb.org/martinapensalfini/ontologies/2022/9/stop#Elmer"/>
+        <has_character rdf:resource="http://www.semanticweb.org/martinapensalfini/ontologies/2022/9/stop#Herman"/>
+        <has_character rdf:resource="http://www.semanticweb.org/martinapensalfini/ontologies/2022/9/stop#Kate"/>
+        <has_character rdf:resource="http://www.semanticweb.org/martinapensalfini/ontologies/2022/9/stop#Lizzie"/>
+        <has_character rdf:resource="http://www.semanticweb.org/martinapensalfini/ontologies/2022/9/stop#Maggie"/>
+        <has_character rdf:resource="http://www.semanticweb.org/martinapensalfini/ontologies/2022/9/stop#Major_Walker"/>
+        <has_character rdf:resource="http://www.semanticweb.org/martinapensalfini/ontologies/2022/9/stop#Sevigne_Houghton"/>
+        <has_character rdf:resource="http://www.semanticweb.org/martinapensalfini/ontologies/2022/9/stop#Tom"/>
+        <has_character rdf:resource="http://www.semanticweb.org/martinapensalfini/ontologies/2022/9/stop#Towny_Kincaid"/>
+        <has_character rdf:resource="http://www.semanticweb.org/martinapensalfini/ontologies/2022/9/stop#Uncle_Isaac"/>
+        <is_about rdf:resource="http://www.semanticweb.org/martinapensalfini/ontologies/2022/9/stop#Death"/>
+        <is_about rdf:resource="http://www.semanticweb.org/martinapensalfini/ontologies/2022/9/stop#Eternal_Sleep"/>
+        <is_about rdf:resource="http://www.semanticweb.org/martinapensalfini/ontologies/2022/9/stop#Nature"/>
+        <have_name rdf:datatype="http://www.w3.org/2000/01/rdf-schema#Literal">The Hill</have_name>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/martinapensalfini/ontologies/2022/9/stop#Tom -->
+
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/martinapensalfini/ontologies/2022/9/stop#Tom">
+        <rdf:type rdf:resource="http://www.semanticweb.org/martinapensalfini/ontologies/2022/9/stop#Character"/>
+        <is_in rdf:resource="http://www.semanticweb.org/martinapensalfini/ontologies/2022/9/stop#Dormono_sulla_collina"/>
+        <is_in rdf:resource="http://www.semanticweb.org/martinapensalfini/ontologies/2022/9/stop#The_Hill"/>
+        <have_name rdf:datatype="http://www.w3.org/2000/01/rdf-schema#Literal">Tom</have_name>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/martinapensalfini/ontologies/2022/9/stop#Towny_Kincaid -->
+
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/martinapensalfini/ontologies/2022/9/stop#Towny_Kincaid">
+        <rdf:type rdf:resource="http://www.semanticweb.org/martinapensalfini/ontologies/2022/9/stop#Character"/>
+        <is_in rdf:resource="http://www.semanticweb.org/martinapensalfini/ontologies/2022/9/stop#The_Hill"/>
+        <have_name rdf:datatype="http://www.w3.org/2000/01/rdf-schema#Literal">Towny Kincaid</have_name>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/martinapensalfini/ontologies/2022/9/stop#TrainorTheDruggist -->
+
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/martinapensalfini/ontologies/2022/9/stop#TrainorTheDruggist">
+        <rdf:type rdf:resource="http://www.semanticweb.org/martinapensalfini/ontologies/2022/9/stop#Character"/>
+        <owl:sameAs rdf:resource="http://www.semanticweb.org/martinapensalfini/ontologies/2022/9/stop#UnChimico"/>
+        <is_in rdf:resource="http://www.semanticweb.org/martinapensalfini/ontologies/2022/9/stop#Trainor_the_druggist"/>
+        <have_name rdf:datatype="http://www.w3.org/2000/01/rdf-schema#Literal">Trainor, the druggist</have_name>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/martinapensalfini/ontologies/2022/9/stop#UnChimico -->
+
+
+    <rdf:Description rdf:about="http://www.semanticweb.org/martinapensalfini/ontologies/2022/9/stop#UnChimico"/>
+    
+
+
+    <!-- http://www.semanticweb.org/martinapensalfini/ontologies/2022/9/stop#Trainor_the_druggist -->
+
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/martinapensalfini/ontologies/2022/9/stop#Trainor_the_druggist">
+        <rdf:type rdf:resource="http://www.semanticweb.org/martinapensalfini/ontologies/2022/9/stop#Poem"/>
+        <schema:isPartOf rdf:resource="http://www.semanticweb.org/martinapensalfini/ontologies/2022/9/stop#Spoon_River_Anthology"/>
+        <has_character rdf:resource="http://www.semanticweb.org/martinapensalfini/ontologies/2022/9/stop#TrainorTheDruggist"/>
+        <is_about rdf:resource="http://www.semanticweb.org/martinapensalfini/ontologies/2022/9/stop#Family"/>
+        <is_about rdf:resource="http://www.semanticweb.org/martinapensalfini/ontologies/2022/9/stop#Marriage"/>
+        <have_name rdf:datatype="http://www.w3.org/2000/01/rdf-schema#Literal">Trainor, the druggist</have_name>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/martinapensalfini/ontologies/2022/9/stop#UnBlasfemo -->
+
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/martinapensalfini/ontologies/2022/9/stop#UnBlasfemo">
+        <rdf:type rdf:resource="http://www.semanticweb.org/martinapensalfini/ontologies/2022/9/stop#Character"/>
+        <owl:sameAs rdf:resource="http://www.semanticweb.org/martinapensalfini/ontologies/2022/9/stop#WendellPBloyd"/>
+        <is_in rdf:resource="http://www.semanticweb.org/martinapensalfini/ontologies/2022/9/stop#Un_blasfemo_(dietro_ogni_blasfemo_c&apos;è_un_giardino_incantato)"/>
+        <have_name rdf:datatype="http://www.w3.org/2000/01/rdf-schema#Literal">Un blasfemo</have_name>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/martinapensalfini/ontologies/2022/9/stop#WendellPBloyd -->
+
+
+    <rdf:Description rdf:about="http://www.semanticweb.org/martinapensalfini/ontologies/2022/9/stop#WendellPBloyd"/>
+    
+
+
+    <!-- http://www.semanticweb.org/martinapensalfini/ontologies/2022/9/stop#UnChimico -->
+
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/martinapensalfini/ontologies/2022/9/stop#UnChimico">
+        <rdf:type rdf:resource="http://www.semanticweb.org/martinapensalfini/ontologies/2022/9/stop#Character"/>
+        <is_in rdf:resource="http://www.semanticweb.org/martinapensalfini/ontologies/2022/9/stop#Un_chimico"/>
+        <have_name rdf:datatype="http://www.w3.org/2000/01/rdf-schema#Literal">Un chimico</have_name>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/martinapensalfini/ontologies/2022/9/stop#UnGiudice -->
+
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/martinapensalfini/ontologies/2022/9/stop#UnGiudice">
+        <rdf:type rdf:resource="http://www.semanticweb.org/martinapensalfini/ontologies/2022/9/stop#Character"/>
+        <is_in rdf:resource="http://www.semanticweb.org/martinapensalfini/ontologies/2022/9/stop#Un_giudice"/>
+        <have_name rdf:datatype="http://www.w3.org/2000/01/rdf-schema#Literal">Un giudice</have_name>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/martinapensalfini/ontologies/2022/9/stop#UnMalatoDiCuore -->
+
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/martinapensalfini/ontologies/2022/9/stop#UnMalatoDiCuore">
+        <rdf:type rdf:resource="http://www.semanticweb.org/martinapensalfini/ontologies/2022/9/stop#Character"/>
+        <is_in rdf:resource="http://www.semanticweb.org/martinapensalfini/ontologies/2022/9/stop#Un_malato_di_cuore"/>
+        <have_name rdf:datatype="http://www.w3.org/2000/01/rdf-schema#Literal">Un malato di cuore</have_name>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/martinapensalfini/ontologies/2022/9/stop#UnMatto -->
+
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/martinapensalfini/ontologies/2022/9/stop#UnMatto">
+        <rdf:type rdf:resource="http://www.semanticweb.org/martinapensalfini/ontologies/2022/9/stop#Character"/>
+        <is_in rdf:resource="http://www.semanticweb.org/martinapensalfini/ontologies/2022/9/stop#Un_matto(Dietro_ogni_scemo_c&apos;è_un_villaggio)"/>
+        <have_name rdf:datatype="http://www.w3.org/2000/01/rdf-schema#Literal">Un matto</have_name>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/martinapensalfini/ontologies/2022/9/stop#UnMedico -->
+
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/martinapensalfini/ontologies/2022/9/stop#UnMedico">
+        <rdf:type rdf:resource="http://www.semanticweb.org/martinapensalfini/ontologies/2022/9/stop#Character"/>
+        <is_in rdf:resource="http://www.semanticweb.org/martinapensalfini/ontologies/2022/9/stop#Un_medico"/>
+        <have_name rdf:datatype="http://www.w3.org/2000/01/rdf-schema#Literal">Un medico</have_name>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/martinapensalfini/ontologies/2022/9/stop#UnOttico -->
+
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/martinapensalfini/ontologies/2022/9/stop#UnOttico">
+        <rdf:type rdf:resource="http://www.semanticweb.org/martinapensalfini/ontologies/2022/9/stop#Character"/>
+        <is_in rdf:resource="http://www.semanticweb.org/martinapensalfini/ontologies/2022/9/stop#Un_ottico"/>
+        <have_name rdf:datatype="http://www.w3.org/2000/01/rdf-schema#Literal">Un ottico</have_name>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/martinapensalfini/ontologies/2022/9/stop#Un_chimico -->
+
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/martinapensalfini/ontologies/2022/9/stop#Un_chimico">
+        <rdf:type rdf:resource="http://www.semanticweb.org/martinapensalfini/ontologies/2022/9/stop#Song"/>
+        <schema:isPartOf rdf:resource="http://www.semanticweb.org/martinapensalfini/ontologies/2022/9/stop#Non_al_denaro_non_all&apos;amore_né_al_cielo"/>
+        <has_character rdf:resource="http://www.semanticweb.org/martinapensalfini/ontologies/2022/9/stop#UnChimico"/>
+        <is_about rdf:resource="http://www.semanticweb.org/martinapensalfini/ontologies/2022/9/stop#Devastation"/>
+        <is_about rdf:resource="http://www.semanticweb.org/martinapensalfini/ontologies/2022/9/stop#Love"/>
+        <is_about rdf:resource="http://www.semanticweb.org/martinapensalfini/ontologies/2022/9/stop#Nature"/>
+        <is_about rdf:resource="http://www.semanticweb.org/martinapensalfini/ontologies/2022/9/stop#Salvation"/>
+        <is_about rdf:resource="http://www.semanticweb.org/martinapensalfini/ontologies/2022/9/stop#Suffering"/>
+        <related_to rdf:resource="http://www.semanticweb.org/martinapensalfini/ontologies/2022/9/stop#Trainor_the_druggist"/>
+        <have_name rdf:datatype="http://www.w3.org/2000/01/rdf-schema#Literal">Un chimico</have_name>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/martinapensalfini/ontologies/2022/9/stop#Un_giudice -->
+
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/martinapensalfini/ontologies/2022/9/stop#Un_giudice">
+        <rdf:type rdf:resource="http://www.semanticweb.org/martinapensalfini/ontologies/2022/9/stop#Song"/>
+        <schema:isPartOf rdf:resource="http://www.semanticweb.org/martinapensalfini/ontologies/2022/9/stop#Non_al_denaro_non_all&apos;amore_né_al_cielo"/>
+        <has_character rdf:resource="http://www.semanticweb.org/martinapensalfini/ontologies/2022/9/stop#UnGiudice"/>
+        <is_about rdf:resource="http://www.semanticweb.org/martinapensalfini/ontologies/2022/9/stop#Damnation"/>
+        <is_about rdf:resource="http://www.semanticweb.org/martinapensalfini/ontologies/2022/9/stop#Hate"/>
+        <is_about rdf:resource="http://www.semanticweb.org/martinapensalfini/ontologies/2022/9/stop#Justice"/>
+        <is_about rdf:resource="http://www.semanticweb.org/martinapensalfini/ontologies/2022/9/stop#Knowledge"/>
+        <is_about rdf:resource="http://www.semanticweb.org/martinapensalfini/ontologies/2022/9/stop#Religion"/>
+        <related_to rdf:resource="http://www.semanticweb.org/martinapensalfini/ontologies/2022/9/stop#Judge_Selah_Lively"/>
+        <have_name rdf:datatype="http://www.w3.org/2000/01/rdf-schema#Literal">Un giudice</have_name>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/martinapensalfini/ontologies/2022/9/stop#Un_malato_di_cuore -->
+
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/martinapensalfini/ontologies/2022/9/stop#Un_malato_di_cuore">
+        <rdf:type rdf:resource="http://www.semanticweb.org/martinapensalfini/ontologies/2022/9/stop#Song"/>
+        <schema:isPartOf rdf:resource="http://www.semanticweb.org/martinapensalfini/ontologies/2022/9/stop#Non_al_denaro_non_all&apos;amore_né_al_cielo"/>
+        <has_character rdf:resource="http://www.semanticweb.org/martinapensalfini/ontologies/2022/9/stop#UnMalatoDiCuore"/>
+        <is_about rdf:resource="http://www.semanticweb.org/martinapensalfini/ontologies/2022/9/stop#Salvation"/>
+        <is_about rdf:resource="http://www.semanticweb.org/martinapensalfini/ontologies/2022/9/stop#Sickness"/>
+        <is_about rdf:resource="http://www.semanticweb.org/martinapensalfini/ontologies/2022/9/stop#Suffering"/>
+        <related_to rdf:resource="http://www.semanticweb.org/martinapensalfini/ontologies/2022/9/stop#Francis_Turner"/>
+        <have_name rdf:datatype="http://www.w3.org/2000/01/rdf-schema#Literal">Un malato di cuore</have_name>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/martinapensalfini/ontologies/2022/9/stop#Un_medico -->
+
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/martinapensalfini/ontologies/2022/9/stop#Un_medico">
+        <rdf:type rdf:resource="http://www.semanticweb.org/martinapensalfini/ontologies/2022/9/stop#Song"/>
+        <schema:isPartOf rdf:resource="http://www.semanticweb.org/martinapensalfini/ontologies/2022/9/stop#Non_al_denaro_non_all&apos;amore_né_al_cielo"/>
+        <has_character rdf:resource="http://www.semanticweb.org/martinapensalfini/ontologies/2022/9/stop#UnMedico"/>
+        <is_about rdf:resource="http://www.semanticweb.org/martinapensalfini/ontologies/2022/9/stop#Damnation"/>
+        <is_about rdf:resource="http://www.semanticweb.org/martinapensalfini/ontologies/2022/9/stop#Knowledge"/>
+        <is_about rdf:resource="http://www.semanticweb.org/martinapensalfini/ontologies/2022/9/stop#Salvation"/>
+        <is_about rdf:resource="http://www.semanticweb.org/martinapensalfini/ontologies/2022/9/stop#Sickness"/>
+        <is_about rdf:resource="http://www.semanticweb.org/martinapensalfini/ontologies/2022/9/stop#Suffering"/>
+        <related_to rdf:resource="http://www.semanticweb.org/martinapensalfini/ontologies/2022/9/stop#Doctor_Siegfried_Iseman"/>
+        <have_name rdf:datatype="http://www.w3.org/2000/01/rdf-schema#Literal">Un medico</have_name>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/martinapensalfini/ontologies/2022/9/stop#Un_ottico -->
+
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/martinapensalfini/ontologies/2022/9/stop#Un_ottico">
+        <rdf:type rdf:resource="http://www.semanticweb.org/martinapensalfini/ontologies/2022/9/stop#Song"/>
+        <schema:isPartOf rdf:resource="http://www.semanticweb.org/martinapensalfini/ontologies/2022/9/stop#Non_al_denaro_non_all&apos;amore_né_al_cielo"/>
+        <has_character rdf:resource="http://www.semanticweb.org/martinapensalfini/ontologies/2022/9/stop#UnOttico"/>
+        <is_about rdf:resource="http://www.semanticweb.org/martinapensalfini/ontologies/2022/9/stop#Darkness_VS_Light"/>
+        <is_about rdf:resource="http://www.semanticweb.org/martinapensalfini/ontologies/2022/9/stop#Dream"/>
+        <is_about rdf:resource="http://www.semanticweb.org/martinapensalfini/ontologies/2022/9/stop#Sight"/>
+        <is_about rdf:resource="http://www.semanticweb.org/martinapensalfini/ontologies/2022/9/stop#Sky"/>
+        <is_about rdf:resource="http://www.semanticweb.org/martinapensalfini/ontologies/2022/9/stop#Suffering"/>
+        <related_to rdf:resource="http://www.semanticweb.org/martinapensalfini/ontologies/2022/9/stop#Dippold_the_optician"/>
+        <have_name rdf:datatype="http://www.w3.org/2000/01/rdf-schema#Literal">Un ottico</have_name>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/martinapensalfini/ontologies/2022/9/stop#Uncle_Isaac -->
+
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/martinapensalfini/ontologies/2022/9/stop#Uncle_Isaac">
+        <rdf:type rdf:resource="http://www.semanticweb.org/martinapensalfini/ontologies/2022/9/stop#Character"/>
+        <is_in rdf:resource="http://www.semanticweb.org/martinapensalfini/ontologies/2022/9/stop#The_Hill"/>
+        <have_name rdf:datatype="http://www.w3.org/2000/01/rdf-schema#Literal">Uncle Isaac</have_name>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/martinapensalfini/ontologies/2022/9/stop#WendellPBloyd -->
+
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/martinapensalfini/ontologies/2022/9/stop#WendellPBloyd">
+        <rdf:type rdf:resource="http://www.semanticweb.org/martinapensalfini/ontologies/2022/9/stop#Character"/>
+        <is_in rdf:resource="http://www.semanticweb.org/martinapensalfini/ontologies/2022/9/stop#Wendell_P._Bloyd"/>
+        <have_name rdf:datatype="http://www.w3.org/2000/01/rdf-schema#Literal">Wendell P. Bloyd</have_name>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/martinapensalfini/ontologies/2022/9/stop#Wendell_P._Bloyd -->
+
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/martinapensalfini/ontologies/2022/9/stop#Wendell_P._Bloyd">
+        <rdf:type rdf:resource="http://www.semanticweb.org/martinapensalfini/ontologies/2022/9/stop#Poem"/>
+        <schema:isPartOf rdf:resource="http://www.semanticweb.org/martinapensalfini/ontologies/2022/9/stop#Spoon_River_Anthology"/>
+        <has_character rdf:resource="http://www.semanticweb.org/martinapensalfini/ontologies/2022/9/stop#WendellPBloyd"/>
+        <is_about rdf:resource="http://www.semanticweb.org/martinapensalfini/ontologies/2022/9/stop#Damnation"/>
+        <is_about rdf:resource="http://www.semanticweb.org/martinapensalfini/ontologies/2022/9/stop#Hate"/>
+        <is_about rdf:resource="http://www.semanticweb.org/martinapensalfini/ontologies/2022/9/stop#Religion"/>
+        <is_about rdf:resource="http://www.semanticweb.org/martinapensalfini/ontologies/2022/9/stop#Salvation"/>
+        <have_name rdf:datatype="http://www.w3.org/2000/01/rdf-schema#Literal">Wendell P. Bloyd</have_name>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/martinapensalfini/ontologies/2022/9/stop#Writing -->
+
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/martinapensalfini/ontologies/2022/9/stop#Writing">
+        <rdf:type rdf:resource="http://www.semanticweb.org/martinapensalfini/ontologies/2022/9/stop#Topic"/>
+        <appears_in rdf:resource="http://www.semanticweb.org/martinapensalfini/ontologies/2022/9/stop#Un_matto(Dietro_ogni_scemo_c&apos;è_un_villaggio)"/>
+        <have_name>Writing</have_name>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/martinapensalfini/ontologies/2022/9/stop#Non_al_denaro_non_all&apos;amore_né_al_cielo -->
+
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/martinapensalfini/ontologies/2022/9/stop#Non_al_denaro_non_all&apos;amore_né_al_cielo">
+        <rdf:type rdf:resource="http://www.semanticweb.org/martinapensalfini/ontologies/2022/9/stop#Musical_Album"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/martinapensalfini/ontologies/2022/9/stop#Work"/>
+        <schema:hasPart rdf:resource="http://www.semanticweb.org/martinapensalfini/ontologies/2022/9/stop#Dormono_sulla_collina"/>
+        <schema:hasPart rdf:resource="http://www.semanticweb.org/martinapensalfini/ontologies/2022/9/stop#Il_suonatore_Jones"/>
+        <schema:hasPart rdf:resource="http://www.semanticweb.org/martinapensalfini/ontologies/2022/9/stop#Un_chimico"/>
+        <schema:hasPart rdf:resource="http://www.semanticweb.org/martinapensalfini/ontologies/2022/9/stop#Un_giudice"/>
+        <schema:hasPart rdf:resource="http://www.semanticweb.org/martinapensalfini/ontologies/2022/9/stop#Un_malato_di_cuore"/>
+        <schema:hasPart rdf:resource="http://www.semanticweb.org/martinapensalfini/ontologies/2022/9/stop#Un_medico"/>
+        <schema:hasPart rdf:resource="http://www.semanticweb.org/martinapensalfini/ontologies/2022/9/stop#Un_ottico"/>
+        <schema:hasPart rdf:resource="http://www.semanticweb.org/martinapensalfini/ontologies/2022/9/stop#Un_blasfemo_(dietro_ogni_blasfemo_c&apos;è_un_giardino_incantato)"/>
+        <schema:hasPart rdf:resource="http://www.semanticweb.org/martinapensalfini/ontologies/2022/9/stop#Un_matto(Dietro_ogni_scemo_c&apos;è_un_villaggio)"/>
+        <is_inspired_by rdf:resource="http://www.semanticweb.org/martinapensalfini/ontologies/2022/9/stop#Spoon_River_Anthology"/>
+        <have_name rdf:datatype="http://www.w3.org/2000/01/rdf-schema#Literal">Non al denaro non all&apos;amore né al cielo</have_name>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/martinapensalfini/ontologies/2022/9/stop#Un_blasfemo_(dietro_ogni_blasfemo_c&apos;è_un_giardino_incantato) -->
+
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/martinapensalfini/ontologies/2022/9/stop#Un_blasfemo_(dietro_ogni_blasfemo_c&apos;è_un_giardino_incantato)">
+        <rdf:type rdf:resource="http://www.semanticweb.org/martinapensalfini/ontologies/2022/9/stop#Song"/>
+        <schema:isPartOf rdf:resource="http://www.semanticweb.org/martinapensalfini/ontologies/2022/9/stop#Non_al_denaro_non_all&apos;amore_né_al_cielo"/>
+        <has_character rdf:resource="http://www.semanticweb.org/martinapensalfini/ontologies/2022/9/stop#UnBlasfemo"/>
+        <is_about rdf:resource="http://www.semanticweb.org/martinapensalfini/ontologies/2022/9/stop#Damnation"/>
+        <is_about rdf:resource="http://www.semanticweb.org/martinapensalfini/ontologies/2022/9/stop#Dream"/>
+        <is_about rdf:resource="http://www.semanticweb.org/martinapensalfini/ontologies/2022/9/stop#Religion"/>
+        <is_about rdf:resource="http://www.semanticweb.org/martinapensalfini/ontologies/2022/9/stop#Salvation"/>
+        <related_to rdf:resource="http://www.semanticweb.org/martinapensalfini/ontologies/2022/9/stop#Wendell_P._Bloyd"/>
+        <have_name rdf:datatype="http://www.w3.org/2000/01/rdf-schema#Literal">Un blasfemo (Dietro Ogni Blasfemo C&apos;è Un Giardino Incantato)</have_name>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/martinapensalfini/ontologies/2022/9/stop#Un_matto(Dietro_ogni_scemo_c&apos;è_un_villaggio) -->
+
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/martinapensalfini/ontologies/2022/9/stop#Un_matto(Dietro_ogni_scemo_c&apos;è_un_villaggio)">
+        <rdf:type rdf:resource="http://www.semanticweb.org/martinapensalfini/ontologies/2022/9/stop#Song"/>
+        <schema:isPartOf rdf:resource="http://www.semanticweb.org/martinapensalfini/ontologies/2022/9/stop#Non_al_denaro_non_all&apos;amore_né_al_cielo"/>
+        <has_character rdf:resource="http://www.semanticweb.org/martinapensalfini/ontologies/2022/9/stop#UnMatto"/>
+        <is_about rdf:resource="http://www.semanticweb.org/martinapensalfini/ontologies/2022/9/stop#Death"/>
+        <is_about rdf:resource="http://www.semanticweb.org/martinapensalfini/ontologies/2022/9/stop#Dream"/>
+        <is_about rdf:resource="http://www.semanticweb.org/martinapensalfini/ontologies/2022/9/stop#Memory"/>
+        <related_to rdf:resource="http://www.semanticweb.org/martinapensalfini/ontologies/2022/9/stop#Frank_Drummer"/>
+        <have_name rdf:datatype="http://www.w3.org/2000/01/rdf-schema#Literal">Un matto (Dietro Ogni Scemo C&apos;è Un Villaggio)</have_name>
+    </owl:NamedIndividual>
+</rdf:RDF>
+
+
+
+<!-- Generated by the OWL API (version 5.1.18) https://github.com/owlcs/owlapi/ -->
+
+

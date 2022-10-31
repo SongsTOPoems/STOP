@@ -1,0 +1,937 @@
+@prefix : <http://www.semanticweb.org/martinapensalfini/ontologies/2022/9/stop#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix xml: <http://www.w3.org/XML/1998/namespace> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@base <http://www.semanticweb.org/martinapensalfini/ontologies/2022/9/stop#> .
+
+<http://www.semanticweb.org/martinapensalfini/ontologies/2022/9/stop> rdf:type owl:Ontology .
+
+#################################################################
+#    Object Properties
+#################################################################
+
+###  http://schema.org/hasPart
+<http://schema.org/hasPart> rdf:type owl:ObjectProperty ;
+                            owl:inverseOf <http://schema.org/isPartOf> ;
+                            rdfs:domain :Work ;
+                            rdfs:range :Unit .
+
+
+###  http://schema.org/isPartOf
+<http://schema.org/isPartOf> rdf:type owl:ObjectProperty ;
+                             rdfs:domain :Unit ;
+                             rdfs:range :Work .
+
+
+###  http://www.semanticweb.org/martinapensalfini/ontologies/2022/9/stop#appears_in
+:appears_in rdf:type owl:ObjectProperty ;
+            owl:inverseOf :is_about ;
+            rdfs:domain :Topic ;
+            rdfs:range :Unit .
+
+
+###  http://www.semanticweb.org/martinapensalfini/ontologies/2022/9/stop#has_author
+:has_author rdf:type owl:ObjectProperty ;
+            rdfs:domain :Work ;
+            rdfs:range :Author .
+
+
+###  http://www.semanticweb.org/martinapensalfini/ontologies/2022/9/stop#has_character
+:has_character rdf:type owl:ObjectProperty ;
+               owl:inverseOf :is_in ;
+               rdfs:domain :Unit ;
+               rdfs:range :Character .
+
+
+###  http://www.semanticweb.org/martinapensalfini/ontologies/2022/9/stop#inspires
+:inspires rdf:type owl:ObjectProperty ;
+          owl:inverseOf :is_inspired_by ;
+          rdfs:domain :Work ;
+          rdfs:range :Work .
+
+
+###  http://www.semanticweb.org/martinapensalfini/ontologies/2022/9/stop#is_about
+:is_about rdf:type owl:ObjectProperty ;
+          rdfs:domain :Unit ;
+          rdfs:range :Topic .
+
+
+###  http://www.semanticweb.org/martinapensalfini/ontologies/2022/9/stop#is_in
+:is_in rdf:type owl:ObjectProperty ;
+       rdfs:domain :Character ;
+       rdfs:range :Unit .
+
+
+###  http://www.semanticweb.org/martinapensalfini/ontologies/2022/9/stop#is_inspired_by
+:is_inspired_by rdf:type owl:ObjectProperty ;
+                rdfs:domain :Work ;
+                rdfs:range :Work .
+
+
+###  http://www.semanticweb.org/martinapensalfini/ontologies/2022/9/stop#is_written_by
+:is_written_by rdf:type owl:ObjectProperty ;
+               owl:inverseOf :writes ;
+               rdfs:domain :Work ;
+               rdfs:range :Author .
+
+
+###  http://www.semanticweb.org/martinapensalfini/ontologies/2022/9/stop#related_to
+:related_to rdf:type owl:ObjectProperty ;
+            rdfs:domain :Song ;
+            rdfs:range :Poem .
+
+
+###  http://www.semanticweb.org/martinapensalfini/ontologies/2022/9/stop#writes
+:writes rdf:type owl:ObjectProperty ;
+        rdfs:domain :Author ;
+        rdfs:range :Work .
+
+
+###  http://www.w3.org/1999/02/22-rdf-syntax-ns#type
+rdf:type rdf:type owl:ObjectProperty ;
+         rdfs:domain :Work ;
+         rdfs:range :Anthology_Poem ,
+                    :Musical_Album .
+
+
+#################################################################
+#    Data properties
+#################################################################
+
+###  http://www.semanticweb.org/martinapensalfini/ontologies/2022/9/stop#have_name
+:have_name rdf:type owl:DatatypeProperty ;
+           rdfs:domain owl:Thing ;
+           rdfs:range rdfs:Literal .
+
+
+#################################################################
+#    Classes
+#################################################################
+
+###  http://www.semanticweb.org/martinapensalfini/ontologies/2022/9/stop#Anthology_Poem
+:Anthology_Poem rdf:type owl:Class ;
+                rdfs:subClassOf :Work .
+
+
+###  http://www.semanticweb.org/martinapensalfini/ontologies/2022/9/stop#Author
+:Author rdf:type owl:Class .
+
+
+###  http://www.semanticweb.org/martinapensalfini/ontologies/2022/9/stop#Character
+:Character rdf:type owl:Class .
+
+
+###  http://www.semanticweb.org/martinapensalfini/ontologies/2022/9/stop#Musical_Album
+:Musical_Album rdf:type owl:Class ;
+               rdfs:subClassOf :Work .
+
+
+###  http://www.semanticweb.org/martinapensalfini/ontologies/2022/9/stop#Poem
+:Poem rdf:type owl:Class ;
+      rdfs:subClassOf :Unit .
+
+
+###  http://www.semanticweb.org/martinapensalfini/ontologies/2022/9/stop#Song
+:Song rdf:type owl:Class ;
+      rdfs:subClassOf :Unit .
+
+
+###  http://www.semanticweb.org/martinapensalfini/ontologies/2022/9/stop#Topic
+:Topic rdf:type owl:Class .
+
+
+###  http://www.semanticweb.org/martinapensalfini/ontologies/2022/9/stop#Unit
+:Unit rdf:type owl:Class .
+
+
+###  http://www.semanticweb.org/martinapensalfini/ontologies/2022/9/stop#Work
+:Work rdf:type owl:Class .
+
+
+#################################################################
+#    Individuals
+#################################################################
+
+###  http://www.semanticweb.org/martinapensalfini/ontologies/2022/9/stop#Aunt_Emily
+:Aunt_Emily rdf:type owl:NamedIndividual ,
+                     :Character ;
+            :is_in :The_Hill ;
+            :have_name "Aunt Emily"^^rdfs:Literal .
+
+
+###  http://www.semanticweb.org/martinapensalfini/ontologies/2022/9/stop#Bert
+:Bert rdf:type owl:NamedIndividual ,
+               :Character ;
+      :is_in :The_Hill ;
+      :have_name "Bert"^^rdfs:Literal .
+
+
+###  http://www.semanticweb.org/martinapensalfini/ontologies/2022/9/stop#Charley
+:Charley rdf:type owl:NamedIndividual ,
+                  :Character ;
+         :is_in :The_Hill ;
+         :have_name "Charley"^^rdfs:Literal .
+
+
+###  http://www.semanticweb.org/martinapensalfini/ontologies/2022/9/stop#Church
+:Church rdf:type owl:NamedIndividual ,
+                 :Topic ;
+        :appears_in :Doctor_Siegfried_Iseman ;
+        :have_name "Church" .
+
+
+###  http://www.semanticweb.org/martinapensalfini/ontologies/2022/9/stop#Damnation
+:Damnation rdf:type owl:NamedIndividual ,
+                    :Topic ;
+           :appears_in :Un_giudice ,
+                       :Un_medico ,
+                       :Wendell_P._Bloyd ,
+                       <http://www.semanticweb.org/martinapensalfini/ontologies/2022/9/stop#Un_blasfemo_(dietro_ogni_blasfemo_c'è_un_giardino_incantato)> ;
+           :have_name "Damnation" .
+
+
+###  http://www.semanticweb.org/martinapensalfini/ontologies/2022/9/stop#Dancing
+:Dancing rdf:type owl:NamedIndividual ,
+                  :Topic ;
+         :appears_in :Il_suonatore_Jones ;
+         :have_name "Dancing" .
+
+
+###  http://www.semanticweb.org/martinapensalfini/ontologies/2022/9/stop#Darkness_VS_Light
+:Darkness_VS_Light rdf:type owl:NamedIndividual ,
+                            :Topic ;
+                   :appears_in :Dippold_the_optician ,
+                               :Frank_Drummer ,
+                               :Un_ottico ;
+                   :have_name "Darkness vs light" .
+
+
+###  http://www.semanticweb.org/martinapensalfini/ontologies/2022/9/stop#Death
+:Death rdf:type owl:NamedIndividual ,
+                :Topic ;
+       :appears_in :Dormono_sulla_collina ,
+                   :The_Hill ,
+                   <http://www.semanticweb.org/martinapensalfini/ontologies/2022/9/stop#Un_matto(Dietro_ogni_scemo_c'è_un_villaggio)> ;
+       :have_name "Death" .
+
+
+###  http://www.semanticweb.org/martinapensalfini/ontologies/2022/9/stop#Devastation
+:Devastation rdf:type owl:NamedIndividual ,
+                      :Topic ;
+             :appears_in :Un_chimico ;
+             :have_name "Devastation" .
+
+
+###  http://www.semanticweb.org/martinapensalfini/ontologies/2022/9/stop#DippoldTheOptician
+:DippoldTheOptician rdf:type owl:NamedIndividual ,
+                             :Character ;
+                    owl:sameAs :UnOttico ;
+                    :is_in :Dippold_the_optician ;
+                    :have_name "Dippold, The Optician"^^rdfs:Literal .
+
+
+###  http://www.semanticweb.org/martinapensalfini/ontologies/2022/9/stop#UnOttico
+
+###  http://www.semanticweb.org/martinapensalfini/ontologies/2022/9/stop#Dippold_the_optician
+:Dippold_the_optician rdf:type owl:NamedIndividual ,
+                               :Poem ;
+                      <http://schema.org/isPartOf> :Spoon_River_Anthology ;
+                      :has_character :DippoldTheOptician ;
+                      :is_about :Darkness_VS_Light ,
+                                :Night ,
+                                :Sight ,
+                                :Sky ;
+                      :have_name "Dippold, The Optician"^^rdfs:Literal .
+
+
+###  http://www.semanticweb.org/martinapensalfini/ontologies/2022/9/stop#DoctorSiegfriedIseman
+:DoctorSiegfriedIseman rdf:type owl:NamedIndividual ,
+                                :Character ;
+                       owl:sameAs :UnMedico ;
+                       :is_in :Doctor_Siegfried_Iseman ;
+                       :have_name "Doctor Siegfried Iseman"^^rdfs:Literal .
+
+
+###  http://www.semanticweb.org/martinapensalfini/ontologies/2022/9/stop#UnMedico
+
+###  http://www.semanticweb.org/martinapensalfini/ontologies/2022/9/stop#Doctor_Siegfried_Iseman
+:Doctor_Siegfried_Iseman rdf:type owl:NamedIndividual ,
+                                  :Poem ;
+                         <http://schema.org/isPartOf> :Spoon_River_Anthology ;
+                         :has_character :DoctorSiegfriedIseman ;
+                         :is_about :Church ,
+                                   :Justice ,
+                                   :Knowledge ,
+                                   :Religion ,
+                                   :Suffering ;
+                         :have_name "Doctor Siegfried Iseman"^^rdfs:Literal .
+
+
+###  http://www.semanticweb.org/martinapensalfini/ontologies/2022/9/stop#Dormono_sulla_collina
+:Dormono_sulla_collina rdf:type owl:NamedIndividual ,
+                                :Song ,
+                                :Unit ;
+                       <http://schema.org/isPartOf> <http://www.semanticweb.org/martinapensalfini/ontologies/2022/9/stop#Non_al_denaro_non_all'amore_né_al_cielo> ;
+                       :has_character :Bert ,
+                                      :Charley ,
+                                      :Ella ,
+                                      :Elmer ,
+                                      :Herman ,
+                                      :JonesIlSuonatore ,
+                                      :Kate ,
+                                      :Lizzie ,
+                                      :Maggie ,
+                                      :Tom ;
+                       :is_about :Death ,
+                                 :Eternal_Sleep ,
+                                 :Nature ;
+                       :related_to :The_Hill ;
+                       :have_name "La collina"^^rdfs:Literal .
+
+
+###  http://www.semanticweb.org/martinapensalfini/ontologies/2022/9/stop#Dream
+:Dream rdf:type owl:NamedIndividual ,
+                :Topic ;
+       :appears_in :Dippold_the_optician ,
+                   :Frank_Drummer ,
+                   :Il_suonatore_Jones ,
+                   :Un_malato_di_cuore ,
+                   :Un_ottico ,
+                   <http://www.semanticweb.org/martinapensalfini/ontologies/2022/9/stop#Un_blasfemo_(dietro_ogni_blasfemo_c'è_un_giardino_incantato)> ,
+                   <http://www.semanticweb.org/martinapensalfini/ontologies/2022/9/stop#Un_matto(Dietro_ogni_scemo_c'è_un_villaggio)> ;
+       :have_name "Dream" .
+
+
+###  http://www.semanticweb.org/martinapensalfini/ontologies/2022/9/stop#Drinking
+:Drinking rdf:type owl:NamedIndividual ,
+                   :Topic ;
+          :appears_in :Francis_Turner ;
+          :have_name "Drinking" .
+
+
+###  http://www.semanticweb.org/martinapensalfini/ontologies/2022/9/stop#Edgar_Lee_Masters
+:Edgar_Lee_Masters rdf:type owl:NamedIndividual ,
+                            :Author ;
+                   :writes :Spoon_River_Anthology ;
+                   :have_name "Edgar Lee Masters"^^rdfs:Literal .
+
+
+###  http://www.semanticweb.org/martinapensalfini/ontologies/2022/9/stop#Edith
+:Edith rdf:type owl:NamedIndividual ,
+                :Character ;
+       :is_in :The_Hill ;
+       :have_name "Edith"^^rdfs:Literal .
+
+
+###  http://www.semanticweb.org/martinapensalfini/ontologies/2022/9/stop#Ella
+:Ella rdf:type owl:NamedIndividual ,
+               :Character ;
+      :is_in :Dormono_sulla_collina ,
+             :The_Hill ;
+      :have_name "Ella"^^rdfs:Literal .
+
+
+###  http://www.semanticweb.org/martinapensalfini/ontologies/2022/9/stop#Elmer
+:Elmer rdf:type owl:NamedIndividual ,
+                :Character ;
+       :is_in :Dormono_sulla_collina ,
+              :The_Hill ;
+       :have_name "Elmer"^^rdfs:Literal .
+
+
+###  http://www.semanticweb.org/martinapensalfini/ontologies/2022/9/stop#Eternal_Sleep
+:Eternal_Sleep rdf:type owl:NamedIndividual ,
+                        :Topic ;
+               :appears_in :Dormono_sulla_collina ,
+                           :The_Hill ;
+               :have_name "Eternal Sleep" .
+
+
+###  http://www.semanticweb.org/martinapensalfini/ontologies/2022/9/stop#Fabrizio_De_Andrè
+:Fabrizio_De_Andrè rdf:type owl:NamedIndividual ,
+                            :Author ;
+                   :writes <http://www.semanticweb.org/martinapensalfini/ontologies/2022/9/stop#Non_al_denaro_non_all'amore_né_al_cielo> ;
+                   :have_name "Fabrizio De André"^^rdfs:Literal .
+
+
+###  http://www.semanticweb.org/martinapensalfini/ontologies/2022/9/stop#Family
+:Family rdf:type owl:NamedIndividual ,
+                 :Topic ;
+        :appears_in :Trainor_the_druggist ;
+        :have_name "Family" .
+
+
+###  http://www.semanticweb.org/martinapensalfini/ontologies/2022/9/stop#FiddlerJones
+:FiddlerJones rdf:type owl:NamedIndividual ,
+                       :Character ;
+              owl:sameAs :JonesIlSuonatore ;
+              :is_in :Fiddler_Jones ;
+              :have_name "Fiddler Jones"^^rdfs:Literal .
+
+
+###  http://www.semanticweb.org/martinapensalfini/ontologies/2022/9/stop#JonesIlSuonatore
+
+###  http://www.semanticweb.org/martinapensalfini/ontologies/2022/9/stop#Fiddler_Jones
+:Fiddler_Jones rdf:type owl:NamedIndividual ,
+                        :Poem ;
+               <http://schema.org/isPartOf> :Spoon_River_Anthology ;
+               :has_character :FiddlerJones ;
+               :is_about :Dancing ,
+                         :Music ,
+                         :Nature ,
+                         :Sky ;
+               :have_name "Fiddler Jones"^^rdfs:Literal .
+
+
+###  http://www.semanticweb.org/martinapensalfini/ontologies/2022/9/stop#FrancisTurner
+:FrancisTurner rdf:type owl:NamedIndividual ,
+                        :Character ;
+               owl:sameAs :UnMalatoDiCuore ;
+               :is_in :Francis_Turner ;
+               :have_name "Francis Turner"^^rdfs:Literal .
+
+
+###  http://www.semanticweb.org/martinapensalfini/ontologies/2022/9/stop#UnMalatoDiCuore
+
+###  http://www.semanticweb.org/martinapensalfini/ontologies/2022/9/stop#Francis_Turner
+:Francis_Turner rdf:type owl:NamedIndividual ,
+                         :Poem ;
+                <http://schema.org/isPartOf> :Spoon_River_Anthology ;
+                :has_character :FrancisTurner ;
+                :is_about :Drinking ,
+                          :Nature ,
+                          :Secret ,
+                          :Suffering ;
+                :have_name "Francis Turner"^^rdfs:Literal .
+
+
+###  http://www.semanticweb.org/martinapensalfini/ontologies/2022/9/stop#FrankDrummer
+:FrankDrummer rdf:type owl:NamedIndividual ,
+                       :Character ;
+              owl:sameAs :UnMatto ;
+              :is_in :Frank_Drummer ;
+              :have_name "Frank Drummer"^^rdfs:Literal .
+
+
+###  http://www.semanticweb.org/martinapensalfini/ontologies/2022/9/stop#UnMatto
+
+###  http://www.semanticweb.org/martinapensalfini/ontologies/2022/9/stop#Frank_Drummer
+:Frank_Drummer rdf:type owl:NamedIndividual ,
+                        :Poem ;
+               <http://schema.org/isPartOf> :Spoon_River_Anthology ;
+               :has_character :FrankDrummer ;
+               :is_about :Darkness_VS_Light ,
+                         :Dream ,
+                         :Memory ,
+                         :Music ;
+               :have_name "Frank Drummer"^^rdfs:Literal .
+
+
+###  http://www.semanticweb.org/martinapensalfini/ontologies/2022/9/stop#Hate
+:Hate rdf:type owl:NamedIndividual ,
+               :Topic ;
+      :appears_in :Judge_Selah_Lively ,
+                  :Un_giudice ,
+                  :Wendell_P._Bloyd ;
+      :have_name "Hate" .
+
+
+###  http://www.semanticweb.org/martinapensalfini/ontologies/2022/9/stop#Herman
+:Herman rdf:type owl:NamedIndividual ,
+                 :Character ;
+        :is_in :Dormono_sulla_collina ,
+               :The_Hill ;
+        :have_name "Herman"^^rdfs:Literal .
+
+
+###  http://www.semanticweb.org/martinapensalfini/ontologies/2022/9/stop#Il_suonatore_Jones
+:Il_suonatore_Jones rdf:type owl:NamedIndividual ,
+                             :Song ;
+                    <http://schema.org/isPartOf> <http://www.semanticweb.org/martinapensalfini/ontologies/2022/9/stop#Non_al_denaro_non_all'amore_né_al_cielo> ;
+                    :has_character :JonesIlSuonatore ;
+                    :is_about :Dancing ,
+                              :Dream ,
+                              :Music ,
+                              :Nature ,
+                              :Suffering ;
+                    :related_to :Fiddler_Jones ;
+                    :have_name "Il suonatore Jones"^^rdfs:Literal .
+
+
+###  http://www.semanticweb.org/martinapensalfini/ontologies/2022/9/stop#JonesIlSuonatore
+:JonesIlSuonatore rdf:type owl:NamedIndividual ,
+                           :Character ;
+                  :is_in :Il_suonatore_Jones ;
+                  :have_name "Il suonatore Jones"^^rdfs:Literal .
+
+
+###  http://www.semanticweb.org/martinapensalfini/ontologies/2022/9/stop#JudgeSelahLively
+:JudgeSelahLively rdf:type owl:NamedIndividual ,
+                           :Character ;
+                  owl:sameAs :UnGiudice ;
+                  :is_in :Judge_Selah_Lively ;
+                  :have_name "Judge Selah Lively"^^rdfs:Literal .
+
+
+###  http://www.semanticweb.org/martinapensalfini/ontologies/2022/9/stop#UnGiudice
+
+###  http://www.semanticweb.org/martinapensalfini/ontologies/2022/9/stop#Judge_Selah_Lively
+:Judge_Selah_Lively rdf:type owl:NamedIndividual ,
+                             :Poem ;
+                    <http://schema.org/isPartOf> :Spoon_River_Anthology ;
+                    :has_character :JudgeSelahLively ;
+                    :is_about :Hate ,
+                              :Justice ,
+                              :Religion ;
+                    :have_name "Judge Selah Lively"^^rdfs:Literal .
+
+
+###  http://www.semanticweb.org/martinapensalfini/ontologies/2022/9/stop#Justice
+:Justice rdf:type owl:NamedIndividual ,
+                  :Topic ;
+         :appears_in :Doctor_Siegfried_Iseman ,
+                     :Judge_Selah_Lively ,
+                     :Un_giudice ;
+         :have_name "Justice" .
+
+
+###  http://www.semanticweb.org/martinapensalfini/ontologies/2022/9/stop#Kate
+:Kate rdf:type owl:NamedIndividual ,
+               :Character ;
+      :is_in :Dormono_sulla_collina ,
+             :The_Hill ;
+      :have_name "Kate"^^rdfs:Literal .
+
+
+###  http://www.semanticweb.org/martinapensalfini/ontologies/2022/9/stop#Knowledge
+:Knowledge rdf:type owl:NamedIndividual ,
+                    :Topic ;
+           :appears_in :Doctor_Siegfried_Iseman ,
+                       :Un_giudice ,
+                       :Un_medico ;
+           :have_name "Knowledge" .
+
+
+###  http://www.semanticweb.org/martinapensalfini/ontologies/2022/9/stop#Lizzie
+:Lizzie rdf:type owl:NamedIndividual ,
+                 :Character ;
+        :is_in :Dormono_sulla_collina ,
+               :The_Hill ;
+        :have_name "Lizzie"^^rdfs:Literal .
+
+
+###  http://www.semanticweb.org/martinapensalfini/ontologies/2022/9/stop#Love
+:Love rdf:type owl:NamedIndividual ,
+               :Topic ;
+      :appears_in :Un_chimico ;
+      :have_name "Love" .
+
+
+###  http://www.semanticweb.org/martinapensalfini/ontologies/2022/9/stop#Maggie
+:Maggie rdf:type owl:NamedIndividual ,
+                 :Character ;
+        :is_in :Dormono_sulla_collina ,
+               :The_Hill ;
+        :have_name "Maggie"^^rdfs:Literal .
+
+
+###  http://www.semanticweb.org/martinapensalfini/ontologies/2022/9/stop#Major_Walker
+:Major_Walker rdf:type owl:NamedIndividual ,
+                       :Character ;
+              :is_in :The_Hill ;
+              :have_name "Major Walker"^^rdfs:Literal .
+
+
+###  http://www.semanticweb.org/martinapensalfini/ontologies/2022/9/stop#Marriage
+:Marriage rdf:type owl:NamedIndividual ,
+                   :Topic ;
+          :appears_in :Trainor_the_druggist ;
+          :have_name "Marriage" .
+
+
+###  http://www.semanticweb.org/martinapensalfini/ontologies/2022/9/stop#Memory
+:Memory rdf:type owl:NamedIndividual ,
+                 :Topic ;
+        :appears_in :Frank_Drummer ,
+                    <http://www.semanticweb.org/martinapensalfini/ontologies/2022/9/stop#Un_matto(Dietro_ogni_scemo_c'è_un_villaggio)> ;
+        :have_name "Memory" .
+
+
+###  http://www.semanticweb.org/martinapensalfini/ontologies/2022/9/stop#Music
+:Music rdf:type owl:NamedIndividual ,
+                :Topic ;
+       :appears_in :Fiddler_Jones ,
+                   :Frank_Drummer ,
+                   :Il_suonatore_Jones ;
+       :have_name "Music" .
+
+
+###  http://www.semanticweb.org/martinapensalfini/ontologies/2022/9/stop#Nature
+:Nature rdf:type owl:NamedIndividual ,
+                 :Topic ;
+        :appears_in :Dormono_sulla_collina ,
+                    :Fiddler_Jones ,
+                    :Francis_Turner ,
+                    :Il_suonatore_Jones ,
+                    :The_Hill ,
+                    :Un_chimico ;
+        :have_name "Nature" .
+
+
+###  http://www.semanticweb.org/martinapensalfini/ontologies/2022/9/stop#Night
+:Night rdf:type owl:NamedIndividual ,
+                :Topic ;
+       :appears_in :Dippold_the_optician ;
+       :have_name "Night" .
+
+
+###  http://www.semanticweb.org/martinapensalfini/ontologies/2022/9/stop#Religion
+:Religion rdf:type owl:NamedIndividual ,
+                   :Topic ;
+          :appears_in :Doctor_Siegfried_Iseman ,
+                      :Judge_Selah_Lively ,
+                      :Un_giudice ,
+                      :Wendell_P._Bloyd ,
+                      <http://www.semanticweb.org/martinapensalfini/ontologies/2022/9/stop#Un_blasfemo_(dietro_ogni_blasfemo_c'è_un_giardino_incantato)> ;
+          :have_name "Religion" .
+
+
+###  http://www.semanticweb.org/martinapensalfini/ontologies/2022/9/stop#Salvation
+:Salvation rdf:type owl:NamedIndividual ,
+                    :Topic ;
+           :appears_in :Un_chimico ,
+                       :Un_malato_di_cuore ,
+                       :Un_medico ,
+                       :Wendell_P._Bloyd ,
+                       <http://www.semanticweb.org/martinapensalfini/ontologies/2022/9/stop#Un_blasfemo_(dietro_ogni_blasfemo_c'è_un_giardino_incantato)> ;
+           :have_name "Salvation" .
+
+
+###  http://www.semanticweb.org/martinapensalfini/ontologies/2022/9/stop#Secret
+:Secret rdf:type owl:NamedIndividual ,
+                 :Topic ;
+        :appears_in :Francis_Turner ;
+        :have_name "Secret" .
+
+
+###  http://www.semanticweb.org/martinapensalfini/ontologies/2022/9/stop#Sevigne_Houghton
+:Sevigne_Houghton rdf:type owl:NamedIndividual ,
+                           :Character ;
+                  :is_in :The_Hill ;
+                  :have_name "Sevigne Houghton"^^rdfs:Literal .
+
+
+###  http://www.semanticweb.org/martinapensalfini/ontologies/2022/9/stop#Sickness
+:Sickness rdf:type owl:NamedIndividual ,
+                   :Topic ;
+          :appears_in :Un_malato_di_cuore ,
+                      :Un_medico ;
+          :have_name "Sickness" .
+
+
+###  http://www.semanticweb.org/martinapensalfini/ontologies/2022/9/stop#Sight
+:Sight rdf:type owl:NamedIndividual ,
+                :Topic ;
+       :appears_in :Dippold_the_optician ,
+                   :Un_ottico ;
+       :have_name "Sight" .
+
+
+###  http://www.semanticweb.org/martinapensalfini/ontologies/2022/9/stop#Sky
+:Sky rdf:type owl:NamedIndividual ,
+              :Topic ;
+     :appears_in :Dippold_the_optician ,
+                 :Fiddler_Jones ,
+                 :Un_ottico ;
+     :have_name "Sky" .
+
+
+###  http://www.semanticweb.org/martinapensalfini/ontologies/2022/9/stop#Spoon_River_Anthology
+:Spoon_River_Anthology rdf:type owl:NamedIndividual ,
+                                :Anthology_Poem ,
+                                :Work ;
+                       <http://schema.org/hasPart> :Dippold_the_optician ,
+                                                   :Doctor_Siegfried_Iseman ,
+                                                   :Fiddler_Jones ,
+                                                   :Francis_Turner ,
+                                                   :Frank_Drummer ,
+                                                   :Judge_Selah_Lively ,
+                                                   :The_Hill ,
+                                                   :Trainor_the_druggist ,
+                                                   :Wendell_P._Bloyd ;
+                       :inspires <http://www.semanticweb.org/martinapensalfini/ontologies/2022/9/stop#Non_al_denaro_non_all'amore_né_al_cielo> ;
+                       :have_name "Spoon River Anthology"^^rdfs:Literal .
+
+
+###  http://www.semanticweb.org/martinapensalfini/ontologies/2022/9/stop#Suffering
+:Suffering rdf:type owl:NamedIndividual ,
+                    :Topic ;
+           :appears_in :Doctor_Siegfried_Iseman ,
+                       :Francis_Turner ,
+                       :Il_suonatore_Jones ,
+                       :Un_chimico ,
+                       :Un_malato_di_cuore ,
+                       :Un_medico ,
+                       :Un_ottico ;
+           :have_name "Suffering" .
+
+
+###  http://www.semanticweb.org/martinapensalfini/ontologies/2022/9/stop#The_Hill
+:The_Hill rdf:type owl:NamedIndividual ,
+                   :Poem ,
+                   :Unit ;
+          <http://schema.org/isPartOf> :Spoon_River_Anthology ;
+          :has_character :Aunt_Emily ,
+                         :Bert ,
+                         :Charley ,
+                         :Edith ,
+                         :Ella ,
+                         :Elmer ,
+                         :Herman ,
+                         :Kate ,
+                         :Lizzie ,
+                         :Maggie ,
+                         :Major_Walker ,
+                         :Sevigne_Houghton ,
+                         :Tom ,
+                         :Towny_Kincaid ,
+                         :Uncle_Isaac ;
+          :is_about :Death ,
+                    :Eternal_Sleep ,
+                    :Nature ;
+          :have_name "The Hill"^^rdfs:Literal .
+
+
+###  http://www.semanticweb.org/martinapensalfini/ontologies/2022/9/stop#Tom
+:Tom rdf:type owl:NamedIndividual ,
+              :Character ;
+     :is_in :Dormono_sulla_collina ,
+            :The_Hill ;
+     :have_name "Tom"^^rdfs:Literal .
+
+
+###  http://www.semanticweb.org/martinapensalfini/ontologies/2022/9/stop#Towny_Kincaid
+:Towny_Kincaid rdf:type owl:NamedIndividual ,
+                        :Character ;
+               :is_in :The_Hill ;
+               :have_name "Towny Kincaid"^^rdfs:Literal .
+
+
+###  http://www.semanticweb.org/martinapensalfini/ontologies/2022/9/stop#TrainorTheDruggist
+:TrainorTheDruggist rdf:type owl:NamedIndividual ,
+                             :Character ;
+                    owl:sameAs :UnChimico ;
+                    :is_in :Trainor_the_druggist ;
+                    :have_name "Trainor, the druggist"^^rdfs:Literal .
+
+
+###  http://www.semanticweb.org/martinapensalfini/ontologies/2022/9/stop#UnChimico
+
+###  http://www.semanticweb.org/martinapensalfini/ontologies/2022/9/stop#Trainor_the_druggist
+:Trainor_the_druggist rdf:type owl:NamedIndividual ,
+                               :Poem ;
+                      <http://schema.org/isPartOf> :Spoon_River_Anthology ;
+                      :has_character :TrainorTheDruggist ;
+                      :is_about :Family ,
+                                :Marriage ;
+                      :have_name "Trainor, the druggist"^^rdfs:Literal .
+
+
+###  http://www.semanticweb.org/martinapensalfini/ontologies/2022/9/stop#UnBlasfemo
+:UnBlasfemo rdf:type owl:NamedIndividual ,
+                     :Character ;
+            owl:sameAs :WendellPBloyd ;
+            :is_in <http://www.semanticweb.org/martinapensalfini/ontologies/2022/9/stop#Un_blasfemo_(dietro_ogni_blasfemo_c'è_un_giardino_incantato)> ;
+            :have_name "Un blasfemo"^^rdfs:Literal .
+
+
+###  http://www.semanticweb.org/martinapensalfini/ontologies/2022/9/stop#WendellPBloyd
+
+###  http://www.semanticweb.org/martinapensalfini/ontologies/2022/9/stop#UnChimico
+:UnChimico rdf:type owl:NamedIndividual ,
+                    :Character ;
+           :is_in :Un_chimico ;
+           :have_name "Un chimico"^^rdfs:Literal .
+
+
+###  http://www.semanticweb.org/martinapensalfini/ontologies/2022/9/stop#UnGiudice
+:UnGiudice rdf:type owl:NamedIndividual ,
+                    :Character ;
+           :is_in :Un_giudice ;
+           :have_name "Un giudice"^^rdfs:Literal .
+
+
+###  http://www.semanticweb.org/martinapensalfini/ontologies/2022/9/stop#UnMalatoDiCuore
+:UnMalatoDiCuore rdf:type owl:NamedIndividual ,
+                          :Character ;
+                 :is_in :Un_malato_di_cuore ;
+                 :have_name "Un malato di cuore"^^rdfs:Literal .
+
+
+###  http://www.semanticweb.org/martinapensalfini/ontologies/2022/9/stop#UnMatto
+:UnMatto rdf:type owl:NamedIndividual ,
+                  :Character ;
+         :is_in <http://www.semanticweb.org/martinapensalfini/ontologies/2022/9/stop#Un_matto(Dietro_ogni_scemo_c'è_un_villaggio)> ;
+         :have_name "Un matto"^^rdfs:Literal .
+
+
+###  http://www.semanticweb.org/martinapensalfini/ontologies/2022/9/stop#UnMedico
+:UnMedico rdf:type owl:NamedIndividual ,
+                   :Character ;
+          :is_in :Un_medico ;
+          :have_name "Un medico"^^rdfs:Literal .
+
+
+###  http://www.semanticweb.org/martinapensalfini/ontologies/2022/9/stop#UnOttico
+:UnOttico rdf:type owl:NamedIndividual ,
+                   :Character ;
+          :is_in :Un_ottico ;
+          :have_name "Un ottico"^^rdfs:Literal .
+
+
+###  http://www.semanticweb.org/martinapensalfini/ontologies/2022/9/stop#Un_chimico
+:Un_chimico rdf:type owl:NamedIndividual ,
+                     :Song ;
+            <http://schema.org/isPartOf> <http://www.semanticweb.org/martinapensalfini/ontologies/2022/9/stop#Non_al_denaro_non_all'amore_né_al_cielo> ;
+            :has_character :UnChimico ;
+            :is_about :Devastation ,
+                      :Love ,
+                      :Nature ,
+                      :Salvation ,
+                      :Suffering ;
+            :related_to :Trainor_the_druggist ;
+            :have_name "Un chimico"^^rdfs:Literal .
+
+
+###  http://www.semanticweb.org/martinapensalfini/ontologies/2022/9/stop#Un_giudice
+:Un_giudice rdf:type owl:NamedIndividual ,
+                     :Song ;
+            <http://schema.org/isPartOf> <http://www.semanticweb.org/martinapensalfini/ontologies/2022/9/stop#Non_al_denaro_non_all'amore_né_al_cielo> ;
+            :has_character :UnGiudice ;
+            :is_about :Damnation ,
+                      :Hate ,
+                      :Justice ,
+                      :Knowledge ,
+                      :Religion ;
+            :related_to :Judge_Selah_Lively ;
+            :have_name "Un giudice"^^rdfs:Literal .
+
+
+###  http://www.semanticweb.org/martinapensalfini/ontologies/2022/9/stop#Un_malato_di_cuore
+:Un_malato_di_cuore rdf:type owl:NamedIndividual ,
+                             :Song ;
+                    <http://schema.org/isPartOf> <http://www.semanticweb.org/martinapensalfini/ontologies/2022/9/stop#Non_al_denaro_non_all'amore_né_al_cielo> ;
+                    :has_character :UnMalatoDiCuore ;
+                    :is_about :Salvation ,
+                              :Sickness ,
+                              :Suffering ;
+                    :related_to :Francis_Turner ;
+                    :have_name "Un malato di cuore"^^rdfs:Literal .
+
+
+###  http://www.semanticweb.org/martinapensalfini/ontologies/2022/9/stop#Un_medico
+:Un_medico rdf:type owl:NamedIndividual ,
+                    :Song ;
+           <http://schema.org/isPartOf> <http://www.semanticweb.org/martinapensalfini/ontologies/2022/9/stop#Non_al_denaro_non_all'amore_né_al_cielo> ;
+           :has_character :UnMedico ;
+           :is_about :Damnation ,
+                     :Knowledge ,
+                     :Salvation ,
+                     :Sickness ,
+                     :Suffering ;
+           :related_to :Doctor_Siegfried_Iseman ;
+           :have_name "Un medico"^^rdfs:Literal .
+
+
+###  http://www.semanticweb.org/martinapensalfini/ontologies/2022/9/stop#Un_ottico
+:Un_ottico rdf:type owl:NamedIndividual ,
+                    :Song ;
+           <http://schema.org/isPartOf> <http://www.semanticweb.org/martinapensalfini/ontologies/2022/9/stop#Non_al_denaro_non_all'amore_né_al_cielo> ;
+           :has_character :UnOttico ;
+           :is_about :Darkness_VS_Light ,
+                     :Dream ,
+                     :Sight ,
+                     :Sky ,
+                     :Suffering ;
+           :related_to :Dippold_the_optician ;
+           :have_name "Un ottico"^^rdfs:Literal .
+
+
+###  http://www.semanticweb.org/martinapensalfini/ontologies/2022/9/stop#Uncle_Isaac
+:Uncle_Isaac rdf:type owl:NamedIndividual ,
+                      :Character ;
+             :is_in :The_Hill ;
+             :have_name "Uncle Isaac"^^rdfs:Literal .
+
+
+###  http://www.semanticweb.org/martinapensalfini/ontologies/2022/9/stop#WendellPBloyd
+:WendellPBloyd rdf:type owl:NamedIndividual ,
+                        :Character ;
+               :is_in :Wendell_P._Bloyd ;
+               :have_name "Wendell P. Bloyd"^^rdfs:Literal .
+
+
+###  http://www.semanticweb.org/martinapensalfini/ontologies/2022/9/stop#Wendell_P._Bloyd
+:Wendell_P._Bloyd rdf:type owl:NamedIndividual ,
+                           :Poem ;
+                  <http://schema.org/isPartOf> :Spoon_River_Anthology ;
+                  :has_character :WendellPBloyd ;
+                  :is_about :Damnation ,
+                            :Hate ,
+                            :Religion ,
+                            :Salvation ;
+                  :have_name "Wendell P. Bloyd"^^rdfs:Literal .
+
+
+###  http://www.semanticweb.org/martinapensalfini/ontologies/2022/9/stop#Writing
+:Writing rdf:type owl:NamedIndividual ,
+                  :Topic ;
+         :appears_in <http://www.semanticweb.org/martinapensalfini/ontologies/2022/9/stop#Un_matto(Dietro_ogni_scemo_c'è_un_villaggio)> ;
+         :have_name "Writing" .
+
+
+###  http://www.semanticweb.org/martinapensalfini/ontologies/2022/9/stop#Non_al_denaro_non_all'amore_né_al_cielo
+<http://www.semanticweb.org/martinapensalfini/ontologies/2022/9/stop#Non_al_denaro_non_all'amore_né_al_cielo> rdf:type owl:NamedIndividual ,
+                                                                                                                       :Musical_Album ,
+                                                                                                                       :Work ;
+                                                                                                              <http://schema.org/hasPart> :Dormono_sulla_collina ,
+                                                                                                                                          :Il_suonatore_Jones ,
+                                                                                                                                          :Un_chimico ,
+                                                                                                                                          :Un_giudice ,
+                                                                                                                                          :Un_malato_di_cuore ,
+                                                                                                                                          :Un_medico ,
+                                                                                                                                          :Un_ottico ,
+                                                                                                                                          <http://www.semanticweb.org/martinapensalfini/ontologies/2022/9/stop#Un_blasfemo_(dietro_ogni_blasfemo_c'è_un_giardino_incantato)> ,
+                                                                                                                                          <http://www.semanticweb.org/martinapensalfini/ontologies/2022/9/stop#Un_matto(Dietro_ogni_scemo_c'è_un_villaggio)> ;
+                                                                                                              :is_inspired_by :Spoon_River_Anthology ;
+                                                                                                              :have_name "Non al denaro non all'amore né al cielo"^^rdfs:Literal .
+
+
+###  http://www.semanticweb.org/martinapensalfini/ontologies/2022/9/stop#Un_blasfemo_(dietro_ogni_blasfemo_c'è_un_giardino_incantato)
+<http://www.semanticweb.org/martinapensalfini/ontologies/2022/9/stop#Un_blasfemo_(dietro_ogni_blasfemo_c'è_un_giardino_incantato)> rdf:type owl:NamedIndividual ,
+                                                                                                                                            :Song ;
+                                                                                                                                   <http://schema.org/isPartOf> <http://www.semanticweb.org/martinapensalfini/ontologies/2022/9/stop#Non_al_denaro_non_all'amore_né_al_cielo> ;
+                                                                                                                                   :has_character :UnBlasfemo ;
+                                                                                                                                   :is_about :Damnation ,
+                                                                                                                                             :Dream ,
+                                                                                                                                             :Religion ,
+                                                                                                                                             :Salvation ;
+                                                                                                                                   :related_to :Wendell_P._Bloyd ;
+                                                                                                                                   :have_name "Un blasfemo (Dietro Ogni Blasfemo C'è Un Giardino Incantato)"^^rdfs:Literal .
+
+
+###  http://www.semanticweb.org/martinapensalfini/ontologies/2022/9/stop#Un_matto(Dietro_ogni_scemo_c'è_un_villaggio)
+<http://www.semanticweb.org/martinapensalfini/ontologies/2022/9/stop#Un_matto(Dietro_ogni_scemo_c'è_un_villaggio)> rdf:type owl:NamedIndividual ,
+                                                                                                                            :Song ;
+                                                                                                                   <http://schema.org/isPartOf> <http://www.semanticweb.org/martinapensalfini/ontologies/2022/9/stop#Non_al_denaro_non_all'amore_né_al_cielo> ;
+                                                                                                                   :has_character :UnMatto ;
+                                                                                                                   :is_about :Death ,
+                                                                                                                             :Dream ,
+                                                                                                                             :Memory ;
+                                                                                                                   :related_to :Frank_Drummer ;
+                                                                                                                   :have_name "Un matto (Dietro Ogni Scemo C'è Un Villaggio)"^^rdfs:Literal .
+
+
+###  Generated by the OWL API (version 5.1.18) https://github.com/owlcs/owlapi/

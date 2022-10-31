@@ -1,0 +1,1662 @@
+[ {
+  "@id" : "http://schema.org/hasPart",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://www.semanticweb.org/martinapensalfini/ontologies/2022/9/stop#Work"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.semanticweb.org/martinapensalfini/ontologies/2022/9/stop#Unit"
+  } ],
+  "http://www.w3.org/2002/07/owl#inverseOf" : [ {
+    "@id" : "http://schema.org/isPartOf"
+  } ]
+}, {
+  "@id" : "http://schema.org/isPartOf",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://www.semanticweb.org/martinapensalfini/ontologies/2022/9/stop#Unit"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.semanticweb.org/martinapensalfini/ontologies/2022/9/stop#Work"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/martinapensalfini/ontologies/2022/9/stop",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Ontology" ]
+}, {
+  "@id" : "http://www.semanticweb.org/martinapensalfini/ontologies/2022/9/stop#Anthology_Poem",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://www.semanticweb.org/martinapensalfini/ontologies/2022/9/stop#Work"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/martinapensalfini/ontologies/2022/9/stop#Aunt_Emily",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.semanticweb.org/martinapensalfini/ontologies/2022/9/stop#have_name" : [ {
+    "@type" : "http://www.w3.org/2000/01/rdf-schema#Literal",
+    "@value" : "Aunt Emily"
+  } ],
+  "http://www.semanticweb.org/martinapensalfini/ontologies/2022/9/stop#is_in" : [ {
+    "@id" : "http://www.semanticweb.org/martinapensalfini/ontologies/2022/9/stop#The_Hill"
+  } ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.semanticweb.org/martinapensalfini/ontologies/2022/9/stop#Character"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/martinapensalfini/ontologies/2022/9/stop#Author",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ]
+}, {
+  "@id" : "http://www.semanticweb.org/martinapensalfini/ontologies/2022/9/stop#Bert",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.semanticweb.org/martinapensalfini/ontologies/2022/9/stop#have_name" : [ {
+    "@type" : "http://www.w3.org/2000/01/rdf-schema#Literal",
+    "@value" : "Bert"
+  } ],
+  "http://www.semanticweb.org/martinapensalfini/ontologies/2022/9/stop#is_in" : [ {
+    "@id" : "http://www.semanticweb.org/martinapensalfini/ontologies/2022/9/stop#The_Hill"
+  } ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.semanticweb.org/martinapensalfini/ontologies/2022/9/stop#Character"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/martinapensalfini/ontologies/2022/9/stop#Character",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ]
+}, {
+  "@id" : "http://www.semanticweb.org/martinapensalfini/ontologies/2022/9/stop#Charley",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.semanticweb.org/martinapensalfini/ontologies/2022/9/stop#have_name" : [ {
+    "@type" : "http://www.w3.org/2000/01/rdf-schema#Literal",
+    "@value" : "Charley"
+  } ],
+  "http://www.semanticweb.org/martinapensalfini/ontologies/2022/9/stop#is_in" : [ {
+    "@id" : "http://www.semanticweb.org/martinapensalfini/ontologies/2022/9/stop#The_Hill"
+  } ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.semanticweb.org/martinapensalfini/ontologies/2022/9/stop#Character"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/martinapensalfini/ontologies/2022/9/stop#Church",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.semanticweb.org/martinapensalfini/ontologies/2022/9/stop#appears_in" : [ {
+    "@id" : "http://www.semanticweb.org/martinapensalfini/ontologies/2022/9/stop#Doctor_Siegfried_Iseman"
+  } ],
+  "http://www.semanticweb.org/martinapensalfini/ontologies/2022/9/stop#have_name" : [ {
+    "@value" : "Church"
+  } ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.semanticweb.org/martinapensalfini/ontologies/2022/9/stop#Topic"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/martinapensalfini/ontologies/2022/9/stop#Damnation",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.semanticweb.org/martinapensalfini/ontologies/2022/9/stop#appears_in" : [ {
+    "@id" : "http://www.semanticweb.org/martinapensalfini/ontologies/2022/9/stop#Un_giudice"
+  }, {
+    "@id" : "http://www.semanticweb.org/martinapensalfini/ontologies/2022/9/stop#Un_medico"
+  }, {
+    "@id" : "http://www.semanticweb.org/martinapensalfini/ontologies/2022/9/stop#Wendell_P._Bloyd"
+  }, {
+    "@id" : "http://www.semanticweb.org/martinapensalfini/ontologies/2022/9/stop#Un_blasfemo_(dietro_ogni_blasfemo_c'è_un_giardino_incantato)"
+  } ],
+  "http://www.semanticweb.org/martinapensalfini/ontologies/2022/9/stop#have_name" : [ {
+    "@value" : "Damnation"
+  } ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.semanticweb.org/martinapensalfini/ontologies/2022/9/stop#Topic"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/martinapensalfini/ontologies/2022/9/stop#Dancing",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.semanticweb.org/martinapensalfini/ontologies/2022/9/stop#appears_in" : [ {
+    "@id" : "http://www.semanticweb.org/martinapensalfini/ontologies/2022/9/stop#Il_suonatore_Jones"
+  } ],
+  "http://www.semanticweb.org/martinapensalfini/ontologies/2022/9/stop#have_name" : [ {
+    "@value" : "Dancing"
+  } ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.semanticweb.org/martinapensalfini/ontologies/2022/9/stop#Topic"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/martinapensalfini/ontologies/2022/9/stop#Darkness_VS_Light",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.semanticweb.org/martinapensalfini/ontologies/2022/9/stop#appears_in" : [ {
+    "@id" : "http://www.semanticweb.org/martinapensalfini/ontologies/2022/9/stop#Dippold_the_optician"
+  }, {
+    "@id" : "http://www.semanticweb.org/martinapensalfini/ontologies/2022/9/stop#Frank_Drummer"
+  }, {
+    "@id" : "http://www.semanticweb.org/martinapensalfini/ontologies/2022/9/stop#Un_ottico"
+  } ],
+  "http://www.semanticweb.org/martinapensalfini/ontologies/2022/9/stop#have_name" : [ {
+    "@value" : "Darkness vs light"
+  } ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.semanticweb.org/martinapensalfini/ontologies/2022/9/stop#Topic"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/martinapensalfini/ontologies/2022/9/stop#Death",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.semanticweb.org/martinapensalfini/ontologies/2022/9/stop#appears_in" : [ {
+    "@id" : "http://www.semanticweb.org/martinapensalfini/ontologies/2022/9/stop#Dormono_sulla_collina"
+  }, {
+    "@id" : "http://www.semanticweb.org/martinapensalfini/ontologies/2022/9/stop#The_Hill"
+  }, {
+    "@id" : "http://www.semanticweb.org/martinapensalfini/ontologies/2022/9/stop#Un_matto(Dietro_ogni_scemo_c'è_un_villaggio)"
+  } ],
+  "http://www.semanticweb.org/martinapensalfini/ontologies/2022/9/stop#have_name" : [ {
+    "@value" : "Death"
+  } ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.semanticweb.org/martinapensalfini/ontologies/2022/9/stop#Topic"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/martinapensalfini/ontologies/2022/9/stop#Devastation",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.semanticweb.org/martinapensalfini/ontologies/2022/9/stop#appears_in" : [ {
+    "@id" : "http://www.semanticweb.org/martinapensalfini/ontologies/2022/9/stop#Un_chimico"
+  } ],
+  "http://www.semanticweb.org/martinapensalfini/ontologies/2022/9/stop#have_name" : [ {
+    "@value" : "Devastation"
+  } ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.semanticweb.org/martinapensalfini/ontologies/2022/9/stop#Topic"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/martinapensalfini/ontologies/2022/9/stop#DippoldTheOptician",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.semanticweb.org/martinapensalfini/ontologies/2022/9/stop#have_name" : [ {
+    "@type" : "http://www.w3.org/2000/01/rdf-schema#Literal",
+    "@value" : "Dippold, The Optician"
+  } ],
+  "http://www.semanticweb.org/martinapensalfini/ontologies/2022/9/stop#is_in" : [ {
+    "@id" : "http://www.semanticweb.org/martinapensalfini/ontologies/2022/9/stop#Dippold_the_optician"
+  } ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.semanticweb.org/martinapensalfini/ontologies/2022/9/stop#Character"
+  } ],
+  "http://www.w3.org/2002/07/owl#sameAs" : [ {
+    "@id" : "http://www.semanticweb.org/martinapensalfini/ontologies/2022/9/stop#UnOttico"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/martinapensalfini/ontologies/2022/9/stop#Dippold_the_optician",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://schema.org/isPartOf" : [ {
+    "@id" : "http://www.semanticweb.org/martinapensalfini/ontologies/2022/9/stop#Spoon_River_Anthology"
+  } ],
+  "http://www.semanticweb.org/martinapensalfini/ontologies/2022/9/stop#has_character" : [ {
+    "@id" : "http://www.semanticweb.org/martinapensalfini/ontologies/2022/9/stop#DippoldTheOptician"
+  } ],
+  "http://www.semanticweb.org/martinapensalfini/ontologies/2022/9/stop#have_name" : [ {
+    "@type" : "http://www.w3.org/2000/01/rdf-schema#Literal",
+    "@value" : "Dippold, The Optician"
+  } ],
+  "http://www.semanticweb.org/martinapensalfini/ontologies/2022/9/stop#is_about" : [ {
+    "@id" : "http://www.semanticweb.org/martinapensalfini/ontologies/2022/9/stop#Darkness_VS_Light"
+  }, {
+    "@id" : "http://www.semanticweb.org/martinapensalfini/ontologies/2022/9/stop#Night"
+  }, {
+    "@id" : "http://www.semanticweb.org/martinapensalfini/ontologies/2022/9/stop#Sight"
+  }, {
+    "@id" : "http://www.semanticweb.org/martinapensalfini/ontologies/2022/9/stop#Sky"
+  } ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.semanticweb.org/martinapensalfini/ontologies/2022/9/stop#Poem"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/martinapensalfini/ontologies/2022/9/stop#DoctorSiegfriedIseman",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.semanticweb.org/martinapensalfini/ontologies/2022/9/stop#have_name" : [ {
+    "@type" : "http://www.w3.org/2000/01/rdf-schema#Literal",
+    "@value" : "Doctor Siegfried Iseman"
+  } ],
+  "http://www.semanticweb.org/martinapensalfini/ontologies/2022/9/stop#is_in" : [ {
+    "@id" : "http://www.semanticweb.org/martinapensalfini/ontologies/2022/9/stop#Doctor_Siegfried_Iseman"
+  } ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.semanticweb.org/martinapensalfini/ontologies/2022/9/stop#Character"
+  } ],
+  "http://www.w3.org/2002/07/owl#sameAs" : [ {
+    "@id" : "http://www.semanticweb.org/martinapensalfini/ontologies/2022/9/stop#UnMedico"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/martinapensalfini/ontologies/2022/9/stop#Doctor_Siegfried_Iseman",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://schema.org/isPartOf" : [ {
+    "@id" : "http://www.semanticweb.org/martinapensalfini/ontologies/2022/9/stop#Spoon_River_Anthology"
+  } ],
+  "http://www.semanticweb.org/martinapensalfini/ontologies/2022/9/stop#has_character" : [ {
+    "@id" : "http://www.semanticweb.org/martinapensalfini/ontologies/2022/9/stop#DoctorSiegfriedIseman"
+  } ],
+  "http://www.semanticweb.org/martinapensalfini/ontologies/2022/9/stop#have_name" : [ {
+    "@type" : "http://www.w3.org/2000/01/rdf-schema#Literal",
+    "@value" : "Doctor Siegfried Iseman"
+  } ],
+  "http://www.semanticweb.org/martinapensalfini/ontologies/2022/9/stop#is_about" : [ {
+    "@id" : "http://www.semanticweb.org/martinapensalfini/ontologies/2022/9/stop#Church"
+  }, {
+    "@id" : "http://www.semanticweb.org/martinapensalfini/ontologies/2022/9/stop#Justice"
+  }, {
+    "@id" : "http://www.semanticweb.org/martinapensalfini/ontologies/2022/9/stop#Knowledge"
+  }, {
+    "@id" : "http://www.semanticweb.org/martinapensalfini/ontologies/2022/9/stop#Religion"
+  }, {
+    "@id" : "http://www.semanticweb.org/martinapensalfini/ontologies/2022/9/stop#Suffering"
+  } ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.semanticweb.org/martinapensalfini/ontologies/2022/9/stop#Poem"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/martinapensalfini/ontologies/2022/9/stop#Dormono_sulla_collina",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://schema.org/isPartOf" : [ {
+    "@id" : "http://www.semanticweb.org/martinapensalfini/ontologies/2022/9/stop#Non_al_denaro_non_all'amore_né_al_cielo"
+  } ],
+  "http://www.semanticweb.org/martinapensalfini/ontologies/2022/9/stop#has_character" : [ {
+    "@id" : "http://www.semanticweb.org/martinapensalfini/ontologies/2022/9/stop#Bert"
+  }, {
+    "@id" : "http://www.semanticweb.org/martinapensalfini/ontologies/2022/9/stop#Charley"
+  }, {
+    "@id" : "http://www.semanticweb.org/martinapensalfini/ontologies/2022/9/stop#Ella"
+  }, {
+    "@id" : "http://www.semanticweb.org/martinapensalfini/ontologies/2022/9/stop#Elmer"
+  }, {
+    "@id" : "http://www.semanticweb.org/martinapensalfini/ontologies/2022/9/stop#Herman"
+  }, {
+    "@id" : "http://www.semanticweb.org/martinapensalfini/ontologies/2022/9/stop#JonesIlSuonatore"
+  }, {
+    "@id" : "http://www.semanticweb.org/martinapensalfini/ontologies/2022/9/stop#Kate"
+  }, {
+    "@id" : "http://www.semanticweb.org/martinapensalfini/ontologies/2022/9/stop#Lizzie"
+  }, {
+    "@id" : "http://www.semanticweb.org/martinapensalfini/ontologies/2022/9/stop#Maggie"
+  }, {
+    "@id" : "http://www.semanticweb.org/martinapensalfini/ontologies/2022/9/stop#Tom"
+  } ],
+  "http://www.semanticweb.org/martinapensalfini/ontologies/2022/9/stop#have_name" : [ {
+    "@type" : "http://www.w3.org/2000/01/rdf-schema#Literal",
+    "@value" : "La collina"
+  } ],
+  "http://www.semanticweb.org/martinapensalfini/ontologies/2022/9/stop#is_about" : [ {
+    "@id" : "http://www.semanticweb.org/martinapensalfini/ontologies/2022/9/stop#Death"
+  }, {
+    "@id" : "http://www.semanticweb.org/martinapensalfini/ontologies/2022/9/stop#Eternal_Sleep"
+  }, {
+    "@id" : "http://www.semanticweb.org/martinapensalfini/ontologies/2022/9/stop#Nature"
+  } ],
+  "http://www.semanticweb.org/martinapensalfini/ontologies/2022/9/stop#related_to" : [ {
+    "@id" : "http://www.semanticweb.org/martinapensalfini/ontologies/2022/9/stop#The_Hill"
+  } ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.semanticweb.org/martinapensalfini/ontologies/2022/9/stop#Song"
+  }, {
+    "@id" : "http://www.semanticweb.org/martinapensalfini/ontologies/2022/9/stop#Unit"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/martinapensalfini/ontologies/2022/9/stop#Dream",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.semanticweb.org/martinapensalfini/ontologies/2022/9/stop#appears_in" : [ {
+    "@id" : "http://www.semanticweb.org/martinapensalfini/ontologies/2022/9/stop#Dippold_the_optician"
+  }, {
+    "@id" : "http://www.semanticweb.org/martinapensalfini/ontologies/2022/9/stop#Frank_Drummer"
+  }, {
+    "@id" : "http://www.semanticweb.org/martinapensalfini/ontologies/2022/9/stop#Il_suonatore_Jones"
+  }, {
+    "@id" : "http://www.semanticweb.org/martinapensalfini/ontologies/2022/9/stop#Un_malato_di_cuore"
+  }, {
+    "@id" : "http://www.semanticweb.org/martinapensalfini/ontologies/2022/9/stop#Un_ottico"
+  }, {
+    "@id" : "http://www.semanticweb.org/martinapensalfini/ontologies/2022/9/stop#Un_blasfemo_(dietro_ogni_blasfemo_c'è_un_giardino_incantato)"
+  }, {
+    "@id" : "http://www.semanticweb.org/martinapensalfini/ontologies/2022/9/stop#Un_matto(Dietro_ogni_scemo_c'è_un_villaggio)"
+  } ],
+  "http://www.semanticweb.org/martinapensalfini/ontologies/2022/9/stop#have_name" : [ {
+    "@value" : "Dream"
+  } ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.semanticweb.org/martinapensalfini/ontologies/2022/9/stop#Topic"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/martinapensalfini/ontologies/2022/9/stop#Drinking",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.semanticweb.org/martinapensalfini/ontologies/2022/9/stop#appears_in" : [ {
+    "@id" : "http://www.semanticweb.org/martinapensalfini/ontologies/2022/9/stop#Francis_Turner"
+  } ],
+  "http://www.semanticweb.org/martinapensalfini/ontologies/2022/9/stop#have_name" : [ {
+    "@value" : "Drinking"
+  } ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.semanticweb.org/martinapensalfini/ontologies/2022/9/stop#Topic"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/martinapensalfini/ontologies/2022/9/stop#Edgar_Lee_Masters",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.semanticweb.org/martinapensalfini/ontologies/2022/9/stop#have_name" : [ {
+    "@type" : "http://www.w3.org/2000/01/rdf-schema#Literal",
+    "@value" : "Edgar Lee Masters"
+  } ],
+  "http://www.semanticweb.org/martinapensalfini/ontologies/2022/9/stop#writes" : [ {
+    "@id" : "http://www.semanticweb.org/martinapensalfini/ontologies/2022/9/stop#Spoon_River_Anthology"
+  } ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.semanticweb.org/martinapensalfini/ontologies/2022/9/stop#Author"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/martinapensalfini/ontologies/2022/9/stop#Edith",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.semanticweb.org/martinapensalfini/ontologies/2022/9/stop#have_name" : [ {
+    "@type" : "http://www.w3.org/2000/01/rdf-schema#Literal",
+    "@value" : "Edith"
+  } ],
+  "http://www.semanticweb.org/martinapensalfini/ontologies/2022/9/stop#is_in" : [ {
+    "@id" : "http://www.semanticweb.org/martinapensalfini/ontologies/2022/9/stop#The_Hill"
+  } ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.semanticweb.org/martinapensalfini/ontologies/2022/9/stop#Character"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/martinapensalfini/ontologies/2022/9/stop#Ella",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.semanticweb.org/martinapensalfini/ontologies/2022/9/stop#have_name" : [ {
+    "@type" : "http://www.w3.org/2000/01/rdf-schema#Literal",
+    "@value" : "Ella"
+  } ],
+  "http://www.semanticweb.org/martinapensalfini/ontologies/2022/9/stop#is_in" : [ {
+    "@id" : "http://www.semanticweb.org/martinapensalfini/ontologies/2022/9/stop#Dormono_sulla_collina"
+  }, {
+    "@id" : "http://www.semanticweb.org/martinapensalfini/ontologies/2022/9/stop#The_Hill"
+  } ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.semanticweb.org/martinapensalfini/ontologies/2022/9/stop#Character"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/martinapensalfini/ontologies/2022/9/stop#Elmer",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.semanticweb.org/martinapensalfini/ontologies/2022/9/stop#have_name" : [ {
+    "@type" : "http://www.w3.org/2000/01/rdf-schema#Literal",
+    "@value" : "Elmer"
+  } ],
+  "http://www.semanticweb.org/martinapensalfini/ontologies/2022/9/stop#is_in" : [ {
+    "@id" : "http://www.semanticweb.org/martinapensalfini/ontologies/2022/9/stop#Dormono_sulla_collina"
+  }, {
+    "@id" : "http://www.semanticweb.org/martinapensalfini/ontologies/2022/9/stop#The_Hill"
+  } ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.semanticweb.org/martinapensalfini/ontologies/2022/9/stop#Character"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/martinapensalfini/ontologies/2022/9/stop#Eternal_Sleep",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.semanticweb.org/martinapensalfini/ontologies/2022/9/stop#appears_in" : [ {
+    "@id" : "http://www.semanticweb.org/martinapensalfini/ontologies/2022/9/stop#Dormono_sulla_collina"
+  }, {
+    "@id" : "http://www.semanticweb.org/martinapensalfini/ontologies/2022/9/stop#The_Hill"
+  } ],
+  "http://www.semanticweb.org/martinapensalfini/ontologies/2022/9/stop#have_name" : [ {
+    "@value" : "Eternal Sleep"
+  } ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.semanticweb.org/martinapensalfini/ontologies/2022/9/stop#Topic"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/martinapensalfini/ontologies/2022/9/stop#Fabrizio_De_Andrè",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.semanticweb.org/martinapensalfini/ontologies/2022/9/stop#have_name" : [ {
+    "@type" : "http://www.w3.org/2000/01/rdf-schema#Literal",
+    "@value" : "Fabrizio De André"
+  } ],
+  "http://www.semanticweb.org/martinapensalfini/ontologies/2022/9/stop#writes" : [ {
+    "@id" : "http://www.semanticweb.org/martinapensalfini/ontologies/2022/9/stop#Non_al_denaro_non_all'amore_né_al_cielo"
+  } ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.semanticweb.org/martinapensalfini/ontologies/2022/9/stop#Author"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/martinapensalfini/ontologies/2022/9/stop#Family",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.semanticweb.org/martinapensalfini/ontologies/2022/9/stop#appears_in" : [ {
+    "@id" : "http://www.semanticweb.org/martinapensalfini/ontologies/2022/9/stop#Trainor_the_druggist"
+  } ],
+  "http://www.semanticweb.org/martinapensalfini/ontologies/2022/9/stop#have_name" : [ {
+    "@value" : "Family"
+  } ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.semanticweb.org/martinapensalfini/ontologies/2022/9/stop#Topic"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/martinapensalfini/ontologies/2022/9/stop#FiddlerJones",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.semanticweb.org/martinapensalfini/ontologies/2022/9/stop#have_name" : [ {
+    "@type" : "http://www.w3.org/2000/01/rdf-schema#Literal",
+    "@value" : "Fiddler Jones"
+  } ],
+  "http://www.semanticweb.org/martinapensalfini/ontologies/2022/9/stop#is_in" : [ {
+    "@id" : "http://www.semanticweb.org/martinapensalfini/ontologies/2022/9/stop#Fiddler_Jones"
+  } ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.semanticweb.org/martinapensalfini/ontologies/2022/9/stop#Character"
+  } ],
+  "http://www.w3.org/2002/07/owl#sameAs" : [ {
+    "@id" : "http://www.semanticweb.org/martinapensalfini/ontologies/2022/9/stop#JonesIlSuonatore"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/martinapensalfini/ontologies/2022/9/stop#Fiddler_Jones",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://schema.org/isPartOf" : [ {
+    "@id" : "http://www.semanticweb.org/martinapensalfini/ontologies/2022/9/stop#Spoon_River_Anthology"
+  } ],
+  "http://www.semanticweb.org/martinapensalfini/ontologies/2022/9/stop#has_character" : [ {
+    "@id" : "http://www.semanticweb.org/martinapensalfini/ontologies/2022/9/stop#FiddlerJones"
+  } ],
+  "http://www.semanticweb.org/martinapensalfini/ontologies/2022/9/stop#have_name" : [ {
+    "@type" : "http://www.w3.org/2000/01/rdf-schema#Literal",
+    "@value" : "Fiddler Jones"
+  } ],
+  "http://www.semanticweb.org/martinapensalfini/ontologies/2022/9/stop#is_about" : [ {
+    "@id" : "http://www.semanticweb.org/martinapensalfini/ontologies/2022/9/stop#Dancing"
+  }, {
+    "@id" : "http://www.semanticweb.org/martinapensalfini/ontologies/2022/9/stop#Music"
+  }, {
+    "@id" : "http://www.semanticweb.org/martinapensalfini/ontologies/2022/9/stop#Nature"
+  }, {
+    "@id" : "http://www.semanticweb.org/martinapensalfini/ontologies/2022/9/stop#Sky"
+  } ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.semanticweb.org/martinapensalfini/ontologies/2022/9/stop#Poem"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/martinapensalfini/ontologies/2022/9/stop#FrancisTurner",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.semanticweb.org/martinapensalfini/ontologies/2022/9/stop#have_name" : [ {
+    "@type" : "http://www.w3.org/2000/01/rdf-schema#Literal",
+    "@value" : "Francis Turner"
+  } ],
+  "http://www.semanticweb.org/martinapensalfini/ontologies/2022/9/stop#is_in" : [ {
+    "@id" : "http://www.semanticweb.org/martinapensalfini/ontologies/2022/9/stop#Francis_Turner"
+  } ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.semanticweb.org/martinapensalfini/ontologies/2022/9/stop#Character"
+  } ],
+  "http://www.w3.org/2002/07/owl#sameAs" : [ {
+    "@id" : "http://www.semanticweb.org/martinapensalfini/ontologies/2022/9/stop#UnMalatoDiCuore"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/martinapensalfini/ontologies/2022/9/stop#Francis_Turner",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://schema.org/isPartOf" : [ {
+    "@id" : "http://www.semanticweb.org/martinapensalfini/ontologies/2022/9/stop#Spoon_River_Anthology"
+  } ],
+  "http://www.semanticweb.org/martinapensalfini/ontologies/2022/9/stop#has_character" : [ {
+    "@id" : "http://www.semanticweb.org/martinapensalfini/ontologies/2022/9/stop#FrancisTurner"
+  } ],
+  "http://www.semanticweb.org/martinapensalfini/ontologies/2022/9/stop#have_name" : [ {
+    "@type" : "http://www.w3.org/2000/01/rdf-schema#Literal",
+    "@value" : "Francis Turner"
+  } ],
+  "http://www.semanticweb.org/martinapensalfini/ontologies/2022/9/stop#is_about" : [ {
+    "@id" : "http://www.semanticweb.org/martinapensalfini/ontologies/2022/9/stop#Drinking"
+  }, {
+    "@id" : "http://www.semanticweb.org/martinapensalfini/ontologies/2022/9/stop#Nature"
+  }, {
+    "@id" : "http://www.semanticweb.org/martinapensalfini/ontologies/2022/9/stop#Secret"
+  }, {
+    "@id" : "http://www.semanticweb.org/martinapensalfini/ontologies/2022/9/stop#Suffering"
+  } ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.semanticweb.org/martinapensalfini/ontologies/2022/9/stop#Poem"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/martinapensalfini/ontologies/2022/9/stop#FrankDrummer",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.semanticweb.org/martinapensalfini/ontologies/2022/9/stop#have_name" : [ {
+    "@type" : "http://www.w3.org/2000/01/rdf-schema#Literal",
+    "@value" : "Frank Drummer"
+  } ],
+  "http://www.semanticweb.org/martinapensalfini/ontologies/2022/9/stop#is_in" : [ {
+    "@id" : "http://www.semanticweb.org/martinapensalfini/ontologies/2022/9/stop#Frank_Drummer"
+  } ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.semanticweb.org/martinapensalfini/ontologies/2022/9/stop#Character"
+  } ],
+  "http://www.w3.org/2002/07/owl#sameAs" : [ {
+    "@id" : "http://www.semanticweb.org/martinapensalfini/ontologies/2022/9/stop#UnMatto"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/martinapensalfini/ontologies/2022/9/stop#Frank_Drummer",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://schema.org/isPartOf" : [ {
+    "@id" : "http://www.semanticweb.org/martinapensalfini/ontologies/2022/9/stop#Spoon_River_Anthology"
+  } ],
+  "http://www.semanticweb.org/martinapensalfini/ontologies/2022/9/stop#has_character" : [ {
+    "@id" : "http://www.semanticweb.org/martinapensalfini/ontologies/2022/9/stop#FrankDrummer"
+  } ],
+  "http://www.semanticweb.org/martinapensalfini/ontologies/2022/9/stop#have_name" : [ {
+    "@type" : "http://www.w3.org/2000/01/rdf-schema#Literal",
+    "@value" : "Frank Drummer"
+  } ],
+  "http://www.semanticweb.org/martinapensalfini/ontologies/2022/9/stop#is_about" : [ {
+    "@id" : "http://www.semanticweb.org/martinapensalfini/ontologies/2022/9/stop#Darkness_VS_Light"
+  }, {
+    "@id" : "http://www.semanticweb.org/martinapensalfini/ontologies/2022/9/stop#Dream"
+  }, {
+    "@id" : "http://www.semanticweb.org/martinapensalfini/ontologies/2022/9/stop#Memory"
+  }, {
+    "@id" : "http://www.semanticweb.org/martinapensalfini/ontologies/2022/9/stop#Music"
+  } ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.semanticweb.org/martinapensalfini/ontologies/2022/9/stop#Poem"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/martinapensalfini/ontologies/2022/9/stop#Hate",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.semanticweb.org/martinapensalfini/ontologies/2022/9/stop#appears_in" : [ {
+    "@id" : "http://www.semanticweb.org/martinapensalfini/ontologies/2022/9/stop#Judge_Selah_Lively"
+  }, {
+    "@id" : "http://www.semanticweb.org/martinapensalfini/ontologies/2022/9/stop#Un_giudice"
+  }, {
+    "@id" : "http://www.semanticweb.org/martinapensalfini/ontologies/2022/9/stop#Wendell_P._Bloyd"
+  } ],
+  "http://www.semanticweb.org/martinapensalfini/ontologies/2022/9/stop#have_name" : [ {
+    "@value" : "Hate"
+  } ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.semanticweb.org/martinapensalfini/ontologies/2022/9/stop#Topic"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/martinapensalfini/ontologies/2022/9/stop#Herman",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.semanticweb.org/martinapensalfini/ontologies/2022/9/stop#have_name" : [ {
+    "@type" : "http://www.w3.org/2000/01/rdf-schema#Literal",
+    "@value" : "Herman"
+  } ],
+  "http://www.semanticweb.org/martinapensalfini/ontologies/2022/9/stop#is_in" : [ {
+    "@id" : "http://www.semanticweb.org/martinapensalfini/ontologies/2022/9/stop#Dormono_sulla_collina"
+  }, {
+    "@id" : "http://www.semanticweb.org/martinapensalfini/ontologies/2022/9/stop#The_Hill"
+  } ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.semanticweb.org/martinapensalfini/ontologies/2022/9/stop#Character"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/martinapensalfini/ontologies/2022/9/stop#Il_suonatore_Jones",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://schema.org/isPartOf" : [ {
+    "@id" : "http://www.semanticweb.org/martinapensalfini/ontologies/2022/9/stop#Non_al_denaro_non_all'amore_né_al_cielo"
+  } ],
+  "http://www.semanticweb.org/martinapensalfini/ontologies/2022/9/stop#has_character" : [ {
+    "@id" : "http://www.semanticweb.org/martinapensalfini/ontologies/2022/9/stop#JonesIlSuonatore"
+  } ],
+  "http://www.semanticweb.org/martinapensalfini/ontologies/2022/9/stop#have_name" : [ {
+    "@type" : "http://www.w3.org/2000/01/rdf-schema#Literal",
+    "@value" : "Il suonatore Jones"
+  } ],
+  "http://www.semanticweb.org/martinapensalfini/ontologies/2022/9/stop#is_about" : [ {
+    "@id" : "http://www.semanticweb.org/martinapensalfini/ontologies/2022/9/stop#Dancing"
+  }, {
+    "@id" : "http://www.semanticweb.org/martinapensalfini/ontologies/2022/9/stop#Dream"
+  }, {
+    "@id" : "http://www.semanticweb.org/martinapensalfini/ontologies/2022/9/stop#Music"
+  }, {
+    "@id" : "http://www.semanticweb.org/martinapensalfini/ontologies/2022/9/stop#Nature"
+  }, {
+    "@id" : "http://www.semanticweb.org/martinapensalfini/ontologies/2022/9/stop#Suffering"
+  } ],
+  "http://www.semanticweb.org/martinapensalfini/ontologies/2022/9/stop#related_to" : [ {
+    "@id" : "http://www.semanticweb.org/martinapensalfini/ontologies/2022/9/stop#Fiddler_Jones"
+  } ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.semanticweb.org/martinapensalfini/ontologies/2022/9/stop#Song"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/martinapensalfini/ontologies/2022/9/stop#JonesIlSuonatore",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.semanticweb.org/martinapensalfini/ontologies/2022/9/stop#have_name" : [ {
+    "@type" : "http://www.w3.org/2000/01/rdf-schema#Literal",
+    "@value" : "Il suonatore Jones"
+  } ],
+  "http://www.semanticweb.org/martinapensalfini/ontologies/2022/9/stop#is_in" : [ {
+    "@id" : "http://www.semanticweb.org/martinapensalfini/ontologies/2022/9/stop#Il_suonatore_Jones"
+  } ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.semanticweb.org/martinapensalfini/ontologies/2022/9/stop#Character"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/martinapensalfini/ontologies/2022/9/stop#JudgeSelahLively",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.semanticweb.org/martinapensalfini/ontologies/2022/9/stop#have_name" : [ {
+    "@type" : "http://www.w3.org/2000/01/rdf-schema#Literal",
+    "@value" : "Judge Selah Lively"
+  } ],
+  "http://www.semanticweb.org/martinapensalfini/ontologies/2022/9/stop#is_in" : [ {
+    "@id" : "http://www.semanticweb.org/martinapensalfini/ontologies/2022/9/stop#Judge_Selah_Lively"
+  } ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.semanticweb.org/martinapensalfini/ontologies/2022/9/stop#Character"
+  } ],
+  "http://www.w3.org/2002/07/owl#sameAs" : [ {
+    "@id" : "http://www.semanticweb.org/martinapensalfini/ontologies/2022/9/stop#UnGiudice"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/martinapensalfini/ontologies/2022/9/stop#Judge_Selah_Lively",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://schema.org/isPartOf" : [ {
+    "@id" : "http://www.semanticweb.org/martinapensalfini/ontologies/2022/9/stop#Spoon_River_Anthology"
+  } ],
+  "http://www.semanticweb.org/martinapensalfini/ontologies/2022/9/stop#has_character" : [ {
+    "@id" : "http://www.semanticweb.org/martinapensalfini/ontologies/2022/9/stop#JudgeSelahLively"
+  } ],
+  "http://www.semanticweb.org/martinapensalfini/ontologies/2022/9/stop#have_name" : [ {
+    "@type" : "http://www.w3.org/2000/01/rdf-schema#Literal",
+    "@value" : "Judge Selah Lively"
+  } ],
+  "http://www.semanticweb.org/martinapensalfini/ontologies/2022/9/stop#is_about" : [ {
+    "@id" : "http://www.semanticweb.org/martinapensalfini/ontologies/2022/9/stop#Hate"
+  }, {
+    "@id" : "http://www.semanticweb.org/martinapensalfini/ontologies/2022/9/stop#Justice"
+  }, {
+    "@id" : "http://www.semanticweb.org/martinapensalfini/ontologies/2022/9/stop#Religion"
+  } ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.semanticweb.org/martinapensalfini/ontologies/2022/9/stop#Poem"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/martinapensalfini/ontologies/2022/9/stop#Justice",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.semanticweb.org/martinapensalfini/ontologies/2022/9/stop#appears_in" : [ {
+    "@id" : "http://www.semanticweb.org/martinapensalfini/ontologies/2022/9/stop#Doctor_Siegfried_Iseman"
+  }, {
+    "@id" : "http://www.semanticweb.org/martinapensalfini/ontologies/2022/9/stop#Judge_Selah_Lively"
+  }, {
+    "@id" : "http://www.semanticweb.org/martinapensalfini/ontologies/2022/9/stop#Un_giudice"
+  } ],
+  "http://www.semanticweb.org/martinapensalfini/ontologies/2022/9/stop#have_name" : [ {
+    "@value" : "Justice"
+  } ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.semanticweb.org/martinapensalfini/ontologies/2022/9/stop#Topic"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/martinapensalfini/ontologies/2022/9/stop#Kate",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.semanticweb.org/martinapensalfini/ontologies/2022/9/stop#have_name" : [ {
+    "@type" : "http://www.w3.org/2000/01/rdf-schema#Literal",
+    "@value" : "Kate"
+  } ],
+  "http://www.semanticweb.org/martinapensalfini/ontologies/2022/9/stop#is_in" : [ {
+    "@id" : "http://www.semanticweb.org/martinapensalfini/ontologies/2022/9/stop#Dormono_sulla_collina"
+  }, {
+    "@id" : "http://www.semanticweb.org/martinapensalfini/ontologies/2022/9/stop#The_Hill"
+  } ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.semanticweb.org/martinapensalfini/ontologies/2022/9/stop#Character"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/martinapensalfini/ontologies/2022/9/stop#Knowledge",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.semanticweb.org/martinapensalfini/ontologies/2022/9/stop#appears_in" : [ {
+    "@id" : "http://www.semanticweb.org/martinapensalfini/ontologies/2022/9/stop#Doctor_Siegfried_Iseman"
+  }, {
+    "@id" : "http://www.semanticweb.org/martinapensalfini/ontologies/2022/9/stop#Un_giudice"
+  }, {
+    "@id" : "http://www.semanticweb.org/martinapensalfini/ontologies/2022/9/stop#Un_medico"
+  } ],
+  "http://www.semanticweb.org/martinapensalfini/ontologies/2022/9/stop#have_name" : [ {
+    "@value" : "Knowledge"
+  } ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.semanticweb.org/martinapensalfini/ontologies/2022/9/stop#Topic"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/martinapensalfini/ontologies/2022/9/stop#Lizzie",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.semanticweb.org/martinapensalfini/ontologies/2022/9/stop#have_name" : [ {
+    "@type" : "http://www.w3.org/2000/01/rdf-schema#Literal",
+    "@value" : "Lizzie"
+  } ],
+  "http://www.semanticweb.org/martinapensalfini/ontologies/2022/9/stop#is_in" : [ {
+    "@id" : "http://www.semanticweb.org/martinapensalfini/ontologies/2022/9/stop#Dormono_sulla_collina"
+  }, {
+    "@id" : "http://www.semanticweb.org/martinapensalfini/ontologies/2022/9/stop#The_Hill"
+  } ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.semanticweb.org/martinapensalfini/ontologies/2022/9/stop#Character"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/martinapensalfini/ontologies/2022/9/stop#Love",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.semanticweb.org/martinapensalfini/ontologies/2022/9/stop#appears_in" : [ {
+    "@id" : "http://www.semanticweb.org/martinapensalfini/ontologies/2022/9/stop#Un_chimico"
+  } ],
+  "http://www.semanticweb.org/martinapensalfini/ontologies/2022/9/stop#have_name" : [ {
+    "@value" : "Love"
+  } ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.semanticweb.org/martinapensalfini/ontologies/2022/9/stop#Topic"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/martinapensalfini/ontologies/2022/9/stop#Maggie",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.semanticweb.org/martinapensalfini/ontologies/2022/9/stop#have_name" : [ {
+    "@type" : "http://www.w3.org/2000/01/rdf-schema#Literal",
+    "@value" : "Maggie"
+  } ],
+  "http://www.semanticweb.org/martinapensalfini/ontologies/2022/9/stop#is_in" : [ {
+    "@id" : "http://www.semanticweb.org/martinapensalfini/ontologies/2022/9/stop#Dormono_sulla_collina"
+  }, {
+    "@id" : "http://www.semanticweb.org/martinapensalfini/ontologies/2022/9/stop#The_Hill"
+  } ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.semanticweb.org/martinapensalfini/ontologies/2022/9/stop#Character"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/martinapensalfini/ontologies/2022/9/stop#Major_Walker",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.semanticweb.org/martinapensalfini/ontologies/2022/9/stop#have_name" : [ {
+    "@type" : "http://www.w3.org/2000/01/rdf-schema#Literal",
+    "@value" : "Major Walker"
+  } ],
+  "http://www.semanticweb.org/martinapensalfini/ontologies/2022/9/stop#is_in" : [ {
+    "@id" : "http://www.semanticweb.org/martinapensalfini/ontologies/2022/9/stop#The_Hill"
+  } ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.semanticweb.org/martinapensalfini/ontologies/2022/9/stop#Character"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/martinapensalfini/ontologies/2022/9/stop#Marriage",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.semanticweb.org/martinapensalfini/ontologies/2022/9/stop#appears_in" : [ {
+    "@id" : "http://www.semanticweb.org/martinapensalfini/ontologies/2022/9/stop#Trainor_the_druggist"
+  } ],
+  "http://www.semanticweb.org/martinapensalfini/ontologies/2022/9/stop#have_name" : [ {
+    "@value" : "Marriage"
+  } ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.semanticweb.org/martinapensalfini/ontologies/2022/9/stop#Topic"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/martinapensalfini/ontologies/2022/9/stop#Memory",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.semanticweb.org/martinapensalfini/ontologies/2022/9/stop#appears_in" : [ {
+    "@id" : "http://www.semanticweb.org/martinapensalfini/ontologies/2022/9/stop#Frank_Drummer"
+  }, {
+    "@id" : "http://www.semanticweb.org/martinapensalfini/ontologies/2022/9/stop#Un_matto(Dietro_ogni_scemo_c'è_un_villaggio)"
+  } ],
+  "http://www.semanticweb.org/martinapensalfini/ontologies/2022/9/stop#have_name" : [ {
+    "@value" : "Memory"
+  } ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.semanticweb.org/martinapensalfini/ontologies/2022/9/stop#Topic"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/martinapensalfini/ontologies/2022/9/stop#Music",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.semanticweb.org/martinapensalfini/ontologies/2022/9/stop#appears_in" : [ {
+    "@id" : "http://www.semanticweb.org/martinapensalfini/ontologies/2022/9/stop#Fiddler_Jones"
+  }, {
+    "@id" : "http://www.semanticweb.org/martinapensalfini/ontologies/2022/9/stop#Frank_Drummer"
+  }, {
+    "@id" : "http://www.semanticweb.org/martinapensalfini/ontologies/2022/9/stop#Il_suonatore_Jones"
+  } ],
+  "http://www.semanticweb.org/martinapensalfini/ontologies/2022/9/stop#have_name" : [ {
+    "@value" : "Music"
+  } ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.semanticweb.org/martinapensalfini/ontologies/2022/9/stop#Topic"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/martinapensalfini/ontologies/2022/9/stop#Musical_Album",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://www.semanticweb.org/martinapensalfini/ontologies/2022/9/stop#Work"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/martinapensalfini/ontologies/2022/9/stop#Nature",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.semanticweb.org/martinapensalfini/ontologies/2022/9/stop#appears_in" : [ {
+    "@id" : "http://www.semanticweb.org/martinapensalfini/ontologies/2022/9/stop#Dormono_sulla_collina"
+  }, {
+    "@id" : "http://www.semanticweb.org/martinapensalfini/ontologies/2022/9/stop#Fiddler_Jones"
+  }, {
+    "@id" : "http://www.semanticweb.org/martinapensalfini/ontologies/2022/9/stop#Francis_Turner"
+  }, {
+    "@id" : "http://www.semanticweb.org/martinapensalfini/ontologies/2022/9/stop#Il_suonatore_Jones"
+  }, {
+    "@id" : "http://www.semanticweb.org/martinapensalfini/ontologies/2022/9/stop#The_Hill"
+  }, {
+    "@id" : "http://www.semanticweb.org/martinapensalfini/ontologies/2022/9/stop#Un_chimico"
+  } ],
+  "http://www.semanticweb.org/martinapensalfini/ontologies/2022/9/stop#have_name" : [ {
+    "@value" : "Nature"
+  } ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.semanticweb.org/martinapensalfini/ontologies/2022/9/stop#Topic"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/martinapensalfini/ontologies/2022/9/stop#Night",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.semanticweb.org/martinapensalfini/ontologies/2022/9/stop#appears_in" : [ {
+    "@id" : "http://www.semanticweb.org/martinapensalfini/ontologies/2022/9/stop#Dippold_the_optician"
+  } ],
+  "http://www.semanticweb.org/martinapensalfini/ontologies/2022/9/stop#have_name" : [ {
+    "@value" : "Night"
+  } ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.semanticweb.org/martinapensalfini/ontologies/2022/9/stop#Topic"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/martinapensalfini/ontologies/2022/9/stop#Non_al_denaro_non_all'amore_né_al_cielo",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://schema.org/hasPart" : [ {
+    "@id" : "http://www.semanticweb.org/martinapensalfini/ontologies/2022/9/stop#Dormono_sulla_collina"
+  }, {
+    "@id" : "http://www.semanticweb.org/martinapensalfini/ontologies/2022/9/stop#Il_suonatore_Jones"
+  }, {
+    "@id" : "http://www.semanticweb.org/martinapensalfini/ontologies/2022/9/stop#Un_chimico"
+  }, {
+    "@id" : "http://www.semanticweb.org/martinapensalfini/ontologies/2022/9/stop#Un_giudice"
+  }, {
+    "@id" : "http://www.semanticweb.org/martinapensalfini/ontologies/2022/9/stop#Un_malato_di_cuore"
+  }, {
+    "@id" : "http://www.semanticweb.org/martinapensalfini/ontologies/2022/9/stop#Un_medico"
+  }, {
+    "@id" : "http://www.semanticweb.org/martinapensalfini/ontologies/2022/9/stop#Un_ottico"
+  }, {
+    "@id" : "http://www.semanticweb.org/martinapensalfini/ontologies/2022/9/stop#Un_blasfemo_(dietro_ogni_blasfemo_c'è_un_giardino_incantato)"
+  }, {
+    "@id" : "http://www.semanticweb.org/martinapensalfini/ontologies/2022/9/stop#Un_matto(Dietro_ogni_scemo_c'è_un_villaggio)"
+  } ],
+  "http://www.semanticweb.org/martinapensalfini/ontologies/2022/9/stop#have_name" : [ {
+    "@type" : "http://www.w3.org/2000/01/rdf-schema#Literal",
+    "@value" : "Non al denaro non all'amore né al cielo"
+  } ],
+  "http://www.semanticweb.org/martinapensalfini/ontologies/2022/9/stop#is_inspired_by" : [ {
+    "@id" : "http://www.semanticweb.org/martinapensalfini/ontologies/2022/9/stop#Spoon_River_Anthology"
+  } ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.semanticweb.org/martinapensalfini/ontologies/2022/9/stop#Musical_Album"
+  }, {
+    "@id" : "http://www.semanticweb.org/martinapensalfini/ontologies/2022/9/stop#Work"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/martinapensalfini/ontologies/2022/9/stop#Poem",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://www.semanticweb.org/martinapensalfini/ontologies/2022/9/stop#Unit"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/martinapensalfini/ontologies/2022/9/stop#Religion",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.semanticweb.org/martinapensalfini/ontologies/2022/9/stop#appears_in" : [ {
+    "@id" : "http://www.semanticweb.org/martinapensalfini/ontologies/2022/9/stop#Doctor_Siegfried_Iseman"
+  }, {
+    "@id" : "http://www.semanticweb.org/martinapensalfini/ontologies/2022/9/stop#Judge_Selah_Lively"
+  }, {
+    "@id" : "http://www.semanticweb.org/martinapensalfini/ontologies/2022/9/stop#Un_giudice"
+  }, {
+    "@id" : "http://www.semanticweb.org/martinapensalfini/ontologies/2022/9/stop#Wendell_P._Bloyd"
+  }, {
+    "@id" : "http://www.semanticweb.org/martinapensalfini/ontologies/2022/9/stop#Un_blasfemo_(dietro_ogni_blasfemo_c'è_un_giardino_incantato)"
+  } ],
+  "http://www.semanticweb.org/martinapensalfini/ontologies/2022/9/stop#have_name" : [ {
+    "@value" : "Religion"
+  } ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.semanticweb.org/martinapensalfini/ontologies/2022/9/stop#Topic"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/martinapensalfini/ontologies/2022/9/stop#Salvation",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.semanticweb.org/martinapensalfini/ontologies/2022/9/stop#appears_in" : [ {
+    "@id" : "http://www.semanticweb.org/martinapensalfini/ontologies/2022/9/stop#Un_chimico"
+  }, {
+    "@id" : "http://www.semanticweb.org/martinapensalfini/ontologies/2022/9/stop#Un_malato_di_cuore"
+  }, {
+    "@id" : "http://www.semanticweb.org/martinapensalfini/ontologies/2022/9/stop#Un_medico"
+  }, {
+    "@id" : "http://www.semanticweb.org/martinapensalfini/ontologies/2022/9/stop#Wendell_P._Bloyd"
+  }, {
+    "@id" : "http://www.semanticweb.org/martinapensalfini/ontologies/2022/9/stop#Un_blasfemo_(dietro_ogni_blasfemo_c'è_un_giardino_incantato)"
+  } ],
+  "http://www.semanticweb.org/martinapensalfini/ontologies/2022/9/stop#have_name" : [ {
+    "@value" : "Salvation"
+  } ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.semanticweb.org/martinapensalfini/ontologies/2022/9/stop#Topic"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/martinapensalfini/ontologies/2022/9/stop#Secret",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.semanticweb.org/martinapensalfini/ontologies/2022/9/stop#appears_in" : [ {
+    "@id" : "http://www.semanticweb.org/martinapensalfini/ontologies/2022/9/stop#Francis_Turner"
+  } ],
+  "http://www.semanticweb.org/martinapensalfini/ontologies/2022/9/stop#have_name" : [ {
+    "@value" : "Secret"
+  } ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.semanticweb.org/martinapensalfini/ontologies/2022/9/stop#Topic"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/martinapensalfini/ontologies/2022/9/stop#Sevigne_Houghton",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.semanticweb.org/martinapensalfini/ontologies/2022/9/stop#have_name" : [ {
+    "@type" : "http://www.w3.org/2000/01/rdf-schema#Literal",
+    "@value" : "Sevigne Houghton"
+  } ],
+  "http://www.semanticweb.org/martinapensalfini/ontologies/2022/9/stop#is_in" : [ {
+    "@id" : "http://www.semanticweb.org/martinapensalfini/ontologies/2022/9/stop#The_Hill"
+  } ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.semanticweb.org/martinapensalfini/ontologies/2022/9/stop#Character"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/martinapensalfini/ontologies/2022/9/stop#Sickness",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.semanticweb.org/martinapensalfini/ontologies/2022/9/stop#appears_in" : [ {
+    "@id" : "http://www.semanticweb.org/martinapensalfini/ontologies/2022/9/stop#Un_malato_di_cuore"
+  }, {
+    "@id" : "http://www.semanticweb.org/martinapensalfini/ontologies/2022/9/stop#Un_medico"
+  } ],
+  "http://www.semanticweb.org/martinapensalfini/ontologies/2022/9/stop#have_name" : [ {
+    "@value" : "Sickness"
+  } ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.semanticweb.org/martinapensalfini/ontologies/2022/9/stop#Topic"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/martinapensalfini/ontologies/2022/9/stop#Sight",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.semanticweb.org/martinapensalfini/ontologies/2022/9/stop#appears_in" : [ {
+    "@id" : "http://www.semanticweb.org/martinapensalfini/ontologies/2022/9/stop#Dippold_the_optician"
+  }, {
+    "@id" : "http://www.semanticweb.org/martinapensalfini/ontologies/2022/9/stop#Un_ottico"
+  } ],
+  "http://www.semanticweb.org/martinapensalfini/ontologies/2022/9/stop#have_name" : [ {
+    "@value" : "Sight"
+  } ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.semanticweb.org/martinapensalfini/ontologies/2022/9/stop#Topic"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/martinapensalfini/ontologies/2022/9/stop#Sky",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.semanticweb.org/martinapensalfini/ontologies/2022/9/stop#appears_in" : [ {
+    "@id" : "http://www.semanticweb.org/martinapensalfini/ontologies/2022/9/stop#Dippold_the_optician"
+  }, {
+    "@id" : "http://www.semanticweb.org/martinapensalfini/ontologies/2022/9/stop#Fiddler_Jones"
+  }, {
+    "@id" : "http://www.semanticweb.org/martinapensalfini/ontologies/2022/9/stop#Un_ottico"
+  } ],
+  "http://www.semanticweb.org/martinapensalfini/ontologies/2022/9/stop#have_name" : [ {
+    "@value" : "Sky"
+  } ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.semanticweb.org/martinapensalfini/ontologies/2022/9/stop#Topic"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/martinapensalfini/ontologies/2022/9/stop#Song",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://www.semanticweb.org/martinapensalfini/ontologies/2022/9/stop#Unit"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/martinapensalfini/ontologies/2022/9/stop#Spoon_River_Anthology",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://schema.org/hasPart" : [ {
+    "@id" : "http://www.semanticweb.org/martinapensalfini/ontologies/2022/9/stop#Dippold_the_optician"
+  }, {
+    "@id" : "http://www.semanticweb.org/martinapensalfini/ontologies/2022/9/stop#Doctor_Siegfried_Iseman"
+  }, {
+    "@id" : "http://www.semanticweb.org/martinapensalfini/ontologies/2022/9/stop#Fiddler_Jones"
+  }, {
+    "@id" : "http://www.semanticweb.org/martinapensalfini/ontologies/2022/9/stop#Francis_Turner"
+  }, {
+    "@id" : "http://www.semanticweb.org/martinapensalfini/ontologies/2022/9/stop#Frank_Drummer"
+  }, {
+    "@id" : "http://www.semanticweb.org/martinapensalfini/ontologies/2022/9/stop#Judge_Selah_Lively"
+  }, {
+    "@id" : "http://www.semanticweb.org/martinapensalfini/ontologies/2022/9/stop#The_Hill"
+  }, {
+    "@id" : "http://www.semanticweb.org/martinapensalfini/ontologies/2022/9/stop#Trainor_the_druggist"
+  }, {
+    "@id" : "http://www.semanticweb.org/martinapensalfini/ontologies/2022/9/stop#Wendell_P._Bloyd"
+  } ],
+  "http://www.semanticweb.org/martinapensalfini/ontologies/2022/9/stop#have_name" : [ {
+    "@type" : "http://www.w3.org/2000/01/rdf-schema#Literal",
+    "@value" : "Spoon River Anthology"
+  } ],
+  "http://www.semanticweb.org/martinapensalfini/ontologies/2022/9/stop#inspires" : [ {
+    "@id" : "http://www.semanticweb.org/martinapensalfini/ontologies/2022/9/stop#Non_al_denaro_non_all'amore_né_al_cielo"
+  } ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.semanticweb.org/martinapensalfini/ontologies/2022/9/stop#Anthology_Poem"
+  }, {
+    "@id" : "http://www.semanticweb.org/martinapensalfini/ontologies/2022/9/stop#Work"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/martinapensalfini/ontologies/2022/9/stop#Suffering",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.semanticweb.org/martinapensalfini/ontologies/2022/9/stop#appears_in" : [ {
+    "@id" : "http://www.semanticweb.org/martinapensalfini/ontologies/2022/9/stop#Doctor_Siegfried_Iseman"
+  }, {
+    "@id" : "http://www.semanticweb.org/martinapensalfini/ontologies/2022/9/stop#Francis_Turner"
+  }, {
+    "@id" : "http://www.semanticweb.org/martinapensalfini/ontologies/2022/9/stop#Il_suonatore_Jones"
+  }, {
+    "@id" : "http://www.semanticweb.org/martinapensalfini/ontologies/2022/9/stop#Un_chimico"
+  }, {
+    "@id" : "http://www.semanticweb.org/martinapensalfini/ontologies/2022/9/stop#Un_malato_di_cuore"
+  }, {
+    "@id" : "http://www.semanticweb.org/martinapensalfini/ontologies/2022/9/stop#Un_medico"
+  }, {
+    "@id" : "http://www.semanticweb.org/martinapensalfini/ontologies/2022/9/stop#Un_ottico"
+  } ],
+  "http://www.semanticweb.org/martinapensalfini/ontologies/2022/9/stop#have_name" : [ {
+    "@value" : "Suffering"
+  } ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.semanticweb.org/martinapensalfini/ontologies/2022/9/stop#Topic"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/martinapensalfini/ontologies/2022/9/stop#The_Hill",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://schema.org/isPartOf" : [ {
+    "@id" : "http://www.semanticweb.org/martinapensalfini/ontologies/2022/9/stop#Spoon_River_Anthology"
+  } ],
+  "http://www.semanticweb.org/martinapensalfini/ontologies/2022/9/stop#has_character" : [ {
+    "@id" : "http://www.semanticweb.org/martinapensalfini/ontologies/2022/9/stop#Aunt_Emily"
+  }, {
+    "@id" : "http://www.semanticweb.org/martinapensalfini/ontologies/2022/9/stop#Bert"
+  }, {
+    "@id" : "http://www.semanticweb.org/martinapensalfini/ontologies/2022/9/stop#Charley"
+  }, {
+    "@id" : "http://www.semanticweb.org/martinapensalfini/ontologies/2022/9/stop#Edith"
+  }, {
+    "@id" : "http://www.semanticweb.org/martinapensalfini/ontologies/2022/9/stop#Ella"
+  }, {
+    "@id" : "http://www.semanticweb.org/martinapensalfini/ontologies/2022/9/stop#Elmer"
+  }, {
+    "@id" : "http://www.semanticweb.org/martinapensalfini/ontologies/2022/9/stop#Herman"
+  }, {
+    "@id" : "http://www.semanticweb.org/martinapensalfini/ontologies/2022/9/stop#Kate"
+  }, {
+    "@id" : "http://www.semanticweb.org/martinapensalfini/ontologies/2022/9/stop#Lizzie"
+  }, {
+    "@id" : "http://www.semanticweb.org/martinapensalfini/ontologies/2022/9/stop#Maggie"
+  }, {
+    "@id" : "http://www.semanticweb.org/martinapensalfini/ontologies/2022/9/stop#Major_Walker"
+  }, {
+    "@id" : "http://www.semanticweb.org/martinapensalfini/ontologies/2022/9/stop#Sevigne_Houghton"
+  }, {
+    "@id" : "http://www.semanticweb.org/martinapensalfini/ontologies/2022/9/stop#Tom"
+  }, {
+    "@id" : "http://www.semanticweb.org/martinapensalfini/ontologies/2022/9/stop#Towny_Kincaid"
+  }, {
+    "@id" : "http://www.semanticweb.org/martinapensalfini/ontologies/2022/9/stop#Uncle_Isaac"
+  } ],
+  "http://www.semanticweb.org/martinapensalfini/ontologies/2022/9/stop#have_name" : [ {
+    "@type" : "http://www.w3.org/2000/01/rdf-schema#Literal",
+    "@value" : "The Hill"
+  } ],
+  "http://www.semanticweb.org/martinapensalfini/ontologies/2022/9/stop#is_about" : [ {
+    "@id" : "http://www.semanticweb.org/martinapensalfini/ontologies/2022/9/stop#Death"
+  }, {
+    "@id" : "http://www.semanticweb.org/martinapensalfini/ontologies/2022/9/stop#Eternal_Sleep"
+  }, {
+    "@id" : "http://www.semanticweb.org/martinapensalfini/ontologies/2022/9/stop#Nature"
+  } ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.semanticweb.org/martinapensalfini/ontologies/2022/9/stop#Poem"
+  }, {
+    "@id" : "http://www.semanticweb.org/martinapensalfini/ontologies/2022/9/stop#Unit"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/martinapensalfini/ontologies/2022/9/stop#Tom",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.semanticweb.org/martinapensalfini/ontologies/2022/9/stop#have_name" : [ {
+    "@type" : "http://www.w3.org/2000/01/rdf-schema#Literal",
+    "@value" : "Tom"
+  } ],
+  "http://www.semanticweb.org/martinapensalfini/ontologies/2022/9/stop#is_in" : [ {
+    "@id" : "http://www.semanticweb.org/martinapensalfini/ontologies/2022/9/stop#Dormono_sulla_collina"
+  }, {
+    "@id" : "http://www.semanticweb.org/martinapensalfini/ontologies/2022/9/stop#The_Hill"
+  } ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.semanticweb.org/martinapensalfini/ontologies/2022/9/stop#Character"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/martinapensalfini/ontologies/2022/9/stop#Topic",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ]
+}, {
+  "@id" : "http://www.semanticweb.org/martinapensalfini/ontologies/2022/9/stop#Towny_Kincaid",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.semanticweb.org/martinapensalfini/ontologies/2022/9/stop#have_name" : [ {
+    "@type" : "http://www.w3.org/2000/01/rdf-schema#Literal",
+    "@value" : "Towny Kincaid"
+  } ],
+  "http://www.semanticweb.org/martinapensalfini/ontologies/2022/9/stop#is_in" : [ {
+    "@id" : "http://www.semanticweb.org/martinapensalfini/ontologies/2022/9/stop#The_Hill"
+  } ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.semanticweb.org/martinapensalfini/ontologies/2022/9/stop#Character"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/martinapensalfini/ontologies/2022/9/stop#TrainorTheDruggist",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.semanticweb.org/martinapensalfini/ontologies/2022/9/stop#have_name" : [ {
+    "@type" : "http://www.w3.org/2000/01/rdf-schema#Literal",
+    "@value" : "Trainor, the druggist"
+  } ],
+  "http://www.semanticweb.org/martinapensalfini/ontologies/2022/9/stop#is_in" : [ {
+    "@id" : "http://www.semanticweb.org/martinapensalfini/ontologies/2022/9/stop#Trainor_the_druggist"
+  } ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.semanticweb.org/martinapensalfini/ontologies/2022/9/stop#Character"
+  } ],
+  "http://www.w3.org/2002/07/owl#sameAs" : [ {
+    "@id" : "http://www.semanticweb.org/martinapensalfini/ontologies/2022/9/stop#UnChimico"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/martinapensalfini/ontologies/2022/9/stop#Trainor_the_druggist",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://schema.org/isPartOf" : [ {
+    "@id" : "http://www.semanticweb.org/martinapensalfini/ontologies/2022/9/stop#Spoon_River_Anthology"
+  } ],
+  "http://www.semanticweb.org/martinapensalfini/ontologies/2022/9/stop#has_character" : [ {
+    "@id" : "http://www.semanticweb.org/martinapensalfini/ontologies/2022/9/stop#TrainorTheDruggist"
+  } ],
+  "http://www.semanticweb.org/martinapensalfini/ontologies/2022/9/stop#have_name" : [ {
+    "@type" : "http://www.w3.org/2000/01/rdf-schema#Literal",
+    "@value" : "Trainor, the druggist"
+  } ],
+  "http://www.semanticweb.org/martinapensalfini/ontologies/2022/9/stop#is_about" : [ {
+    "@id" : "http://www.semanticweb.org/martinapensalfini/ontologies/2022/9/stop#Family"
+  }, {
+    "@id" : "http://www.semanticweb.org/martinapensalfini/ontologies/2022/9/stop#Marriage"
+  } ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.semanticweb.org/martinapensalfini/ontologies/2022/9/stop#Poem"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/martinapensalfini/ontologies/2022/9/stop#UnBlasfemo",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.semanticweb.org/martinapensalfini/ontologies/2022/9/stop#have_name" : [ {
+    "@type" : "http://www.w3.org/2000/01/rdf-schema#Literal",
+    "@value" : "Un blasfemo"
+  } ],
+  "http://www.semanticweb.org/martinapensalfini/ontologies/2022/9/stop#is_in" : [ {
+    "@id" : "http://www.semanticweb.org/martinapensalfini/ontologies/2022/9/stop#Un_blasfemo_(dietro_ogni_blasfemo_c'è_un_giardino_incantato)"
+  } ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.semanticweb.org/martinapensalfini/ontologies/2022/9/stop#Character"
+  } ],
+  "http://www.w3.org/2002/07/owl#sameAs" : [ {
+    "@id" : "http://www.semanticweb.org/martinapensalfini/ontologies/2022/9/stop#WendellPBloyd"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/martinapensalfini/ontologies/2022/9/stop#UnChimico",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.semanticweb.org/martinapensalfini/ontologies/2022/9/stop#have_name" : [ {
+    "@type" : "http://www.w3.org/2000/01/rdf-schema#Literal",
+    "@value" : "Un chimico"
+  } ],
+  "http://www.semanticweb.org/martinapensalfini/ontologies/2022/9/stop#is_in" : [ {
+    "@id" : "http://www.semanticweb.org/martinapensalfini/ontologies/2022/9/stop#Un_chimico"
+  } ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.semanticweb.org/martinapensalfini/ontologies/2022/9/stop#Character"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/martinapensalfini/ontologies/2022/9/stop#UnGiudice",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.semanticweb.org/martinapensalfini/ontologies/2022/9/stop#have_name" : [ {
+    "@type" : "http://www.w3.org/2000/01/rdf-schema#Literal",
+    "@value" : "Un giudice"
+  } ],
+  "http://www.semanticweb.org/martinapensalfini/ontologies/2022/9/stop#is_in" : [ {
+    "@id" : "http://www.semanticweb.org/martinapensalfini/ontologies/2022/9/stop#Un_giudice"
+  } ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.semanticweb.org/martinapensalfini/ontologies/2022/9/stop#Character"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/martinapensalfini/ontologies/2022/9/stop#UnMalatoDiCuore",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.semanticweb.org/martinapensalfini/ontologies/2022/9/stop#have_name" : [ {
+    "@type" : "http://www.w3.org/2000/01/rdf-schema#Literal",
+    "@value" : "Un malato di cuore"
+  } ],
+  "http://www.semanticweb.org/martinapensalfini/ontologies/2022/9/stop#is_in" : [ {
+    "@id" : "http://www.semanticweb.org/martinapensalfini/ontologies/2022/9/stop#Un_malato_di_cuore"
+  } ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.semanticweb.org/martinapensalfini/ontologies/2022/9/stop#Character"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/martinapensalfini/ontologies/2022/9/stop#UnMatto",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.semanticweb.org/martinapensalfini/ontologies/2022/9/stop#have_name" : [ {
+    "@type" : "http://www.w3.org/2000/01/rdf-schema#Literal",
+    "@value" : "Un matto"
+  } ],
+  "http://www.semanticweb.org/martinapensalfini/ontologies/2022/9/stop#is_in" : [ {
+    "@id" : "http://www.semanticweb.org/martinapensalfini/ontologies/2022/9/stop#Un_matto(Dietro_ogni_scemo_c'è_un_villaggio)"
+  } ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.semanticweb.org/martinapensalfini/ontologies/2022/9/stop#Character"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/martinapensalfini/ontologies/2022/9/stop#UnMedico",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.semanticweb.org/martinapensalfini/ontologies/2022/9/stop#have_name" : [ {
+    "@type" : "http://www.w3.org/2000/01/rdf-schema#Literal",
+    "@value" : "Un medico"
+  } ],
+  "http://www.semanticweb.org/martinapensalfini/ontologies/2022/9/stop#is_in" : [ {
+    "@id" : "http://www.semanticweb.org/martinapensalfini/ontologies/2022/9/stop#Un_medico"
+  } ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.semanticweb.org/martinapensalfini/ontologies/2022/9/stop#Character"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/martinapensalfini/ontologies/2022/9/stop#UnOttico",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.semanticweb.org/martinapensalfini/ontologies/2022/9/stop#have_name" : [ {
+    "@type" : "http://www.w3.org/2000/01/rdf-schema#Literal",
+    "@value" : "Un ottico"
+  } ],
+  "http://www.semanticweb.org/martinapensalfini/ontologies/2022/9/stop#is_in" : [ {
+    "@id" : "http://www.semanticweb.org/martinapensalfini/ontologies/2022/9/stop#Un_ottico"
+  } ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.semanticweb.org/martinapensalfini/ontologies/2022/9/stop#Character"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/martinapensalfini/ontologies/2022/9/stop#Un_blasfemo_(dietro_ogni_blasfemo_c'è_un_giardino_incantato)",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://schema.org/isPartOf" : [ {
+    "@id" : "http://www.semanticweb.org/martinapensalfini/ontologies/2022/9/stop#Non_al_denaro_non_all'amore_né_al_cielo"
+  } ],
+  "http://www.semanticweb.org/martinapensalfini/ontologies/2022/9/stop#has_character" : [ {
+    "@id" : "http://www.semanticweb.org/martinapensalfini/ontologies/2022/9/stop#UnBlasfemo"
+  } ],
+  "http://www.semanticweb.org/martinapensalfini/ontologies/2022/9/stop#have_name" : [ {
+    "@type" : "http://www.w3.org/2000/01/rdf-schema#Literal",
+    "@value" : "Un blasfemo (Dietro Ogni Blasfemo C'è Un Giardino Incantato)"
+  } ],
+  "http://www.semanticweb.org/martinapensalfini/ontologies/2022/9/stop#is_about" : [ {
+    "@id" : "http://www.semanticweb.org/martinapensalfini/ontologies/2022/9/stop#Damnation"
+  }, {
+    "@id" : "http://www.semanticweb.org/martinapensalfini/ontologies/2022/9/stop#Dream"
+  }, {
+    "@id" : "http://www.semanticweb.org/martinapensalfini/ontologies/2022/9/stop#Religion"
+  }, {
+    "@id" : "http://www.semanticweb.org/martinapensalfini/ontologies/2022/9/stop#Salvation"
+  } ],
+  "http://www.semanticweb.org/martinapensalfini/ontologies/2022/9/stop#related_to" : [ {
+    "@id" : "http://www.semanticweb.org/martinapensalfini/ontologies/2022/9/stop#Wendell_P._Bloyd"
+  } ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.semanticweb.org/martinapensalfini/ontologies/2022/9/stop#Song"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/martinapensalfini/ontologies/2022/9/stop#Un_chimico",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://schema.org/isPartOf" : [ {
+    "@id" : "http://www.semanticweb.org/martinapensalfini/ontologies/2022/9/stop#Non_al_denaro_non_all'amore_né_al_cielo"
+  } ],
+  "http://www.semanticweb.org/martinapensalfini/ontologies/2022/9/stop#has_character" : [ {
+    "@id" : "http://www.semanticweb.org/martinapensalfini/ontologies/2022/9/stop#UnChimico"
+  } ],
+  "http://www.semanticweb.org/martinapensalfini/ontologies/2022/9/stop#have_name" : [ {
+    "@type" : "http://www.w3.org/2000/01/rdf-schema#Literal",
+    "@value" : "Un chimico"
+  } ],
+  "http://www.semanticweb.org/martinapensalfini/ontologies/2022/9/stop#is_about" : [ {
+    "@id" : "http://www.semanticweb.org/martinapensalfini/ontologies/2022/9/stop#Devastation"
+  }, {
+    "@id" : "http://www.semanticweb.org/martinapensalfini/ontologies/2022/9/stop#Love"
+  }, {
+    "@id" : "http://www.semanticweb.org/martinapensalfini/ontologies/2022/9/stop#Nature"
+  }, {
+    "@id" : "http://www.semanticweb.org/martinapensalfini/ontologies/2022/9/stop#Salvation"
+  }, {
+    "@id" : "http://www.semanticweb.org/martinapensalfini/ontologies/2022/9/stop#Suffering"
+  } ],
+  "http://www.semanticweb.org/martinapensalfini/ontologies/2022/9/stop#related_to" : [ {
+    "@id" : "http://www.semanticweb.org/martinapensalfini/ontologies/2022/9/stop#Trainor_the_druggist"
+  } ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.semanticweb.org/martinapensalfini/ontologies/2022/9/stop#Song"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/martinapensalfini/ontologies/2022/9/stop#Un_giudice",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://schema.org/isPartOf" : [ {
+    "@id" : "http://www.semanticweb.org/martinapensalfini/ontologies/2022/9/stop#Non_al_denaro_non_all'amore_né_al_cielo"
+  } ],
+  "http://www.semanticweb.org/martinapensalfini/ontologies/2022/9/stop#has_character" : [ {
+    "@id" : "http://www.semanticweb.org/martinapensalfini/ontologies/2022/9/stop#UnGiudice"
+  } ],
+  "http://www.semanticweb.org/martinapensalfini/ontologies/2022/9/stop#have_name" : [ {
+    "@type" : "http://www.w3.org/2000/01/rdf-schema#Literal",
+    "@value" : "Un giudice"
+  } ],
+  "http://www.semanticweb.org/martinapensalfini/ontologies/2022/9/stop#is_about" : [ {
+    "@id" : "http://www.semanticweb.org/martinapensalfini/ontologies/2022/9/stop#Damnation"
+  }, {
+    "@id" : "http://www.semanticweb.org/martinapensalfini/ontologies/2022/9/stop#Hate"
+  }, {
+    "@id" : "http://www.semanticweb.org/martinapensalfini/ontologies/2022/9/stop#Justice"
+  }, {
+    "@id" : "http://www.semanticweb.org/martinapensalfini/ontologies/2022/9/stop#Knowledge"
+  }, {
+    "@id" : "http://www.semanticweb.org/martinapensalfini/ontologies/2022/9/stop#Religion"
+  } ],
+  "http://www.semanticweb.org/martinapensalfini/ontologies/2022/9/stop#related_to" : [ {
+    "@id" : "http://www.semanticweb.org/martinapensalfini/ontologies/2022/9/stop#Judge_Selah_Lively"
+  } ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.semanticweb.org/martinapensalfini/ontologies/2022/9/stop#Song"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/martinapensalfini/ontologies/2022/9/stop#Un_malato_di_cuore",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://schema.org/isPartOf" : [ {
+    "@id" : "http://www.semanticweb.org/martinapensalfini/ontologies/2022/9/stop#Non_al_denaro_non_all'amore_né_al_cielo"
+  } ],
+  "http://www.semanticweb.org/martinapensalfini/ontologies/2022/9/stop#has_character" : [ {
+    "@id" : "http://www.semanticweb.org/martinapensalfini/ontologies/2022/9/stop#UnMalatoDiCuore"
+  } ],
+  "http://www.semanticweb.org/martinapensalfini/ontologies/2022/9/stop#have_name" : [ {
+    "@type" : "http://www.w3.org/2000/01/rdf-schema#Literal",
+    "@value" : "Un malato di cuore"
+  } ],
+  "http://www.semanticweb.org/martinapensalfini/ontologies/2022/9/stop#is_about" : [ {
+    "@id" : "http://www.semanticweb.org/martinapensalfini/ontologies/2022/9/stop#Salvation"
+  }, {
+    "@id" : "http://www.semanticweb.org/martinapensalfini/ontologies/2022/9/stop#Sickness"
+  }, {
+    "@id" : "http://www.semanticweb.org/martinapensalfini/ontologies/2022/9/stop#Suffering"
+  } ],
+  "http://www.semanticweb.org/martinapensalfini/ontologies/2022/9/stop#related_to" : [ {
+    "@id" : "http://www.semanticweb.org/martinapensalfini/ontologies/2022/9/stop#Francis_Turner"
+  } ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.semanticweb.org/martinapensalfini/ontologies/2022/9/stop#Song"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/martinapensalfini/ontologies/2022/9/stop#Un_matto(Dietro_ogni_scemo_c'è_un_villaggio)",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://schema.org/isPartOf" : [ {
+    "@id" : "http://www.semanticweb.org/martinapensalfini/ontologies/2022/9/stop#Non_al_denaro_non_all'amore_né_al_cielo"
+  } ],
+  "http://www.semanticweb.org/martinapensalfini/ontologies/2022/9/stop#has_character" : [ {
+    "@id" : "http://www.semanticweb.org/martinapensalfini/ontologies/2022/9/stop#UnMatto"
+  } ],
+  "http://www.semanticweb.org/martinapensalfini/ontologies/2022/9/stop#have_name" : [ {
+    "@type" : "http://www.w3.org/2000/01/rdf-schema#Literal",
+    "@value" : "Un matto (Dietro Ogni Scemo C'è Un Villaggio)"
+  } ],
+  "http://www.semanticweb.org/martinapensalfini/ontologies/2022/9/stop#is_about" : [ {
+    "@id" : "http://www.semanticweb.org/martinapensalfini/ontologies/2022/9/stop#Death"
+  }, {
+    "@id" : "http://www.semanticweb.org/martinapensalfini/ontologies/2022/9/stop#Dream"
+  }, {
+    "@id" : "http://www.semanticweb.org/martinapensalfini/ontologies/2022/9/stop#Memory"
+  } ],
+  "http://www.semanticweb.org/martinapensalfini/ontologies/2022/9/stop#related_to" : [ {
+    "@id" : "http://www.semanticweb.org/martinapensalfini/ontologies/2022/9/stop#Frank_Drummer"
+  } ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.semanticweb.org/martinapensalfini/ontologies/2022/9/stop#Song"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/martinapensalfini/ontologies/2022/9/stop#Un_medico",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://schema.org/isPartOf" : [ {
+    "@id" : "http://www.semanticweb.org/martinapensalfini/ontologies/2022/9/stop#Non_al_denaro_non_all'amore_né_al_cielo"
+  } ],
+  "http://www.semanticweb.org/martinapensalfini/ontologies/2022/9/stop#has_character" : [ {
+    "@id" : "http://www.semanticweb.org/martinapensalfini/ontologies/2022/9/stop#UnMedico"
+  } ],
+  "http://www.semanticweb.org/martinapensalfini/ontologies/2022/9/stop#have_name" : [ {
+    "@type" : "http://www.w3.org/2000/01/rdf-schema#Literal",
+    "@value" : "Un medico"
+  } ],
+  "http://www.semanticweb.org/martinapensalfini/ontologies/2022/9/stop#is_about" : [ {
+    "@id" : "http://www.semanticweb.org/martinapensalfini/ontologies/2022/9/stop#Damnation"
+  }, {
+    "@id" : "http://www.semanticweb.org/martinapensalfini/ontologies/2022/9/stop#Knowledge"
+  }, {
+    "@id" : "http://www.semanticweb.org/martinapensalfini/ontologies/2022/9/stop#Salvation"
+  }, {
+    "@id" : "http://www.semanticweb.org/martinapensalfini/ontologies/2022/9/stop#Sickness"
+  }, {
+    "@id" : "http://www.semanticweb.org/martinapensalfini/ontologies/2022/9/stop#Suffering"
+  } ],
+  "http://www.semanticweb.org/martinapensalfini/ontologies/2022/9/stop#related_to" : [ {
+    "@id" : "http://www.semanticweb.org/martinapensalfini/ontologies/2022/9/stop#Doctor_Siegfried_Iseman"
+  } ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.semanticweb.org/martinapensalfini/ontologies/2022/9/stop#Song"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/martinapensalfini/ontologies/2022/9/stop#Un_ottico",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://schema.org/isPartOf" : [ {
+    "@id" : "http://www.semanticweb.org/martinapensalfini/ontologies/2022/9/stop#Non_al_denaro_non_all'amore_né_al_cielo"
+  } ],
+  "http://www.semanticweb.org/martinapensalfini/ontologies/2022/9/stop#has_character" : [ {
+    "@id" : "http://www.semanticweb.org/martinapensalfini/ontologies/2022/9/stop#UnOttico"
+  } ],
+  "http://www.semanticweb.org/martinapensalfini/ontologies/2022/9/stop#have_name" : [ {
+    "@type" : "http://www.w3.org/2000/01/rdf-schema#Literal",
+    "@value" : "Un ottico"
+  } ],
+  "http://www.semanticweb.org/martinapensalfini/ontologies/2022/9/stop#is_about" : [ {
+    "@id" : "http://www.semanticweb.org/martinapensalfini/ontologies/2022/9/stop#Darkness_VS_Light"
+  }, {
+    "@id" : "http://www.semanticweb.org/martinapensalfini/ontologies/2022/9/stop#Dream"
+  }, {
+    "@id" : "http://www.semanticweb.org/martinapensalfini/ontologies/2022/9/stop#Sight"
+  }, {
+    "@id" : "http://www.semanticweb.org/martinapensalfini/ontologies/2022/9/stop#Sky"
+  }, {
+    "@id" : "http://www.semanticweb.org/martinapensalfini/ontologies/2022/9/stop#Suffering"
+  } ],
+  "http://www.semanticweb.org/martinapensalfini/ontologies/2022/9/stop#related_to" : [ {
+    "@id" : "http://www.semanticweb.org/martinapensalfini/ontologies/2022/9/stop#Dippold_the_optician"
+  } ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.semanticweb.org/martinapensalfini/ontologies/2022/9/stop#Song"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/martinapensalfini/ontologies/2022/9/stop#Uncle_Isaac",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.semanticweb.org/martinapensalfini/ontologies/2022/9/stop#have_name" : [ {
+    "@type" : "http://www.w3.org/2000/01/rdf-schema#Literal",
+    "@value" : "Uncle Isaac"
+  } ],
+  "http://www.semanticweb.org/martinapensalfini/ontologies/2022/9/stop#is_in" : [ {
+    "@id" : "http://www.semanticweb.org/martinapensalfini/ontologies/2022/9/stop#The_Hill"
+  } ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.semanticweb.org/martinapensalfini/ontologies/2022/9/stop#Character"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/martinapensalfini/ontologies/2022/9/stop#Unit",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ]
+}, {
+  "@id" : "http://www.semanticweb.org/martinapensalfini/ontologies/2022/9/stop#WendellPBloyd",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.semanticweb.org/martinapensalfini/ontologies/2022/9/stop#have_name" : [ {
+    "@type" : "http://www.w3.org/2000/01/rdf-schema#Literal",
+    "@value" : "Wendell P. Bloyd"
+  } ],
+  "http://www.semanticweb.org/martinapensalfini/ontologies/2022/9/stop#is_in" : [ {
+    "@id" : "http://www.semanticweb.org/martinapensalfini/ontologies/2022/9/stop#Wendell_P._Bloyd"
+  } ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.semanticweb.org/martinapensalfini/ontologies/2022/9/stop#Character"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/martinapensalfini/ontologies/2022/9/stop#Wendell_P._Bloyd",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://schema.org/isPartOf" : [ {
+    "@id" : "http://www.semanticweb.org/martinapensalfini/ontologies/2022/9/stop#Spoon_River_Anthology"
+  } ],
+  "http://www.semanticweb.org/martinapensalfini/ontologies/2022/9/stop#has_character" : [ {
+    "@id" : "http://www.semanticweb.org/martinapensalfini/ontologies/2022/9/stop#WendellPBloyd"
+  } ],
+  "http://www.semanticweb.org/martinapensalfini/ontologies/2022/9/stop#have_name" : [ {
+    "@type" : "http://www.w3.org/2000/01/rdf-schema#Literal",
+    "@value" : "Wendell P. Bloyd"
+  } ],
+  "http://www.semanticweb.org/martinapensalfini/ontologies/2022/9/stop#is_about" : [ {
+    "@id" : "http://www.semanticweb.org/martinapensalfini/ontologies/2022/9/stop#Damnation"
+  }, {
+    "@id" : "http://www.semanticweb.org/martinapensalfini/ontologies/2022/9/stop#Hate"
+  }, {
+    "@id" : "http://www.semanticweb.org/martinapensalfini/ontologies/2022/9/stop#Religion"
+  }, {
+    "@id" : "http://www.semanticweb.org/martinapensalfini/ontologies/2022/9/stop#Salvation"
+  } ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.semanticweb.org/martinapensalfini/ontologies/2022/9/stop#Poem"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/martinapensalfini/ontologies/2022/9/stop#Work",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ]
+}, {
+  "@id" : "http://www.semanticweb.org/martinapensalfini/ontologies/2022/9/stop#Writing",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.semanticweb.org/martinapensalfini/ontologies/2022/9/stop#appears_in" : [ {
+    "@id" : "http://www.semanticweb.org/martinapensalfini/ontologies/2022/9/stop#Un_matto(Dietro_ogni_scemo_c'è_un_villaggio)"
+  } ],
+  "http://www.semanticweb.org/martinapensalfini/ontologies/2022/9/stop#have_name" : [ {
+    "@value" : "Writing"
+  } ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.semanticweb.org/martinapensalfini/ontologies/2022/9/stop#Topic"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/martinapensalfini/ontologies/2022/9/stop#appears_in",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://www.semanticweb.org/martinapensalfini/ontologies/2022/9/stop#Topic"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.semanticweb.org/martinapensalfini/ontologies/2022/9/stop#Unit"
+  } ],
+  "http://www.w3.org/2002/07/owl#inverseOf" : [ {
+    "@id" : "http://www.semanticweb.org/martinapensalfini/ontologies/2022/9/stop#is_about"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/martinapensalfini/ontologies/2022/9/stop#has_author",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://www.semanticweb.org/martinapensalfini/ontologies/2022/9/stop#Work"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.semanticweb.org/martinapensalfini/ontologies/2022/9/stop#Author"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/martinapensalfini/ontologies/2022/9/stop#has_character",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://www.semanticweb.org/martinapensalfini/ontologies/2022/9/stop#Unit"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.semanticweb.org/martinapensalfini/ontologies/2022/9/stop#Character"
+  } ],
+  "http://www.w3.org/2002/07/owl#inverseOf" : [ {
+    "@id" : "http://www.semanticweb.org/martinapensalfini/ontologies/2022/9/stop#is_in"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/martinapensalfini/ontologies/2022/9/stop#have_name",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://www.w3.org/2002/07/owl#Thing"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.w3.org/2000/01/rdf-schema#Literal"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/martinapensalfini/ontologies/2022/9/stop#inspires",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://www.semanticweb.org/martinapensalfini/ontologies/2022/9/stop#Work"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.semanticweb.org/martinapensalfini/ontologies/2022/9/stop#Work"
+  } ],
+  "http://www.w3.org/2002/07/owl#inverseOf" : [ {
+    "@id" : "http://www.semanticweb.org/martinapensalfini/ontologies/2022/9/stop#is_inspired_by"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/martinapensalfini/ontologies/2022/9/stop#is_about",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://www.semanticweb.org/martinapensalfini/ontologies/2022/9/stop#Unit"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.semanticweb.org/martinapensalfini/ontologies/2022/9/stop#Topic"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/martinapensalfini/ontologies/2022/9/stop#is_in",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://www.semanticweb.org/martinapensalfini/ontologies/2022/9/stop#Character"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.semanticweb.org/martinapensalfini/ontologies/2022/9/stop#Unit"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/martinapensalfini/ontologies/2022/9/stop#is_inspired_by",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://www.semanticweb.org/martinapensalfini/ontologies/2022/9/stop#Work"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.semanticweb.org/martinapensalfini/ontologies/2022/9/stop#Work"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/martinapensalfini/ontologies/2022/9/stop#is_written_by",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://www.semanticweb.org/martinapensalfini/ontologies/2022/9/stop#Work"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.semanticweb.org/martinapensalfini/ontologies/2022/9/stop#Author"
+  } ],
+  "http://www.w3.org/2002/07/owl#inverseOf" : [ {
+    "@id" : "http://www.semanticweb.org/martinapensalfini/ontologies/2022/9/stop#writes"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/martinapensalfini/ontologies/2022/9/stop#related_to",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://www.semanticweb.org/martinapensalfini/ontologies/2022/9/stop#Song"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.semanticweb.org/martinapensalfini/ontologies/2022/9/stop#Poem"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/martinapensalfini/ontologies/2022/9/stop#writes",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://www.semanticweb.org/martinapensalfini/ontologies/2022/9/stop#Author"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.semanticweb.org/martinapensalfini/ontologies/2022/9/stop#Work"
+  } ]
+}, {
+  "@id" : "http://www.w3.org/1999/02/22-rdf-syntax-ns#type",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://www.semanticweb.org/martinapensalfini/ontologies/2022/9/stop#Work"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.semanticweb.org/martinapensalfini/ontologies/2022/9/stop#Anthology_Poem"
+  }, {
+    "@id" : "http://www.semanticweb.org/martinapensalfini/ontologies/2022/9/stop#Musical_Album"
+  } ]
+} ]

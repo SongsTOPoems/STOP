@@ -1,0 +1,878 @@
+{
+  "_comment" : "Created with OWL2VOWL (version 0.3.5), http://vowl.visualdataweb.org",
+  "header" : {
+    "baseIris" : [ "http://www.w3.org/1999/02/22-rdf-syntax-ns", "http://schema.org", "http://www.w3.org/2000/01/rdf-schema", "http://www.w3.org/2001/XMLSchema", "http://www.semanticweb.org/martinapensalfini/ontologies/2022/9/stop" ],
+    "iri" : "http://www.semanticweb.org/martinapensalfini/ontologies/2022/9/stop"
+  },
+  "namespace" : [ ],
+  "class" : [ {
+    "id" : "4",
+    "type" : "owl:Class"
+  }, {
+    "id" : "9",
+    "type" : "owl:Class"
+  }, {
+    "id" : "1",
+    "type" : "owl:Class"
+  }, {
+    "id" : "18",
+    "type" : "rdfs:Literal"
+  }, {
+    "id" : "10",
+    "type" : "owl:Class"
+  }, {
+    "id" : "8",
+    "type" : "owl:Class"
+  }, {
+    "id" : "21",
+    "type" : "owl:Thing"
+  }, {
+    "id" : "22",
+    "type" : "owl:Class"
+  }, {
+    "id" : "17",
+    "type" : "owl:Class"
+  }, {
+    "id" : "7",
+    "type" : "owl:Class"
+  }, {
+    "id" : "26",
+    "type" : "owl:Class"
+  }, {
+    "id" : "11",
+    "type" : "owl:Class"
+  } ],
+  "classAttribute" : [ {
+    "iri" : "http://www.semanticweb.org/martinapensalfini/ontologies/2022/9/stop#Unit",
+    "baseIri" : "http://www.semanticweb.org/martinapensalfini/ontologies/2022/9/stop",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Unit"
+    },
+    "individuals" : [ {
+      "iri" : "http://www.semanticweb.org/martinapensalfini/ontologies/2022/9/stop#The_Hill",
+      "baseIri" : "http://www.semanticweb.org/martinapensalfini/ontologies/2022/9/stop",
+      "labels" : {
+        "IRI-based" : "The_Hill"
+      }
+    }, {
+      "iri" : "http://www.semanticweb.org/martinapensalfini/ontologies/2022/9/stop#Dormono_sulla_collina",
+      "baseIri" : "http://www.semanticweb.org/martinapensalfini/ontologies/2022/9/stop",
+      "labels" : {
+        "IRI-based" : "Dormono_sulla_collina"
+      }
+    } ],
+    "subClasses" : [ "8", "7" ],
+    "id" : "4"
+  }, {
+    "instances" : 0,
+    "union" : [ "10", "11" ],
+    "attributes" : [ "union", "anonymous" ],
+    "id" : "9"
+  }, {
+    "iri" : "http://www.semanticweb.org/martinapensalfini/ontologies/2022/9/stop#Work",
+    "baseIri" : "http://www.semanticweb.org/martinapensalfini/ontologies/2022/9/stop",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Work"
+    },
+    "individuals" : [ {
+      "iri" : "http://www.semanticweb.org/martinapensalfini/ontologies/2022/9/stop#Non_al_denaro_non_all'amore_né_al_cielo",
+      "baseIri" : "http://www.semanticweb.org/martinapensalfini/ontologies/2022/9/stop",
+      "labels" : {
+        "IRI-based" : "Non_al_denaro_non_all'amore_né_al_cielo"
+      }
+    }, {
+      "iri" : "http://www.semanticweb.org/martinapensalfini/ontologies/2022/9/stop#Spoon_River_Anthology",
+      "baseIri" : "http://www.semanticweb.org/martinapensalfini/ontologies/2022/9/stop",
+      "labels" : {
+        "IRI-based" : "Spoon_River_Anthology"
+      }
+    } ],
+    "subClasses" : [ "10", "11" ],
+    "id" : "1"
+  }, {
+    "iri" : "http://www.w3.org/2000/01/rdf-schema#Literal",
+    "baseIri" : "http://www.w3.org/2000/01/rdf-schema",
+    "id" : "18",
+    "label" : {
+      "IRI-based" : "Literal",
+      "undefined" : "Literal"
+    }
+  }, {
+    "iri" : "http://www.semanticweb.org/martinapensalfini/ontologies/2022/9/stop#Anthology_Poem",
+    "baseIri" : "http://www.semanticweb.org/martinapensalfini/ontologies/2022/9/stop",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Anthology_Poem"
+    },
+    "individuals" : [ {
+      "iri" : "http://www.semanticweb.org/martinapensalfini/ontologies/2022/9/stop#Spoon_River_Anthology",
+      "baseIri" : "http://www.semanticweb.org/martinapensalfini/ontologies/2022/9/stop",
+      "labels" : {
+        "IRI-based" : "Spoon_River_Anthology"
+      }
+    } ],
+    "id" : "10",
+    "superClasses" : [ "1" ]
+  }, {
+    "iri" : "http://www.semanticweb.org/martinapensalfini/ontologies/2022/9/stop#Poem",
+    "baseIri" : "http://www.semanticweb.org/martinapensalfini/ontologies/2022/9/stop",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Poem"
+    },
+    "individuals" : [ {
+      "iri" : "http://www.semanticweb.org/martinapensalfini/ontologies/2022/9/stop#Francis_Turner",
+      "baseIri" : "http://www.semanticweb.org/martinapensalfini/ontologies/2022/9/stop",
+      "labels" : {
+        "IRI-based" : "Francis_Turner"
+      }
+    }, {
+      "iri" : "http://www.semanticweb.org/martinapensalfini/ontologies/2022/9/stop#Frank_Drummer",
+      "baseIri" : "http://www.semanticweb.org/martinapensalfini/ontologies/2022/9/stop",
+      "labels" : {
+        "IRI-based" : "Frank_Drummer"
+      }
+    }, {
+      "iri" : "http://www.semanticweb.org/martinapensalfini/ontologies/2022/9/stop#Doctor_Siegfried_Iseman",
+      "baseIri" : "http://www.semanticweb.org/martinapensalfini/ontologies/2022/9/stop",
+      "labels" : {
+        "IRI-based" : "Doctor_Siegfried_Iseman"
+      }
+    }, {
+      "iri" : "http://www.semanticweb.org/martinapensalfini/ontologies/2022/9/stop#The_Hill",
+      "baseIri" : "http://www.semanticweb.org/martinapensalfini/ontologies/2022/9/stop",
+      "labels" : {
+        "IRI-based" : "The_Hill"
+      }
+    }, {
+      "iri" : "http://www.semanticweb.org/martinapensalfini/ontologies/2022/9/stop#Wendell_P._Bloyd",
+      "baseIri" : "http://www.semanticweb.org/martinapensalfini/ontologies/2022/9/stop",
+      "labels" : {
+        "IRI-based" : "Wendell_P._Bloyd"
+      }
+    }, {
+      "iri" : "http://www.semanticweb.org/martinapensalfini/ontologies/2022/9/stop#Trainor_the_druggist",
+      "baseIri" : "http://www.semanticweb.org/martinapensalfini/ontologies/2022/9/stop",
+      "labels" : {
+        "IRI-based" : "Trainor_the_druggist"
+      }
+    }, {
+      "iri" : "http://www.semanticweb.org/martinapensalfini/ontologies/2022/9/stop#Fiddler_Jones",
+      "baseIri" : "http://www.semanticweb.org/martinapensalfini/ontologies/2022/9/stop",
+      "labels" : {
+        "IRI-based" : "Fiddler_Jones"
+      }
+    }, {
+      "iri" : "http://www.semanticweb.org/martinapensalfini/ontologies/2022/9/stop#Dippold_the_optician",
+      "baseIri" : "http://www.semanticweb.org/martinapensalfini/ontologies/2022/9/stop",
+      "labels" : {
+        "IRI-based" : "Dippold_the_optician"
+      }
+    }, {
+      "iri" : "http://www.semanticweb.org/martinapensalfini/ontologies/2022/9/stop#Judge_Selah_Lively",
+      "baseIri" : "http://www.semanticweb.org/martinapensalfini/ontologies/2022/9/stop",
+      "labels" : {
+        "IRI-based" : "Judge_Selah_Lively"
+      }
+    } ],
+    "id" : "8",
+    "superClasses" : [ "4" ]
+  }, {
+    "iri" : "http://www.w3.org/2002/07/owl#Thing",
+    "baseIri" : "http://owl2vowl.de",
+    "id" : "21",
+    "label" : {
+      "undefined" : "Thing"
+    }
+  }, {
+    "iri" : "http://www.semanticweb.org/martinapensalfini/ontologies/2022/9/stop#Topic",
+    "baseIri" : "http://www.semanticweb.org/martinapensalfini/ontologies/2022/9/stop",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Topic"
+    },
+    "individuals" : [ {
+      "iri" : "http://www.semanticweb.org/martinapensalfini/ontologies/2022/9/stop#Writing",
+      "baseIri" : "http://www.semanticweb.org/martinapensalfini/ontologies/2022/9/stop",
+      "labels" : {
+        "IRI-based" : "Writing"
+      }
+    }, {
+      "iri" : "http://www.semanticweb.org/martinapensalfini/ontologies/2022/9/stop#Marriage",
+      "baseIri" : "http://www.semanticweb.org/martinapensalfini/ontologies/2022/9/stop",
+      "labels" : {
+        "IRI-based" : "Marriage"
+      }
+    }, {
+      "iri" : "http://www.semanticweb.org/martinapensalfini/ontologies/2022/9/stop#Sight",
+      "baseIri" : "http://www.semanticweb.org/martinapensalfini/ontologies/2022/9/stop",
+      "labels" : {
+        "IRI-based" : "Sight"
+      }
+    }, {
+      "iri" : "http://www.semanticweb.org/martinapensalfini/ontologies/2022/9/stop#Darkness_VS_Light",
+      "baseIri" : "http://www.semanticweb.org/martinapensalfini/ontologies/2022/9/stop",
+      "labels" : {
+        "IRI-based" : "Darkness_VS_Light"
+      }
+    }, {
+      "iri" : "http://www.semanticweb.org/martinapensalfini/ontologies/2022/9/stop#Love",
+      "baseIri" : "http://www.semanticweb.org/martinapensalfini/ontologies/2022/9/stop",
+      "labels" : {
+        "IRI-based" : "Love"
+      }
+    }, {
+      "iri" : "http://www.semanticweb.org/martinapensalfini/ontologies/2022/9/stop#Secret",
+      "baseIri" : "http://www.semanticweb.org/martinapensalfini/ontologies/2022/9/stop",
+      "labels" : {
+        "IRI-based" : "Secret"
+      }
+    }, {
+      "iri" : "http://www.semanticweb.org/martinapensalfini/ontologies/2022/9/stop#Night",
+      "baseIri" : "http://www.semanticweb.org/martinapensalfini/ontologies/2022/9/stop",
+      "labels" : {
+        "IRI-based" : "Night"
+      }
+    }, {
+      "iri" : "http://www.semanticweb.org/martinapensalfini/ontologies/2022/9/stop#Dream",
+      "baseIri" : "http://www.semanticweb.org/martinapensalfini/ontologies/2022/9/stop",
+      "labels" : {
+        "IRI-based" : "Dream"
+      }
+    }, {
+      "iri" : "http://www.semanticweb.org/martinapensalfini/ontologies/2022/9/stop#Devastation",
+      "baseIri" : "http://www.semanticweb.org/martinapensalfini/ontologies/2022/9/stop",
+      "labels" : {
+        "IRI-based" : "Devastation"
+      }
+    }, {
+      "iri" : "http://www.semanticweb.org/martinapensalfini/ontologies/2022/9/stop#Nature",
+      "baseIri" : "http://www.semanticweb.org/martinapensalfini/ontologies/2022/9/stop",
+      "labels" : {
+        "IRI-based" : "Nature"
+      }
+    }, {
+      "iri" : "http://www.semanticweb.org/martinapensalfini/ontologies/2022/9/stop#Hate",
+      "baseIri" : "http://www.semanticweb.org/martinapensalfini/ontologies/2022/9/stop",
+      "labels" : {
+        "IRI-based" : "Hate"
+      }
+    }, {
+      "iri" : "http://www.semanticweb.org/martinapensalfini/ontologies/2022/9/stop#Drinking",
+      "baseIri" : "http://www.semanticweb.org/martinapensalfini/ontologies/2022/9/stop",
+      "labels" : {
+        "IRI-based" : "Drinking"
+      }
+    }, {
+      "iri" : "http://www.semanticweb.org/martinapensalfini/ontologies/2022/9/stop#Sickness",
+      "baseIri" : "http://www.semanticweb.org/martinapensalfini/ontologies/2022/9/stop",
+      "labels" : {
+        "IRI-based" : "Sickness"
+      }
+    }, {
+      "iri" : "http://www.semanticweb.org/martinapensalfini/ontologies/2022/9/stop#Religion",
+      "baseIri" : "http://www.semanticweb.org/martinapensalfini/ontologies/2022/9/stop",
+      "labels" : {
+        "IRI-based" : "Religion"
+      }
+    }, {
+      "iri" : "http://www.semanticweb.org/martinapensalfini/ontologies/2022/9/stop#Eternal_Sleep",
+      "baseIri" : "http://www.semanticweb.org/martinapensalfini/ontologies/2022/9/stop",
+      "labels" : {
+        "IRI-based" : "Eternal_Sleep"
+      }
+    }, {
+      "iri" : "http://www.semanticweb.org/martinapensalfini/ontologies/2022/9/stop#Knowledge",
+      "baseIri" : "http://www.semanticweb.org/martinapensalfini/ontologies/2022/9/stop",
+      "labels" : {
+        "IRI-based" : "Knowledge"
+      }
+    }, {
+      "iri" : "http://www.semanticweb.org/martinapensalfini/ontologies/2022/9/stop#Music",
+      "baseIri" : "http://www.semanticweb.org/martinapensalfini/ontologies/2022/9/stop",
+      "labels" : {
+        "IRI-based" : "Music"
+      }
+    }, {
+      "iri" : "http://www.semanticweb.org/martinapensalfini/ontologies/2022/9/stop#Dancing",
+      "baseIri" : "http://www.semanticweb.org/martinapensalfini/ontologies/2022/9/stop",
+      "labels" : {
+        "IRI-based" : "Dancing"
+      }
+    }, {
+      "iri" : "http://www.semanticweb.org/martinapensalfini/ontologies/2022/9/stop#Family",
+      "baseIri" : "http://www.semanticweb.org/martinapensalfini/ontologies/2022/9/stop",
+      "labels" : {
+        "IRI-based" : "Family"
+      }
+    }, {
+      "iri" : "http://www.semanticweb.org/martinapensalfini/ontologies/2022/9/stop#Death",
+      "baseIri" : "http://www.semanticweb.org/martinapensalfini/ontologies/2022/9/stop",
+      "labels" : {
+        "IRI-based" : "Death"
+      }
+    }, {
+      "iri" : "http://www.semanticweb.org/martinapensalfini/ontologies/2022/9/stop#Church",
+      "baseIri" : "http://www.semanticweb.org/martinapensalfini/ontologies/2022/9/stop",
+      "labels" : {
+        "IRI-based" : "Church"
+      }
+    }, {
+      "iri" : "http://www.semanticweb.org/martinapensalfini/ontologies/2022/9/stop#Suffering",
+      "baseIri" : "http://www.semanticweb.org/martinapensalfini/ontologies/2022/9/stop",
+      "labels" : {
+        "IRI-based" : "Suffering"
+      }
+    }, {
+      "iri" : "http://www.semanticweb.org/martinapensalfini/ontologies/2022/9/stop#Justice",
+      "baseIri" : "http://www.semanticweb.org/martinapensalfini/ontologies/2022/9/stop",
+      "labels" : {
+        "IRI-based" : "Justice"
+      }
+    }, {
+      "iri" : "http://www.semanticweb.org/martinapensalfini/ontologies/2022/9/stop#Damnation",
+      "baseIri" : "http://www.semanticweb.org/martinapensalfini/ontologies/2022/9/stop",
+      "labels" : {
+        "IRI-based" : "Damnation"
+      }
+    }, {
+      "iri" : "http://www.semanticweb.org/martinapensalfini/ontologies/2022/9/stop#Sky",
+      "baseIri" : "http://www.semanticweb.org/martinapensalfini/ontologies/2022/9/stop",
+      "labels" : {
+        "IRI-based" : "Sky"
+      }
+    }, {
+      "iri" : "http://www.semanticweb.org/martinapensalfini/ontologies/2022/9/stop#Salvation",
+      "baseIri" : "http://www.semanticweb.org/martinapensalfini/ontologies/2022/9/stop",
+      "labels" : {
+        "IRI-based" : "Salvation"
+      }
+    }, {
+      "iri" : "http://www.semanticweb.org/martinapensalfini/ontologies/2022/9/stop#Memory",
+      "baseIri" : "http://www.semanticweb.org/martinapensalfini/ontologies/2022/9/stop",
+      "labels" : {
+        "IRI-based" : "Memory"
+      }
+    } ],
+    "id" : "22"
+  }, {
+    "iri" : "http://www.semanticweb.org/martinapensalfini/ontologies/2022/9/stop#Author",
+    "baseIri" : "http://www.semanticweb.org/martinapensalfini/ontologies/2022/9/stop",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Author"
+    },
+    "individuals" : [ {
+      "iri" : "http://www.semanticweb.org/martinapensalfini/ontologies/2022/9/stop#Fabrizio_De_Andrè",
+      "baseIri" : "http://www.semanticweb.org/martinapensalfini/ontologies/2022/9/stop",
+      "labels" : {
+        "IRI-based" : "Fabrizio_De_Andrè"
+      }
+    }, {
+      "iri" : "http://www.semanticweb.org/martinapensalfini/ontologies/2022/9/stop#Edgar_Lee_Masters",
+      "baseIri" : "http://www.semanticweb.org/martinapensalfini/ontologies/2022/9/stop",
+      "labels" : {
+        "IRI-based" : "Edgar_Lee_Masters"
+      }
+    } ],
+    "id" : "17"
+  }, {
+    "iri" : "http://www.semanticweb.org/martinapensalfini/ontologies/2022/9/stop#Song",
+    "baseIri" : "http://www.semanticweb.org/martinapensalfini/ontologies/2022/9/stop",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Song"
+    },
+    "individuals" : [ {
+      "iri" : "http://www.semanticweb.org/martinapensalfini/ontologies/2022/9/stop#Un_medico",
+      "baseIri" : "http://www.semanticweb.org/martinapensalfini/ontologies/2022/9/stop",
+      "labels" : {
+        "IRI-based" : "Un_medico"
+      }
+    }, {
+      "iri" : "http://www.semanticweb.org/martinapensalfini/ontologies/2022/9/stop#Un_chimico",
+      "baseIri" : "http://www.semanticweb.org/martinapensalfini/ontologies/2022/9/stop",
+      "labels" : {
+        "IRI-based" : "Un_chimico"
+      }
+    }, {
+      "iri" : "http://www.semanticweb.org/martinapensalfini/ontologies/2022/9/stop#Il_suonatore_Jones",
+      "baseIri" : "http://www.semanticweb.org/martinapensalfini/ontologies/2022/9/stop",
+      "labels" : {
+        "IRI-based" : "Il_suonatore_Jones"
+      }
+    }, {
+      "iri" : "http://www.semanticweb.org/martinapensalfini/ontologies/2022/9/stop#Un_giudice",
+      "baseIri" : "http://www.semanticweb.org/martinapensalfini/ontologies/2022/9/stop",
+      "labels" : {
+        "IRI-based" : "Un_giudice"
+      }
+    }, {
+      "iri" : "http://www.semanticweb.org/martinapensalfini/ontologies/2022/9/stop#Un_malato_di_cuore",
+      "baseIri" : "http://www.semanticweb.org/martinapensalfini/ontologies/2022/9/stop",
+      "labels" : {
+        "IRI-based" : "Un_malato_di_cuore"
+      }
+    }, {
+      "iri" : "http://www.semanticweb.org/martinapensalfini/ontologies/2022/9/stop#Un_blasfemo_(dietro_ogni_blasfemo_c'è_un_giardino_incantato)",
+      "baseIri" : "http://www.semanticweb.org/martinapensalfini/ontologies/2022/9/stop",
+      "labels" : {
+        "IRI-based" : "Un_blasfemo_(dietro_ogni_blasfemo_c'è_un_giardino_incantato)"
+      }
+    }, {
+      "iri" : "http://www.semanticweb.org/martinapensalfini/ontologies/2022/9/stop#Un_ottico",
+      "baseIri" : "http://www.semanticweb.org/martinapensalfini/ontologies/2022/9/stop",
+      "labels" : {
+        "IRI-based" : "Un_ottico"
+      }
+    }, {
+      "iri" : "http://www.semanticweb.org/martinapensalfini/ontologies/2022/9/stop#Un_matto(Dietro_ogni_scemo_c'è_un_villaggio)",
+      "baseIri" : "http://www.semanticweb.org/martinapensalfini/ontologies/2022/9/stop",
+      "labels" : {
+        "IRI-based" : "Un_matto(Dietro_ogni_scemo_c'è_un_villaggio)"
+      }
+    }, {
+      "iri" : "http://www.semanticweb.org/martinapensalfini/ontologies/2022/9/stop#Dormono_sulla_collina",
+      "baseIri" : "http://www.semanticweb.org/martinapensalfini/ontologies/2022/9/stop",
+      "labels" : {
+        "IRI-based" : "Dormono_sulla_collina"
+      }
+    } ],
+    "id" : "7",
+    "superClasses" : [ "4" ]
+  }, {
+    "iri" : "http://www.semanticweb.org/martinapensalfini/ontologies/2022/9/stop#Character",
+    "baseIri" : "http://www.semanticweb.org/martinapensalfini/ontologies/2022/9/stop",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Character"
+    },
+    "individuals" : [ {
+      "iri" : "http://www.semanticweb.org/martinapensalfini/ontologies/2022/9/stop#DoctorSiegfriedIseman",
+      "baseIri" : "http://www.semanticweb.org/martinapensalfini/ontologies/2022/9/stop",
+      "labels" : {
+        "IRI-based" : "DoctorSiegfriedIseman"
+      }
+    }, {
+      "iri" : "http://www.semanticweb.org/martinapensalfini/ontologies/2022/9/stop#WendellPBloyd",
+      "baseIri" : "http://www.semanticweb.org/martinapensalfini/ontologies/2022/9/stop",
+      "labels" : {
+        "IRI-based" : "WendellPBloyd"
+      }
+    }, {
+      "iri" : "http://www.semanticweb.org/martinapensalfini/ontologies/2022/9/stop#Elmer",
+      "baseIri" : "http://www.semanticweb.org/martinapensalfini/ontologies/2022/9/stop",
+      "labels" : {
+        "IRI-based" : "Elmer"
+      }
+    }, {
+      "iri" : "http://www.semanticweb.org/martinapensalfini/ontologies/2022/9/stop#UnBlasfemo",
+      "baseIri" : "http://www.semanticweb.org/martinapensalfini/ontologies/2022/9/stop",
+      "labels" : {
+        "IRI-based" : "UnBlasfemo"
+      }
+    }, {
+      "iri" : "http://www.semanticweb.org/martinapensalfini/ontologies/2022/9/stop#JudgeSelahLively",
+      "baseIri" : "http://www.semanticweb.org/martinapensalfini/ontologies/2022/9/stop",
+      "labels" : {
+        "IRI-based" : "JudgeSelahLively"
+      }
+    }, {
+      "iri" : "http://www.semanticweb.org/martinapensalfini/ontologies/2022/9/stop#JonesIlSuonatore",
+      "baseIri" : "http://www.semanticweb.org/martinapensalfini/ontologies/2022/9/stop",
+      "labels" : {
+        "IRI-based" : "JonesIlSuonatore"
+      }
+    }, {
+      "iri" : "http://www.semanticweb.org/martinapensalfini/ontologies/2022/9/stop#Tom",
+      "baseIri" : "http://www.semanticweb.org/martinapensalfini/ontologies/2022/9/stop",
+      "labels" : {
+        "IRI-based" : "Tom"
+      }
+    }, {
+      "iri" : "http://www.semanticweb.org/martinapensalfini/ontologies/2022/9/stop#Charley",
+      "baseIri" : "http://www.semanticweb.org/martinapensalfini/ontologies/2022/9/stop",
+      "labels" : {
+        "IRI-based" : "Charley"
+      }
+    }, {
+      "iri" : "http://www.semanticweb.org/martinapensalfini/ontologies/2022/9/stop#Lizzie",
+      "baseIri" : "http://www.semanticweb.org/martinapensalfini/ontologies/2022/9/stop",
+      "labels" : {
+        "IRI-based" : "Lizzie"
+      }
+    }, {
+      "iri" : "http://www.semanticweb.org/martinapensalfini/ontologies/2022/9/stop#UnChimico",
+      "baseIri" : "http://www.semanticweb.org/martinapensalfini/ontologies/2022/9/stop",
+      "labels" : {
+        "IRI-based" : "UnChimico"
+      }
+    }, {
+      "iri" : "http://www.semanticweb.org/martinapensalfini/ontologies/2022/9/stop#Maggie",
+      "baseIri" : "http://www.semanticweb.org/martinapensalfini/ontologies/2022/9/stop",
+      "labels" : {
+        "IRI-based" : "Maggie"
+      }
+    }, {
+      "iri" : "http://www.semanticweb.org/martinapensalfini/ontologies/2022/9/stop#UnMalatoDiCuore",
+      "baseIri" : "http://www.semanticweb.org/martinapensalfini/ontologies/2022/9/stop",
+      "labels" : {
+        "IRI-based" : "UnMalatoDiCuore"
+      }
+    }, {
+      "iri" : "http://www.semanticweb.org/martinapensalfini/ontologies/2022/9/stop#Sevigne_Houghton",
+      "baseIri" : "http://www.semanticweb.org/martinapensalfini/ontologies/2022/9/stop",
+      "labels" : {
+        "IRI-based" : "Sevigne_Houghton"
+      }
+    }, {
+      "iri" : "http://www.semanticweb.org/martinapensalfini/ontologies/2022/9/stop#UnGiudice",
+      "baseIri" : "http://www.semanticweb.org/martinapensalfini/ontologies/2022/9/stop",
+      "labels" : {
+        "IRI-based" : "UnGiudice"
+      }
+    }, {
+      "iri" : "http://www.semanticweb.org/martinapensalfini/ontologies/2022/9/stop#TrainorTheDruggist",
+      "baseIri" : "http://www.semanticweb.org/martinapensalfini/ontologies/2022/9/stop",
+      "labels" : {
+        "IRI-based" : "TrainorTheDruggist"
+      }
+    }, {
+      "iri" : "http://www.semanticweb.org/martinapensalfini/ontologies/2022/9/stop#Herman",
+      "baseIri" : "http://www.semanticweb.org/martinapensalfini/ontologies/2022/9/stop",
+      "labels" : {
+        "IRI-based" : "Herman"
+      }
+    }, {
+      "iri" : "http://www.semanticweb.org/martinapensalfini/ontologies/2022/9/stop#Aunt_Emily",
+      "baseIri" : "http://www.semanticweb.org/martinapensalfini/ontologies/2022/9/stop",
+      "labels" : {
+        "IRI-based" : "Aunt_Emily"
+      }
+    }, {
+      "iri" : "http://www.semanticweb.org/martinapensalfini/ontologies/2022/9/stop#FiddlerJones",
+      "baseIri" : "http://www.semanticweb.org/martinapensalfini/ontologies/2022/9/stop",
+      "labels" : {
+        "IRI-based" : "FiddlerJones"
+      }
+    }, {
+      "iri" : "http://www.semanticweb.org/martinapensalfini/ontologies/2022/9/stop#Major_Walker",
+      "baseIri" : "http://www.semanticweb.org/martinapensalfini/ontologies/2022/9/stop",
+      "labels" : {
+        "IRI-based" : "Major_Walker"
+      }
+    }, {
+      "iri" : "http://www.semanticweb.org/martinapensalfini/ontologies/2022/9/stop#Uncle_Isaac",
+      "baseIri" : "http://www.semanticweb.org/martinapensalfini/ontologies/2022/9/stop",
+      "labels" : {
+        "IRI-based" : "Uncle_Isaac"
+      }
+    }, {
+      "iri" : "http://www.semanticweb.org/martinapensalfini/ontologies/2022/9/stop#Ella",
+      "baseIri" : "http://www.semanticweb.org/martinapensalfini/ontologies/2022/9/stop",
+      "labels" : {
+        "IRI-based" : "Ella"
+      }
+    }, {
+      "iri" : "http://www.semanticweb.org/martinapensalfini/ontologies/2022/9/stop#UnMedico",
+      "baseIri" : "http://www.semanticweb.org/martinapensalfini/ontologies/2022/9/stop",
+      "labels" : {
+        "IRI-based" : "UnMedico"
+      }
+    }, {
+      "iri" : "http://www.semanticweb.org/martinapensalfini/ontologies/2022/9/stop#Towny_Kincaid",
+      "baseIri" : "http://www.semanticweb.org/martinapensalfini/ontologies/2022/9/stop",
+      "labels" : {
+        "IRI-based" : "Towny_Kincaid"
+      }
+    }, {
+      "iri" : "http://www.semanticweb.org/martinapensalfini/ontologies/2022/9/stop#UnMatto",
+      "baseIri" : "http://www.semanticweb.org/martinapensalfini/ontologies/2022/9/stop",
+      "labels" : {
+        "IRI-based" : "UnMatto"
+      }
+    }, {
+      "iri" : "http://www.semanticweb.org/martinapensalfini/ontologies/2022/9/stop#Bert",
+      "baseIri" : "http://www.semanticweb.org/martinapensalfini/ontologies/2022/9/stop",
+      "labels" : {
+        "IRI-based" : "Bert"
+      }
+    }, {
+      "iri" : "http://www.semanticweb.org/martinapensalfini/ontologies/2022/9/stop#UnOttico",
+      "baseIri" : "http://www.semanticweb.org/martinapensalfini/ontologies/2022/9/stop",
+      "labels" : {
+        "IRI-based" : "UnOttico"
+      }
+    }, {
+      "iri" : "http://www.semanticweb.org/martinapensalfini/ontologies/2022/9/stop#Kate",
+      "baseIri" : "http://www.semanticweb.org/martinapensalfini/ontologies/2022/9/stop",
+      "labels" : {
+        "IRI-based" : "Kate"
+      }
+    }, {
+      "iri" : "http://www.semanticweb.org/martinapensalfini/ontologies/2022/9/stop#DippoldTheOptician",
+      "baseIri" : "http://www.semanticweb.org/martinapensalfini/ontologies/2022/9/stop",
+      "labels" : {
+        "IRI-based" : "DippoldTheOptician"
+      }
+    }, {
+      "iri" : "http://www.semanticweb.org/martinapensalfini/ontologies/2022/9/stop#Edith",
+      "baseIri" : "http://www.semanticweb.org/martinapensalfini/ontologies/2022/9/stop",
+      "labels" : {
+        "IRI-based" : "Edith"
+      }
+    }, {
+      "iri" : "http://www.semanticweb.org/martinapensalfini/ontologies/2022/9/stop#FrankDrummer",
+      "baseIri" : "http://www.semanticweb.org/martinapensalfini/ontologies/2022/9/stop",
+      "labels" : {
+        "IRI-based" : "FrankDrummer"
+      }
+    }, {
+      "iri" : "http://www.semanticweb.org/martinapensalfini/ontologies/2022/9/stop#FrancisTurner",
+      "baseIri" : "http://www.semanticweb.org/martinapensalfini/ontologies/2022/9/stop",
+      "labels" : {
+        "IRI-based" : "FrancisTurner"
+      }
+    } ],
+    "id" : "26"
+  }, {
+    "iri" : "http://www.semanticweb.org/martinapensalfini/ontologies/2022/9/stop#Musical_Album",
+    "baseIri" : "http://www.semanticweb.org/martinapensalfini/ontologies/2022/9/stop",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Musical_Album"
+    },
+    "individuals" : [ {
+      "iri" : "http://www.semanticweb.org/martinapensalfini/ontologies/2022/9/stop#Non_al_denaro_non_all'amore_né_al_cielo",
+      "baseIri" : "http://www.semanticweb.org/martinapensalfini/ontologies/2022/9/stop",
+      "labels" : {
+        "IRI-based" : "Non_al_denaro_non_all'amore_né_al_cielo"
+      }
+    } ],
+    "id" : "11",
+    "superClasses" : [ "1" ]
+  } ],
+  "property" : [ {
+    "id" : "0",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "3",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "6",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "12",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "13",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "14",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "15",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "16",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "2",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "19",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "23",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "24",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "25",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "27",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "20",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "28",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "5",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "29",
+    "type" : "owl:objectProperty"
+  } ],
+  "propertyAttribute" : [ {
+    "iri" : "http://www.semanticweb.org/martinapensalfini/ontologies/2022/9/stop#inspires",
+    "inverse" : "2",
+    "baseIri" : "http://www.semanticweb.org/martinapensalfini/ontologies/2022/9/stop",
+    "range" : "1",
+    "label" : {
+      "IRI-based" : "inspires"
+    },
+    "domain" : "1",
+    "attributes" : [ "object" ],
+    "id" : "0"
+  }, {
+    "iri" : "http://schema.org/hasPart",
+    "inverse" : "5",
+    "baseIri" : "http://schema.org",
+    "range" : "4",
+    "label" : {
+      "IRI-based" : "hasPart"
+    },
+    "domain" : "1",
+    "attributes" : [ "external", "object" ],
+    "id" : "3"
+  }, {
+    "iri" : "http://www.semanticweb.org/martinapensalfini/ontologies/2022/9/stop#related_to",
+    "baseIri" : "http://www.semanticweb.org/martinapensalfini/ontologies/2022/9/stop",
+    "range" : "8",
+    "label" : {
+      "IRI-based" : "related_to"
+    },
+    "domain" : "7",
+    "attributes" : [ "object" ],
+    "id" : "6"
+  }, {
+    "range" : "4",
+    "domain" : "8",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "12"
+  }, {
+    "range" : "4",
+    "domain" : "7",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "13"
+  }, {
+    "range" : "1",
+    "domain" : "10",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "14"
+  }, {
+    "range" : "1",
+    "domain" : "11",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "15"
+  }, {
+    "iri" : "http://www.semanticweb.org/martinapensalfini/ontologies/2022/9/stop#has_author",
+    "baseIri" : "http://www.semanticweb.org/martinapensalfini/ontologies/2022/9/stop",
+    "range" : "17",
+    "label" : {
+      "IRI-based" : "has_author"
+    },
+    "domain" : "1",
+    "attributes" : [ "object" ],
+    "id" : "16"
+  }, {
+    "iri" : "http://www.semanticweb.org/martinapensalfini/ontologies/2022/9/stop#is_inspired_by",
+    "baseIri" : "http://www.semanticweb.org/martinapensalfini/ontologies/2022/9/stop",
+    "range" : "1",
+    "label" : {
+      "IRI-based" : "is_inspired_by"
+    },
+    "domain" : "1",
+    "attributes" : [ "object" ],
+    "id" : "2"
+  }, {
+    "iri" : "http://www.semanticweb.org/martinapensalfini/ontologies/2022/9/stop#is_written_by",
+    "inverse" : "20",
+    "baseIri" : "http://www.semanticweb.org/martinapensalfini/ontologies/2022/9/stop",
+    "range" : "17",
+    "label" : {
+      "IRI-based" : "is_written_by"
+    },
+    "domain" : "1",
+    "attributes" : [ "object" ],
+    "id" : "19"
+  }, {
+    "iri" : "http://www.semanticweb.org/martinapensalfini/ontologies/2022/9/stop#is_about",
+    "baseIri" : "http://www.semanticweb.org/martinapensalfini/ontologies/2022/9/stop",
+    "range" : "22",
+    "label" : {
+      "IRI-based" : "is_about"
+    },
+    "domain" : "4",
+    "attributes" : [ "object" ],
+    "id" : "23"
+  }, {
+    "iri" : "http://www.semanticweb.org/martinapensalfini/ontologies/2022/9/stop#appears_in",
+    "inverse" : "23",
+    "baseIri" : "http://www.semanticweb.org/martinapensalfini/ontologies/2022/9/stop",
+    "range" : "4",
+    "label" : {
+      "IRI-based" : "appears_in"
+    },
+    "domain" : "22",
+    "attributes" : [ "object" ],
+    "id" : "24"
+  }, {
+    "iri" : "http://www.semanticweb.org/martinapensalfini/ontologies/2022/9/stop#is_in",
+    "baseIri" : "http://www.semanticweb.org/martinapensalfini/ontologies/2022/9/stop",
+    "range" : "4",
+    "label" : {
+      "IRI-based" : "is_in"
+    },
+    "domain" : "26",
+    "attributes" : [ "object" ],
+    "id" : "25"
+  }, {
+    "iri" : "http://www.w3.org/1999/02/22-rdf-syntax-ns#type",
+    "baseIri" : "http://www.w3.org/1999/02/22-rdf-syntax-ns",
+    "range" : "9",
+    "label" : {
+      "IRI-based" : "type"
+    },
+    "domain" : "1",
+    "attributes" : [ "external", "object" ],
+    "id" : "27"
+  }, {
+    "iri" : "http://www.semanticweb.org/martinapensalfini/ontologies/2022/9/stop#writes",
+    "baseIri" : "http://www.semanticweb.org/martinapensalfini/ontologies/2022/9/stop",
+    "range" : "1",
+    "label" : {
+      "IRI-based" : "writes"
+    },
+    "domain" : "17",
+    "attributes" : [ "object" ],
+    "id" : "20"
+  }, {
+    "iri" : "http://www.semanticweb.org/martinapensalfini/ontologies/2022/9/stop#have_name",
+    "baseIri" : "http://www.semanticweb.org/martinapensalfini/ontologies/2022/9/stop",
+    "range" : "18",
+    "label" : {
+      "IRI-based" : "have_name"
+    },
+    "domain" : "21",
+    "attributes" : [ "datatype" ],
+    "id" : "28"
+  }, {
+    "iri" : "http://schema.org/isPartOf",
+    "baseIri" : "http://schema.org",
+    "range" : "1",
+    "label" : {
+      "IRI-based" : "isPartOf"
+    },
+    "domain" : "4",
+    "attributes" : [ "external", "object" ],
+    "id" : "5"
+  }, {
+    "iri" : "http://www.semanticweb.org/martinapensalfini/ontologies/2022/9/stop#has_character",
+    "inverse" : "25",
+    "baseIri" : "http://www.semanticweb.org/martinapensalfini/ontologies/2022/9/stop",
+    "range" : "26",
+    "label" : {
+      "IRI-based" : "has_character"
+    },
+    "domain" : "4",
+    "attributes" : [ "object" ],
+    "id" : "29"
+  } ]
+}
