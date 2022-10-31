@@ -622,6 +622,11 @@ a:hover {
     opacity: 0.1;
     animation: bgOp 1s forwards;
 }
+.highlightdamnation {
+    background-color: #cff5fc;
+    opacity: 0.1;
+    animation: bgOp 1s forwards;
+}
 @keyframes bgOp {
     from {opacity: 0.1}
     to {opacity: 1}
