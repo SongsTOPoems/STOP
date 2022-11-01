@@ -8,7 +8,12 @@ $(document).ready(function(){
         $("#projectList").show();
     });
     $("body").click(function() {
-        $("#projectList").hide();
+        if ($("#projectList").attr('class') == "active") {
+            $("#projectList").hide();
+        }
+        else {
+            $("#projectList").addClass('active');
+        } 
     });
 });
 
