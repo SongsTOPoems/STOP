@@ -4,6 +4,12 @@ $(document).ready(function(){
             scrollTop: $("#subHero").offset().top
         }, 800);
     });
+    $("#project").click(function() {
+        $("#projectList").show();
+    });
+    $("body").click(function() {
+        $("#projectList").hide();
+    });
 });
 
 
