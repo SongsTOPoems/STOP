@@ -35,7 +35,18 @@ html, body {
     padding-top: 12px;
     padding-bottom: 10px;
 }
-
+#secondaryButton {
+    display: none;
+    font-size: 26px;
+    position: fixed;
+    color: white;
+    right: 22px;
+    top: 22px;
+    background-color: rgba(51, 51, 51, 0.3);
+    border-radius: 5px;
+    border: 1pt solid #f7f7f7;
+    padding: 0px 4px;
+}
 #logo, #logo a{
     position: fixed;
     left: 30px;
