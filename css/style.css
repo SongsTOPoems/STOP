@@ -64,11 +64,15 @@ html, body {
     color: rgba(255, 255, 255, 0.8);
     padding: 8px;
     font-size: 20px;
-    animation: appearing 3s 1s forwards;
+    animation: appearing 2s forwards;
 }
 
 #navbar li:hover {
     color: rgba(255, 255, 255, 1);
+}
+
+.active {
+    display: table !important;
 }
 
 #projectList {
