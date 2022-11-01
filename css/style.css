@@ -157,7 +157,8 @@ html, body {
 
 #cloud {
     height: 80vh;
-    margin-left: 16vw;
+    transform: translateX(-50%);
+    margin-left: 50%;
 }
 
 #subHero h1 {
