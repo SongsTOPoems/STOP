@@ -310,6 +310,11 @@ body > hr {
     margin-right: 5%;
 }
 
+.icon-tit a {
+    text-decoration: none!important;
+    color: inherit!important;
+}
+
 .slider1 {
     animation: leftToRight1 1s ease-in forwards;
 }
