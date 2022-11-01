@@ -273,8 +273,8 @@ h1::after {
         height: 40vw;
     }
     .small-cards {
-        width: 46%;
-        margin-left: 2.5%;
+        width: 46% !important;
+        margin-left: 2.5% !important;
     }
 }
 
