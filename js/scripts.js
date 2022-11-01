@@ -10,6 +10,7 @@ $(document).ready(function(){
     $("body").click(function() {
         if ($("#projectList").attr('class') == "active") {
             $("#projectList").removeClass('active');
+            break;
         }
         else {
             $("#projectList").hide();
