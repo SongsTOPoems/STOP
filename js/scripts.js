@@ -10,10 +10,9 @@ $(document).ready(function(){
     $("body").click(function() {
         if ($("#projectList").attr('class') == "active") {
             $("#projectList").removeClass('active');
-            $("#projectList").hide();
         }
         else {
-            $("#projectList").addClass('active');
+            $("#projectList").hide();
         } 
     });
 });
