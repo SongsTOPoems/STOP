@@ -29,6 +29,9 @@ function getList(entry) {
         case 'poem6':
             return (["Writing", "Church", "Sickness", "Family", "Salvation", "Damnation", "Justice"]);
             break;
+        case 'poem7':
+            return (["Nature", "Family", "Damnation"]);
+            break;
         case 'text1':
             return (["Death", "Family", "Music", "Nature", "Salvation", "Sickness"]);
             break;
@@ -43,6 +46,12 @@ function getList(entry) {
             break;
         case 'text5':
             return ([ "Salvation", "Music", "Sickness", "Sight", "Secret", "Love", " Nature", "Church"]);
+            break;
+        case 'text6':
+            return ([ "Writing", "Church", "Sickness", "Family", "Justice", "Damnation", " Nature"]);
+            break;
+        case 'text7':
+            return ([ "Death", "Nature", "Suffering", "Justice", "Knowledge"]);
             break;
     }
 }
