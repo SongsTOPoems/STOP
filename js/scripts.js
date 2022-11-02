@@ -104,6 +104,7 @@ $(document).ready(function(){
         $("#poemList .left-pointer").hide();
     });
     $("#songList a").click(function(){
+        $("#readerIcon").hide();
         $("#select").hide();
         var name = $(this).attr('id');
         var url = "https://songstopoems.github.io/STOP/texts/" + name + ".html";
@@ -117,6 +118,7 @@ $(document).ready(function(){
         $("#topics").html(newString) ;
     });
     $("#poemList a").click(function(){
+        $("#readerIcon").hide();
         $("#select").hide();
         var name = $(this).attr('id');
         var url = "https://songstopoems.github.io/STOP/texts/" + name + ".html";
