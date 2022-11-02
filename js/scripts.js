@@ -1,4 +1,5 @@
 $(document).ready(function(){
+    $("#projectList").hide();
     $("#start").click(function() {
         $('html, body').animate({
             scrollTop: $("#subHero").offset().top
