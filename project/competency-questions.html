@@ -32,9 +32,10 @@
             <input type="checkbox" checked>
             <i></i>
             <h2>#1 Which are the topics of the songs?</h2>
-            <span>The query</span>
-            <div class="codeBox">
-                <code>  
+            <div class="queryBox">
+                <span>The query</span>
+                <div class="codeBox">
+                    <code>  
 PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#><br>
 PREFIX stop: <http://www.semanticweb.org/martinapensalfini/ontologies/2022/9/stop#><br>
 SELECT ?topic_n <br>
@@ -42,8 +43,9 @@ WHERE {<br>
     ?song rdf:type stop:Song;<br>
           stop:is_about ?topic.<br>
           ?topic stop:have_name ?topic_n}"""<br>
-                </code>
-            </div><br>
+                    </code>
+                </div><br>
+            </div>
           </li>
           <li class="quest">
             <input type="checkbox" checked>
