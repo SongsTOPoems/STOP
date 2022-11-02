@@ -896,6 +896,9 @@ a:hover {
 #questList li:nth-of-type(10) {
   animation-delay: 2.1s;
 }
+#questList li:nth-of-type(11) {
+  animation-delay: 2.3s;
+}
 #questList li:last-of-type {
   padding-bottom: 0;
 }
