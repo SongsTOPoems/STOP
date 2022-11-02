@@ -786,7 +786,7 @@ a:hover {
 .innerPageIcon {
     margin-left: 50%;
     transform: translateX(-50%);
-    max-width: 260px;
+    max-width: 200px;
     margin-top: 90px;
 }
 
@@ -812,8 +812,13 @@ a:hover {
 #questList {
   list-style: none;
   perspective: 900;
-  padding: 0;
-  margin: 0;
+  padding: 0px 10px;
+  margin: 5vw;
+  width: calc(90vw - 20px);
+  border-top: 7px solid #ffcc02;
+  border-left: solid 1px #d5d5d5;
+  border-right: solid 1px #d5d5d5;
+  border-bottom: solid 1px #d5d5d5;
 }
 #questList li {
   position: relative;
@@ -844,7 +849,7 @@ a:hover {
 #questList li i:before, #questList li i:after {
   content: "";
   position: absolute;
-  background-color: #ff6873;
+  background-color: #707070;
   width: 3px;
   height: 9px;
 }
