@@ -223,6 +223,7 @@ h1::after {
     color: #838383;
     margin-left: 15%;
     margin-right: 15%;
+    text-align: center;
 }
 
 .para {
