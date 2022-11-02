@@ -76,7 +76,7 @@ html, body {
 }
 
 #projectList {
-  display: none;
+  display: table;
   margin-top: 10px;
   border: 0.1pt solid rgba(255, 255,255, 0.3);
   border-radius: 5px;
