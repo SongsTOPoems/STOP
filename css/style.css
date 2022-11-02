@@ -935,3 +935,16 @@ a:hover {
     color: #333;
 }
 
+.queryBox button {
+    transform: translateX(-50%);
+    margin-left: 50%;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    border-radius: 10px;
+    box-shadow: 0 24px 36px rgb(0 0 0 / 11%);
+    background-color: #fefefe77;
+    border: solid 1pt #ffce00;
+    padding: 10px;
+    font-family: inherit;
+}
+
