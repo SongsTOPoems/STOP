@@ -31,7 +31,7 @@
           <li class="quest">
             <input type="checkbox" checked>
             <i></i>
-            <h2>#1 Which are the topics of the songs?</h2>
+            <h3>#1 Which are the topics of the songs?</h3>
             <div class="queryBox">
                 <div class="codeBox">
                     <span>The query</span>
@@ -41,7 +41,8 @@
 <code>WHERE {</code>
 <code>  ?song rdf:type stop:Song;</code>
 <code>    stop:is_about ?topic.</code>
-<code>    ?topic stop:have_name ?topic_n}</code>
+<code>    ?topic stop:have_name ?topic_n</code>
+<code>}</code>
                 </div>
                 <br>
                 <p class="smallerPara"><span class="smallBolder">Result:</span> #1, #2</p>
@@ -52,7 +53,7 @@
           <li class="quest">
             <input type="checkbox" checked>
             <i></i>
-            <h2>#2 Which are the topics of the poems?</h2>
+            <h3>#2 Which are the topics of the poems?</h3>
             <div class="queryBox">
                 <div class="codeBox">
                     <span>The query</span>
@@ -62,7 +63,8 @@
 <code>WHERE {</code>
 <code>  ?poem rdf:type stop:Poem;</code>
 <code>    stop:is_about ?topic.</code>
-<code>    ?topic stop:have_name ?topic_n}</code>
+<code>    ?topic stop:have_name ?topic_n</code>
+<code>}</code>
                 </div>
                 <br>
                 <p class="smallerPara"><span class="smallBolder">Result:</span> #1, #2</p>
@@ -72,7 +74,7 @@
           </li><li class="quest">
             <input type="checkbox" checked>
             <i></i>
-            <h2>#3 Which is the most frequent topic in general?</h2>
+            <h3>#3 Which is the most frequent topic in general?</h3>
             <div class="queryBox">
                 <div class="codeBox">
                     <span>The query</span>
@@ -81,7 +83,7 @@
 <code>SELECT ?topic_n (COUNT(?unit) as ?number_of_units)</code>
 <code>WHERE {</code>
 <code>  ?topic stop:appears_in ?unit.</code>
-<code>  ?topic stop:have_name ?topic_n}</code>
+<code>  ?topic stop:have_name ?topic_n</code>
 <code>}</code>
 <code>GROUP BY ?topic</code>
 <code>ORDER BY desc(?number_of_songs)</code>
@@ -95,17 +97,21 @@
           </li><li class="quest">
             <input type="checkbox" checked>
             <i></i>
-            <h2>#1 Which are the topics of the songs?</h2>
+            <h3>#4 Which is the most frequent topic in songs?</h3>
             <div class="queryBox">
                 <div class="codeBox">
                     <span>The query</span>
 <code>PREFIX rdf: &lt;http://www.w3.org/1999/02/22-rdf-syntax-ns#&gt;</code>
 <code>PREFIX stop: &lt;http://www.semanticweb.org/martinapensalfini/ontologies/2022/9/stop#&gt;</code>
-<code>SELECT ?topic_n</code>
+<code>SELECT ?topic_n (COUNT(?unit) as ?number_of_songs)</code>
 <code>WHERE {</code>
-<code>  ?song rdf:type stop:Song;</code>
-<code>    stop:is_about ?topic.</code>
-<code>    ?topic stop:have_name ?topic_n}</code>
+<code>  ?topic stop:appears_in ?unit.</code>
+<code>    ?unit rdf:type stop:Song.</code>
+<code>    ?topic stop:have_name ?topic_n.</code>
+<code>}</code>                    
+<code>GROUP BY ?topic</code>
+<code>ORDER BY desc(?number_of_songs)</code>
+<code>LIMIT 1</code>
                 </div>
                 <br>
                 <p class="smallerPara"><span class="smallBolder">Result:</span> #1, #2</p>
@@ -115,17 +121,18 @@
           </li><li class="quest">
             <input type="checkbox" checked>
             <i></i>
-            <h2>#1 Which are the topics of the songs?</h2>
+            <h3>#5 Which is the most frequent topic in poems?</h5>
             <div class="queryBox">
                 <div class="codeBox">
                     <span>The query</span>
 <code>PREFIX rdf: &lt;http://www.w3.org/1999/02/22-rdf-syntax-ns#&gt;</code>
 <code>PREFIX stop: &lt;http://www.semanticweb.org/martinapensalfini/ontologies/2022/9/stop#&gt;</code>
-<code>SELECT ?topic_n</code>
+<code>SELECT ?topic_n (COUNT(?unit) as ?number_of_poems)</code>
 <code>WHERE {</code>
-<code>  ?song rdf:type stop:Song;</code>
-<code>    stop:is_about ?topic.</code>
-<code>    ?topic stop:have_name ?topic_n}</code>
+<code>  ?topic stop:appears_in ?unit.</code>
+<code>  ?unit rdf:type stop:Poem.</code>
+<code>  ?topic stop:have_name ?topic_n.</code>
+<code>}</code>                    
                 </div>
                 <br>
                 <p class="smallerPara"><span class="smallBolder">Result:</span> #1, #2</p>
@@ -135,7 +142,7 @@
           </li><li class="quest">
             <input type="checkbox" checked>
             <i></i>
-            <h2>#1 Which are the topics of the songs?</h2>
+            <h2>#6 Which are the topics treated in the song "Un chimico"?</h2>
             <div class="queryBox">
                 <div class="codeBox">
                     <span>The query</span>
@@ -143,9 +150,11 @@
 <code>PREFIX stop: &lt;http://www.semanticweb.org/martinapensalfini/ontologies/2022/9/stop#&gt;</code>
 <code>SELECT ?topic_n</code>
 <code>WHERE {</code>
-<code>  ?song rdf:type stop:Song;</code>
-<code>    stop:is_about ?topic.</code>
-<code>    ?topic stop:have_name ?topic_n}</code>
+<code>  ?unit rdf:type stop:Song;</code>
+<code>    stop:have_name "Un chimico"^^rdfs:Literal;</code>
+<code>      stop:is_about ?topic.</code>
+<code>      ?topic stop:have_name ?topic_n.</code>                    
+<code>}</code>
                 </div>
                 <br>
                 <p class="smallerPara"><span class="smallBolder">Result:</span> #1, #2</p>
@@ -155,7 +164,7 @@
           </li><li class="quest">
             <input type="checkbox" checked>
             <i></i>
-            <h2>#1 Which are the topics of the songs?</h2>
+            <h2>#7 Which are the topics treated in the poem "Trainor the druggist"?</h2>
             <div class="queryBox">
                 <div class="codeBox">
                     <span>The query</span>
@@ -163,9 +172,11 @@
 <code>PREFIX stop: &lt;http://www.semanticweb.org/martinapensalfini/ontologies/2022/9/stop#&gt;</code>
 <code>SELECT ?topic_n</code>
 <code>WHERE {</code>
-<code>  ?song rdf:type stop:Song;</code>
-<code>    stop:is_about ?topic.</code>
-<code>    ?topic stop:have_name ?topic_n}</code>
+<code>  ?unit rdf:type stop:Poem;</code>
+<code>    stop:have_name "Trainor, the druggist"^^rdfs:Literal;</code>
+<code>      stop:is_about ?topic.</code>
+<code>      ?topic stop:have_name ?topic_n.</code>
+<code>}</code>                    
                 </div>
                 <br>
                 <p class="smallerPara"><span class="smallBolder">Result:</span> #1, #2</p>
@@ -175,17 +186,18 @@
           </li><li class="quest">
             <input type="checkbox" checked>
             <i></i>
-            <h2>#1 Which are the topics of the songs?</h2>
+            <h2>#8 Which songs/poems are associated with the topic "Sky"?</h2>
             <div class="queryBox">
                 <div class="codeBox">
                     <span>The query</span>
 <code>PREFIX rdf: &lt;http://www.w3.org/1999/02/22-rdf-syntax-ns#&gt;</code>
 <code>PREFIX stop: &lt;http://www.semanticweb.org/martinapensalfini/ontologies/2022/9/stop#&gt;</code>
-<code>SELECT ?topic_n</code>
+<code>SELECT ?unit </code>
 <code>WHERE {</code>
-<code>  ?song rdf:type stop:Song;</code>
-<code>    stop:is_about ?topic.</code>
-<code>    ?topic stop:have_name ?topic_n}</code>
+<code>  VALUES ?type { stop:Poem stop:Song }</code>
+<code>    ?unit rdf:type ?type;</code>
+<code>      stop:is_about stop:Sky.</code>
+<code>}</code>
                 </div>
                 <br>
                 <p class="smallerPara"><span class="smallBolder">Result:</span> #1, #2</p>
