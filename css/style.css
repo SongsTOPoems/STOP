@@ -228,6 +228,14 @@ h1::after {
     text-align: justify;
 }
 
+.smallerPara {
+    font-size: 16px;
+    color: #838383;
+    margin-left: 10%;
+    margin-right: 10%;
+    text-align: justify;
+}
+
 #magnifier {
     margin-top: -15px;
     width: 70px;
@@ -337,6 +345,18 @@ h1::after {
     padding-left: 10px;
     padding-right: 20px;
     font-size: 1.2em;
+    padding-bottom: 8px;
+
+}
+.smallBolder {
+    font-weight: 900;
+    color: #333;
+    text-transform: uppercase;
+    display: block;
+    padding-top: 10px;
+    padding-left: 10px;
+    padding-right: 20px;
+    font-size: 18px;
     padding-bottom: 8px;
 
 }
