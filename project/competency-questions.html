@@ -63,7 +63,7 @@
 <code>WHERE {</code>
 <code>  ?poem rdf:type stop:Poem;</code>
 <code>    stop:is_about ?topic.</code>
-<code>    ?topic stop:have_name ?topic_n</code>
+<code>    ?topic stop:have_name ?topic_n.</code>
 <code>}</code>
                 </div>
                 <br>
@@ -86,7 +86,7 @@
 <code>  ?topic stop:have_name ?topic_n</code>
 <code>}</code>
 <code>GROUP BY ?topic</code>
-<code>ORDER BY desc(?number_of_songs)</code>
+<code>ORDER BY desc(?number_of_units)</code>
 <code>LIMIT 1</code>     
                 </div>
                 <br>
@@ -106,8 +106,8 @@
 <code>SELECT ?topic_n (COUNT(?unit) as ?number_of_songs)</code>
 <code>WHERE {</code>
 <code>  ?topic stop:appears_in ?unit.</code>
-<code>    ?unit rdf:type stop:Song.</code>
-<code>    ?topic stop:have_name ?topic_n.</code>
+<code>  ?unit rdf:type stop:Song.</code>
+<code>  ?topic stop:have_name ?topic_n.</code>
 <code>}</code>                    
 <code>GROUP BY ?topic</code>
 <code>ORDER BY desc(?number_of_songs)</code>
@@ -121,7 +121,7 @@
           </li><li class="quest">
             <input type="checkbox" checked>
             <i></i>
-            <h3>#5 Which is the most frequent topic in poems?</h5>
+            <h3>#5 Which is the most frequent topic in poems?</h3>
             <div class="queryBox">
                 <div class="codeBox">
                     <span>The query</span>
@@ -132,7 +132,10 @@
 <code>  ?topic stop:appears_in ?unit.</code>
 <code>  ?unit rdf:type stop:Poem.</code>
 <code>  ?topic stop:have_name ?topic_n.</code>
-<code>}</code>                    
+<code>}</code>
+<code>GROUP BY ?topic</code>
+<code>ORDER BY desc(?number_of_poems)</code>
+<code>LIMIT 1</code>    
                 </div>
                 <br>
                 <p class="smallerPara"><span class="smallBolder">Result:</span> #1, #2</p>
@@ -142,7 +145,7 @@
           </li><li class="quest">
             <input type="checkbox" checked>
             <i></i>
-            <h2>#6 Which are the topics treated in the song "Un chimico"?</h2>
+            <h3>#6 Which are the topics treated in the song "Un chimico"?</h3>
             <div class="queryBox">
                 <div class="codeBox">
                     <span>The query</span>
@@ -164,7 +167,7 @@
           </li><li class="quest">
             <input type="checkbox" checked>
             <i></i>
-            <h2>#7 Which are the topics treated in the poem "Trainor the druggist"?</h2>
+            <h3>#7 Which are the topics treated in the poem "Trainor the druggist"?</h3>
             <div class="queryBox">
                 <div class="codeBox">
                     <span>The query</span>
@@ -186,17 +189,18 @@
           </li><li class="quest">
             <input type="checkbox" checked>
             <i></i>
-            <h2>#8 Which songs/poems are associated with the topic "Sky"?</h2>
+            <h3>#8 Which songs/poems are associated with the topic "Sky"?</h3>
             <div class="queryBox">
                 <div class="codeBox">
                     <span>The query</span>
 <code>PREFIX rdf: &lt;http://www.w3.org/1999/02/22-rdf-syntax-ns#&gt;</code>
 <code>PREFIX stop: &lt;http://www.semanticweb.org/martinapensalfini/ontologies/2022/9/stop#&gt;</code>
-<code>SELECT ?unit </code>
+<code>SELECT ?unit_name </code>
 <code>WHERE {</code>
 <code>  VALUES ?type { stop:Poem stop:Song }</code>
 <code>    ?unit rdf:type ?type;</code>
-<code>      stop:is_about stop:Sky.</code>
+<code>      stop:have_name ?unit_name;</code>
+<code>        stop:is_about stop:Sky.</code>
 <code>}</code>
                 </div>
                 <br>
@@ -207,37 +211,69 @@
           </li><li class="quest">
             <input type="checkbox" checked>
             <i></i>
-            <h2>#1 Which are the topics of the songs?</h2>
+            <h3>#9 In which songs/poems can we find the topic "Love"?</h3>
             <div class="queryBox">
                 <div class="codeBox">
                     <span>The query</span>
 <code>PREFIX rdf: &lt;http://www.w3.org/1999/02/22-rdf-syntax-ns#&gt;</code>
 <code>PREFIX stop: &lt;http://www.semanticweb.org/martinapensalfini/ontologies/2022/9/stop#&gt;</code>
-<code>SELECT ?topic_n</code>
+<code>SELECT ?unit_name </code>
 <code>WHERE {</code>
-<code>  ?song rdf:type stop:Song;</code>
-<code>    stop:is_about ?topic.</code>
-<code>    ?topic stop:have_name ?topic_n}</code>
+<code>  VALUES ?type { stop:Poem stop:Song }</code>
+<code>    ?unit rdf:type ?type;</code>
+<code>      stop:have_name ?unit_name;</code>
+<code>        stop:is_about stop:Love.</code>
+<code>}</code>
                 </div>
                 <br>
                 <p class="smallerPara"><span class="smallBolder">Result:</span> #1, #2</p>
                 <br>
                 <br>
             </div>
-          </li><li class="quest">
+          </li>
+          <li class="quest">
             <input type="checkbox" checked>
             <i></i>
-            <h2>#1 Which are the topics of the songs?</h2>
+            <h3>#10 Which characters of The hill are not mentioned in La collina?</h3>
             <div class="queryBox">
                 <div class="codeBox">
                     <span>The query</span>
 <code>PREFIX rdf: &lt;http://www.w3.org/1999/02/22-rdf-syntax-ns#&gt;</code>
 <code>PREFIX stop: &lt;http://www.semanticweb.org/martinapensalfini/ontologies/2022/9/stop#&gt;</code>
-<code>SELECT ?topic_n</code>
+<code>SELECT DISTINCT ?p_name</code>
 <code>WHERE {</code>
-<code>  ?song rdf:type stop:Song;</code>
-<code>    stop:is_about ?topic.</code>
-<code>    ?topic stop:have_name ?topic_n}</code>
+<code>  ?song stop:has_character ?s_character.</code>
+<code>  ?s_character stop:have_name ?s_name.</code>
+<code>  ?song stop:related_to ?poem.</code>
+<code>  ?song  stop:have_name "La collina"^^rdfs:Literal.</code>
+<code>  ?poem stop:has_character ?p_character.</code>
+<code>  ?p_character stop:have_name ?p_name.</code>
+<code>  FILTER (NOT EXISTS {?song stop:has_character ?p_character})</code>
+<code>}</code>
+
+                </div>
+                <br>
+                <p class="smallerPara"><span class="smallBolder">Result:</span> #1, #2</p>
+                <br>
+                <br>
+            </div>
+          </li>
+          <li class="quest">
+            <input type="checkbox" checked>
+            <i></i>
+            <h3>#11 Which is the name that the character of the song "Un giudice" has in the original poem by Masters?</h3>
+            <div class="queryBox">
+                <div class="codeBox">
+                    <span>The query</span>
+<code>PREFIX rdf: &lt;http://www.w3.org/1999/02/22-rdf-syntax-ns#&gt;</code>
+<code>PREFIX stop: &lt;http://www.semanticweb.org/martinapensalfini/ontologies/2022/9/stop#&gt;</code>
+<code>SELECT ?poem_name</code>
+<code>WHERE {</code>
+<code>  ?unit stop:have_name "Un giudice"^^rdfs:Literal;</code>
+<code>    rdf:type stop:Song;</code>
+<code>    stop:related_to ?poem.</code>
+<code>  ?poem stop:have_name ?poem_name.</code>
+<code>}</code>
                 </div>
                 <br>
                 <p class="smallerPara"><span class="smallBolder">Result:</span> #1, #2</p>
