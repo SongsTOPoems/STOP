@@ -8,12 +8,11 @@ $(document).ready(function(){
         $("#projectList").show();
     });
     $("body").click(function() {
-        if ($("#projectList").attr('class') == "active") {
-            $("#projectList").removeClass('active');
-            break;
+        if ($("#projectList").attr('class') != "active") {
+            $("#projectList").hide();
         }
         else {
-            $("#projectList").hide();
+            $("#projectList").removeClass('active');
         } 
     });
 });
