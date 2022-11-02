@@ -6,6 +6,7 @@ $(document).ready(function(){
     });
     $("#project").click(function() {
         $("#projectList").show();
+        $("#projectList").addClass("active");
     });
     $("body").click(function() {
         if ($("#projectList").attr('class') != "active") {
