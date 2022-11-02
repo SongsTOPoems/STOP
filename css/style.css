@@ -790,6 +790,10 @@ a:hover {
     margin-top: 90px;
 }
 
+#readerIcon {
+    margin-top: 200px !important;
+}    
+
 /* comp-quest*/
 .transition, #questList li i:before, #questList li i:after, p {
   transition: all 0.25s ease-in-out;
