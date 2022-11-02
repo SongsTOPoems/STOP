@@ -35,16 +35,14 @@
             <div class="queryBox">
                 <span>The query</span>
                 <div class="codeBox">
-                    <code>  
-PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#><br>
-PREFIX stop: <http://www.semanticweb.org/martinapensalfini/ontologies/2022/9/stop#><br>
-SELECT ?topic_n <br>
-WHERE {<br>
-    ?song rdf:type stop:Song;<br>
-          stop:is_about ?topic.<br>
-          ?topic stop:have_name ?topic_n}"""<br>
-                    </code>
-                </div><br>
+                    <code>PREFIX rdf: &lt;http://www.w3.org/1999/02/22-rdf-syntax-ns#&gt;</code>
+                    <code>PREFIX stop: &lt;http://www.semanticweb.org/martinapensalfini/ontologies/2022/9/stop#&gt;</code>
+                    <code>SELECT ?topic_n</code>
+                    <code>WHERE {</code>
+                    <code>  ?song rdf:type stop:Song;</code>
+                    <code>    stop:is_about ?topic.</code>
+                    <code>    ?topic stop:have_name ?topic_n}</code>
+                </div>
             </div>
           </li>
           <li class="quest">
