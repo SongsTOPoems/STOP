@@ -918,3 +918,17 @@ a:hover {
     background-color: #f8f8f8;
     padding: 0 0.6rem 0.8rem;
 }
+
+.codeBox span {
+    display: block;
+    background-color: #fceaa4;
+    margin: 0 -0.6000000000000014rem;
+    position: relative;
+    padding-left: 0.6000000000000014rem;
+    border-top-right-radius: inherit;
+    border-top-left-radius: inherit;
+}
+
+code {
+    white-space: pre;
+}
