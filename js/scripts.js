@@ -7,14 +7,14 @@ $(document).ready(function(){
     });
     $("#project").click(function() {
         $("#projectList").show();
-        $("#projectList").addClass("active");
+        $("#projectList").addClass("activeList");
     });
     $("body").click(function() {
-        if ($("#projectList").attr('class') != "active") {
+        if ($("#projectList").attr('class') != "activeList") {
             $("#projectList").hide();
         }
         else {
-            $("#projectList").removeClass('active');
+            $("#projectList").removeClass('activeList');
         } 
     });
 });
