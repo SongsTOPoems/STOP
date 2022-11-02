@@ -917,6 +917,7 @@ a:hover {
     margin: 1.5625em auto;
     background-color: #f8f8f8;
     padding: 0 0.6rem 0.8rem;
+    white-space: pre;
 }
 
 .codeBox span {
@@ -929,6 +930,3 @@ a:hover {
     border-top-left-radius: inherit;
 }
 
-code {
-    white-space: pre;
-}
