@@ -28,3 +28,9 @@ function addClass(element, className) {
         element.className += " " + className;
     }
 }
+
+$("#teamButton").click(function() {
+    $('html, body').animate({
+        scrollTop: $("#sectionThree").offset().top
+    }, 2000);
+});
