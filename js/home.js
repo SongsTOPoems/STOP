@@ -29,8 +29,10 @@ function addClass(element, className) {
     }
 }
 
-$("#teamButton").click(function() {
-    $('html, body').animate({
-        scrollTop: $("#sectionThree").offset().top
-    }, 2000);
+$(document).ready(function(){
+    $("#teamButton").click(function() {
+        $('html, body').animate({
+            scrollTop: $("#sectionThree").offset().top
+        }, 2000);
+    });
 });
