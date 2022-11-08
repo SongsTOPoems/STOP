@@ -457,12 +457,12 @@ body > hr {
 }
 
 .person img {
-  width: 95%;
+  width: 80%;
   height: 200px;
   object-fit: cover;
   object-position: top;
   margin-top: -15px;
-  margin-left: 2.5%;
+  margin-left: 10%;
   margin-bottom: 10px;
   border-radius: 0px 0px 25px 25px;
 }
