@@ -350,9 +350,9 @@ h1::after {
         margin-left: 2.5% !important;
     }
     .person {
-        width: 41vw;
+        width: 41vw!important;
         display: inline-block;
-        margin-left: 3.3vw;
+        margin-left: 3.3vw!important;
         padding-left: 1%;
         padding-right: 1%;
         border-radius: 25px;
