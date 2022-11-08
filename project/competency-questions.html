@@ -37,11 +37,11 @@
                     <span>The query</span>
 <code>PREFIX rdf: &lt;http://www.w3.org/1999/02/22-rdf-syntax-ns#&gt;</code>
 <code>PREFIX stop: &lt;http://www.semanticweb.org/martinapensalfini/ontologies/2022/9/stop#&gt;</code>
-<code>SELECT ?topic_n</code>
+<code>SELECT ?topic_name.</code>
 <code>WHERE {</code>
 <code>  ?song rdf:type stop:Song;</code>
 <code>    stop:is_about ?topic.</code>
-<code>    ?topic stop:have_name ?topic_n</code>
+<code>    ?topic stop:have_name ?topic_name.</code>
 <code>}</code>
                 </div>
                 <br>
@@ -63,7 +63,7 @@
 <code>WHERE {</code>
 <code>  ?poem rdf:type stop:Poem;</code>
 <code>    stop:is_about ?topic.</code>
-<code>    ?topic stop:have_name ?topic_n.</code>
+<code>    ?topic stop:have_name ?topic_name.</code>
 <code>}</code>
                 </div>
                 <br>
@@ -80,10 +80,10 @@
                     <span>The query</span>
 <code>PREFIX rdf: &lt;http://www.w3.org/1999/02/22-rdf-syntax-ns#&gt;</code>
 <code>PREFIX stop: &lt;http://www.semanticweb.org/martinapensalfini/ontologies/2022/9/stop#&gt;</code>
-<code>SELECT ?topic_n (COUNT(?unit) as ?number_of_units)</code>
+<code>SELECT ?topic_name (COUNT(?unit) as ?number_of_units)</code>
 <code>WHERE {</code>
 <code>  ?topic stop:appears_in ?unit.</code>
-<code>  ?topic stop:have_name ?topic_n</code>
+<code>  ?topic stop:have_name ?topic_name.</code>
 <code>}</code>
 <code>GROUP BY ?topic</code>
 <code>ORDER BY desc(?number_of_units)</code>
@@ -103,11 +103,11 @@
                     <span>The query</span>
 <code>PREFIX rdf: &lt;http://www.w3.org/1999/02/22-rdf-syntax-ns#&gt;</code>
 <code>PREFIX stop: &lt;http://www.semanticweb.org/martinapensalfini/ontologies/2022/9/stop#&gt;</code>
-<code>SELECT ?topic_n (COUNT(?unit) as ?number_of_songs)</code>
+<code>SELECT ?topic_name (COUNT(?unit) as ?number_of_songs)</code>
 <code>WHERE {</code>
 <code>  ?topic stop:appears_in ?unit.</code>
 <code>  ?unit rdf:type stop:Song.</code>
-<code>  ?topic stop:have_name ?topic_n.</code>
+<code>  ?topic stop:have_name ?topic_name.</code>
 <code>}</code>                    
 <code>GROUP BY ?topic</code>
 <code>ORDER BY desc(?number_of_songs)</code>
@@ -127,11 +127,11 @@
                     <span>The query</span>
 <code>PREFIX rdf: &lt;http://www.w3.org/1999/02/22-rdf-syntax-ns#&gt;</code>
 <code>PREFIX stop: &lt;http://www.semanticweb.org/martinapensalfini/ontologies/2022/9/stop#&gt;</code>
-<code>SELECT ?topic_n (COUNT(?unit) as ?number_of_poems)</code>
+<code>SELECT ?topic_name (COUNT(?unit) as ?number_of_poems)</code>
 <code>WHERE {</code>
 <code>  ?topic stop:appears_in ?unit.</code>
 <code>  ?unit rdf:type stop:Poem.</code>
-<code>  ?topic stop:have_name ?topic_n.</code>
+<code>  ?topic stop:have_name ?topic_name.</code>
 <code>}</code>
 <code>GROUP BY ?topic</code>
 <code>ORDER BY desc(?number_of_poems)</code>
@@ -151,12 +151,12 @@
                     <span>The query</span>
 <code>PREFIX rdf: &lt;http://www.w3.org/1999/02/22-rdf-syntax-ns#&gt;</code>
 <code>PREFIX stop: &lt;http://www.semanticweb.org/martinapensalfini/ontologies/2022/9/stop#&gt;</code>
-<code>SELECT ?topic_n</code>
+<code>SELECT ?topic_name</code>
 <code>WHERE {</code>
 <code>  ?unit rdf:type stop:Song;</code>
 <code>    stop:have_name "Un chimico"^^rdfs:Literal;</code>
 <code>      stop:is_about ?topic.</code>
-<code>      ?topic stop:have_name ?topic_n.</code>                    
+<code>      ?topic stop:have_name ?topic_name.</code>                    
 <code>}</code>
                 </div>
                 <br>
@@ -173,12 +173,12 @@
                     <span>The query</span>
 <code>PREFIX rdf: &lt;http://www.w3.org/1999/02/22-rdf-syntax-ns#&gt;</code>
 <code>PREFIX stop: &lt;http://www.semanticweb.org/martinapensalfini/ontologies/2022/9/stop#&gt;</code>
-<code>SELECT ?topic_n</code>
+<code>SELECT ?topic_name</code>
 <code>WHERE {</code>
 <code>  ?unit rdf:type stop:Poem;</code>
 <code>    stop:have_name "Trainor, the druggist"^^rdfs:Literal;</code>
 <code>      stop:is_about ?topic.</code>
-<code>      ?topic stop:have_name ?topic_n.</code>
+<code>      ?topic stop:have_name ?topic_name.</code>
 <code>}</code>                    
                 </div>
                 <br>
