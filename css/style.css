@@ -448,10 +448,13 @@ body > hr {
 }
 
 .name {
-  text-align: center;
-  padding: 15px 8px;
-  color: #838383;
-  display: block;
+  font-weight: bolder;
+  text-decoration: underline;
+  text-decoration-thickness: 2px;
+  text-decoration-color: #ffcc02;
+  padding-left: 10px;
+  font-size: 20px;
+  display: inline-block;
 }
 
 .info {
