@@ -96,7 +96,9 @@ html, body {
     font-size: 85%;
     border-bottom: 0.1pt solid rgba(255, 255, 255, 0.2);
 }
-
+.navBg #projectList > li:hover {
+    background-color: rgba(255, 255, 255, 0.9);
+}
 #projectList > li:hover {
     background-color: rgba(51, 51, 51, 0.7);
 }
