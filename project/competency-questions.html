@@ -241,10 +241,8 @@
 <code>PREFIX stop: &lt;http://www.semanticweb.org/martinapensalfini/ontologies/2022/9/stop#&gt;</code>
 <code>SELECT DISTINCT ?p_name</code>
 <code>WHERE {</code>
-<code>  ?song stop:has_character ?s_character.</code>
-<code>  ?s_character stop:have_name ?s_name.</code>
-<code>  ?song stop:related_to ?poem.</code>
-<code>  ?song  stop:have_name "La collina"^^rdfs:Literal.</code>
+<code>  ?song stop:have_name "La collina"^^rdfs:Literal;</code>
+<code>        stop:related_to ?poem.</code>
 <code>  ?poem stop:has_character ?p_character.</code>
 <code>  ?p_character stop:have_name ?p_name.</code>
 <code>  FILTER (NOT EXISTS {?song stop:has_character ?p_character})</code>
@@ -259,8 +257,8 @@
           </li>
           <li class="quest">
             <input type="checkbox" checked>
-            <i></i>
-            <h3>#11 Which is the name that the character of the song "Un giudice" has in the original poem by Masters?</h3>
+            <i></i> 
+              <h3>#11 Which is the name of the the original poem by Masters that inspired the song Un giudice?</h3>
             <div class="queryBox">
                 <div class="codeBox">
                     <span>The query</span>
