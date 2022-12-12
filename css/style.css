@@ -886,7 +886,7 @@ a:hover {
 #caption {
     display: none;
     position: absolute;
-    top: calc(160%);
+    top: calc(200%);
     width: 200px;
     left: calc(50% - 100px);
 }
