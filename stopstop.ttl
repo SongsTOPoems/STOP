@@ -1,0 +1,978 @@
+@prefix : <https://songstopoems.github.io/STOP/stopfinal.owl#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix xml: <http://www.w3.org/XML/1998/namespace> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix stop: <https://songstopoems.github.io/STOP/stopfinal.owl#> .
+@prefix schema: <http://schema.org/> .
+@base <https://songstopoems.github.io/STOP/stopfinal.owl#> .
+
+<https://songstopoems.github.io/STOP/stopfinal.owl#> rdf:type owl:Ontology ;
+                                                      owl:versionIRI <https://songstopoems.github.io/STOP/stopfinal.owl#/1.0> .
+
+#################################################################
+#    Object Properties
+#################################################################
+
+###  http://schema.org/hasPart
+schema:hasPart rdf:type owl:ObjectProperty ;
+               owl:inverseOf schema:isPartOf ;
+               rdfs:domain stop:Work ;
+               rdfs:range stop:Unit .
+
+
+###  http://schema.org/isPartOf
+schema:isPartOf rdf:type owl:ObjectProperty ;
+                rdfs:domain stop:Unit ;
+                rdfs:range stop:Work .
+
+
+###  https://songstopoems.github.io/STOP/stopfinal.owl#appears_in
+stop:appears_in rdf:type owl:ObjectProperty ;
+                owl:inverseOf stop:is_about ;
+                rdfs:domain stop:Topic ;
+                rdfs:range stop:Unit .
+
+
+###  https://songstopoems.github.io/STOP/stopfinal.owl#has_character
+stop:has_character rdf:type owl:ObjectProperty ;
+                   owl:inverseOf stop:is_in ;
+                   rdfs:domain stop:Unit ;
+                   rdfs:range stop:Character .
+
+
+###  https://songstopoems.github.io/STOP/stopfinal.owl#inspires
+stop:inspires rdf:type owl:ObjectProperty ;
+              owl:inverseOf stop:is_inspired_by ;
+              rdfs:domain stop:Work ;
+              rdfs:range stop:Work .
+
+
+###  https://songstopoems.github.io/STOP/stopfinal.owl#is_about
+stop:is_about rdf:type owl:ObjectProperty ;
+              rdfs:domain stop:Unit ;
+              rdfs:range stop:Topic .
+
+
+###  https://songstopoems.github.io/STOP/stopfinal.owl#is_in
+stop:is_in rdf:type owl:ObjectProperty ;
+           rdfs:domain stop:Character ;
+           rdfs:range stop:Unit .
+
+
+###  https://songstopoems.github.io/STOP/stopfinal.owl#is_inspired_by
+stop:is_inspired_by rdf:type owl:ObjectProperty ;
+                    rdfs:domain stop:Work ;
+                    rdfs:range stop:Work .
+
+
+###  https://songstopoems.github.io/STOP/stopfinal.owl#is_written_by
+stop:is_written_by rdf:type owl:ObjectProperty ;
+                   owl:inverseOf stop:writes ;
+                   rdfs:domain stop:Work ;
+                   rdfs:range stop:Author .
+
+
+###  https://songstopoems.github.io/STOP/stopfinal.owl#related_to
+stop:related_to rdf:type owl:ObjectProperty ;
+                rdfs:domain stop:Song ;
+                rdfs:range stop:Poem .
+
+
+###  https://songstopoems.github.io/STOP/stopfinal.owl#writes
+stop:writes rdf:type owl:ObjectProperty ;
+            rdfs:domain stop:Author ;
+            rdfs:range stop:Work .
+
+
+#################################################################
+#    Data properties
+#################################################################
+
+###  https://songstopoems.github.io/STOP/stopfinal.owl#have_name
+stop:have_name rdf:type owl:DatatypeProperty ;
+               rdfs:domain owl:Thing ;
+               rdfs:range rdfs:Literal .
+
+
+#################################################################
+#    Classes
+#################################################################
+
+###  https://songstopoems.github.io/STOP/stopfinal.owl#Anthology_Poem
+stop:Anthology_Poem rdf:type owl:Class ;
+                    rdfs:subClassOf stop:Work .
+
+
+###  https://songstopoems.github.io/STOP/stopfinal.owl#Author
+stop:Author rdf:type owl:Class .
+
+
+###  https://songstopoems.github.io/STOP/stopfinal.owl#Character
+stop:Character rdf:type owl:Class .
+
+
+###  https://songstopoems.github.io/STOP/stopfinal.owl#CreativeWork
+stop:CreativeWork rdf:type owl:Class .
+
+
+###  https://songstopoems.github.io/STOP/stopfinal.owl#Musical_Album
+stop:Musical_Album rdf:type owl:Class ;
+                   rdfs:subClassOf stop:Work .
+
+
+###  https://songstopoems.github.io/STOP/stopfinal.owl#Poem
+stop:Poem rdf:type owl:Class ;
+          rdfs:subClassOf stop:Unit .
+
+
+###  https://songstopoems.github.io/STOP/stopfinal.owl#Song
+stop:Song rdf:type owl:Class ;
+          rdfs:subClassOf stop:Unit .
+
+
+###  https://songstopoems.github.io/STOP/stopfinal.owl#Topic
+stop:Topic rdf:type owl:Class .
+
+
+###  https://songstopoems.github.io/STOP/stopfinal.owl#Unit
+stop:Unit rdf:type owl:Class ;
+          rdfs:subClassOf stop:CreativeWork .
+
+
+###  https://songstopoems.github.io/STOP/stopfinal.owl#Work
+stop:Work rdf:type owl:Class ;
+          rdfs:subClassOf stop:CreativeWork .
+
+
+#################################################################
+#    Individuals
+#################################################################
+
+###  https://songstopoems.github.io/STOP/stopfinal.owl#Aunt_Emily
+stop:Aunt_Emily rdf:type owl:NamedIndividual ,
+                         stop:Character ;
+                stop:is_in stop:The_Hill ;
+                stop:have_name "Aunt Emily"^^rdfs:Literal .
+
+
+###  https://songstopoems.github.io/STOP/stopfinal.owl#Bert
+stop:Bert rdf:type owl:NamedIndividual ,
+                   stop:Character ;
+          stop:is_in stop:Dormono_sulla_collina ,
+                     stop:The_Hill ;
+          stop:have_name "Bert"^^rdfs:Literal .
+
+
+###  https://songstopoems.github.io/STOP/stopfinal.owl#Charley
+stop:Charley rdf:type owl:NamedIndividual ,
+                      stop:Character ;
+             stop:is_in stop:Dormono_sulla_collina ,
+                        stop:The_Hill ;
+             stop:have_name "Charley"^^rdfs:Literal .
+
+
+###  https://songstopoems.github.io/STOP/stopfinal.owl#Church
+stop:Church rdf:type owl:NamedIndividual ,
+                     stop:Topic ;
+            stop:appears_in stop:Doctor_Siegfried_Iseman ;
+            stop:have_name "Church" .
+
+
+###  https://songstopoems.github.io/STOP/stopfinal.owl#Damnation
+stop:Damnation rdf:type owl:NamedIndividual ,
+                        stop:Topic ;
+               stop:appears_in stop:Un_giudice ,
+                               stop:Un_medico ,
+                               stop:Wendell_P._Bloyd ,
+                               <https://songstopoems.github.io/STOP/stopfinal.owl#Un_blasfemo_(dietro_ogni_blasfemo_c'è_un_giardino_incantato)> ;
+               stop:have_name "Damnation" .
+
+
+###  https://songstopoems.github.io/STOP/stopfinal.owl#Dancing
+stop:Dancing rdf:type owl:NamedIndividual ,
+                      stop:Topic ;
+             stop:appears_in stop:Fiddler_Jones ,
+                             stop:Il_suonatore_Jones ;
+             stop:have_name "Dancing" .
+
+
+###  https://songstopoems.github.io/STOP/stopfinal.owl#Darkness_VS_Light
+stop:Darkness_VS_Light rdf:type owl:NamedIndividual ,
+                                stop:Topic ;
+                       stop:appears_in stop:Dippold_the_optician ,
+                                       stop:Frank_Drummer ,
+                                       stop:Un_ottico ;
+                       stop:have_name "Darkness vs light" .
+
+
+###  https://songstopoems.github.io/STOP/stopfinal.owl#Death
+stop:Death rdf:type owl:NamedIndividual ,
+                    stop:Topic ;
+           stop:appears_in stop:Dormono_sulla_collina ,
+                           stop:The_Hill ,
+                           <https://songstopoems.github.io/STOP/stopfinal.owl#Un_matto(Dietro_ogni_scemo_c'è_un_villaggio)> ;
+           stop:have_name "Death" .
+
+
+###  https://songstopoems.github.io/STOP/stopfinal.owl#Devastation
+stop:Devastation rdf:type owl:NamedIndividual ,
+                          stop:Topic ;
+                 stop:appears_in stop:Un_chimico ;
+                 stop:have_name "Devastation" .
+
+
+###  https://songstopoems.github.io/STOP/stopfinal.owl#DippoldTheOptician
+stop:DippoldTheOptician rdf:type owl:NamedIndividual ,
+                                 stop:Character ;
+                        stop:is_in stop:Dippold_the_optician ;
+                        stop:have_name "Dippold, The Optician"^^rdfs:Literal .
+
+
+###  https://songstopoems.github.io/STOP/stopfinal.owl#Dippold_the_optician
+stop:Dippold_the_optician rdf:type owl:NamedIndividual ,
+                                   stop:Poem ;
+                          schema:isPartOf stop:Spoon_River_Anthology ;
+                          stop:has_character stop:DippoldTheOptician ;
+                          stop:is_about stop:Darkness_VS_Light ,
+                                        stop:Dream ,
+                                        stop:Night ,
+                                        stop:Sight ,
+                                        stop:Sky ;
+                          stop:have_name "Dippold, The Optician"^^rdfs:Literal .
+
+
+###  https://songstopoems.github.io/STOP/stopfinal.owl#DoctorSiegfriedIseman
+stop:DoctorSiegfriedIseman rdf:type owl:NamedIndividual ,
+                                    stop:Character ;
+                           stop:is_in stop:Doctor_Siegfried_Iseman ;
+                           stop:have_name "Doctor Siegfried Iseman"^^rdfs:Literal .
+
+
+###  https://songstopoems.github.io/STOP/stopfinal.owl#Doctor_Siegfried_Iseman
+stop:Doctor_Siegfried_Iseman rdf:type owl:NamedIndividual ,
+                                      stop:Poem ;
+                             schema:isPartOf stop:Spoon_River_Anthology ;
+                             stop:has_character stop:DoctorSiegfriedIseman ;
+                             stop:is_about stop:Church ,
+                                           stop:Justice ,
+                                           stop:Knowledge ,
+                                           stop:Religion ,
+                                           stop:Suffering ;
+                             stop:have_name "Doctor Siegfried Iseman"^^rdfs:Literal .
+
+
+###  https://songstopoems.github.io/STOP/stopfinal.owl#Dormono_sulla_collina
+stop:Dormono_sulla_collina rdf:type owl:NamedIndividual ,
+                                    stop:Song ,
+                                    stop:Unit ;
+                           schema:isPartOf <https://songstopoems.github.io/STOP/stopfinal.owl#Non_al_denaro_non_all'amore_né_al_cielo> ;
+                           stop:has_character stop:Bert ,
+                                              stop:Charley ,
+                                              stop:Ella ,
+                                              stop:Elmer ,
+                                              stop:Herman ,
+                                              stop:JonesIlSuonatore ,
+                                              stop:Kate ,
+                                              stop:Lizzie ,
+                                              stop:Maggie ,
+                                              stop:Tom ;
+                           stop:is_about stop:Death ,
+                                         stop:Eternal_Sleep ,
+                                         stop:Nature ;
+                           stop:related_to stop:The_Hill ;
+                           stop:have_name "La collina"^^rdfs:Literal .
+
+
+###  https://songstopoems.github.io/STOP/stopfinal.owl#Dream
+stop:Dream rdf:type owl:NamedIndividual ,
+                    stop:Topic ;
+           stop:appears_in stop:Dippold_the_optician ,
+                           stop:Frank_Drummer ,
+                           stop:Il_suonatore_Jones ,
+                           stop:Un_malato_di_cuore ,
+                           stop:Un_ottico ,
+                           <https://songstopoems.github.io/STOP/stopfinal.owl#Un_blasfemo_(dietro_ogni_blasfemo_c'è_un_giardino_incantato)> ,
+                           <https://songstopoems.github.io/STOP/stopfinal.owl#Un_matto(Dietro_ogni_scemo_c'è_un_villaggio)> ;
+           stop:have_name "Dream" .
+
+
+###  https://songstopoems.github.io/STOP/stopfinal.owl#Drinking
+stop:Drinking rdf:type owl:NamedIndividual ,
+                       stop:Topic ;
+              stop:appears_in stop:Francis_Turner ;
+              stop:have_name "Drinking" .
+
+
+###  https://songstopoems.github.io/STOP/stopfinal.owl#Edgar_Lee_Masters
+stop:Edgar_Lee_Masters rdf:type owl:NamedIndividual ,
+                                stop:Author ;
+                       stop:writes stop:Spoon_River_Anthology ;
+                       stop:have_name "Edgar Lee Masters"^^rdfs:Literal .
+
+
+###  https://songstopoems.github.io/STOP/stopfinal.owl#Edith
+stop:Edith rdf:type owl:NamedIndividual ,
+                    stop:Character ;
+           stop:is_in stop:The_Hill ;
+           stop:have_name "Edith"^^rdfs:Literal .
+
+
+###  https://songstopoems.github.io/STOP/stopfinal.owl#Ella
+stop:Ella rdf:type owl:NamedIndividual ,
+                   stop:Character ;
+          stop:is_in stop:Dormono_sulla_collina ,
+                     stop:The_Hill ;
+          stop:have_name "Ella"^^rdfs:Literal .
+
+
+###  https://songstopoems.github.io/STOP/stopfinal.owl#Elmer
+stop:Elmer rdf:type owl:NamedIndividual ,
+                    stop:Character ;
+           stop:is_in stop:Dormono_sulla_collina ,
+                      stop:The_Hill ;
+           stop:have_name "Elmer"^^rdfs:Literal .
+
+
+###  https://songstopoems.github.io/STOP/stopfinal.owl#Eternal_Sleep
+stop:Eternal_Sleep rdf:type owl:NamedIndividual ,
+                            stop:Topic ;
+                   stop:appears_in stop:Dormono_sulla_collina ,
+                                   stop:The_Hill ;
+                   stop:have_name "Eternal Sleep" .
+
+
+###  https://songstopoems.github.io/STOP/stopfinal.owl#Fabrizio_De_Andrè
+stop:Fabrizio_De_Andrè rdf:type owl:NamedIndividual ,
+                                stop:Author ;
+                       stop:writes <https://songstopoems.github.io/STOP/stopfinal.owl#Non_al_denaro_non_all'amore_né_al_cielo> ;
+                       stop:have_name "Fabrizio De André"^^rdfs:Literal .
+
+
+###  https://songstopoems.github.io/STOP/stopfinal.owl#Family
+stop:Family rdf:type owl:NamedIndividual ,
+                     stop:Topic ;
+            stop:appears_in stop:Trainor_the_druggist ;
+            stop:have_name "Family" .
+
+
+###  https://songstopoems.github.io/STOP/stopfinal.owl#FiddlerJones
+stop:FiddlerJones rdf:type owl:NamedIndividual ,
+                           stop:Character ;
+                  stop:is_in stop:Fiddler_Jones ;
+                  stop:have_name "Fiddler Jones"^^rdfs:Literal .
+
+
+###  https://songstopoems.github.io/STOP/stopfinal.owl#Fiddler_Jones
+stop:Fiddler_Jones rdf:type owl:NamedIndividual ,
+                            stop:Poem ;
+                   schema:isPartOf stop:Spoon_River_Anthology ;
+                   stop:has_character stop:FiddlerJones ;
+                   stop:is_about stop:Dancing ,
+                                 stop:Music ,
+                                 stop:Nature ,
+                                 stop:Sky ;
+                   stop:have_name "Fiddler Jones"^^rdfs:Literal .
+
+
+###  https://songstopoems.github.io/STOP/stopfinal.owl#FrancisTurner
+stop:FrancisTurner rdf:type owl:NamedIndividual ,
+                            stop:Character ;
+                   stop:is_in stop:Francis_Turner ;
+                   stop:have_name "Francis Turner"^^rdfs:Literal .
+
+
+###  https://songstopoems.github.io/STOP/stopfinal.owl#Francis_Turner
+stop:Francis_Turner rdf:type owl:NamedIndividual ,
+                             stop:Poem ;
+                    schema:isPartOf stop:Spoon_River_Anthology ;
+                    stop:has_character stop:FrancisTurner ;
+                    stop:is_about stop:Drinking ,
+                                  stop:Nature ,
+                                  stop:Secret ,
+                                  stop:Suffering ;
+                    stop:have_name "Francis Turner"^^rdfs:Literal .
+
+
+###  https://songstopoems.github.io/STOP/stopfinal.owl#FrankDrummer
+stop:FrankDrummer rdf:type owl:NamedIndividual ,
+                           stop:Character ;
+                  stop:is_in stop:Frank_Drummer ;
+                  stop:have_name "Frank Drummer"^^rdfs:Literal .
+
+
+###  https://songstopoems.github.io/STOP/stopfinal.owl#Frank_Drummer
+stop:Frank_Drummer rdf:type owl:NamedIndividual ,
+                            stop:Poem ;
+                   schema:isPartOf stop:Spoon_River_Anthology ;
+                   stop:has_character stop:FrankDrummer ;
+                   stop:is_about stop:Darkness_VS_Light ,
+                                 stop:Dream ,
+                                 stop:Memory ,
+                                 stop:Music ;
+                   stop:have_name "Frank Drummer"^^rdfs:Literal .
+
+
+###  https://songstopoems.github.io/STOP/stopfinal.owl#Hate
+stop:Hate rdf:type owl:NamedIndividual ,
+                   stop:Topic ;
+          stop:appears_in stop:Judge_Selah_Lively ,
+                          stop:Un_giudice ,
+                          stop:Wendell_P._Bloyd ;
+          stop:have_name "Hate" .
+
+
+###  https://songstopoems.github.io/STOP/stopfinal.owl#Herman
+stop:Herman rdf:type owl:NamedIndividual ,
+                     stop:Character ;
+            stop:is_in stop:Dormono_sulla_collina ,
+                       stop:The_Hill ;
+            stop:have_name "Herman"^^rdfs:Literal .
+
+
+###  https://songstopoems.github.io/STOP/stopfinal.owl#Il_suonatore_Jones
+stop:Il_suonatore_Jones rdf:type owl:NamedIndividual ,
+                                 stop:Song ;
+                        schema:isPartOf <https://songstopoems.github.io/STOP/stopfinal.owl#Non_al_denaro_non_all'amore_né_al_cielo> ;
+                        stop:has_character stop:JonesIlSuonatore ;
+                        stop:is_about stop:Dancing ,
+                                      stop:Dream ,
+                                      stop:Music ,
+                                      stop:Nature ,
+                                      stop:Suffering ;
+                        stop:related_to stop:Fiddler_Jones ;
+                        stop:have_name "Il suonatore Jones"^^rdfs:Literal .
+
+
+###  https://songstopoems.github.io/STOP/stopfinal.owl#JonesIlSuonatore
+stop:JonesIlSuonatore rdf:type owl:NamedIndividual ,
+                               stop:Character ;
+                      stop:is_in stop:Dormono_sulla_collina ,
+                                 stop:Il_suonatore_Jones ;
+                      stop:have_name "Il suonatore Jones"^^rdfs:Literal .
+
+
+###  https://songstopoems.github.io/STOP/stopfinal.owl#JudgeSelahLively
+stop:JudgeSelahLively rdf:type owl:NamedIndividual ,
+                               stop:Character ;
+                      stop:is_in stop:Judge_Selah_Lively ;
+                      stop:have_name "Judge Selah Lively"^^rdfs:Literal .
+
+
+###  https://songstopoems.github.io/STOP/stopfinal.owl#Judge_Selah_Lively
+stop:Judge_Selah_Lively rdf:type owl:NamedIndividual ,
+                                 stop:Poem ;
+                        schema:isPartOf stop:Spoon_River_Anthology ;
+                        stop:has_character stop:JudgeSelahLively ;
+                        stop:is_about stop:Hate ,
+                                      stop:Justice ,
+                                      stop:Religion ;
+                        stop:have_name "Judge Selah Lively"^^rdfs:Literal .
+
+
+###  https://songstopoems.github.io/STOP/stopfinal.owl#Justice
+stop:Justice rdf:type owl:NamedIndividual ,
+                      stop:Topic ;
+             stop:appears_in stop:Doctor_Siegfried_Iseman ,
+                             stop:Judge_Selah_Lively ,
+                             stop:Un_giudice ;
+             stop:have_name "Justice" .
+
+
+###  https://songstopoems.github.io/STOP/stopfinal.owl#Kate
+stop:Kate rdf:type owl:NamedIndividual ,
+                   stop:Character ;
+          stop:is_in stop:Dormono_sulla_collina ,
+                     stop:The_Hill ;
+          stop:have_name "Kate"^^rdfs:Literal .
+
+
+###  https://songstopoems.github.io/STOP/stopfinal.owl#Knowledge
+stop:Knowledge rdf:type owl:NamedIndividual ,
+                        stop:Topic ;
+               stop:appears_in stop:Doctor_Siegfried_Iseman ,
+                               stop:Un_giudice ,
+                               stop:Un_medico ;
+               stop:have_name "Knowledge" .
+
+
+###  https://songstopoems.github.io/STOP/stopfinal.owl#Lizzie
+stop:Lizzie rdf:type owl:NamedIndividual ,
+                     stop:Character ;
+            stop:is_in stop:Dormono_sulla_collina ,
+                       stop:The_Hill ;
+            stop:have_name "Lizzie"^^rdfs:Literal .
+
+
+###  https://songstopoems.github.io/STOP/stopfinal.owl#Love
+stop:Love rdf:type owl:NamedIndividual ,
+                   stop:Topic ;
+          stop:appears_in stop:Un_chimico ;
+          stop:have_name "Love" .
+
+
+###  https://songstopoems.github.io/STOP/stopfinal.owl#Maggie
+stop:Maggie rdf:type owl:NamedIndividual ,
+                     stop:Character ;
+            stop:is_in stop:Dormono_sulla_collina ,
+                       stop:The_Hill ;
+            stop:have_name "Maggie"^^rdfs:Literal .
+
+
+###  https://songstopoems.github.io/STOP/stopfinal.owl#Major_Walker
+stop:Major_Walker rdf:type owl:NamedIndividual ,
+                           stop:Character ;
+                  stop:is_in stop:The_Hill ;
+                  stop:have_name "Major Walker"^^rdfs:Literal .
+
+
+###  https://songstopoems.github.io/STOP/stopfinal.owl#Marriage
+stop:Marriage rdf:type owl:NamedIndividual ,
+                       stop:Topic ;
+              stop:appears_in stop:Trainor_the_druggist ;
+              stop:have_name "Marriage" .
+
+
+###  https://songstopoems.github.io/STOP/stopfinal.owl#Memory
+stop:Memory rdf:type owl:NamedIndividual ,
+                     stop:Topic ;
+            stop:appears_in stop:Frank_Drummer ,
+                            <https://songstopoems.github.io/STOP/stopfinal.owl#Un_matto(Dietro_ogni_scemo_c'è_un_villaggio)> ;
+            stop:have_name "Memory" .
+
+
+###  https://songstopoems.github.io/STOP/stopfinal.owl#Music
+stop:Music rdf:type owl:NamedIndividual ,
+                    stop:Topic ;
+           stop:appears_in stop:Fiddler_Jones ,
+                           stop:Frank_Drummer ,
+                           stop:Il_suonatore_Jones ;
+           stop:have_name "Music" .
+
+
+###  https://songstopoems.github.io/STOP/stopfinal.owl#Nature
+stop:Nature rdf:type owl:NamedIndividual ,
+                     stop:Topic ;
+            stop:appears_in stop:Dormono_sulla_collina ,
+                            stop:Fiddler_Jones ,
+                            stop:Francis_Turner ,
+                            stop:Il_suonatore_Jones ,
+                            stop:The_Hill ,
+                            stop:Un_chimico ;
+            stop:have_name "Nature" .
+
+
+###  https://songstopoems.github.io/STOP/stopfinal.owl#Night
+stop:Night rdf:type owl:NamedIndividual ,
+                    stop:Topic ;
+           stop:appears_in stop:Dippold_the_optician ;
+           stop:have_name "Night" .
+
+
+###  https://songstopoems.github.io/STOP/stopfinal.owl#Religion
+stop:Religion rdf:type owl:NamedIndividual ,
+                       stop:Topic ;
+              stop:appears_in stop:Doctor_Siegfried_Iseman ,
+                              stop:Judge_Selah_Lively ,
+                              stop:Un_giudice ,
+                              stop:Wendell_P._Bloyd ,
+                              <https://songstopoems.github.io/STOP/stopfinal.owl#Un_blasfemo_(dietro_ogni_blasfemo_c'è_un_giardino_incantato)> ;
+              stop:have_name "Religion" .
+
+
+###  https://songstopoems.github.io/STOP/stopfinal.owl#Salvation
+stop:Salvation rdf:type owl:NamedIndividual ,
+                        stop:Topic ;
+               stop:appears_in stop:Un_chimico ,
+                               stop:Un_malato_di_cuore ,
+                               stop:Un_medico ,
+                               stop:Wendell_P._Bloyd ,
+                               <https://songstopoems.github.io/STOP/stopfinal.owl#Un_blasfemo_(dietro_ogni_blasfemo_c'è_un_giardino_incantato)> ;
+               stop:have_name "Salvation" .
+
+
+###  https://songstopoems.github.io/STOP/stopfinal.owl#Secret
+stop:Secret rdf:type owl:NamedIndividual ,
+                     stop:Topic ;
+            stop:appears_in stop:Francis_Turner ;
+            stop:have_name "Secret" .
+
+
+###  https://songstopoems.github.io/STOP/stopfinal.owl#Sevigne_Houghton
+stop:Sevigne_Houghton rdf:type owl:NamedIndividual ,
+                               stop:Character ;
+                      stop:is_in stop:The_Hill ;
+                      stop:have_name "Sevigne Houghton"^^rdfs:Literal .
+
+
+###  https://songstopoems.github.io/STOP/stopfinal.owl#Sickness
+stop:Sickness rdf:type owl:NamedIndividual ,
+                       stop:Topic ;
+              stop:appears_in stop:Un_malato_di_cuore ,
+                              stop:Un_medico ;
+              stop:have_name "Sickness" .
+
+
+###  https://songstopoems.github.io/STOP/stopfinal.owl#Sight
+stop:Sight rdf:type owl:NamedIndividual ,
+                    stop:Topic ;
+           stop:appears_in stop:Dippold_the_optician ,
+                           stop:Un_ottico ;
+           stop:have_name "Sight" .
+
+
+###  https://songstopoems.github.io/STOP/stopfinal.owl#Sky
+stop:Sky rdf:type owl:NamedIndividual ,
+                  stop:Topic ;
+         stop:appears_in stop:Dippold_the_optician ,
+                         stop:Fiddler_Jones ,
+                         stop:Un_ottico ;
+         stop:have_name "Sky" .
+
+
+###  https://songstopoems.github.io/STOP/stopfinal.owl#Spoon_River_Anthology
+stop:Spoon_River_Anthology rdf:type owl:NamedIndividual ,
+                                    stop:Anthology_Poem ,
+                                    stop:Work ;
+                           schema:hasPart stop:Dippold_the_optician ,
+                                          stop:Doctor_Siegfried_Iseman ,
+                                          stop:Fiddler_Jones ,
+                                          stop:Francis_Turner ,
+                                          stop:Frank_Drummer ,
+                                          stop:Judge_Selah_Lively ,
+                                          stop:The_Hill ,
+                                          stop:Trainor_the_druggist ,
+                                          stop:Wendell_P._Bloyd ;
+                           stop:inspires <https://songstopoems.github.io/STOP/stopfinal.owl#Non_al_denaro_non_all'amore_né_al_cielo> ;
+                           stop:is_written_by stop:Edgar_Lee_Masters ;
+                           stop:have_name "Spoon River Anthology"^^rdfs:Literal .
+
+
+###  https://songstopoems.github.io/STOP/stopfinal.owl#Suffering
+stop:Suffering rdf:type owl:NamedIndividual ,
+                        stop:Topic ;
+               stop:appears_in stop:Doctor_Siegfried_Iseman ,
+                               stop:Francis_Turner ,
+                               stop:Il_suonatore_Jones ,
+                               stop:Un_chimico ,
+                               stop:Un_malato_di_cuore ,
+                               stop:Un_medico ,
+                               stop:Un_ottico ;
+               stop:have_name "Suffering" .
+
+
+###  https://songstopoems.github.io/STOP/stopfinal.owl#The_Hill
+stop:The_Hill rdf:type owl:NamedIndividual ,
+                       stop:Poem ,
+                       stop:Unit ;
+              schema:isPartOf stop:Spoon_River_Anthology ;
+              stop:has_character stop:Aunt_Emily ,
+                                 stop:Bert ,
+                                 stop:Charley ,
+                                 stop:Edith ,
+                                 stop:Ella ,
+                                 stop:Elmer ,
+                                 stop:Herman ,
+                                 stop:Kate ,
+                                 stop:Lizzie ,
+                                 stop:Maggie ,
+                                 stop:Major_Walker ,
+                                 stop:Sevigne_Houghton ,
+                                 stop:Tom ,
+                                 stop:Towny_Kincaid ,
+                                 stop:Uncle_Isaac ;
+              stop:is_about stop:Death ,
+                            stop:Eternal_Sleep ,
+                            stop:Nature ;
+              stop:have_name "The Hill"^^rdfs:Literal .
+
+
+###  https://songstopoems.github.io/STOP/stopfinal.owl#Tom
+stop:Tom rdf:type owl:NamedIndividual ,
+                  stop:Character ;
+         stop:is_in stop:Dormono_sulla_collina ,
+                    stop:The_Hill ;
+         stop:have_name "Tom"^^rdfs:Literal .
+
+
+###  https://songstopoems.github.io/STOP/stopfinal.owl#Towny_Kincaid
+stop:Towny_Kincaid rdf:type owl:NamedIndividual ,
+                            stop:Character ;
+                   stop:is_in stop:The_Hill ;
+                   stop:have_name "Towny Kincaid"^^rdfs:Literal .
+
+
+###  https://songstopoems.github.io/STOP/stopfinal.owl#TrainorTheDruggist
+stop:TrainorTheDruggist rdf:type owl:NamedIndividual ,
+                                 stop:Character ;
+                        stop:is_in stop:Trainor_the_druggist ;
+                        stop:have_name "Trainor, the druggist"^^rdfs:Literal .
+
+
+###  https://songstopoems.github.io/STOP/stopfinal.owl#Trainor_the_druggist
+stop:Trainor_the_druggist rdf:type owl:NamedIndividual ,
+                                   stop:Poem ;
+                          schema:isPartOf stop:Spoon_River_Anthology ;
+                          stop:has_character stop:TrainorTheDruggist ;
+                          stop:is_about stop:Family ,
+                                        stop:Marriage ;
+                          stop:have_name "Trainor, the druggist"^^rdfs:Literal .
+
+
+###  https://songstopoems.github.io/STOP/stopfinal.owl#UnBlasfemo
+stop:UnBlasfemo rdf:type owl:NamedIndividual ,
+                         stop:Character ;
+                stop:is_in <https://songstopoems.github.io/STOP/stopfinal.owl#Un_blasfemo_(dietro_ogni_blasfemo_c'è_un_giardino_incantato)> ;
+                stop:have_name "Un blasfemo"^^rdfs:Literal .
+
+
+###  https://songstopoems.github.io/STOP/stopfinal.owl#UnChimico
+stop:UnChimico rdf:type owl:NamedIndividual ,
+                        stop:Character ;
+               stop:is_in stop:Un_chimico ;
+               stop:have_name "Un chimico"^^rdfs:Literal .
+
+
+###  https://songstopoems.github.io/STOP/stopfinal.owl#UnGiudice
+stop:UnGiudice rdf:type owl:NamedIndividual ,
+                        stop:Character ;
+               stop:is_in stop:Un_giudice ;
+               stop:have_name "Un giudice"^^rdfs:Literal .
+
+
+###  https://songstopoems.github.io/STOP/stopfinal.owl#UnMalatoDiCuore
+stop:UnMalatoDiCuore rdf:type owl:NamedIndividual ,
+                              stop:Character ;
+                     stop:is_in stop:Un_malato_di_cuore ;
+                     stop:have_name "Un malato di cuore"^^rdfs:Literal .
+
+
+###  https://songstopoems.github.io/STOP/stopfinal.owl#UnMatto
+stop:UnMatto rdf:type owl:NamedIndividual ,
+                      stop:Character ;
+             stop:is_in <https://songstopoems.github.io/STOP/stopfinal.owl#Un_matto(Dietro_ogni_scemo_c'è_un_villaggio)> ;
+             stop:have_name "Un matto"^^rdfs:Literal .
+
+
+###  https://songstopoems.github.io/STOP/stopfinal.owl#UnMedico
+stop:UnMedico rdf:type owl:NamedIndividual ,
+                       stop:Character ;
+              stop:is_in stop:Un_medico ;
+              stop:have_name "Un medico"^^rdfs:Literal .
+
+
+###  https://songstopoems.github.io/STOP/stopfinal.owl#UnOttico
+stop:UnOttico rdf:type owl:NamedIndividual ,
+                       stop:Character ;
+              stop:is_in stop:Un_ottico ;
+              stop:have_name "Un ottico"^^rdfs:Literal .
+
+
+###  https://songstopoems.github.io/STOP/stopfinal.owl#Un_chimico
+stop:Un_chimico rdf:type owl:NamedIndividual ,
+                         stop:Song ;
+                schema:isPartOf <https://songstopoems.github.io/STOP/stopfinal.owl#Non_al_denaro_non_all'amore_né_al_cielo> ;
+                stop:has_character stop:UnChimico ;
+                stop:is_about stop:Devastation ,
+                              stop:Love ,
+                              stop:Nature ,
+                              stop:Salvation ,
+                              stop:Suffering ;
+                stop:related_to stop:Trainor_the_druggist ;
+                stop:have_name "Un chimico"^^rdfs:Literal .
+
+
+###  https://songstopoems.github.io/STOP/stopfinal.owl#Un_giudice
+stop:Un_giudice rdf:type owl:NamedIndividual ,
+                         stop:Song ;
+                schema:isPartOf <https://songstopoems.github.io/STOP/stopfinal.owl#Non_al_denaro_non_all'amore_né_al_cielo> ;
+                stop:has_character stop:UnGiudice ;
+                stop:is_about stop:Damnation ,
+                              stop:Hate ,
+                              stop:Justice ,
+                              stop:Knowledge ,
+                              stop:Religion ;
+                stop:related_to stop:Judge_Selah_Lively ;
+                stop:have_name "Un giudice"^^rdfs:Literal .
+
+
+###  https://songstopoems.github.io/STOP/stopfinal.owl#Un_malato_di_cuore
+stop:Un_malato_di_cuore rdf:type owl:NamedIndividual ,
+                                 stop:Song ;
+                        schema:isPartOf <https://songstopoems.github.io/STOP/stopfinal.owl#Non_al_denaro_non_all'amore_né_al_cielo> ;
+                        stop:has_character stop:UnMalatoDiCuore ;
+                        stop:is_about stop:Dream ,
+                                      stop:Salvation ,
+                                      stop:Sickness ,
+                                      stop:Suffering ;
+                        stop:related_to stop:Francis_Turner ;
+                        stop:have_name "Un malato di cuore"^^rdfs:Literal .
+
+
+###  https://songstopoems.github.io/STOP/stopfinal.owl#Un_medico
+stop:Un_medico rdf:type owl:NamedIndividual ,
+                        stop:Song ;
+               schema:isPartOf <https://songstopoems.github.io/STOP/stopfinal.owl#Non_al_denaro_non_all'amore_né_al_cielo> ;
+               stop:has_character stop:UnMedico ;
+               stop:is_about stop:Damnation ,
+                             stop:Knowledge ,
+                             stop:Salvation ,
+                             stop:Sickness ,
+                             stop:Suffering ;
+               stop:related_to stop:Doctor_Siegfried_Iseman ;
+               stop:have_name "Un medico"^^rdfs:Literal .
+
+
+###  https://songstopoems.github.io/STOP/stopfinal.owl#Un_ottico
+stop:Un_ottico rdf:type owl:NamedIndividual ,
+                        stop:Song ;
+               schema:isPartOf <https://songstopoems.github.io/STOP/stopfinal.owl#Non_al_denaro_non_all'amore_né_al_cielo> ;
+               stop:has_character stop:UnOttico ;
+               stop:is_about stop:Darkness_VS_Light ,
+                             stop:Dream ,
+                             stop:Sight ,
+                             stop:Sky ,
+                             stop:Suffering ;
+               stop:related_to stop:Dippold_the_optician ;
+               stop:have_name "Un ottico"^^rdfs:Literal .
+
+
+###  https://songstopoems.github.io/STOP/stopfinal.owl#Uncle_Isaac
+stop:Uncle_Isaac rdf:type owl:NamedIndividual ,
+                          stop:Character ;
+                 stop:is_in stop:The_Hill ;
+                 stop:have_name "Uncle Isaac"^^rdfs:Literal .
+
+
+###  https://songstopoems.github.io/STOP/stopfinal.owl#WendellPBloyd
+stop:WendellPBloyd rdf:type owl:NamedIndividual ,
+                            stop:Character ;
+                   stop:is_in stop:Wendell_P._Bloyd ;
+                   stop:have_name "Wendell P. Bloyd"^^rdfs:Literal .
+
+
+###  https://songstopoems.github.io/STOP/stopfinal.owl#Wendell_P._Bloyd
+stop:Wendell_P._Bloyd rdf:type owl:NamedIndividual ,
+                               stop:Poem ;
+                      schema:isPartOf stop:Spoon_River_Anthology ;
+                      stop:has_character stop:WendellPBloyd ;
+                      stop:is_about stop:Damnation ,
+                                    stop:Hate ,
+                                    stop:Religion ,
+                                    stop:Salvation ;
+                      stop:have_name "Wendell P. Bloyd"^^rdfs:Literal .
+
+
+###  https://songstopoems.github.io/STOP/stopfinal.owl#Writing
+stop:Writing rdf:type owl:NamedIndividual ,
+                      stop:Topic ;
+             stop:appears_in <https://songstopoems.github.io/STOP/stopfinal.owl#Un_matto(Dietro_ogni_scemo_c'è_un_villaggio)> ;
+             stop:have_name "Writing" .
+
+
+###  https://songstopoems.github.io/STOP/stopfinal.owl#Non_al_denaro_non_all'amore_né_al_cielo
+<https://songstopoems.github.io/STOP/stopfinal.owl#Non_al_denaro_non_all'amore_né_al_cielo> rdf:type owl:NamedIndividual ,
+                                                                                                     stop:Musical_Album ,
+                                                                                                     stop:Work ;
+                                                                                            schema:hasPart stop:Dormono_sulla_collina ,
+                                                                                                           stop:Il_suonatore_Jones ,
+                                                                                                           stop:Un_chimico ,
+                                                                                                           stop:Un_giudice ,
+                                                                                                           stop:Un_malato_di_cuore ,
+                                                                                                           stop:Un_medico ,
+                                                                                                           stop:Un_ottico ,
+                                                                                                           <https://songstopoems.github.io/STOP/stopfinal.owl#Un_blasfemo_(dietro_ogni_blasfemo_c'è_un_giardino_incantato)> ,
+                                                                                                           <https://songstopoems.github.io/STOP/stopfinal.owl#Un_matto(Dietro_ogni_scemo_c'è_un_villaggio)> ;
+                                                                                            stop:is_inspired_by stop:Spoon_River_Anthology ;
+                                                                                            stop:is_written_by stop:Fabrizio_De_Andrè ;
+                                                                                            stop:have_name "Non al denaro non all'amore né al cielo"^^rdfs:Literal .
+
+
+###  https://songstopoems.github.io/STOP/stopfinal.owl#Un_blasfemo_(dietro_ogni_blasfemo_c'è_un_giardino_incantato)
+<https://songstopoems.github.io/STOP/stopfinal.owl#Un_blasfemo_(dietro_ogni_blasfemo_c'è_un_giardino_incantato)> rdf:type owl:NamedIndividual ,
+                                                                                                                          stop:Song ;
+                                                                                                                 schema:isPartOf <https://songstopoems.github.io/STOP/stopfinal.owl#Non_al_denaro_non_all'amore_né_al_cielo> ;
+                                                                                                                 stop:has_character stop:UnBlasfemo ;
+                                                                                                                 stop:is_about stop:Damnation ,
+                                                                                                                               stop:Dream ,
+                                                                                                                               stop:Religion ,
+                                                                                                                               stop:Salvation ;
+                                                                                                                 stop:related_to stop:Wendell_P._Bloyd ;
+                                                                                                                 stop:have_name "Un blasfemo (Dietro Ogni Blasfemo C'è Un Giardino Incantato)"^^rdfs:Literal .
+
+
+###  https://songstopoems.github.io/STOP/stopfinal.owl#Un_matto(Dietro_ogni_scemo_c'è_un_villaggio)
+<https://songstopoems.github.io/STOP/stopfinal.owl#Un_matto(Dietro_ogni_scemo_c'è_un_villaggio)> rdf:type owl:NamedIndividual ,
+                                                                                                          stop:Song ;
+                                                                                                 schema:isPartOf <https://songstopoems.github.io/STOP/stopfinal.owl#Non_al_denaro_non_all'amore_né_al_cielo> ;
+                                                                                                 stop:has_character stop:UnMatto ;
+                                                                                                 stop:is_about stop:Death ,
+                                                                                                               stop:Dream ,
+                                                                                                               stop:Memory ,
+                                                                                                               stop:Writing ;
+                                                                                                 stop:related_to stop:Frank_Drummer ;
+                                                                                                 stop:have_name "Un matto (Dietro Ogni Scemo C'è Un Villaggio)"^^rdfs:Literal .
+
+
+#################################################################
+#    General axioms
+#################################################################
+
+[ rdf:type owl:AllDifferent ;
+  owl:distinctMembers ( stop:DippoldTheOptician
+                        stop:UnOttico
+                      )
+] .
+
+
+[ rdf:type owl:AllDifferent ;
+  owl:distinctMembers ( stop:DoctorSiegfriedIseman
+                        stop:UnMedico
+                      )
+] .
+
+
+[ rdf:type owl:AllDifferent ;
+  owl:distinctMembers ( stop:FiddlerJones
+                        stop:JonesIlSuonatore
+                      )
+] .
+
+
+[ rdf:type owl:AllDifferent ;
+  owl:distinctMembers ( stop:FrancisTurner
+                        stop:UnMalatoDiCuore
+                      )
+] .
+
+
+[ rdf:type owl:AllDifferent ;
+  owl:distinctMembers ( stop:FrankDrummer
+                        stop:UnMatto
+                      )
+] .
+
+
+[ rdf:type owl:AllDifferent ;
+  owl:distinctMembers ( stop:JudgeSelahLively
+                        stop:UnGiudice
+                      )
+] .
+
+
+[ rdf:type owl:AllDifferent ;
+  owl:distinctMembers ( stop:TrainorTheDruggist
+                        stop:UnChimico
+                      )
+] .
+
+
+[ rdf:type owl:AllDifferent ;
+  owl:distinctMembers ( stop:UnBlasfemo
+                        stop:WendellPBloyd
+                      )
+] .
+
+
+###  Generated by the OWL API (version 4.5.9.2019-02-01T07:24:44Z) https://github.com/owlcs/owlapi
