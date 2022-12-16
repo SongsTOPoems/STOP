@@ -1,0 +1,874 @@
+{
+  "_comment" : "Created with OWL2VOWL (version 0.3.5), http://vowl.visualdataweb.org",
+  "header" : {
+    "baseIris" : [ "http://schema.org", "http://www.w3.org/2000/01/rdf-schema", "https://songstopoems.github.io/STOP/stopfinal.owl", "http://www.w3.org/2001/XMLSchema" ],
+    "iri" : "https://songstopoems.github.io/STOP/stopfinal.owl#"
+  },
+  "namespace" : [ ],
+  "class" : [ {
+    "id" : "0",
+    "type" : "owl:Class"
+  }, {
+    "id" : "5",
+    "type" : "owl:Class"
+  }, {
+    "id" : "8",
+    "type" : "owl:Class"
+  }, {
+    "id" : "14",
+    "type" : "owl:Class"
+  }, {
+    "id" : "19",
+    "type" : "rdfs:Literal"
+  }, {
+    "id" : "20",
+    "type" : "owl:Thing"
+  }, {
+    "id" : "7",
+    "type" : "owl:Class"
+  }, {
+    "id" : "16",
+    "type" : "owl:Class"
+  }, {
+    "id" : "1",
+    "type" : "owl:Class"
+  }, {
+    "id" : "3",
+    "type" : "owl:Class"
+  }, {
+    "id" : "12",
+    "type" : "owl:Class"
+  }, {
+    "id" : "26",
+    "type" : "owl:Class"
+  } ],
+  "classAttribute" : [ {
+    "iri" : "https://songstopoems.github.io/STOP/stopfinal.owl#Poem",
+    "baseIri" : "https://songstopoems.github.io/STOP/stopfinal.owl",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Poem"
+    },
+    "individuals" : [ {
+      "iri" : "https://songstopoems.github.io/STOP/stopfinal.owl#Wendell_P._Bloyd",
+      "baseIri" : "https://songstopoems.github.io/STOP/stopfinal.owl",
+      "labels" : {
+        "IRI-based" : "Wendell_P._Bloyd"
+      }
+    }, {
+      "iri" : "https://songstopoems.github.io/STOP/stopfinal.owl#Trainor_the_druggist",
+      "baseIri" : "https://songstopoems.github.io/STOP/stopfinal.owl",
+      "labels" : {
+        "IRI-based" : "Trainor_the_druggist"
+      }
+    }, {
+      "iri" : "https://songstopoems.github.io/STOP/stopfinal.owl#Frank_Drummer",
+      "baseIri" : "https://songstopoems.github.io/STOP/stopfinal.owl",
+      "labels" : {
+        "IRI-based" : "Frank_Drummer"
+      }
+    }, {
+      "iri" : "https://songstopoems.github.io/STOP/stopfinal.owl#The_Hill",
+      "baseIri" : "https://songstopoems.github.io/STOP/stopfinal.owl",
+      "labels" : {
+        "IRI-based" : "The_Hill"
+      }
+    }, {
+      "iri" : "https://songstopoems.github.io/STOP/stopfinal.owl#Judge_Selah_Lively",
+      "baseIri" : "https://songstopoems.github.io/STOP/stopfinal.owl",
+      "labels" : {
+        "IRI-based" : "Judge_Selah_Lively"
+      }
+    }, {
+      "iri" : "https://songstopoems.github.io/STOP/stopfinal.owl#Fiddler_Jones",
+      "baseIri" : "https://songstopoems.github.io/STOP/stopfinal.owl",
+      "labels" : {
+        "IRI-based" : "Fiddler_Jones"
+      }
+    }, {
+      "iri" : "https://songstopoems.github.io/STOP/stopfinal.owl#Doctor_Siegfried_Iseman",
+      "baseIri" : "https://songstopoems.github.io/STOP/stopfinal.owl",
+      "labels" : {
+        "IRI-based" : "Doctor_Siegfried_Iseman"
+      }
+    }, {
+      "iri" : "https://songstopoems.github.io/STOP/stopfinal.owl#Francis_Turner",
+      "baseIri" : "https://songstopoems.github.io/STOP/stopfinal.owl",
+      "labels" : {
+        "IRI-based" : "Francis_Turner"
+      }
+    }, {
+      "iri" : "https://songstopoems.github.io/STOP/stopfinal.owl#Dippold_the_optician",
+      "baseIri" : "https://songstopoems.github.io/STOP/stopfinal.owl",
+      "labels" : {
+        "IRI-based" : "Dippold_the_optician"
+      }
+    } ],
+    "id" : "0",
+    "superClasses" : [ "1" ]
+  }, {
+    "iri" : "https://songstopoems.github.io/STOP/stopfinal.owl#Anthology_Poem",
+    "baseIri" : "https://songstopoems.github.io/STOP/stopfinal.owl",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Anthology_Poem"
+    },
+    "individuals" : [ {
+      "iri" : "https://songstopoems.github.io/STOP/stopfinal.owl#Spoon_River_Anthology",
+      "baseIri" : "https://songstopoems.github.io/STOP/stopfinal.owl",
+      "labels" : {
+        "IRI-based" : "Spoon_River_Anthology"
+      }
+    } ],
+    "id" : "5",
+    "superClasses" : [ "3" ]
+  }, {
+    "iri" : "https://songstopoems.github.io/STOP/stopfinal.owl#Author",
+    "baseIri" : "https://songstopoems.github.io/STOP/stopfinal.owl",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Author"
+    },
+    "individuals" : [ {
+      "iri" : "https://songstopoems.github.io/STOP/stopfinal.owl#Edgar_Lee_Masters",
+      "baseIri" : "https://songstopoems.github.io/STOP/stopfinal.owl",
+      "labels" : {
+        "IRI-based" : "Edgar_Lee_Masters"
+      }
+    }, {
+      "iri" : "https://songstopoems.github.io/STOP/stopfinal.owl#Fabrizio_De_Andrè",
+      "baseIri" : "https://songstopoems.github.io/STOP/stopfinal.owl",
+      "labels" : {
+        "IRI-based" : "Fabrizio_De_Andrè"
+      }
+    } ],
+    "id" : "8"
+  }, {
+    "iri" : "https://songstopoems.github.io/STOP/stopfinal.owl#Character",
+    "baseIri" : "https://songstopoems.github.io/STOP/stopfinal.owl",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Character"
+    },
+    "individuals" : [ {
+      "iri" : "https://songstopoems.github.io/STOP/stopfinal.owl#UnGiudice",
+      "baseIri" : "https://songstopoems.github.io/STOP/stopfinal.owl",
+      "labels" : {
+        "IRI-based" : "UnGiudice"
+      }
+    }, {
+      "iri" : "https://songstopoems.github.io/STOP/stopfinal.owl#Charley",
+      "baseIri" : "https://songstopoems.github.io/STOP/stopfinal.owl",
+      "labels" : {
+        "IRI-based" : "Charley"
+      }
+    }, {
+      "iri" : "https://songstopoems.github.io/STOP/stopfinal.owl#Uncle_Isaac",
+      "baseIri" : "https://songstopoems.github.io/STOP/stopfinal.owl",
+      "labels" : {
+        "IRI-based" : "Uncle_Isaac"
+      }
+    }, {
+      "iri" : "https://songstopoems.github.io/STOP/stopfinal.owl#Ella",
+      "baseIri" : "https://songstopoems.github.io/STOP/stopfinal.owl",
+      "labels" : {
+        "IRI-based" : "Ella"
+      }
+    }, {
+      "iri" : "https://songstopoems.github.io/STOP/stopfinal.owl#Major_Walker",
+      "baseIri" : "https://songstopoems.github.io/STOP/stopfinal.owl",
+      "labels" : {
+        "IRI-based" : "Major_Walker"
+      }
+    }, {
+      "iri" : "https://songstopoems.github.io/STOP/stopfinal.owl#UnBlasfemo",
+      "baseIri" : "https://songstopoems.github.io/STOP/stopfinal.owl",
+      "labels" : {
+        "IRI-based" : "UnBlasfemo"
+      }
+    }, {
+      "iri" : "https://songstopoems.github.io/STOP/stopfinal.owl#JudgeSelahLively",
+      "baseIri" : "https://songstopoems.github.io/STOP/stopfinal.owl",
+      "labels" : {
+        "IRI-based" : "JudgeSelahLively"
+      }
+    }, {
+      "iri" : "https://songstopoems.github.io/STOP/stopfinal.owl#DippoldTheOptician",
+      "baseIri" : "https://songstopoems.github.io/STOP/stopfinal.owl",
+      "labels" : {
+        "IRI-based" : "DippoldTheOptician"
+      }
+    }, {
+      "iri" : "https://songstopoems.github.io/STOP/stopfinal.owl#WendellPBloyd",
+      "baseIri" : "https://songstopoems.github.io/STOP/stopfinal.owl",
+      "labels" : {
+        "IRI-based" : "WendellPBloyd"
+      }
+    }, {
+      "iri" : "https://songstopoems.github.io/STOP/stopfinal.owl#Bert",
+      "baseIri" : "https://songstopoems.github.io/STOP/stopfinal.owl",
+      "labels" : {
+        "IRI-based" : "Bert"
+      }
+    }, {
+      "iri" : "https://songstopoems.github.io/STOP/stopfinal.owl#Edith",
+      "baseIri" : "https://songstopoems.github.io/STOP/stopfinal.owl",
+      "labels" : {
+        "IRI-based" : "Edith"
+      }
+    }, {
+      "iri" : "https://songstopoems.github.io/STOP/stopfinal.owl#Kate",
+      "baseIri" : "https://songstopoems.github.io/STOP/stopfinal.owl",
+      "labels" : {
+        "IRI-based" : "Kate"
+      }
+    }, {
+      "iri" : "https://songstopoems.github.io/STOP/stopfinal.owl#FrancisTurner",
+      "baseIri" : "https://songstopoems.github.io/STOP/stopfinal.owl",
+      "labels" : {
+        "IRI-based" : "FrancisTurner"
+      }
+    }, {
+      "iri" : "https://songstopoems.github.io/STOP/stopfinal.owl#UnChimico",
+      "baseIri" : "https://songstopoems.github.io/STOP/stopfinal.owl",
+      "labels" : {
+        "IRI-based" : "UnChimico"
+      }
+    }, {
+      "iri" : "https://songstopoems.github.io/STOP/stopfinal.owl#Maggie",
+      "baseIri" : "https://songstopoems.github.io/STOP/stopfinal.owl",
+      "labels" : {
+        "IRI-based" : "Maggie"
+      }
+    }, {
+      "iri" : "https://songstopoems.github.io/STOP/stopfinal.owl#UnMalatoDiCuore",
+      "baseIri" : "https://songstopoems.github.io/STOP/stopfinal.owl",
+      "labels" : {
+        "IRI-based" : "UnMalatoDiCuore"
+      }
+    }, {
+      "iri" : "https://songstopoems.github.io/STOP/stopfinal.owl#JonesIlSuonatore",
+      "baseIri" : "https://songstopoems.github.io/STOP/stopfinal.owl",
+      "labels" : {
+        "IRI-based" : "JonesIlSuonatore"
+      }
+    }, {
+      "iri" : "https://songstopoems.github.io/STOP/stopfinal.owl#Towny_Kincaid",
+      "baseIri" : "https://songstopoems.github.io/STOP/stopfinal.owl",
+      "labels" : {
+        "IRI-based" : "Towny_Kincaid"
+      }
+    }, {
+      "iri" : "https://songstopoems.github.io/STOP/stopfinal.owl#FrankDrummer",
+      "baseIri" : "https://songstopoems.github.io/STOP/stopfinal.owl",
+      "labels" : {
+        "IRI-based" : "FrankDrummer"
+      }
+    }, {
+      "iri" : "https://songstopoems.github.io/STOP/stopfinal.owl#DoctorSiegfriedIseman",
+      "baseIri" : "https://songstopoems.github.io/STOP/stopfinal.owl",
+      "labels" : {
+        "IRI-based" : "DoctorSiegfriedIseman"
+      }
+    }, {
+      "iri" : "https://songstopoems.github.io/STOP/stopfinal.owl#UnOttico",
+      "baseIri" : "https://songstopoems.github.io/STOP/stopfinal.owl",
+      "labels" : {
+        "IRI-based" : "UnOttico"
+      }
+    }, {
+      "iri" : "https://songstopoems.github.io/STOP/stopfinal.owl#UnMedico",
+      "baseIri" : "https://songstopoems.github.io/STOP/stopfinal.owl",
+      "labels" : {
+        "IRI-based" : "UnMedico"
+      }
+    }, {
+      "iri" : "https://songstopoems.github.io/STOP/stopfinal.owl#TrainorTheDruggist",
+      "baseIri" : "https://songstopoems.github.io/STOP/stopfinal.owl",
+      "labels" : {
+        "IRI-based" : "TrainorTheDruggist"
+      }
+    }, {
+      "iri" : "https://songstopoems.github.io/STOP/stopfinal.owl#Tom",
+      "baseIri" : "https://songstopoems.github.io/STOP/stopfinal.owl",
+      "labels" : {
+        "IRI-based" : "Tom"
+      }
+    }, {
+      "iri" : "https://songstopoems.github.io/STOP/stopfinal.owl#UnMatto",
+      "baseIri" : "https://songstopoems.github.io/STOP/stopfinal.owl",
+      "labels" : {
+        "IRI-based" : "UnMatto"
+      }
+    }, {
+      "iri" : "https://songstopoems.github.io/STOP/stopfinal.owl#FiddlerJones",
+      "baseIri" : "https://songstopoems.github.io/STOP/stopfinal.owl",
+      "labels" : {
+        "IRI-based" : "FiddlerJones"
+      }
+    }, {
+      "iri" : "https://songstopoems.github.io/STOP/stopfinal.owl#Elmer",
+      "baseIri" : "https://songstopoems.github.io/STOP/stopfinal.owl",
+      "labels" : {
+        "IRI-based" : "Elmer"
+      }
+    }, {
+      "iri" : "https://songstopoems.github.io/STOP/stopfinal.owl#Lizzie",
+      "baseIri" : "https://songstopoems.github.io/STOP/stopfinal.owl",
+      "labels" : {
+        "IRI-based" : "Lizzie"
+      }
+    }, {
+      "iri" : "https://songstopoems.github.io/STOP/stopfinal.owl#Aunt_Emily",
+      "baseIri" : "https://songstopoems.github.io/STOP/stopfinal.owl",
+      "labels" : {
+        "IRI-based" : "Aunt_Emily"
+      }
+    }, {
+      "iri" : "https://songstopoems.github.io/STOP/stopfinal.owl#Sevigne_Houghton",
+      "baseIri" : "https://songstopoems.github.io/STOP/stopfinal.owl",
+      "labels" : {
+        "IRI-based" : "Sevigne_Houghton"
+      }
+    }, {
+      "iri" : "https://songstopoems.github.io/STOP/stopfinal.owl#Herman",
+      "baseIri" : "https://songstopoems.github.io/STOP/stopfinal.owl",
+      "labels" : {
+        "IRI-based" : "Herman"
+      }
+    } ],
+    "id" : "14"
+  }, {
+    "iri" : "http://www.w3.org/2000/01/rdf-schema#Literal",
+    "baseIri" : "http://www.w3.org/2000/01/rdf-schema",
+    "id" : "19",
+    "label" : {
+      "IRI-based" : "Literal",
+      "undefined" : "Literal"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2002/07/owl#Thing",
+    "baseIri" : "http://owl2vowl.de",
+    "id" : "20",
+    "label" : {
+      "undefined" : "Thing"
+    }
+  }, {
+    "iri" : "https://songstopoems.github.io/STOP/stopfinal.owl#CreativeWork",
+    "baseIri" : "https://songstopoems.github.io/STOP/stopfinal.owl",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "CreativeWork"
+    },
+    "subClasses" : [ "1", "3" ],
+    "id" : "7"
+  }, {
+    "iri" : "https://songstopoems.github.io/STOP/stopfinal.owl#Musical_Album",
+    "baseIri" : "https://songstopoems.github.io/STOP/stopfinal.owl",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Musical_Album"
+    },
+    "individuals" : [ {
+      "iri" : "https://songstopoems.github.io/STOP/stopfinal.owl#Non_al_denaro_non_all'amore_né_al_cielo",
+      "baseIri" : "https://songstopoems.github.io/STOP/stopfinal.owl",
+      "labels" : {
+        "IRI-based" : "Non_al_denaro_non_all'amore_né_al_cielo"
+      }
+    } ],
+    "id" : "16",
+    "superClasses" : [ "3" ]
+  }, {
+    "iri" : "https://songstopoems.github.io/STOP/stopfinal.owl#Unit",
+    "baseIri" : "https://songstopoems.github.io/STOP/stopfinal.owl",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Unit"
+    },
+    "individuals" : [ {
+      "iri" : "https://songstopoems.github.io/STOP/stopfinal.owl#Dormono_sulla_collina",
+      "baseIri" : "https://songstopoems.github.io/STOP/stopfinal.owl",
+      "labels" : {
+        "IRI-based" : "Dormono_sulla_collina"
+      }
+    }, {
+      "iri" : "https://songstopoems.github.io/STOP/stopfinal.owl#The_Hill",
+      "baseIri" : "https://songstopoems.github.io/STOP/stopfinal.owl",
+      "labels" : {
+        "IRI-based" : "The_Hill"
+      }
+    } ],
+    "subClasses" : [ "0", "12" ],
+    "id" : "1",
+    "superClasses" : [ "7" ]
+  }, {
+    "iri" : "https://songstopoems.github.io/STOP/stopfinal.owl#Work",
+    "baseIri" : "https://songstopoems.github.io/STOP/stopfinal.owl",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Work"
+    },
+    "individuals" : [ {
+      "iri" : "https://songstopoems.github.io/STOP/stopfinal.owl#Non_al_denaro_non_all'amore_né_al_cielo",
+      "baseIri" : "https://songstopoems.github.io/STOP/stopfinal.owl",
+      "labels" : {
+        "IRI-based" : "Non_al_denaro_non_all'amore_né_al_cielo"
+      }
+    }, {
+      "iri" : "https://songstopoems.github.io/STOP/stopfinal.owl#Spoon_River_Anthology",
+      "baseIri" : "https://songstopoems.github.io/STOP/stopfinal.owl",
+      "labels" : {
+        "IRI-based" : "Spoon_River_Anthology"
+      }
+    } ],
+    "subClasses" : [ "16", "5" ],
+    "id" : "3",
+    "superClasses" : [ "7" ]
+  }, {
+    "iri" : "https://songstopoems.github.io/STOP/stopfinal.owl#Song",
+    "baseIri" : "https://songstopoems.github.io/STOP/stopfinal.owl",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Song"
+    },
+    "individuals" : [ {
+      "iri" : "https://songstopoems.github.io/STOP/stopfinal.owl#Un_chimico",
+      "baseIri" : "https://songstopoems.github.io/STOP/stopfinal.owl",
+      "labels" : {
+        "IRI-based" : "Un_chimico"
+      }
+    }, {
+      "iri" : "https://songstopoems.github.io/STOP/stopfinal.owl#Un_ottico",
+      "baseIri" : "https://songstopoems.github.io/STOP/stopfinal.owl",
+      "labels" : {
+        "IRI-based" : "Un_ottico"
+      }
+    }, {
+      "iri" : "https://songstopoems.github.io/STOP/stopfinal.owl#Un_matto(Dietro_ogni_scemo_c'è_un_villaggio)",
+      "baseIri" : "https://songstopoems.github.io/STOP/stopfinal.owl",
+      "labels" : {
+        "IRI-based" : "Un_matto(Dietro_ogni_scemo_c'è_un_villaggio)"
+      }
+    }, {
+      "iri" : "https://songstopoems.github.io/STOP/stopfinal.owl#Dormono_sulla_collina",
+      "baseIri" : "https://songstopoems.github.io/STOP/stopfinal.owl",
+      "labels" : {
+        "IRI-based" : "Dormono_sulla_collina"
+      }
+    }, {
+      "iri" : "https://songstopoems.github.io/STOP/stopfinal.owl#Un_blasfemo_(dietro_ogni_blasfemo_c'è_un_giardino_incantato)",
+      "baseIri" : "https://songstopoems.github.io/STOP/stopfinal.owl",
+      "labels" : {
+        "IRI-based" : "Un_blasfemo_(dietro_ogni_blasfemo_c'è_un_giardino_incantato)"
+      }
+    }, {
+      "iri" : "https://songstopoems.github.io/STOP/stopfinal.owl#Un_giudice",
+      "baseIri" : "https://songstopoems.github.io/STOP/stopfinal.owl",
+      "labels" : {
+        "IRI-based" : "Un_giudice"
+      }
+    }, {
+      "iri" : "https://songstopoems.github.io/STOP/stopfinal.owl#Un_malato_di_cuore",
+      "baseIri" : "https://songstopoems.github.io/STOP/stopfinal.owl",
+      "labels" : {
+        "IRI-based" : "Un_malato_di_cuore"
+      }
+    }, {
+      "iri" : "https://songstopoems.github.io/STOP/stopfinal.owl#Il_suonatore_Jones",
+      "baseIri" : "https://songstopoems.github.io/STOP/stopfinal.owl",
+      "labels" : {
+        "IRI-based" : "Il_suonatore_Jones"
+      }
+    }, {
+      "iri" : "https://songstopoems.github.io/STOP/stopfinal.owl#Un_medico",
+      "baseIri" : "https://songstopoems.github.io/STOP/stopfinal.owl",
+      "labels" : {
+        "IRI-based" : "Un_medico"
+      }
+    } ],
+    "id" : "12",
+    "superClasses" : [ "1" ]
+  }, {
+    "iri" : "https://songstopoems.github.io/STOP/stopfinal.owl#Topic",
+    "baseIri" : "https://songstopoems.github.io/STOP/stopfinal.owl",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Topic"
+    },
+    "individuals" : [ {
+      "iri" : "https://songstopoems.github.io/STOP/stopfinal.owl#Drinking",
+      "baseIri" : "https://songstopoems.github.io/STOP/stopfinal.owl",
+      "labels" : {
+        "IRI-based" : "Drinking"
+      }
+    }, {
+      "iri" : "https://songstopoems.github.io/STOP/stopfinal.owl#Nature",
+      "baseIri" : "https://songstopoems.github.io/STOP/stopfinal.owl",
+      "labels" : {
+        "IRI-based" : "Nature"
+      }
+    }, {
+      "iri" : "https://songstopoems.github.io/STOP/stopfinal.owl#Eternal_Sleep",
+      "baseIri" : "https://songstopoems.github.io/STOP/stopfinal.owl",
+      "labels" : {
+        "IRI-based" : "Eternal_Sleep"
+      }
+    }, {
+      "iri" : "https://songstopoems.github.io/STOP/stopfinal.owl#Suffering",
+      "baseIri" : "https://songstopoems.github.io/STOP/stopfinal.owl",
+      "labels" : {
+        "IRI-based" : "Suffering"
+      }
+    }, {
+      "iri" : "https://songstopoems.github.io/STOP/stopfinal.owl#Dancing",
+      "baseIri" : "https://songstopoems.github.io/STOP/stopfinal.owl",
+      "labels" : {
+        "IRI-based" : "Dancing"
+      }
+    }, {
+      "iri" : "https://songstopoems.github.io/STOP/stopfinal.owl#Dream",
+      "baseIri" : "https://songstopoems.github.io/STOP/stopfinal.owl",
+      "labels" : {
+        "IRI-based" : "Dream"
+      }
+    }, {
+      "iri" : "https://songstopoems.github.io/STOP/stopfinal.owl#Love",
+      "baseIri" : "https://songstopoems.github.io/STOP/stopfinal.owl",
+      "labels" : {
+        "IRI-based" : "Love"
+      }
+    }, {
+      "iri" : "https://songstopoems.github.io/STOP/stopfinal.owl#Salvation",
+      "baseIri" : "https://songstopoems.github.io/STOP/stopfinal.owl",
+      "labels" : {
+        "IRI-based" : "Salvation"
+      }
+    }, {
+      "iri" : "https://songstopoems.github.io/STOP/stopfinal.owl#Music",
+      "baseIri" : "https://songstopoems.github.io/STOP/stopfinal.owl",
+      "labels" : {
+        "IRI-based" : "Music"
+      }
+    }, {
+      "iri" : "https://songstopoems.github.io/STOP/stopfinal.owl#Damnation",
+      "baseIri" : "https://songstopoems.github.io/STOP/stopfinal.owl",
+      "labels" : {
+        "IRI-based" : "Damnation"
+      }
+    }, {
+      "iri" : "https://songstopoems.github.io/STOP/stopfinal.owl#Memory",
+      "baseIri" : "https://songstopoems.github.io/STOP/stopfinal.owl",
+      "labels" : {
+        "IRI-based" : "Memory"
+      }
+    }, {
+      "iri" : "https://songstopoems.github.io/STOP/stopfinal.owl#Writing",
+      "baseIri" : "https://songstopoems.github.io/STOP/stopfinal.owl",
+      "labels" : {
+        "IRI-based" : "Writing"
+      }
+    }, {
+      "iri" : "https://songstopoems.github.io/STOP/stopfinal.owl#Family",
+      "baseIri" : "https://songstopoems.github.io/STOP/stopfinal.owl",
+      "labels" : {
+        "IRI-based" : "Family"
+      }
+    }, {
+      "iri" : "https://songstopoems.github.io/STOP/stopfinal.owl#Death",
+      "baseIri" : "https://songstopoems.github.io/STOP/stopfinal.owl",
+      "labels" : {
+        "IRI-based" : "Death"
+      }
+    }, {
+      "iri" : "https://songstopoems.github.io/STOP/stopfinal.owl#Religion",
+      "baseIri" : "https://songstopoems.github.io/STOP/stopfinal.owl",
+      "labels" : {
+        "IRI-based" : "Religion"
+      }
+    }, {
+      "iri" : "https://songstopoems.github.io/STOP/stopfinal.owl#Justice",
+      "baseIri" : "https://songstopoems.github.io/STOP/stopfinal.owl",
+      "labels" : {
+        "IRI-based" : "Justice"
+      }
+    }, {
+      "iri" : "https://songstopoems.github.io/STOP/stopfinal.owl#Church",
+      "baseIri" : "https://songstopoems.github.io/STOP/stopfinal.owl",
+      "labels" : {
+        "IRI-based" : "Church"
+      }
+    }, {
+      "iri" : "https://songstopoems.github.io/STOP/stopfinal.owl#Sickness",
+      "baseIri" : "https://songstopoems.github.io/STOP/stopfinal.owl",
+      "labels" : {
+        "IRI-based" : "Sickness"
+      }
+    }, {
+      "iri" : "https://songstopoems.github.io/STOP/stopfinal.owl#Sky",
+      "baseIri" : "https://songstopoems.github.io/STOP/stopfinal.owl",
+      "labels" : {
+        "IRI-based" : "Sky"
+      }
+    }, {
+      "iri" : "https://songstopoems.github.io/STOP/stopfinal.owl#Sight",
+      "baseIri" : "https://songstopoems.github.io/STOP/stopfinal.owl",
+      "labels" : {
+        "IRI-based" : "Sight"
+      }
+    }, {
+      "iri" : "https://songstopoems.github.io/STOP/stopfinal.owl#Knowledge",
+      "baseIri" : "https://songstopoems.github.io/STOP/stopfinal.owl",
+      "labels" : {
+        "IRI-based" : "Knowledge"
+      }
+    }, {
+      "iri" : "https://songstopoems.github.io/STOP/stopfinal.owl#Night",
+      "baseIri" : "https://songstopoems.github.io/STOP/stopfinal.owl",
+      "labels" : {
+        "IRI-based" : "Night"
+      }
+    }, {
+      "iri" : "https://songstopoems.github.io/STOP/stopfinal.owl#Darkness_VS_Light",
+      "baseIri" : "https://songstopoems.github.io/STOP/stopfinal.owl",
+      "labels" : {
+        "IRI-based" : "Darkness_VS_Light"
+      }
+    }, {
+      "iri" : "https://songstopoems.github.io/STOP/stopfinal.owl#Secret",
+      "baseIri" : "https://songstopoems.github.io/STOP/stopfinal.owl",
+      "labels" : {
+        "IRI-based" : "Secret"
+      }
+    }, {
+      "iri" : "https://songstopoems.github.io/STOP/stopfinal.owl#Marriage",
+      "baseIri" : "https://songstopoems.github.io/STOP/stopfinal.owl",
+      "labels" : {
+        "IRI-based" : "Marriage"
+      }
+    }, {
+      "iri" : "https://songstopoems.github.io/STOP/stopfinal.owl#Hate",
+      "baseIri" : "https://songstopoems.github.io/STOP/stopfinal.owl",
+      "labels" : {
+        "IRI-based" : "Hate"
+      }
+    }, {
+      "iri" : "https://songstopoems.github.io/STOP/stopfinal.owl#Devastation",
+      "baseIri" : "https://songstopoems.github.io/STOP/stopfinal.owl",
+      "labels" : {
+        "IRI-based" : "Devastation"
+      }
+    } ],
+    "id" : "26"
+  } ],
+  "property" : [ {
+    "id" : "2",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "6",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "9",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "10",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "11",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "13",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "15",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "17",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "18",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "21",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "22",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "23",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "25",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "27",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "28",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "24",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "4",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "29",
+    "type" : "owl:objectProperty"
+  } ],
+  "propertyAttribute" : [ {
+    "iri" : "http://schema.org/hasPart",
+    "inverse" : "4",
+    "baseIri" : "http://schema.org",
+    "range" : "1",
+    "label" : {
+      "IRI-based" : "hasPart"
+    },
+    "domain" : "3",
+    "attributes" : [ "external", "object" ],
+    "id" : "2"
+  }, {
+    "range" : "7",
+    "domain" : "1",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "6"
+  }, {
+    "range" : "7",
+    "domain" : "3",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "9"
+  }, {
+    "range" : "1",
+    "domain" : "0",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "10"
+  }, {
+    "range" : "1",
+    "domain" : "12",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "11"
+  }, {
+    "iri" : "https://songstopoems.github.io/STOP/stopfinal.owl#is_in",
+    "baseIri" : "https://songstopoems.github.io/STOP/stopfinal.owl",
+    "range" : "1",
+    "label" : {
+      "IRI-based" : "is_in"
+    },
+    "domain" : "14",
+    "attributes" : [ "object" ],
+    "id" : "13"
+  }, {
+    "range" : "3",
+    "domain" : "16",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "15"
+  }, {
+    "range" : "3",
+    "domain" : "5",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "17"
+  }, {
+    "iri" : "https://songstopoems.github.io/STOP/stopfinal.owl#writes",
+    "baseIri" : "https://songstopoems.github.io/STOP/stopfinal.owl",
+    "range" : "3",
+    "label" : {
+      "IRI-based" : "writes"
+    },
+    "domain" : "8",
+    "attributes" : [ "object" ],
+    "id" : "18"
+  }, {
+    "iri" : "https://songstopoems.github.io/STOP/stopfinal.owl#have_name",
+    "baseIri" : "https://songstopoems.github.io/STOP/stopfinal.owl",
+    "range" : "19",
+    "label" : {
+      "IRI-based" : "have_name"
+    },
+    "domain" : "20",
+    "attributes" : [ "datatype" ],
+    "id" : "21"
+  }, {
+    "iri" : "https://songstopoems.github.io/STOP/stopfinal.owl#has_character",
+    "inverse" : "13",
+    "baseIri" : "https://songstopoems.github.io/STOP/stopfinal.owl",
+    "range" : "14",
+    "label" : {
+      "IRI-based" : "has_character"
+    },
+    "domain" : "1",
+    "attributes" : [ "object" ],
+    "id" : "22"
+  }, {
+    "iri" : "https://songstopoems.github.io/STOP/stopfinal.owl#inspires",
+    "inverse" : "24",
+    "baseIri" : "https://songstopoems.github.io/STOP/stopfinal.owl",
+    "range" : "3",
+    "label" : {
+      "IRI-based" : "inspires"
+    },
+    "domain" : "3",
+    "attributes" : [ "object" ],
+    "id" : "23"
+  }, {
+    "iri" : "https://songstopoems.github.io/STOP/stopfinal.owl#is_about",
+    "baseIri" : "https://songstopoems.github.io/STOP/stopfinal.owl",
+    "range" : "26",
+    "label" : {
+      "IRI-based" : "is_about"
+    },
+    "domain" : "1",
+    "attributes" : [ "object" ],
+    "id" : "25"
+  }, {
+    "iri" : "https://songstopoems.github.io/STOP/stopfinal.owl#is_written_by",
+    "inverse" : "18",
+    "baseIri" : "https://songstopoems.github.io/STOP/stopfinal.owl",
+    "range" : "8",
+    "label" : {
+      "IRI-based" : "is_written_by"
+    },
+    "domain" : "3",
+    "attributes" : [ "object" ],
+    "id" : "27"
+  }, {
+    "iri" : "https://songstopoems.github.io/STOP/stopfinal.owl#related_to",
+    "baseIri" : "https://songstopoems.github.io/STOP/stopfinal.owl",
+    "range" : "0",
+    "label" : {
+      "IRI-based" : "related_to"
+    },
+    "domain" : "12",
+    "attributes" : [ "object" ],
+    "id" : "28"
+  }, {
+    "iri" : "https://songstopoems.github.io/STOP/stopfinal.owl#is_inspired_by",
+    "baseIri" : "https://songstopoems.github.io/STOP/stopfinal.owl",
+    "range" : "3",
+    "label" : {
+      "IRI-based" : "is_inspired_by"
+    },
+    "domain" : "3",
+    "attributes" : [ "object" ],
+    "id" : "24"
+  }, {
+    "iri" : "http://schema.org/isPartOf",
+    "baseIri" : "http://schema.org",
+    "range" : "3",
+    "label" : {
+      "IRI-based" : "isPartOf"
+    },
+    "domain" : "1",
+    "attributes" : [ "external", "object" ],
+    "id" : "4"
+  }, {
+    "iri" : "https://songstopoems.github.io/STOP/stopfinal.owl#appears_in",
+    "inverse" : "25",
+    "baseIri" : "https://songstopoems.github.io/STOP/stopfinal.owl",
+    "range" : "1",
+    "label" : {
+      "IRI-based" : "appears_in"
+    },
+    "domain" : "26",
+    "attributes" : [ "object" ],
+    "id" : "29"
+  } ]
+}

@@ -1,0 +1,1730 @@
+[ {
+  "@id" : "_:genid1",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AllDifferent" ],
+  "http://www.w3.org/2002/07/owl#distinctMembers" : [ {
+    "@list" : [ {
+      "@id" : "https://songstopoems.github.io/STOP/stopfinal.owl#DippoldTheOptician"
+    }, {
+      "@id" : "https://songstopoems.github.io/STOP/stopfinal.owl#UnOttico"
+    } ]
+  } ]
+}, {
+  "@id" : "_:genid10",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AllDifferent" ],
+  "http://www.w3.org/2002/07/owl#distinctMembers" : [ {
+    "@list" : [ {
+      "@id" : "https://songstopoems.github.io/STOP/stopfinal.owl#FrancisTurner"
+    }, {
+      "@id" : "https://songstopoems.github.io/STOP/stopfinal.owl#UnMalatoDiCuore"
+    } ]
+  } ]
+}, {
+  "@id" : "_:genid13",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AllDifferent" ],
+  "http://www.w3.org/2002/07/owl#distinctMembers" : [ {
+    "@list" : [ {
+      "@id" : "https://songstopoems.github.io/STOP/stopfinal.owl#FrankDrummer"
+    }, {
+      "@id" : "https://songstopoems.github.io/STOP/stopfinal.owl#UnMatto"
+    } ]
+  } ]
+}, {
+  "@id" : "_:genid16",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AllDifferent" ],
+  "http://www.w3.org/2002/07/owl#distinctMembers" : [ {
+    "@list" : [ {
+      "@id" : "https://songstopoems.github.io/STOP/stopfinal.owl#JudgeSelahLively"
+    }, {
+      "@id" : "https://songstopoems.github.io/STOP/stopfinal.owl#UnGiudice"
+    } ]
+  } ]
+}, {
+  "@id" : "_:genid19",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AllDifferent" ],
+  "http://www.w3.org/2002/07/owl#distinctMembers" : [ {
+    "@list" : [ {
+      "@id" : "https://songstopoems.github.io/STOP/stopfinal.owl#TrainorTheDruggist"
+    }, {
+      "@id" : "https://songstopoems.github.io/STOP/stopfinal.owl#UnChimico"
+    } ]
+  } ]
+}, {
+  "@id" : "_:genid22",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AllDifferent" ],
+  "http://www.w3.org/2002/07/owl#distinctMembers" : [ {
+    "@list" : [ {
+      "@id" : "https://songstopoems.github.io/STOP/stopfinal.owl#UnBlasfemo"
+    }, {
+      "@id" : "https://songstopoems.github.io/STOP/stopfinal.owl#WendellPBloyd"
+    } ]
+  } ]
+}, {
+  "@id" : "_:genid4",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AllDifferent" ],
+  "http://www.w3.org/2002/07/owl#distinctMembers" : [ {
+    "@list" : [ {
+      "@id" : "https://songstopoems.github.io/STOP/stopfinal.owl#DoctorSiegfriedIseman"
+    }, {
+      "@id" : "https://songstopoems.github.io/STOP/stopfinal.owl#UnMedico"
+    } ]
+  } ]
+}, {
+  "@id" : "_:genid7",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AllDifferent" ],
+  "http://www.w3.org/2002/07/owl#distinctMembers" : [ {
+    "@list" : [ {
+      "@id" : "https://songstopoems.github.io/STOP/stopfinal.owl#FiddlerJones"
+    }, {
+      "@id" : "https://songstopoems.github.io/STOP/stopfinal.owl#JonesIlSuonatore"
+    } ]
+  } ]
+}, {
+  "@id" : "http://schema.org/hasPart",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "https://songstopoems.github.io/STOP/stopfinal.owl#Work"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "https://songstopoems.github.io/STOP/stopfinal.owl#Unit"
+  } ],
+  "http://www.w3.org/2002/07/owl#inverseOf" : [ {
+    "@id" : "http://schema.org/isPartOf"
+  } ]
+}, {
+  "@id" : "http://schema.org/isPartOf",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "https://songstopoems.github.io/STOP/stopfinal.owl#Unit"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "https://songstopoems.github.io/STOP/stopfinal.owl#Work"
+  } ]
+}, {
+  "@id" : "https://songstopoems.github.io/STOP/stopfinal.owl#",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Ontology" ],
+  "http://www.w3.org/2002/07/owl#versionIRI" : [ {
+    "@id" : "https://songstopoems.github.io/STOP/stopfinal.owl#/1.0"
+  } ]
+}, {
+  "@id" : "https://songstopoems.github.io/STOP/stopfinal.owl#Anthology_Poem",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://songstopoems.github.io/STOP/stopfinal.owl#Work"
+  } ]
+}, {
+  "@id" : "https://songstopoems.github.io/STOP/stopfinal.owl#Aunt_Emily",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "https://songstopoems.github.io/STOP/stopfinal.owl#Character"
+  } ],
+  "https://songstopoems.github.io/STOP/stopfinal.owl#have_name" : [ {
+    "@type" : "http://www.w3.org/2000/01/rdf-schema#Literal",
+    "@value" : "Aunt Emily"
+  } ],
+  "https://songstopoems.github.io/STOP/stopfinal.owl#is_in" : [ {
+    "@id" : "https://songstopoems.github.io/STOP/stopfinal.owl#The_Hill"
+  } ]
+}, {
+  "@id" : "https://songstopoems.github.io/STOP/stopfinal.owl#Author",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ]
+}, {
+  "@id" : "https://songstopoems.github.io/STOP/stopfinal.owl#Bert",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "https://songstopoems.github.io/STOP/stopfinal.owl#Character"
+  } ],
+  "https://songstopoems.github.io/STOP/stopfinal.owl#have_name" : [ {
+    "@type" : "http://www.w3.org/2000/01/rdf-schema#Literal",
+    "@value" : "Bert"
+  } ],
+  "https://songstopoems.github.io/STOP/stopfinal.owl#is_in" : [ {
+    "@id" : "https://songstopoems.github.io/STOP/stopfinal.owl#Dormono_sulla_collina"
+  }, {
+    "@id" : "https://songstopoems.github.io/STOP/stopfinal.owl#The_Hill"
+  } ]
+}, {
+  "@id" : "https://songstopoems.github.io/STOP/stopfinal.owl#Character",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ]
+}, {
+  "@id" : "https://songstopoems.github.io/STOP/stopfinal.owl#Charley",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "https://songstopoems.github.io/STOP/stopfinal.owl#Character"
+  } ],
+  "https://songstopoems.github.io/STOP/stopfinal.owl#have_name" : [ {
+    "@type" : "http://www.w3.org/2000/01/rdf-schema#Literal",
+    "@value" : "Charley"
+  } ],
+  "https://songstopoems.github.io/STOP/stopfinal.owl#is_in" : [ {
+    "@id" : "https://songstopoems.github.io/STOP/stopfinal.owl#Dormono_sulla_collina"
+  }, {
+    "@id" : "https://songstopoems.github.io/STOP/stopfinal.owl#The_Hill"
+  } ]
+}, {
+  "@id" : "https://songstopoems.github.io/STOP/stopfinal.owl#Church",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "https://songstopoems.github.io/STOP/stopfinal.owl#Topic"
+  } ],
+  "https://songstopoems.github.io/STOP/stopfinal.owl#appears_in" : [ {
+    "@id" : "https://songstopoems.github.io/STOP/stopfinal.owl#Doctor_Siegfried_Iseman"
+  } ],
+  "https://songstopoems.github.io/STOP/stopfinal.owl#have_name" : [ {
+    "@value" : "Church"
+  } ]
+}, {
+  "@id" : "https://songstopoems.github.io/STOP/stopfinal.owl#CreativeWork",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ]
+}, {
+  "@id" : "https://songstopoems.github.io/STOP/stopfinal.owl#Damnation",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "https://songstopoems.github.io/STOP/stopfinal.owl#Topic"
+  } ],
+  "https://songstopoems.github.io/STOP/stopfinal.owl#appears_in" : [ {
+    "@id" : "https://songstopoems.github.io/STOP/stopfinal.owl#Un_giudice"
+  }, {
+    "@id" : "https://songstopoems.github.io/STOP/stopfinal.owl#Un_medico"
+  }, {
+    "@id" : "https://songstopoems.github.io/STOP/stopfinal.owl#Wendell_P._Bloyd"
+  }, {
+    "@id" : "https://songstopoems.github.io/STOP/stopfinal.owl#Un_blasfemo_(dietro_ogni_blasfemo_c'è_un_giardino_incantato)"
+  } ],
+  "https://songstopoems.github.io/STOP/stopfinal.owl#have_name" : [ {
+    "@value" : "Damnation"
+  } ]
+}, {
+  "@id" : "https://songstopoems.github.io/STOP/stopfinal.owl#Dancing",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "https://songstopoems.github.io/STOP/stopfinal.owl#Topic"
+  } ],
+  "https://songstopoems.github.io/STOP/stopfinal.owl#appears_in" : [ {
+    "@id" : "https://songstopoems.github.io/STOP/stopfinal.owl#Fiddler_Jones"
+  }, {
+    "@id" : "https://songstopoems.github.io/STOP/stopfinal.owl#Il_suonatore_Jones"
+  } ],
+  "https://songstopoems.github.io/STOP/stopfinal.owl#have_name" : [ {
+    "@value" : "Dancing"
+  } ]
+}, {
+  "@id" : "https://songstopoems.github.io/STOP/stopfinal.owl#Darkness_VS_Light",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "https://songstopoems.github.io/STOP/stopfinal.owl#Topic"
+  } ],
+  "https://songstopoems.github.io/STOP/stopfinal.owl#appears_in" : [ {
+    "@id" : "https://songstopoems.github.io/STOP/stopfinal.owl#Dippold_the_optician"
+  }, {
+    "@id" : "https://songstopoems.github.io/STOP/stopfinal.owl#Frank_Drummer"
+  }, {
+    "@id" : "https://songstopoems.github.io/STOP/stopfinal.owl#Un_ottico"
+  } ],
+  "https://songstopoems.github.io/STOP/stopfinal.owl#have_name" : [ {
+    "@value" : "Darkness vs light"
+  } ]
+}, {
+  "@id" : "https://songstopoems.github.io/STOP/stopfinal.owl#Death",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "https://songstopoems.github.io/STOP/stopfinal.owl#Topic"
+  } ],
+  "https://songstopoems.github.io/STOP/stopfinal.owl#appears_in" : [ {
+    "@id" : "https://songstopoems.github.io/STOP/stopfinal.owl#Dormono_sulla_collina"
+  }, {
+    "@id" : "https://songstopoems.github.io/STOP/stopfinal.owl#The_Hill"
+  }, {
+    "@id" : "https://songstopoems.github.io/STOP/stopfinal.owl#Un_matto(Dietro_ogni_scemo_c'è_un_villaggio)"
+  } ],
+  "https://songstopoems.github.io/STOP/stopfinal.owl#have_name" : [ {
+    "@value" : "Death"
+  } ]
+}, {
+  "@id" : "https://songstopoems.github.io/STOP/stopfinal.owl#Devastation",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "https://songstopoems.github.io/STOP/stopfinal.owl#Topic"
+  } ],
+  "https://songstopoems.github.io/STOP/stopfinal.owl#appears_in" : [ {
+    "@id" : "https://songstopoems.github.io/STOP/stopfinal.owl#Un_chimico"
+  } ],
+  "https://songstopoems.github.io/STOP/stopfinal.owl#have_name" : [ {
+    "@value" : "Devastation"
+  } ]
+}, {
+  "@id" : "https://songstopoems.github.io/STOP/stopfinal.owl#DippoldTheOptician",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "https://songstopoems.github.io/STOP/stopfinal.owl#Character"
+  } ],
+  "https://songstopoems.github.io/STOP/stopfinal.owl#have_name" : [ {
+    "@type" : "http://www.w3.org/2000/01/rdf-schema#Literal",
+    "@value" : "Dippold, The Optician"
+  } ],
+  "https://songstopoems.github.io/STOP/stopfinal.owl#is_in" : [ {
+    "@id" : "https://songstopoems.github.io/STOP/stopfinal.owl#Dippold_the_optician"
+  } ]
+}, {
+  "@id" : "https://songstopoems.github.io/STOP/stopfinal.owl#Dippold_the_optician",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://schema.org/isPartOf" : [ {
+    "@id" : "https://songstopoems.github.io/STOP/stopfinal.owl#Spoon_River_Anthology"
+  } ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "https://songstopoems.github.io/STOP/stopfinal.owl#Poem"
+  } ],
+  "https://songstopoems.github.io/STOP/stopfinal.owl#has_character" : [ {
+    "@id" : "https://songstopoems.github.io/STOP/stopfinal.owl#DippoldTheOptician"
+  } ],
+  "https://songstopoems.github.io/STOP/stopfinal.owl#have_name" : [ {
+    "@type" : "http://www.w3.org/2000/01/rdf-schema#Literal",
+    "@value" : "Dippold, The Optician"
+  } ],
+  "https://songstopoems.github.io/STOP/stopfinal.owl#is_about" : [ {
+    "@id" : "https://songstopoems.github.io/STOP/stopfinal.owl#Darkness_VS_Light"
+  }, {
+    "@id" : "https://songstopoems.github.io/STOP/stopfinal.owl#Dream"
+  }, {
+    "@id" : "https://songstopoems.github.io/STOP/stopfinal.owl#Night"
+  }, {
+    "@id" : "https://songstopoems.github.io/STOP/stopfinal.owl#Sight"
+  }, {
+    "@id" : "https://songstopoems.github.io/STOP/stopfinal.owl#Sky"
+  } ]
+}, {
+  "@id" : "https://songstopoems.github.io/STOP/stopfinal.owl#DoctorSiegfriedIseman",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "https://songstopoems.github.io/STOP/stopfinal.owl#Character"
+  } ],
+  "https://songstopoems.github.io/STOP/stopfinal.owl#have_name" : [ {
+    "@type" : "http://www.w3.org/2000/01/rdf-schema#Literal",
+    "@value" : "Doctor Siegfried Iseman"
+  } ],
+  "https://songstopoems.github.io/STOP/stopfinal.owl#is_in" : [ {
+    "@id" : "https://songstopoems.github.io/STOP/stopfinal.owl#Doctor_Siegfried_Iseman"
+  } ]
+}, {
+  "@id" : "https://songstopoems.github.io/STOP/stopfinal.owl#Doctor_Siegfried_Iseman",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://schema.org/isPartOf" : [ {
+    "@id" : "https://songstopoems.github.io/STOP/stopfinal.owl#Spoon_River_Anthology"
+  } ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "https://songstopoems.github.io/STOP/stopfinal.owl#Poem"
+  } ],
+  "https://songstopoems.github.io/STOP/stopfinal.owl#has_character" : [ {
+    "@id" : "https://songstopoems.github.io/STOP/stopfinal.owl#DoctorSiegfriedIseman"
+  } ],
+  "https://songstopoems.github.io/STOP/stopfinal.owl#have_name" : [ {
+    "@type" : "http://www.w3.org/2000/01/rdf-schema#Literal",
+    "@value" : "Doctor Siegfried Iseman"
+  } ],
+  "https://songstopoems.github.io/STOP/stopfinal.owl#is_about" : [ {
+    "@id" : "https://songstopoems.github.io/STOP/stopfinal.owl#Church"
+  }, {
+    "@id" : "https://songstopoems.github.io/STOP/stopfinal.owl#Justice"
+  }, {
+    "@id" : "https://songstopoems.github.io/STOP/stopfinal.owl#Knowledge"
+  }, {
+    "@id" : "https://songstopoems.github.io/STOP/stopfinal.owl#Religion"
+  }, {
+    "@id" : "https://songstopoems.github.io/STOP/stopfinal.owl#Suffering"
+  } ]
+}, {
+  "@id" : "https://songstopoems.github.io/STOP/stopfinal.owl#Dormono_sulla_collina",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://schema.org/isPartOf" : [ {
+    "@id" : "https://songstopoems.github.io/STOP/stopfinal.owl#Non_al_denaro_non_all'amore_né_al_cielo"
+  } ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "https://songstopoems.github.io/STOP/stopfinal.owl#Song"
+  }, {
+    "@id" : "https://songstopoems.github.io/STOP/stopfinal.owl#Unit"
+  } ],
+  "https://songstopoems.github.io/STOP/stopfinal.owl#has_character" : [ {
+    "@id" : "https://songstopoems.github.io/STOP/stopfinal.owl#Bert"
+  }, {
+    "@id" : "https://songstopoems.github.io/STOP/stopfinal.owl#Charley"
+  }, {
+    "@id" : "https://songstopoems.github.io/STOP/stopfinal.owl#Ella"
+  }, {
+    "@id" : "https://songstopoems.github.io/STOP/stopfinal.owl#Elmer"
+  }, {
+    "@id" : "https://songstopoems.github.io/STOP/stopfinal.owl#Herman"
+  }, {
+    "@id" : "https://songstopoems.github.io/STOP/stopfinal.owl#JonesIlSuonatore"
+  }, {
+    "@id" : "https://songstopoems.github.io/STOP/stopfinal.owl#Kate"
+  }, {
+    "@id" : "https://songstopoems.github.io/STOP/stopfinal.owl#Lizzie"
+  }, {
+    "@id" : "https://songstopoems.github.io/STOP/stopfinal.owl#Maggie"
+  }, {
+    "@id" : "https://songstopoems.github.io/STOP/stopfinal.owl#Tom"
+  } ],
+  "https://songstopoems.github.io/STOP/stopfinal.owl#have_name" : [ {
+    "@type" : "http://www.w3.org/2000/01/rdf-schema#Literal",
+    "@value" : "La collina"
+  } ],
+  "https://songstopoems.github.io/STOP/stopfinal.owl#is_about" : [ {
+    "@id" : "https://songstopoems.github.io/STOP/stopfinal.owl#Death"
+  }, {
+    "@id" : "https://songstopoems.github.io/STOP/stopfinal.owl#Eternal_Sleep"
+  }, {
+    "@id" : "https://songstopoems.github.io/STOP/stopfinal.owl#Nature"
+  } ],
+  "https://songstopoems.github.io/STOP/stopfinal.owl#related_to" : [ {
+    "@id" : "https://songstopoems.github.io/STOP/stopfinal.owl#The_Hill"
+  } ]
+}, {
+  "@id" : "https://songstopoems.github.io/STOP/stopfinal.owl#Dream",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "https://songstopoems.github.io/STOP/stopfinal.owl#Topic"
+  } ],
+  "https://songstopoems.github.io/STOP/stopfinal.owl#appears_in" : [ {
+    "@id" : "https://songstopoems.github.io/STOP/stopfinal.owl#Dippold_the_optician"
+  }, {
+    "@id" : "https://songstopoems.github.io/STOP/stopfinal.owl#Frank_Drummer"
+  }, {
+    "@id" : "https://songstopoems.github.io/STOP/stopfinal.owl#Il_suonatore_Jones"
+  }, {
+    "@id" : "https://songstopoems.github.io/STOP/stopfinal.owl#Un_malato_di_cuore"
+  }, {
+    "@id" : "https://songstopoems.github.io/STOP/stopfinal.owl#Un_ottico"
+  }, {
+    "@id" : "https://songstopoems.github.io/STOP/stopfinal.owl#Un_blasfemo_(dietro_ogni_blasfemo_c'è_un_giardino_incantato)"
+  }, {
+    "@id" : "https://songstopoems.github.io/STOP/stopfinal.owl#Un_matto(Dietro_ogni_scemo_c'è_un_villaggio)"
+  } ],
+  "https://songstopoems.github.io/STOP/stopfinal.owl#have_name" : [ {
+    "@value" : "Dream"
+  } ]
+}, {
+  "@id" : "https://songstopoems.github.io/STOP/stopfinal.owl#Drinking",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "https://songstopoems.github.io/STOP/stopfinal.owl#Topic"
+  } ],
+  "https://songstopoems.github.io/STOP/stopfinal.owl#appears_in" : [ {
+    "@id" : "https://songstopoems.github.io/STOP/stopfinal.owl#Francis_Turner"
+  } ],
+  "https://songstopoems.github.io/STOP/stopfinal.owl#have_name" : [ {
+    "@value" : "Drinking"
+  } ]
+}, {
+  "@id" : "https://songstopoems.github.io/STOP/stopfinal.owl#Edgar_Lee_Masters",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "https://songstopoems.github.io/STOP/stopfinal.owl#Author"
+  } ],
+  "https://songstopoems.github.io/STOP/stopfinal.owl#have_name" : [ {
+    "@type" : "http://www.w3.org/2000/01/rdf-schema#Literal",
+    "@value" : "Edgar Lee Masters"
+  } ],
+  "https://songstopoems.github.io/STOP/stopfinal.owl#writes" : [ {
+    "@id" : "https://songstopoems.github.io/STOP/stopfinal.owl#Spoon_River_Anthology"
+  } ]
+}, {
+  "@id" : "https://songstopoems.github.io/STOP/stopfinal.owl#Edith",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "https://songstopoems.github.io/STOP/stopfinal.owl#Character"
+  } ],
+  "https://songstopoems.github.io/STOP/stopfinal.owl#have_name" : [ {
+    "@type" : "http://www.w3.org/2000/01/rdf-schema#Literal",
+    "@value" : "Edith"
+  } ],
+  "https://songstopoems.github.io/STOP/stopfinal.owl#is_in" : [ {
+    "@id" : "https://songstopoems.github.io/STOP/stopfinal.owl#The_Hill"
+  } ]
+}, {
+  "@id" : "https://songstopoems.github.io/STOP/stopfinal.owl#Ella",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "https://songstopoems.github.io/STOP/stopfinal.owl#Character"
+  } ],
+  "https://songstopoems.github.io/STOP/stopfinal.owl#have_name" : [ {
+    "@type" : "http://www.w3.org/2000/01/rdf-schema#Literal",
+    "@value" : "Ella"
+  } ],
+  "https://songstopoems.github.io/STOP/stopfinal.owl#is_in" : [ {
+    "@id" : "https://songstopoems.github.io/STOP/stopfinal.owl#Dormono_sulla_collina"
+  }, {
+    "@id" : "https://songstopoems.github.io/STOP/stopfinal.owl#The_Hill"
+  } ]
+}, {
+  "@id" : "https://songstopoems.github.io/STOP/stopfinal.owl#Elmer",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "https://songstopoems.github.io/STOP/stopfinal.owl#Character"
+  } ],
+  "https://songstopoems.github.io/STOP/stopfinal.owl#have_name" : [ {
+    "@type" : "http://www.w3.org/2000/01/rdf-schema#Literal",
+    "@value" : "Elmer"
+  } ],
+  "https://songstopoems.github.io/STOP/stopfinal.owl#is_in" : [ {
+    "@id" : "https://songstopoems.github.io/STOP/stopfinal.owl#Dormono_sulla_collina"
+  }, {
+    "@id" : "https://songstopoems.github.io/STOP/stopfinal.owl#The_Hill"
+  } ]
+}, {
+  "@id" : "https://songstopoems.github.io/STOP/stopfinal.owl#Eternal_Sleep",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "https://songstopoems.github.io/STOP/stopfinal.owl#Topic"
+  } ],
+  "https://songstopoems.github.io/STOP/stopfinal.owl#appears_in" : [ {
+    "@id" : "https://songstopoems.github.io/STOP/stopfinal.owl#Dormono_sulla_collina"
+  }, {
+    "@id" : "https://songstopoems.github.io/STOP/stopfinal.owl#The_Hill"
+  } ],
+  "https://songstopoems.github.io/STOP/stopfinal.owl#have_name" : [ {
+    "@value" : "Eternal Sleep"
+  } ]
+}, {
+  "@id" : "https://songstopoems.github.io/STOP/stopfinal.owl#Fabrizio_De_Andrè",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "https://songstopoems.github.io/STOP/stopfinal.owl#Author"
+  } ],
+  "https://songstopoems.github.io/STOP/stopfinal.owl#have_name" : [ {
+    "@type" : "http://www.w3.org/2000/01/rdf-schema#Literal",
+    "@value" : "Fabrizio De André"
+  } ],
+  "https://songstopoems.github.io/STOP/stopfinal.owl#writes" : [ {
+    "@id" : "https://songstopoems.github.io/STOP/stopfinal.owl#Non_al_denaro_non_all'amore_né_al_cielo"
+  } ]
+}, {
+  "@id" : "https://songstopoems.github.io/STOP/stopfinal.owl#Family",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "https://songstopoems.github.io/STOP/stopfinal.owl#Topic"
+  } ],
+  "https://songstopoems.github.io/STOP/stopfinal.owl#appears_in" : [ {
+    "@id" : "https://songstopoems.github.io/STOP/stopfinal.owl#Trainor_the_druggist"
+  } ],
+  "https://songstopoems.github.io/STOP/stopfinal.owl#have_name" : [ {
+    "@value" : "Family"
+  } ]
+}, {
+  "@id" : "https://songstopoems.github.io/STOP/stopfinal.owl#FiddlerJones",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "https://songstopoems.github.io/STOP/stopfinal.owl#Character"
+  } ],
+  "https://songstopoems.github.io/STOP/stopfinal.owl#have_name" : [ {
+    "@type" : "http://www.w3.org/2000/01/rdf-schema#Literal",
+    "@value" : "Fiddler Jones"
+  } ],
+  "https://songstopoems.github.io/STOP/stopfinal.owl#is_in" : [ {
+    "@id" : "https://songstopoems.github.io/STOP/stopfinal.owl#Fiddler_Jones"
+  } ]
+}, {
+  "@id" : "https://songstopoems.github.io/STOP/stopfinal.owl#Fiddler_Jones",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://schema.org/isPartOf" : [ {
+    "@id" : "https://songstopoems.github.io/STOP/stopfinal.owl#Spoon_River_Anthology"
+  } ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "https://songstopoems.github.io/STOP/stopfinal.owl#Poem"
+  } ],
+  "https://songstopoems.github.io/STOP/stopfinal.owl#has_character" : [ {
+    "@id" : "https://songstopoems.github.io/STOP/stopfinal.owl#FiddlerJones"
+  } ],
+  "https://songstopoems.github.io/STOP/stopfinal.owl#have_name" : [ {
+    "@type" : "http://www.w3.org/2000/01/rdf-schema#Literal",
+    "@value" : "Fiddler Jones"
+  } ],
+  "https://songstopoems.github.io/STOP/stopfinal.owl#is_about" : [ {
+    "@id" : "https://songstopoems.github.io/STOP/stopfinal.owl#Dancing"
+  }, {
+    "@id" : "https://songstopoems.github.io/STOP/stopfinal.owl#Music"
+  }, {
+    "@id" : "https://songstopoems.github.io/STOP/stopfinal.owl#Nature"
+  }, {
+    "@id" : "https://songstopoems.github.io/STOP/stopfinal.owl#Sky"
+  } ]
+}, {
+  "@id" : "https://songstopoems.github.io/STOP/stopfinal.owl#FrancisTurner",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "https://songstopoems.github.io/STOP/stopfinal.owl#Character"
+  } ],
+  "https://songstopoems.github.io/STOP/stopfinal.owl#have_name" : [ {
+    "@type" : "http://www.w3.org/2000/01/rdf-schema#Literal",
+    "@value" : "Francis Turner"
+  } ],
+  "https://songstopoems.github.io/STOP/stopfinal.owl#is_in" : [ {
+    "@id" : "https://songstopoems.github.io/STOP/stopfinal.owl#Francis_Turner"
+  } ]
+}, {
+  "@id" : "https://songstopoems.github.io/STOP/stopfinal.owl#Francis_Turner",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://schema.org/isPartOf" : [ {
+    "@id" : "https://songstopoems.github.io/STOP/stopfinal.owl#Spoon_River_Anthology"
+  } ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "https://songstopoems.github.io/STOP/stopfinal.owl#Poem"
+  } ],
+  "https://songstopoems.github.io/STOP/stopfinal.owl#has_character" : [ {
+    "@id" : "https://songstopoems.github.io/STOP/stopfinal.owl#FrancisTurner"
+  } ],
+  "https://songstopoems.github.io/STOP/stopfinal.owl#have_name" : [ {
+    "@type" : "http://www.w3.org/2000/01/rdf-schema#Literal",
+    "@value" : "Francis Turner"
+  } ],
+  "https://songstopoems.github.io/STOP/stopfinal.owl#is_about" : [ {
+    "@id" : "https://songstopoems.github.io/STOP/stopfinal.owl#Drinking"
+  }, {
+    "@id" : "https://songstopoems.github.io/STOP/stopfinal.owl#Nature"
+  }, {
+    "@id" : "https://songstopoems.github.io/STOP/stopfinal.owl#Secret"
+  }, {
+    "@id" : "https://songstopoems.github.io/STOP/stopfinal.owl#Suffering"
+  } ]
+}, {
+  "@id" : "https://songstopoems.github.io/STOP/stopfinal.owl#FrankDrummer",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "https://songstopoems.github.io/STOP/stopfinal.owl#Character"
+  } ],
+  "https://songstopoems.github.io/STOP/stopfinal.owl#have_name" : [ {
+    "@type" : "http://www.w3.org/2000/01/rdf-schema#Literal",
+    "@value" : "Frank Drummer"
+  } ],
+  "https://songstopoems.github.io/STOP/stopfinal.owl#is_in" : [ {
+    "@id" : "https://songstopoems.github.io/STOP/stopfinal.owl#Frank_Drummer"
+  } ]
+}, {
+  "@id" : "https://songstopoems.github.io/STOP/stopfinal.owl#Frank_Drummer",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://schema.org/isPartOf" : [ {
+    "@id" : "https://songstopoems.github.io/STOP/stopfinal.owl#Spoon_River_Anthology"
+  } ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "https://songstopoems.github.io/STOP/stopfinal.owl#Poem"
+  } ],
+  "https://songstopoems.github.io/STOP/stopfinal.owl#has_character" : [ {
+    "@id" : "https://songstopoems.github.io/STOP/stopfinal.owl#FrankDrummer"
+  } ],
+  "https://songstopoems.github.io/STOP/stopfinal.owl#have_name" : [ {
+    "@type" : "http://www.w3.org/2000/01/rdf-schema#Literal",
+    "@value" : "Frank Drummer"
+  } ],
+  "https://songstopoems.github.io/STOP/stopfinal.owl#is_about" : [ {
+    "@id" : "https://songstopoems.github.io/STOP/stopfinal.owl#Darkness_VS_Light"
+  }, {
+    "@id" : "https://songstopoems.github.io/STOP/stopfinal.owl#Dream"
+  }, {
+    "@id" : "https://songstopoems.github.io/STOP/stopfinal.owl#Memory"
+  }, {
+    "@id" : "https://songstopoems.github.io/STOP/stopfinal.owl#Music"
+  } ]
+}, {
+  "@id" : "https://songstopoems.github.io/STOP/stopfinal.owl#Hate",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "https://songstopoems.github.io/STOP/stopfinal.owl#Topic"
+  } ],
+  "https://songstopoems.github.io/STOP/stopfinal.owl#appears_in" : [ {
+    "@id" : "https://songstopoems.github.io/STOP/stopfinal.owl#Judge_Selah_Lively"
+  }, {
+    "@id" : "https://songstopoems.github.io/STOP/stopfinal.owl#Un_giudice"
+  }, {
+    "@id" : "https://songstopoems.github.io/STOP/stopfinal.owl#Wendell_P._Bloyd"
+  } ],
+  "https://songstopoems.github.io/STOP/stopfinal.owl#have_name" : [ {
+    "@value" : "Hate"
+  } ]
+}, {
+  "@id" : "https://songstopoems.github.io/STOP/stopfinal.owl#Herman",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "https://songstopoems.github.io/STOP/stopfinal.owl#Character"
+  } ],
+  "https://songstopoems.github.io/STOP/stopfinal.owl#have_name" : [ {
+    "@type" : "http://www.w3.org/2000/01/rdf-schema#Literal",
+    "@value" : "Herman"
+  } ],
+  "https://songstopoems.github.io/STOP/stopfinal.owl#is_in" : [ {
+    "@id" : "https://songstopoems.github.io/STOP/stopfinal.owl#Dormono_sulla_collina"
+  }, {
+    "@id" : "https://songstopoems.github.io/STOP/stopfinal.owl#The_Hill"
+  } ]
+}, {
+  "@id" : "https://songstopoems.github.io/STOP/stopfinal.owl#Il_suonatore_Jones",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://schema.org/isPartOf" : [ {
+    "@id" : "https://songstopoems.github.io/STOP/stopfinal.owl#Non_al_denaro_non_all'amore_né_al_cielo"
+  } ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "https://songstopoems.github.io/STOP/stopfinal.owl#Song"
+  } ],
+  "https://songstopoems.github.io/STOP/stopfinal.owl#has_character" : [ {
+    "@id" : "https://songstopoems.github.io/STOP/stopfinal.owl#JonesIlSuonatore"
+  } ],
+  "https://songstopoems.github.io/STOP/stopfinal.owl#have_name" : [ {
+    "@type" : "http://www.w3.org/2000/01/rdf-schema#Literal",
+    "@value" : "Il suonatore Jones"
+  } ],
+  "https://songstopoems.github.io/STOP/stopfinal.owl#is_about" : [ {
+    "@id" : "https://songstopoems.github.io/STOP/stopfinal.owl#Dancing"
+  }, {
+    "@id" : "https://songstopoems.github.io/STOP/stopfinal.owl#Dream"
+  }, {
+    "@id" : "https://songstopoems.github.io/STOP/stopfinal.owl#Music"
+  }, {
+    "@id" : "https://songstopoems.github.io/STOP/stopfinal.owl#Nature"
+  }, {
+    "@id" : "https://songstopoems.github.io/STOP/stopfinal.owl#Suffering"
+  } ],
+  "https://songstopoems.github.io/STOP/stopfinal.owl#related_to" : [ {
+    "@id" : "https://songstopoems.github.io/STOP/stopfinal.owl#Fiddler_Jones"
+  } ]
+}, {
+  "@id" : "https://songstopoems.github.io/STOP/stopfinal.owl#JonesIlSuonatore",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "https://songstopoems.github.io/STOP/stopfinal.owl#Character"
+  } ],
+  "https://songstopoems.github.io/STOP/stopfinal.owl#have_name" : [ {
+    "@type" : "http://www.w3.org/2000/01/rdf-schema#Literal",
+    "@value" : "Il suonatore Jones"
+  } ],
+  "https://songstopoems.github.io/STOP/stopfinal.owl#is_in" : [ {
+    "@id" : "https://songstopoems.github.io/STOP/stopfinal.owl#Dormono_sulla_collina"
+  }, {
+    "@id" : "https://songstopoems.github.io/STOP/stopfinal.owl#Il_suonatore_Jones"
+  } ]
+}, {
+  "@id" : "https://songstopoems.github.io/STOP/stopfinal.owl#JudgeSelahLively",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "https://songstopoems.github.io/STOP/stopfinal.owl#Character"
+  } ],
+  "https://songstopoems.github.io/STOP/stopfinal.owl#have_name" : [ {
+    "@type" : "http://www.w3.org/2000/01/rdf-schema#Literal",
+    "@value" : "Judge Selah Lively"
+  } ],
+  "https://songstopoems.github.io/STOP/stopfinal.owl#is_in" : [ {
+    "@id" : "https://songstopoems.github.io/STOP/stopfinal.owl#Judge_Selah_Lively"
+  } ]
+}, {
+  "@id" : "https://songstopoems.github.io/STOP/stopfinal.owl#Judge_Selah_Lively",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://schema.org/isPartOf" : [ {
+    "@id" : "https://songstopoems.github.io/STOP/stopfinal.owl#Spoon_River_Anthology"
+  } ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "https://songstopoems.github.io/STOP/stopfinal.owl#Poem"
+  } ],
+  "https://songstopoems.github.io/STOP/stopfinal.owl#has_character" : [ {
+    "@id" : "https://songstopoems.github.io/STOP/stopfinal.owl#JudgeSelahLively"
+  } ],
+  "https://songstopoems.github.io/STOP/stopfinal.owl#have_name" : [ {
+    "@type" : "http://www.w3.org/2000/01/rdf-schema#Literal",
+    "@value" : "Judge Selah Lively"
+  } ],
+  "https://songstopoems.github.io/STOP/stopfinal.owl#is_about" : [ {
+    "@id" : "https://songstopoems.github.io/STOP/stopfinal.owl#Hate"
+  }, {
+    "@id" : "https://songstopoems.github.io/STOP/stopfinal.owl#Justice"
+  }, {
+    "@id" : "https://songstopoems.github.io/STOP/stopfinal.owl#Religion"
+  } ]
+}, {
+  "@id" : "https://songstopoems.github.io/STOP/stopfinal.owl#Justice",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "https://songstopoems.github.io/STOP/stopfinal.owl#Topic"
+  } ],
+  "https://songstopoems.github.io/STOP/stopfinal.owl#appears_in" : [ {
+    "@id" : "https://songstopoems.github.io/STOP/stopfinal.owl#Doctor_Siegfried_Iseman"
+  }, {
+    "@id" : "https://songstopoems.github.io/STOP/stopfinal.owl#Judge_Selah_Lively"
+  }, {
+    "@id" : "https://songstopoems.github.io/STOP/stopfinal.owl#Un_giudice"
+  } ],
+  "https://songstopoems.github.io/STOP/stopfinal.owl#have_name" : [ {
+    "@value" : "Justice"
+  } ]
+}, {
+  "@id" : "https://songstopoems.github.io/STOP/stopfinal.owl#Kate",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "https://songstopoems.github.io/STOP/stopfinal.owl#Character"
+  } ],
+  "https://songstopoems.github.io/STOP/stopfinal.owl#have_name" : [ {
+    "@type" : "http://www.w3.org/2000/01/rdf-schema#Literal",
+    "@value" : "Kate"
+  } ],
+  "https://songstopoems.github.io/STOP/stopfinal.owl#is_in" : [ {
+    "@id" : "https://songstopoems.github.io/STOP/stopfinal.owl#Dormono_sulla_collina"
+  }, {
+    "@id" : "https://songstopoems.github.io/STOP/stopfinal.owl#The_Hill"
+  } ]
+}, {
+  "@id" : "https://songstopoems.github.io/STOP/stopfinal.owl#Knowledge",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "https://songstopoems.github.io/STOP/stopfinal.owl#Topic"
+  } ],
+  "https://songstopoems.github.io/STOP/stopfinal.owl#appears_in" : [ {
+    "@id" : "https://songstopoems.github.io/STOP/stopfinal.owl#Doctor_Siegfried_Iseman"
+  }, {
+    "@id" : "https://songstopoems.github.io/STOP/stopfinal.owl#Un_giudice"
+  }, {
+    "@id" : "https://songstopoems.github.io/STOP/stopfinal.owl#Un_medico"
+  } ],
+  "https://songstopoems.github.io/STOP/stopfinal.owl#have_name" : [ {
+    "@value" : "Knowledge"
+  } ]
+}, {
+  "@id" : "https://songstopoems.github.io/STOP/stopfinal.owl#Lizzie",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "https://songstopoems.github.io/STOP/stopfinal.owl#Character"
+  } ],
+  "https://songstopoems.github.io/STOP/stopfinal.owl#have_name" : [ {
+    "@type" : "http://www.w3.org/2000/01/rdf-schema#Literal",
+    "@value" : "Lizzie"
+  } ],
+  "https://songstopoems.github.io/STOP/stopfinal.owl#is_in" : [ {
+    "@id" : "https://songstopoems.github.io/STOP/stopfinal.owl#Dormono_sulla_collina"
+  }, {
+    "@id" : "https://songstopoems.github.io/STOP/stopfinal.owl#The_Hill"
+  } ]
+}, {
+  "@id" : "https://songstopoems.github.io/STOP/stopfinal.owl#Love",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "https://songstopoems.github.io/STOP/stopfinal.owl#Topic"
+  } ],
+  "https://songstopoems.github.io/STOP/stopfinal.owl#appears_in" : [ {
+    "@id" : "https://songstopoems.github.io/STOP/stopfinal.owl#Un_chimico"
+  } ],
+  "https://songstopoems.github.io/STOP/stopfinal.owl#have_name" : [ {
+    "@value" : "Love"
+  } ]
+}, {
+  "@id" : "https://songstopoems.github.io/STOP/stopfinal.owl#Maggie",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "https://songstopoems.github.io/STOP/stopfinal.owl#Character"
+  } ],
+  "https://songstopoems.github.io/STOP/stopfinal.owl#have_name" : [ {
+    "@type" : "http://www.w3.org/2000/01/rdf-schema#Literal",
+    "@value" : "Maggie"
+  } ],
+  "https://songstopoems.github.io/STOP/stopfinal.owl#is_in" : [ {
+    "@id" : "https://songstopoems.github.io/STOP/stopfinal.owl#Dormono_sulla_collina"
+  }, {
+    "@id" : "https://songstopoems.github.io/STOP/stopfinal.owl#The_Hill"
+  } ]
+}, {
+  "@id" : "https://songstopoems.github.io/STOP/stopfinal.owl#Major_Walker",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "https://songstopoems.github.io/STOP/stopfinal.owl#Character"
+  } ],
+  "https://songstopoems.github.io/STOP/stopfinal.owl#have_name" : [ {
+    "@type" : "http://www.w3.org/2000/01/rdf-schema#Literal",
+    "@value" : "Major Walker"
+  } ],
+  "https://songstopoems.github.io/STOP/stopfinal.owl#is_in" : [ {
+    "@id" : "https://songstopoems.github.io/STOP/stopfinal.owl#The_Hill"
+  } ]
+}, {
+  "@id" : "https://songstopoems.github.io/STOP/stopfinal.owl#Marriage",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "https://songstopoems.github.io/STOP/stopfinal.owl#Topic"
+  } ],
+  "https://songstopoems.github.io/STOP/stopfinal.owl#appears_in" : [ {
+    "@id" : "https://songstopoems.github.io/STOP/stopfinal.owl#Trainor_the_druggist"
+  } ],
+  "https://songstopoems.github.io/STOP/stopfinal.owl#have_name" : [ {
+    "@value" : "Marriage"
+  } ]
+}, {
+  "@id" : "https://songstopoems.github.io/STOP/stopfinal.owl#Memory",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "https://songstopoems.github.io/STOP/stopfinal.owl#Topic"
+  } ],
+  "https://songstopoems.github.io/STOP/stopfinal.owl#appears_in" : [ {
+    "@id" : "https://songstopoems.github.io/STOP/stopfinal.owl#Frank_Drummer"
+  }, {
+    "@id" : "https://songstopoems.github.io/STOP/stopfinal.owl#Un_matto(Dietro_ogni_scemo_c'è_un_villaggio)"
+  } ],
+  "https://songstopoems.github.io/STOP/stopfinal.owl#have_name" : [ {
+    "@value" : "Memory"
+  } ]
+}, {
+  "@id" : "https://songstopoems.github.io/STOP/stopfinal.owl#Music",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "https://songstopoems.github.io/STOP/stopfinal.owl#Topic"
+  } ],
+  "https://songstopoems.github.io/STOP/stopfinal.owl#appears_in" : [ {
+    "@id" : "https://songstopoems.github.io/STOP/stopfinal.owl#Fiddler_Jones"
+  }, {
+    "@id" : "https://songstopoems.github.io/STOP/stopfinal.owl#Frank_Drummer"
+  }, {
+    "@id" : "https://songstopoems.github.io/STOP/stopfinal.owl#Il_suonatore_Jones"
+  } ],
+  "https://songstopoems.github.io/STOP/stopfinal.owl#have_name" : [ {
+    "@value" : "Music"
+  } ]
+}, {
+  "@id" : "https://songstopoems.github.io/STOP/stopfinal.owl#Musical_Album",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://songstopoems.github.io/STOP/stopfinal.owl#Work"
+  } ]
+}, {
+  "@id" : "https://songstopoems.github.io/STOP/stopfinal.owl#Nature",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "https://songstopoems.github.io/STOP/stopfinal.owl#Topic"
+  } ],
+  "https://songstopoems.github.io/STOP/stopfinal.owl#appears_in" : [ {
+    "@id" : "https://songstopoems.github.io/STOP/stopfinal.owl#Dormono_sulla_collina"
+  }, {
+    "@id" : "https://songstopoems.github.io/STOP/stopfinal.owl#Fiddler_Jones"
+  }, {
+    "@id" : "https://songstopoems.github.io/STOP/stopfinal.owl#Francis_Turner"
+  }, {
+    "@id" : "https://songstopoems.github.io/STOP/stopfinal.owl#Il_suonatore_Jones"
+  }, {
+    "@id" : "https://songstopoems.github.io/STOP/stopfinal.owl#The_Hill"
+  }, {
+    "@id" : "https://songstopoems.github.io/STOP/stopfinal.owl#Un_chimico"
+  } ],
+  "https://songstopoems.github.io/STOP/stopfinal.owl#have_name" : [ {
+    "@value" : "Nature"
+  } ]
+}, {
+  "@id" : "https://songstopoems.github.io/STOP/stopfinal.owl#Night",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "https://songstopoems.github.io/STOP/stopfinal.owl#Topic"
+  } ],
+  "https://songstopoems.github.io/STOP/stopfinal.owl#appears_in" : [ {
+    "@id" : "https://songstopoems.github.io/STOP/stopfinal.owl#Dippold_the_optician"
+  } ],
+  "https://songstopoems.github.io/STOP/stopfinal.owl#have_name" : [ {
+    "@value" : "Night"
+  } ]
+}, {
+  "@id" : "https://songstopoems.github.io/STOP/stopfinal.owl#Non_al_denaro_non_all'amore_né_al_cielo",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://schema.org/hasPart" : [ {
+    "@id" : "https://songstopoems.github.io/STOP/stopfinal.owl#Dormono_sulla_collina"
+  }, {
+    "@id" : "https://songstopoems.github.io/STOP/stopfinal.owl#Il_suonatore_Jones"
+  }, {
+    "@id" : "https://songstopoems.github.io/STOP/stopfinal.owl#Un_chimico"
+  }, {
+    "@id" : "https://songstopoems.github.io/STOP/stopfinal.owl#Un_giudice"
+  }, {
+    "@id" : "https://songstopoems.github.io/STOP/stopfinal.owl#Un_malato_di_cuore"
+  }, {
+    "@id" : "https://songstopoems.github.io/STOP/stopfinal.owl#Un_medico"
+  }, {
+    "@id" : "https://songstopoems.github.io/STOP/stopfinal.owl#Un_ottico"
+  }, {
+    "@id" : "https://songstopoems.github.io/STOP/stopfinal.owl#Un_blasfemo_(dietro_ogni_blasfemo_c'è_un_giardino_incantato)"
+  }, {
+    "@id" : "https://songstopoems.github.io/STOP/stopfinal.owl#Un_matto(Dietro_ogni_scemo_c'è_un_villaggio)"
+  } ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "https://songstopoems.github.io/STOP/stopfinal.owl#Musical_Album"
+  }, {
+    "@id" : "https://songstopoems.github.io/STOP/stopfinal.owl#Work"
+  } ],
+  "https://songstopoems.github.io/STOP/stopfinal.owl#have_name" : [ {
+    "@type" : "http://www.w3.org/2000/01/rdf-schema#Literal",
+    "@value" : "Non al denaro non all'amore né al cielo"
+  } ],
+  "https://songstopoems.github.io/STOP/stopfinal.owl#is_inspired_by" : [ {
+    "@id" : "https://songstopoems.github.io/STOP/stopfinal.owl#Spoon_River_Anthology"
+  } ],
+  "https://songstopoems.github.io/STOP/stopfinal.owl#is_written_by" : [ {
+    "@id" : "https://songstopoems.github.io/STOP/stopfinal.owl#Fabrizio_De_Andrè"
+  } ]
+}, {
+  "@id" : "https://songstopoems.github.io/STOP/stopfinal.owl#Poem",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://songstopoems.github.io/STOP/stopfinal.owl#Unit"
+  } ]
+}, {
+  "@id" : "https://songstopoems.github.io/STOP/stopfinal.owl#Religion",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "https://songstopoems.github.io/STOP/stopfinal.owl#Topic"
+  } ],
+  "https://songstopoems.github.io/STOP/stopfinal.owl#appears_in" : [ {
+    "@id" : "https://songstopoems.github.io/STOP/stopfinal.owl#Doctor_Siegfried_Iseman"
+  }, {
+    "@id" : "https://songstopoems.github.io/STOP/stopfinal.owl#Judge_Selah_Lively"
+  }, {
+    "@id" : "https://songstopoems.github.io/STOP/stopfinal.owl#Un_giudice"
+  }, {
+    "@id" : "https://songstopoems.github.io/STOP/stopfinal.owl#Wendell_P._Bloyd"
+  }, {
+    "@id" : "https://songstopoems.github.io/STOP/stopfinal.owl#Un_blasfemo_(dietro_ogni_blasfemo_c'è_un_giardino_incantato)"
+  } ],
+  "https://songstopoems.github.io/STOP/stopfinal.owl#have_name" : [ {
+    "@value" : "Religion"
+  } ]
+}, {
+  "@id" : "https://songstopoems.github.io/STOP/stopfinal.owl#Salvation",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "https://songstopoems.github.io/STOP/stopfinal.owl#Topic"
+  } ],
+  "https://songstopoems.github.io/STOP/stopfinal.owl#appears_in" : [ {
+    "@id" : "https://songstopoems.github.io/STOP/stopfinal.owl#Un_chimico"
+  }, {
+    "@id" : "https://songstopoems.github.io/STOP/stopfinal.owl#Un_malato_di_cuore"
+  }, {
+    "@id" : "https://songstopoems.github.io/STOP/stopfinal.owl#Un_medico"
+  }, {
+    "@id" : "https://songstopoems.github.io/STOP/stopfinal.owl#Wendell_P._Bloyd"
+  }, {
+    "@id" : "https://songstopoems.github.io/STOP/stopfinal.owl#Un_blasfemo_(dietro_ogni_blasfemo_c'è_un_giardino_incantato)"
+  } ],
+  "https://songstopoems.github.io/STOP/stopfinal.owl#have_name" : [ {
+    "@value" : "Salvation"
+  } ]
+}, {
+  "@id" : "https://songstopoems.github.io/STOP/stopfinal.owl#Secret",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "https://songstopoems.github.io/STOP/stopfinal.owl#Topic"
+  } ],
+  "https://songstopoems.github.io/STOP/stopfinal.owl#appears_in" : [ {
+    "@id" : "https://songstopoems.github.io/STOP/stopfinal.owl#Francis_Turner"
+  } ],
+  "https://songstopoems.github.io/STOP/stopfinal.owl#have_name" : [ {
+    "@value" : "Secret"
+  } ]
+}, {
+  "@id" : "https://songstopoems.github.io/STOP/stopfinal.owl#Sevigne_Houghton",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "https://songstopoems.github.io/STOP/stopfinal.owl#Character"
+  } ],
+  "https://songstopoems.github.io/STOP/stopfinal.owl#have_name" : [ {
+    "@type" : "http://www.w3.org/2000/01/rdf-schema#Literal",
+    "@value" : "Sevigne Houghton"
+  } ],
+  "https://songstopoems.github.io/STOP/stopfinal.owl#is_in" : [ {
+    "@id" : "https://songstopoems.github.io/STOP/stopfinal.owl#The_Hill"
+  } ]
+}, {
+  "@id" : "https://songstopoems.github.io/STOP/stopfinal.owl#Sickness",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "https://songstopoems.github.io/STOP/stopfinal.owl#Topic"
+  } ],
+  "https://songstopoems.github.io/STOP/stopfinal.owl#appears_in" : [ {
+    "@id" : "https://songstopoems.github.io/STOP/stopfinal.owl#Un_malato_di_cuore"
+  }, {
+    "@id" : "https://songstopoems.github.io/STOP/stopfinal.owl#Un_medico"
+  } ],
+  "https://songstopoems.github.io/STOP/stopfinal.owl#have_name" : [ {
+    "@value" : "Sickness"
+  } ]
+}, {
+  "@id" : "https://songstopoems.github.io/STOP/stopfinal.owl#Sight",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "https://songstopoems.github.io/STOP/stopfinal.owl#Topic"
+  } ],
+  "https://songstopoems.github.io/STOP/stopfinal.owl#appears_in" : [ {
+    "@id" : "https://songstopoems.github.io/STOP/stopfinal.owl#Dippold_the_optician"
+  }, {
+    "@id" : "https://songstopoems.github.io/STOP/stopfinal.owl#Un_ottico"
+  } ],
+  "https://songstopoems.github.io/STOP/stopfinal.owl#have_name" : [ {
+    "@value" : "Sight"
+  } ]
+}, {
+  "@id" : "https://songstopoems.github.io/STOP/stopfinal.owl#Sky",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "https://songstopoems.github.io/STOP/stopfinal.owl#Topic"
+  } ],
+  "https://songstopoems.github.io/STOP/stopfinal.owl#appears_in" : [ {
+    "@id" : "https://songstopoems.github.io/STOP/stopfinal.owl#Dippold_the_optician"
+  }, {
+    "@id" : "https://songstopoems.github.io/STOP/stopfinal.owl#Fiddler_Jones"
+  }, {
+    "@id" : "https://songstopoems.github.io/STOP/stopfinal.owl#Un_ottico"
+  } ],
+  "https://songstopoems.github.io/STOP/stopfinal.owl#have_name" : [ {
+    "@value" : "Sky"
+  } ]
+}, {
+  "@id" : "https://songstopoems.github.io/STOP/stopfinal.owl#Song",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://songstopoems.github.io/STOP/stopfinal.owl#Unit"
+  } ]
+}, {
+  "@id" : "https://songstopoems.github.io/STOP/stopfinal.owl#Spoon_River_Anthology",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://schema.org/hasPart" : [ {
+    "@id" : "https://songstopoems.github.io/STOP/stopfinal.owl#Dippold_the_optician"
+  }, {
+    "@id" : "https://songstopoems.github.io/STOP/stopfinal.owl#Doctor_Siegfried_Iseman"
+  }, {
+    "@id" : "https://songstopoems.github.io/STOP/stopfinal.owl#Fiddler_Jones"
+  }, {
+    "@id" : "https://songstopoems.github.io/STOP/stopfinal.owl#Francis_Turner"
+  }, {
+    "@id" : "https://songstopoems.github.io/STOP/stopfinal.owl#Frank_Drummer"
+  }, {
+    "@id" : "https://songstopoems.github.io/STOP/stopfinal.owl#Judge_Selah_Lively"
+  }, {
+    "@id" : "https://songstopoems.github.io/STOP/stopfinal.owl#The_Hill"
+  }, {
+    "@id" : "https://songstopoems.github.io/STOP/stopfinal.owl#Trainor_the_druggist"
+  }, {
+    "@id" : "https://songstopoems.github.io/STOP/stopfinal.owl#Wendell_P._Bloyd"
+  } ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "https://songstopoems.github.io/STOP/stopfinal.owl#Anthology_Poem"
+  }, {
+    "@id" : "https://songstopoems.github.io/STOP/stopfinal.owl#Work"
+  } ],
+  "https://songstopoems.github.io/STOP/stopfinal.owl#have_name" : [ {
+    "@type" : "http://www.w3.org/2000/01/rdf-schema#Literal",
+    "@value" : "Spoon River Anthology"
+  } ],
+  "https://songstopoems.github.io/STOP/stopfinal.owl#inspires" : [ {
+    "@id" : "https://songstopoems.github.io/STOP/stopfinal.owl#Non_al_denaro_non_all'amore_né_al_cielo"
+  } ],
+  "https://songstopoems.github.io/STOP/stopfinal.owl#is_written_by" : [ {
+    "@id" : "https://songstopoems.github.io/STOP/stopfinal.owl#Edgar_Lee_Masters"
+  } ]
+}, {
+  "@id" : "https://songstopoems.github.io/STOP/stopfinal.owl#Suffering",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "https://songstopoems.github.io/STOP/stopfinal.owl#Topic"
+  } ],
+  "https://songstopoems.github.io/STOP/stopfinal.owl#appears_in" : [ {
+    "@id" : "https://songstopoems.github.io/STOP/stopfinal.owl#Doctor_Siegfried_Iseman"
+  }, {
+    "@id" : "https://songstopoems.github.io/STOP/stopfinal.owl#Francis_Turner"
+  }, {
+    "@id" : "https://songstopoems.github.io/STOP/stopfinal.owl#Il_suonatore_Jones"
+  }, {
+    "@id" : "https://songstopoems.github.io/STOP/stopfinal.owl#Un_chimico"
+  }, {
+    "@id" : "https://songstopoems.github.io/STOP/stopfinal.owl#Un_malato_di_cuore"
+  }, {
+    "@id" : "https://songstopoems.github.io/STOP/stopfinal.owl#Un_medico"
+  }, {
+    "@id" : "https://songstopoems.github.io/STOP/stopfinal.owl#Un_ottico"
+  } ],
+  "https://songstopoems.github.io/STOP/stopfinal.owl#have_name" : [ {
+    "@value" : "Suffering"
+  } ]
+}, {
+  "@id" : "https://songstopoems.github.io/STOP/stopfinal.owl#The_Hill",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://schema.org/isPartOf" : [ {
+    "@id" : "https://songstopoems.github.io/STOP/stopfinal.owl#Spoon_River_Anthology"
+  } ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "https://songstopoems.github.io/STOP/stopfinal.owl#Poem"
+  }, {
+    "@id" : "https://songstopoems.github.io/STOP/stopfinal.owl#Unit"
+  } ],
+  "https://songstopoems.github.io/STOP/stopfinal.owl#has_character" : [ {
+    "@id" : "https://songstopoems.github.io/STOP/stopfinal.owl#Aunt_Emily"
+  }, {
+    "@id" : "https://songstopoems.github.io/STOP/stopfinal.owl#Bert"
+  }, {
+    "@id" : "https://songstopoems.github.io/STOP/stopfinal.owl#Charley"
+  }, {
+    "@id" : "https://songstopoems.github.io/STOP/stopfinal.owl#Edith"
+  }, {
+    "@id" : "https://songstopoems.github.io/STOP/stopfinal.owl#Ella"
+  }, {
+    "@id" : "https://songstopoems.github.io/STOP/stopfinal.owl#Elmer"
+  }, {
+    "@id" : "https://songstopoems.github.io/STOP/stopfinal.owl#Herman"
+  }, {
+    "@id" : "https://songstopoems.github.io/STOP/stopfinal.owl#Kate"
+  }, {
+    "@id" : "https://songstopoems.github.io/STOP/stopfinal.owl#Lizzie"
+  }, {
+    "@id" : "https://songstopoems.github.io/STOP/stopfinal.owl#Maggie"
+  }, {
+    "@id" : "https://songstopoems.github.io/STOP/stopfinal.owl#Major_Walker"
+  }, {
+    "@id" : "https://songstopoems.github.io/STOP/stopfinal.owl#Sevigne_Houghton"
+  }, {
+    "@id" : "https://songstopoems.github.io/STOP/stopfinal.owl#Tom"
+  }, {
+    "@id" : "https://songstopoems.github.io/STOP/stopfinal.owl#Towny_Kincaid"
+  }, {
+    "@id" : "https://songstopoems.github.io/STOP/stopfinal.owl#Uncle_Isaac"
+  } ],
+  "https://songstopoems.github.io/STOP/stopfinal.owl#have_name" : [ {
+    "@type" : "http://www.w3.org/2000/01/rdf-schema#Literal",
+    "@value" : "The Hill"
+  } ],
+  "https://songstopoems.github.io/STOP/stopfinal.owl#is_about" : [ {
+    "@id" : "https://songstopoems.github.io/STOP/stopfinal.owl#Death"
+  }, {
+    "@id" : "https://songstopoems.github.io/STOP/stopfinal.owl#Eternal_Sleep"
+  }, {
+    "@id" : "https://songstopoems.github.io/STOP/stopfinal.owl#Nature"
+  } ]
+}, {
+  "@id" : "https://songstopoems.github.io/STOP/stopfinal.owl#Tom",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "https://songstopoems.github.io/STOP/stopfinal.owl#Character"
+  } ],
+  "https://songstopoems.github.io/STOP/stopfinal.owl#have_name" : [ {
+    "@type" : "http://www.w3.org/2000/01/rdf-schema#Literal",
+    "@value" : "Tom"
+  } ],
+  "https://songstopoems.github.io/STOP/stopfinal.owl#is_in" : [ {
+    "@id" : "https://songstopoems.github.io/STOP/stopfinal.owl#Dormono_sulla_collina"
+  }, {
+    "@id" : "https://songstopoems.github.io/STOP/stopfinal.owl#The_Hill"
+  } ]
+}, {
+  "@id" : "https://songstopoems.github.io/STOP/stopfinal.owl#Topic",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ]
+}, {
+  "@id" : "https://songstopoems.github.io/STOP/stopfinal.owl#Towny_Kincaid",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "https://songstopoems.github.io/STOP/stopfinal.owl#Character"
+  } ],
+  "https://songstopoems.github.io/STOP/stopfinal.owl#have_name" : [ {
+    "@type" : "http://www.w3.org/2000/01/rdf-schema#Literal",
+    "@value" : "Towny Kincaid"
+  } ],
+  "https://songstopoems.github.io/STOP/stopfinal.owl#is_in" : [ {
+    "@id" : "https://songstopoems.github.io/STOP/stopfinal.owl#The_Hill"
+  } ]
+}, {
+  "@id" : "https://songstopoems.github.io/STOP/stopfinal.owl#TrainorTheDruggist",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "https://songstopoems.github.io/STOP/stopfinal.owl#Character"
+  } ],
+  "https://songstopoems.github.io/STOP/stopfinal.owl#have_name" : [ {
+    "@type" : "http://www.w3.org/2000/01/rdf-schema#Literal",
+    "@value" : "Trainor, the druggist"
+  } ],
+  "https://songstopoems.github.io/STOP/stopfinal.owl#is_in" : [ {
+    "@id" : "https://songstopoems.github.io/STOP/stopfinal.owl#Trainor_the_druggist"
+  } ]
+}, {
+  "@id" : "https://songstopoems.github.io/STOP/stopfinal.owl#Trainor_the_druggist",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://schema.org/isPartOf" : [ {
+    "@id" : "https://songstopoems.github.io/STOP/stopfinal.owl#Spoon_River_Anthology"
+  } ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "https://songstopoems.github.io/STOP/stopfinal.owl#Poem"
+  } ],
+  "https://songstopoems.github.io/STOP/stopfinal.owl#has_character" : [ {
+    "@id" : "https://songstopoems.github.io/STOP/stopfinal.owl#TrainorTheDruggist"
+  } ],
+  "https://songstopoems.github.io/STOP/stopfinal.owl#have_name" : [ {
+    "@type" : "http://www.w3.org/2000/01/rdf-schema#Literal",
+    "@value" : "Trainor, the druggist"
+  } ],
+  "https://songstopoems.github.io/STOP/stopfinal.owl#is_about" : [ {
+    "@id" : "https://songstopoems.github.io/STOP/stopfinal.owl#Family"
+  }, {
+    "@id" : "https://songstopoems.github.io/STOP/stopfinal.owl#Marriage"
+  } ]
+}, {
+  "@id" : "https://songstopoems.github.io/STOP/stopfinal.owl#UnBlasfemo",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "https://songstopoems.github.io/STOP/stopfinal.owl#Character"
+  } ],
+  "https://songstopoems.github.io/STOP/stopfinal.owl#have_name" : [ {
+    "@type" : "http://www.w3.org/2000/01/rdf-schema#Literal",
+    "@value" : "Un blasfemo"
+  } ],
+  "https://songstopoems.github.io/STOP/stopfinal.owl#is_in" : [ {
+    "@id" : "https://songstopoems.github.io/STOP/stopfinal.owl#Un_blasfemo_(dietro_ogni_blasfemo_c'è_un_giardino_incantato)"
+  } ]
+}, {
+  "@id" : "https://songstopoems.github.io/STOP/stopfinal.owl#UnChimico",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "https://songstopoems.github.io/STOP/stopfinal.owl#Character"
+  } ],
+  "https://songstopoems.github.io/STOP/stopfinal.owl#have_name" : [ {
+    "@type" : "http://www.w3.org/2000/01/rdf-schema#Literal",
+    "@value" : "Un chimico"
+  } ],
+  "https://songstopoems.github.io/STOP/stopfinal.owl#is_in" : [ {
+    "@id" : "https://songstopoems.github.io/STOP/stopfinal.owl#Un_chimico"
+  } ]
+}, {
+  "@id" : "https://songstopoems.github.io/STOP/stopfinal.owl#UnGiudice",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "https://songstopoems.github.io/STOP/stopfinal.owl#Character"
+  } ],
+  "https://songstopoems.github.io/STOP/stopfinal.owl#have_name" : [ {
+    "@type" : "http://www.w3.org/2000/01/rdf-schema#Literal",
+    "@value" : "Un giudice"
+  } ],
+  "https://songstopoems.github.io/STOP/stopfinal.owl#is_in" : [ {
+    "@id" : "https://songstopoems.github.io/STOP/stopfinal.owl#Un_giudice"
+  } ]
+}, {
+  "@id" : "https://songstopoems.github.io/STOP/stopfinal.owl#UnMalatoDiCuore",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "https://songstopoems.github.io/STOP/stopfinal.owl#Character"
+  } ],
+  "https://songstopoems.github.io/STOP/stopfinal.owl#have_name" : [ {
+    "@type" : "http://www.w3.org/2000/01/rdf-schema#Literal",
+    "@value" : "Un malato di cuore"
+  } ],
+  "https://songstopoems.github.io/STOP/stopfinal.owl#is_in" : [ {
+    "@id" : "https://songstopoems.github.io/STOP/stopfinal.owl#Un_malato_di_cuore"
+  } ]
+}, {
+  "@id" : "https://songstopoems.github.io/STOP/stopfinal.owl#UnMatto",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "https://songstopoems.github.io/STOP/stopfinal.owl#Character"
+  } ],
+  "https://songstopoems.github.io/STOP/stopfinal.owl#have_name" : [ {
+    "@type" : "http://www.w3.org/2000/01/rdf-schema#Literal",
+    "@value" : "Un matto"
+  } ],
+  "https://songstopoems.github.io/STOP/stopfinal.owl#is_in" : [ {
+    "@id" : "https://songstopoems.github.io/STOP/stopfinal.owl#Un_matto(Dietro_ogni_scemo_c'è_un_villaggio)"
+  } ]
+}, {
+  "@id" : "https://songstopoems.github.io/STOP/stopfinal.owl#UnMedico",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "https://songstopoems.github.io/STOP/stopfinal.owl#Character"
+  } ],
+  "https://songstopoems.github.io/STOP/stopfinal.owl#have_name" : [ {
+    "@type" : "http://www.w3.org/2000/01/rdf-schema#Literal",
+    "@value" : "Un medico"
+  } ],
+  "https://songstopoems.github.io/STOP/stopfinal.owl#is_in" : [ {
+    "@id" : "https://songstopoems.github.io/STOP/stopfinal.owl#Un_medico"
+  } ]
+}, {
+  "@id" : "https://songstopoems.github.io/STOP/stopfinal.owl#UnOttico",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "https://songstopoems.github.io/STOP/stopfinal.owl#Character"
+  } ],
+  "https://songstopoems.github.io/STOP/stopfinal.owl#have_name" : [ {
+    "@type" : "http://www.w3.org/2000/01/rdf-schema#Literal",
+    "@value" : "Un ottico"
+  } ],
+  "https://songstopoems.github.io/STOP/stopfinal.owl#is_in" : [ {
+    "@id" : "https://songstopoems.github.io/STOP/stopfinal.owl#Un_ottico"
+  } ]
+}, {
+  "@id" : "https://songstopoems.github.io/STOP/stopfinal.owl#Un_blasfemo_(dietro_ogni_blasfemo_c'è_un_giardino_incantato)",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://schema.org/isPartOf" : [ {
+    "@id" : "https://songstopoems.github.io/STOP/stopfinal.owl#Non_al_denaro_non_all'amore_né_al_cielo"
+  } ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "https://songstopoems.github.io/STOP/stopfinal.owl#Song"
+  } ],
+  "https://songstopoems.github.io/STOP/stopfinal.owl#has_character" : [ {
+    "@id" : "https://songstopoems.github.io/STOP/stopfinal.owl#UnBlasfemo"
+  } ],
+  "https://songstopoems.github.io/STOP/stopfinal.owl#have_name" : [ {
+    "@type" : "http://www.w3.org/2000/01/rdf-schema#Literal",
+    "@value" : "Un blasfemo (Dietro Ogni Blasfemo C'è Un Giardino Incantato)"
+  } ],
+  "https://songstopoems.github.io/STOP/stopfinal.owl#is_about" : [ {
+    "@id" : "https://songstopoems.github.io/STOP/stopfinal.owl#Damnation"
+  }, {
+    "@id" : "https://songstopoems.github.io/STOP/stopfinal.owl#Dream"
+  }, {
+    "@id" : "https://songstopoems.github.io/STOP/stopfinal.owl#Religion"
+  }, {
+    "@id" : "https://songstopoems.github.io/STOP/stopfinal.owl#Salvation"
+  } ],
+  "https://songstopoems.github.io/STOP/stopfinal.owl#related_to" : [ {
+    "@id" : "https://songstopoems.github.io/STOP/stopfinal.owl#Wendell_P._Bloyd"
+  } ]
+}, {
+  "@id" : "https://songstopoems.github.io/STOP/stopfinal.owl#Un_chimico",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://schema.org/isPartOf" : [ {
+    "@id" : "https://songstopoems.github.io/STOP/stopfinal.owl#Non_al_denaro_non_all'amore_né_al_cielo"
+  } ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "https://songstopoems.github.io/STOP/stopfinal.owl#Song"
+  } ],
+  "https://songstopoems.github.io/STOP/stopfinal.owl#has_character" : [ {
+    "@id" : "https://songstopoems.github.io/STOP/stopfinal.owl#UnChimico"
+  } ],
+  "https://songstopoems.github.io/STOP/stopfinal.owl#have_name" : [ {
+    "@type" : "http://www.w3.org/2000/01/rdf-schema#Literal",
+    "@value" : "Un chimico"
+  } ],
+  "https://songstopoems.github.io/STOP/stopfinal.owl#is_about" : [ {
+    "@id" : "https://songstopoems.github.io/STOP/stopfinal.owl#Devastation"
+  }, {
+    "@id" : "https://songstopoems.github.io/STOP/stopfinal.owl#Love"
+  }, {
+    "@id" : "https://songstopoems.github.io/STOP/stopfinal.owl#Nature"
+  }, {
+    "@id" : "https://songstopoems.github.io/STOP/stopfinal.owl#Salvation"
+  }, {
+    "@id" : "https://songstopoems.github.io/STOP/stopfinal.owl#Suffering"
+  } ],
+  "https://songstopoems.github.io/STOP/stopfinal.owl#related_to" : [ {
+    "@id" : "https://songstopoems.github.io/STOP/stopfinal.owl#Trainor_the_druggist"
+  } ]
+}, {
+  "@id" : "https://songstopoems.github.io/STOP/stopfinal.owl#Un_giudice",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://schema.org/isPartOf" : [ {
+    "@id" : "https://songstopoems.github.io/STOP/stopfinal.owl#Non_al_denaro_non_all'amore_né_al_cielo"
+  } ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "https://songstopoems.github.io/STOP/stopfinal.owl#Song"
+  } ],
+  "https://songstopoems.github.io/STOP/stopfinal.owl#has_character" : [ {
+    "@id" : "https://songstopoems.github.io/STOP/stopfinal.owl#UnGiudice"
+  } ],
+  "https://songstopoems.github.io/STOP/stopfinal.owl#have_name" : [ {
+    "@type" : "http://www.w3.org/2000/01/rdf-schema#Literal",
+    "@value" : "Un giudice"
+  } ],
+  "https://songstopoems.github.io/STOP/stopfinal.owl#is_about" : [ {
+    "@id" : "https://songstopoems.github.io/STOP/stopfinal.owl#Damnation"
+  }, {
+    "@id" : "https://songstopoems.github.io/STOP/stopfinal.owl#Hate"
+  }, {
+    "@id" : "https://songstopoems.github.io/STOP/stopfinal.owl#Justice"
+  }, {
+    "@id" : "https://songstopoems.github.io/STOP/stopfinal.owl#Knowledge"
+  }, {
+    "@id" : "https://songstopoems.github.io/STOP/stopfinal.owl#Religion"
+  } ],
+  "https://songstopoems.github.io/STOP/stopfinal.owl#related_to" : [ {
+    "@id" : "https://songstopoems.github.io/STOP/stopfinal.owl#Judge_Selah_Lively"
+  } ]
+}, {
+  "@id" : "https://songstopoems.github.io/STOP/stopfinal.owl#Un_malato_di_cuore",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://schema.org/isPartOf" : [ {
+    "@id" : "https://songstopoems.github.io/STOP/stopfinal.owl#Non_al_denaro_non_all'amore_né_al_cielo"
+  } ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "https://songstopoems.github.io/STOP/stopfinal.owl#Song"
+  } ],
+  "https://songstopoems.github.io/STOP/stopfinal.owl#has_character" : [ {
+    "@id" : "https://songstopoems.github.io/STOP/stopfinal.owl#UnMalatoDiCuore"
+  } ],
+  "https://songstopoems.github.io/STOP/stopfinal.owl#have_name" : [ {
+    "@type" : "http://www.w3.org/2000/01/rdf-schema#Literal",
+    "@value" : "Un malato di cuore"
+  } ],
+  "https://songstopoems.github.io/STOP/stopfinal.owl#is_about" : [ {
+    "@id" : "https://songstopoems.github.io/STOP/stopfinal.owl#Dream"
+  }, {
+    "@id" : "https://songstopoems.github.io/STOP/stopfinal.owl#Salvation"
+  }, {
+    "@id" : "https://songstopoems.github.io/STOP/stopfinal.owl#Sickness"
+  }, {
+    "@id" : "https://songstopoems.github.io/STOP/stopfinal.owl#Suffering"
+  } ],
+  "https://songstopoems.github.io/STOP/stopfinal.owl#related_to" : [ {
+    "@id" : "https://songstopoems.github.io/STOP/stopfinal.owl#Francis_Turner"
+  } ]
+}, {
+  "@id" : "https://songstopoems.github.io/STOP/stopfinal.owl#Un_matto(Dietro_ogni_scemo_c'è_un_villaggio)",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://schema.org/isPartOf" : [ {
+    "@id" : "https://songstopoems.github.io/STOP/stopfinal.owl#Non_al_denaro_non_all'amore_né_al_cielo"
+  } ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "https://songstopoems.github.io/STOP/stopfinal.owl#Song"
+  } ],
+  "https://songstopoems.github.io/STOP/stopfinal.owl#has_character" : [ {
+    "@id" : "https://songstopoems.github.io/STOP/stopfinal.owl#UnMatto"
+  } ],
+  "https://songstopoems.github.io/STOP/stopfinal.owl#have_name" : [ {
+    "@type" : "http://www.w3.org/2000/01/rdf-schema#Literal",
+    "@value" : "Un matto (Dietro Ogni Scemo C'è Un Villaggio)"
+  } ],
+  "https://songstopoems.github.io/STOP/stopfinal.owl#is_about" : [ {
+    "@id" : "https://songstopoems.github.io/STOP/stopfinal.owl#Death"
+  }, {
+    "@id" : "https://songstopoems.github.io/STOP/stopfinal.owl#Dream"
+  }, {
+    "@id" : "https://songstopoems.github.io/STOP/stopfinal.owl#Memory"
+  }, {
+    "@id" : "https://songstopoems.github.io/STOP/stopfinal.owl#Writing"
+  } ],
+  "https://songstopoems.github.io/STOP/stopfinal.owl#related_to" : [ {
+    "@id" : "https://songstopoems.github.io/STOP/stopfinal.owl#Frank_Drummer"
+  } ]
+}, {
+  "@id" : "https://songstopoems.github.io/STOP/stopfinal.owl#Un_medico",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://schema.org/isPartOf" : [ {
+    "@id" : "https://songstopoems.github.io/STOP/stopfinal.owl#Non_al_denaro_non_all'amore_né_al_cielo"
+  } ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "https://songstopoems.github.io/STOP/stopfinal.owl#Song"
+  } ],
+  "https://songstopoems.github.io/STOP/stopfinal.owl#has_character" : [ {
+    "@id" : "https://songstopoems.github.io/STOP/stopfinal.owl#UnMedico"
+  } ],
+  "https://songstopoems.github.io/STOP/stopfinal.owl#have_name" : [ {
+    "@type" : "http://www.w3.org/2000/01/rdf-schema#Literal",
+    "@value" : "Un medico"
+  } ],
+  "https://songstopoems.github.io/STOP/stopfinal.owl#is_about" : [ {
+    "@id" : "https://songstopoems.github.io/STOP/stopfinal.owl#Damnation"
+  }, {
+    "@id" : "https://songstopoems.github.io/STOP/stopfinal.owl#Knowledge"
+  }, {
+    "@id" : "https://songstopoems.github.io/STOP/stopfinal.owl#Salvation"
+  }, {
+    "@id" : "https://songstopoems.github.io/STOP/stopfinal.owl#Sickness"
+  }, {
+    "@id" : "https://songstopoems.github.io/STOP/stopfinal.owl#Suffering"
+  } ],
+  "https://songstopoems.github.io/STOP/stopfinal.owl#related_to" : [ {
+    "@id" : "https://songstopoems.github.io/STOP/stopfinal.owl#Doctor_Siegfried_Iseman"
+  } ]
+}, {
+  "@id" : "https://songstopoems.github.io/STOP/stopfinal.owl#Un_ottico",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://schema.org/isPartOf" : [ {
+    "@id" : "https://songstopoems.github.io/STOP/stopfinal.owl#Non_al_denaro_non_all'amore_né_al_cielo"
+  } ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "https://songstopoems.github.io/STOP/stopfinal.owl#Song"
+  } ],
+  "https://songstopoems.github.io/STOP/stopfinal.owl#has_character" : [ {
+    "@id" : "https://songstopoems.github.io/STOP/stopfinal.owl#UnOttico"
+  } ],
+  "https://songstopoems.github.io/STOP/stopfinal.owl#have_name" : [ {
+    "@type" : "http://www.w3.org/2000/01/rdf-schema#Literal",
+    "@value" : "Un ottico"
+  } ],
+  "https://songstopoems.github.io/STOP/stopfinal.owl#is_about" : [ {
+    "@id" : "https://songstopoems.github.io/STOP/stopfinal.owl#Darkness_VS_Light"
+  }, {
+    "@id" : "https://songstopoems.github.io/STOP/stopfinal.owl#Dream"
+  }, {
+    "@id" : "https://songstopoems.github.io/STOP/stopfinal.owl#Sight"
+  }, {
+    "@id" : "https://songstopoems.github.io/STOP/stopfinal.owl#Sky"
+  }, {
+    "@id" : "https://songstopoems.github.io/STOP/stopfinal.owl#Suffering"
+  } ],
+  "https://songstopoems.github.io/STOP/stopfinal.owl#related_to" : [ {
+    "@id" : "https://songstopoems.github.io/STOP/stopfinal.owl#Dippold_the_optician"
+  } ]
+}, {
+  "@id" : "https://songstopoems.github.io/STOP/stopfinal.owl#Uncle_Isaac",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "https://songstopoems.github.io/STOP/stopfinal.owl#Character"
+  } ],
+  "https://songstopoems.github.io/STOP/stopfinal.owl#have_name" : [ {
+    "@type" : "http://www.w3.org/2000/01/rdf-schema#Literal",
+    "@value" : "Uncle Isaac"
+  } ],
+  "https://songstopoems.github.io/STOP/stopfinal.owl#is_in" : [ {
+    "@id" : "https://songstopoems.github.io/STOP/stopfinal.owl#The_Hill"
+  } ]
+}, {
+  "@id" : "https://songstopoems.github.io/STOP/stopfinal.owl#Unit",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://songstopoems.github.io/STOP/stopfinal.owl#CreativeWork"
+  } ]
+}, {
+  "@id" : "https://songstopoems.github.io/STOP/stopfinal.owl#WendellPBloyd",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "https://songstopoems.github.io/STOP/stopfinal.owl#Character"
+  } ],
+  "https://songstopoems.github.io/STOP/stopfinal.owl#have_name" : [ {
+    "@type" : "http://www.w3.org/2000/01/rdf-schema#Literal",
+    "@value" : "Wendell P. Bloyd"
+  } ],
+  "https://songstopoems.github.io/STOP/stopfinal.owl#is_in" : [ {
+    "@id" : "https://songstopoems.github.io/STOP/stopfinal.owl#Wendell_P._Bloyd"
+  } ]
+}, {
+  "@id" : "https://songstopoems.github.io/STOP/stopfinal.owl#Wendell_P._Bloyd",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://schema.org/isPartOf" : [ {
+    "@id" : "https://songstopoems.github.io/STOP/stopfinal.owl#Spoon_River_Anthology"
+  } ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "https://songstopoems.github.io/STOP/stopfinal.owl#Poem"
+  } ],
+  "https://songstopoems.github.io/STOP/stopfinal.owl#has_character" : [ {
+    "@id" : "https://songstopoems.github.io/STOP/stopfinal.owl#WendellPBloyd"
+  } ],
+  "https://songstopoems.github.io/STOP/stopfinal.owl#have_name" : [ {
+    "@type" : "http://www.w3.org/2000/01/rdf-schema#Literal",
+    "@value" : "Wendell P. Bloyd"
+  } ],
+  "https://songstopoems.github.io/STOP/stopfinal.owl#is_about" : [ {
+    "@id" : "https://songstopoems.github.io/STOP/stopfinal.owl#Damnation"
+  }, {
+    "@id" : "https://songstopoems.github.io/STOP/stopfinal.owl#Hate"
+  }, {
+    "@id" : "https://songstopoems.github.io/STOP/stopfinal.owl#Religion"
+  }, {
+    "@id" : "https://songstopoems.github.io/STOP/stopfinal.owl#Salvation"
+  } ]
+}, {
+  "@id" : "https://songstopoems.github.io/STOP/stopfinal.owl#Work",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://songstopoems.github.io/STOP/stopfinal.owl#CreativeWork"
+  } ]
+}, {
+  "@id" : "https://songstopoems.github.io/STOP/stopfinal.owl#Writing",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "https://songstopoems.github.io/STOP/stopfinal.owl#Topic"
+  } ],
+  "https://songstopoems.github.io/STOP/stopfinal.owl#appears_in" : [ {
+    "@id" : "https://songstopoems.github.io/STOP/stopfinal.owl#Un_matto(Dietro_ogni_scemo_c'è_un_villaggio)"
+  } ],
+  "https://songstopoems.github.io/STOP/stopfinal.owl#have_name" : [ {
+    "@value" : "Writing"
+  } ]
+}, {
+  "@id" : "https://songstopoems.github.io/STOP/stopfinal.owl#appears_in",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "https://songstopoems.github.io/STOP/stopfinal.owl#Topic"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "https://songstopoems.github.io/STOP/stopfinal.owl#Unit"
+  } ],
+  "http://www.w3.org/2002/07/owl#inverseOf" : [ {
+    "@id" : "https://songstopoems.github.io/STOP/stopfinal.owl#is_about"
+  } ]
+}, {
+  "@id" : "https://songstopoems.github.io/STOP/stopfinal.owl#has_character",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "https://songstopoems.github.io/STOP/stopfinal.owl#Unit"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "https://songstopoems.github.io/STOP/stopfinal.owl#Character"
+  } ],
+  "http://www.w3.org/2002/07/owl#inverseOf" : [ {
+    "@id" : "https://songstopoems.github.io/STOP/stopfinal.owl#is_in"
+  } ]
+}, {
+  "@id" : "https://songstopoems.github.io/STOP/stopfinal.owl#have_name",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://www.w3.org/2002/07/owl#Thing"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.w3.org/2000/01/rdf-schema#Literal"
+  } ]
+}, {
+  "@id" : "https://songstopoems.github.io/STOP/stopfinal.owl#inspires",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "https://songstopoems.github.io/STOP/stopfinal.owl#Work"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "https://songstopoems.github.io/STOP/stopfinal.owl#Work"
+  } ],
+  "http://www.w3.org/2002/07/owl#inverseOf" : [ {
+    "@id" : "https://songstopoems.github.io/STOP/stopfinal.owl#is_inspired_by"
+  } ]
+}, {
+  "@id" : "https://songstopoems.github.io/STOP/stopfinal.owl#is_about",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "https://songstopoems.github.io/STOP/stopfinal.owl#Unit"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "https://songstopoems.github.io/STOP/stopfinal.owl#Topic"
+  } ]
+}, {
+  "@id" : "https://songstopoems.github.io/STOP/stopfinal.owl#is_in",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "https://songstopoems.github.io/STOP/stopfinal.owl#Character"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "https://songstopoems.github.io/STOP/stopfinal.owl#Unit"
+  } ]
+}, {
+  "@id" : "https://songstopoems.github.io/STOP/stopfinal.owl#is_inspired_by",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "https://songstopoems.github.io/STOP/stopfinal.owl#Work"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "https://songstopoems.github.io/STOP/stopfinal.owl#Work"
+  } ]
+}, {
+  "@id" : "https://songstopoems.github.io/STOP/stopfinal.owl#is_written_by",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "https://songstopoems.github.io/STOP/stopfinal.owl#Work"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "https://songstopoems.github.io/STOP/stopfinal.owl#Author"
+  } ],
+  "http://www.w3.org/2002/07/owl#inverseOf" : [ {
+    "@id" : "https://songstopoems.github.io/STOP/stopfinal.owl#writes"
+  } ]
+}, {
+  "@id" : "https://songstopoems.github.io/STOP/stopfinal.owl#related_to",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "https://songstopoems.github.io/STOP/stopfinal.owl#Song"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "https://songstopoems.github.io/STOP/stopfinal.owl#Poem"
+  } ]
+}, {
+  "@id" : "https://songstopoems.github.io/STOP/stopfinal.owl#writes",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "https://songstopoems.github.io/STOP/stopfinal.owl#Author"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "https://songstopoems.github.io/STOP/stopfinal.owl#Work"
+  } ]
+} ]

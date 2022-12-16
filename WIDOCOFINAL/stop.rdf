@@ -1,0 +1,1428 @@
+<?xml version="1.0"?>
+<rdf:RDF xmlns="https://songstopoems.github.io/STOP/stopfinal.owl#"
+     xml:base="https://songstopoems.github.io/STOP/stopfinal.owl"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     xmlns:schema="http://schema.org/"
+     xmlns:stopfinal="https://songstopoems.github.io/STOP/stopfinal.owl#">
+    <owl:Ontology rdf:about="https://songstopoems.github.io/STOP/stopfinal.owl#">
+        <owl:versionIRI rdf:resource="https://songstopoems.github.io/STOP/stopfinal.owl#/1.0"/>
+    </owl:Ontology>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Object Properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+
+    
+
+
+    <!-- http://schema.org/hasPart -->
+
+
+    <owl:ObjectProperty rdf:about="http://schema.org/hasPart">
+        <owl:inverseOf rdf:resource="http://schema.org/isPartOf"/>
+        <rdfs:domain rdf:resource="https://songstopoems.github.io/STOP/stopfinal.owl#Work"/>
+        <rdfs:range rdf:resource="https://songstopoems.github.io/STOP/stopfinal.owl#Unit"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://schema.org/isPartOf -->
+
+
+    <owl:ObjectProperty rdf:about="http://schema.org/isPartOf">
+        <rdfs:domain rdf:resource="https://songstopoems.github.io/STOP/stopfinal.owl#Unit"/>
+        <rdfs:range rdf:resource="https://songstopoems.github.io/STOP/stopfinal.owl#Work"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://songstopoems.github.io/STOP/stopfinal.owl#appears_in -->
+
+
+    <owl:ObjectProperty rdf:about="https://songstopoems.github.io/STOP/stopfinal.owl#appears_in">
+        <owl:inverseOf rdf:resource="https://songstopoems.github.io/STOP/stopfinal.owl#is_about"/>
+        <rdfs:domain rdf:resource="https://songstopoems.github.io/STOP/stopfinal.owl#Topic"/>
+        <rdfs:range rdf:resource="https://songstopoems.github.io/STOP/stopfinal.owl#Unit"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://songstopoems.github.io/STOP/stopfinal.owl#has_character -->
+
+
+    <owl:ObjectProperty rdf:about="https://songstopoems.github.io/STOP/stopfinal.owl#has_character">
+        <owl:inverseOf rdf:resource="https://songstopoems.github.io/STOP/stopfinal.owl#is_in"/>
+        <rdfs:domain rdf:resource="https://songstopoems.github.io/STOP/stopfinal.owl#Unit"/>
+        <rdfs:range rdf:resource="https://songstopoems.github.io/STOP/stopfinal.owl#Character"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://songstopoems.github.io/STOP/stopfinal.owl#inspires -->
+
+
+    <owl:ObjectProperty rdf:about="https://songstopoems.github.io/STOP/stopfinal.owl#inspires">
+        <owl:inverseOf rdf:resource="https://songstopoems.github.io/STOP/stopfinal.owl#is_inspired_by"/>
+        <rdfs:domain rdf:resource="https://songstopoems.github.io/STOP/stopfinal.owl#Work"/>
+        <rdfs:range rdf:resource="https://songstopoems.github.io/STOP/stopfinal.owl#Work"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://songstopoems.github.io/STOP/stopfinal.owl#is_about -->
+
+
+    <owl:ObjectProperty rdf:about="https://songstopoems.github.io/STOP/stopfinal.owl#is_about">
+        <rdfs:domain rdf:resource="https://songstopoems.github.io/STOP/stopfinal.owl#Unit"/>
+        <rdfs:range rdf:resource="https://songstopoems.github.io/STOP/stopfinal.owl#Topic"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://songstopoems.github.io/STOP/stopfinal.owl#is_in -->
+
+
+    <owl:ObjectProperty rdf:about="https://songstopoems.github.io/STOP/stopfinal.owl#is_in">
+        <rdfs:domain rdf:resource="https://songstopoems.github.io/STOP/stopfinal.owl#Character"/>
+        <rdfs:range rdf:resource="https://songstopoems.github.io/STOP/stopfinal.owl#Unit"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://songstopoems.github.io/STOP/stopfinal.owl#is_inspired_by -->
+
+
+    <owl:ObjectProperty rdf:about="https://songstopoems.github.io/STOP/stopfinal.owl#is_inspired_by">
+        <rdfs:domain rdf:resource="https://songstopoems.github.io/STOP/stopfinal.owl#Work"/>
+        <rdfs:range rdf:resource="https://songstopoems.github.io/STOP/stopfinal.owl#Work"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://songstopoems.github.io/STOP/stopfinal.owl#is_written_by -->
+
+
+    <owl:ObjectProperty rdf:about="https://songstopoems.github.io/STOP/stopfinal.owl#is_written_by">
+        <owl:inverseOf rdf:resource="https://songstopoems.github.io/STOP/stopfinal.owl#writes"/>
+        <rdfs:domain rdf:resource="https://songstopoems.github.io/STOP/stopfinal.owl#Work"/>
+        <rdfs:range rdf:resource="https://songstopoems.github.io/STOP/stopfinal.owl#Author"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://songstopoems.github.io/STOP/stopfinal.owl#related_to -->
+
+
+    <owl:ObjectProperty rdf:about="https://songstopoems.github.io/STOP/stopfinal.owl#related_to">
+        <rdfs:domain rdf:resource="https://songstopoems.github.io/STOP/stopfinal.owl#Song"/>
+        <rdfs:range rdf:resource="https://songstopoems.github.io/STOP/stopfinal.owl#Poem"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://songstopoems.github.io/STOP/stopfinal.owl#writes -->
+
+
+    <owl:ObjectProperty rdf:about="https://songstopoems.github.io/STOP/stopfinal.owl#writes">
+        <rdfs:domain rdf:resource="https://songstopoems.github.io/STOP/stopfinal.owl#Author"/>
+        <rdfs:range rdf:resource="https://songstopoems.github.io/STOP/stopfinal.owl#Work"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Data properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+
+    
+
+
+    <!-- https://songstopoems.github.io/STOP/stopfinal.owl#have_name -->
+
+
+    <owl:DatatypeProperty rdf:about="https://songstopoems.github.io/STOP/stopfinal.owl#have_name">
+        <rdfs:domain rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2000/01/rdf-schema#Literal"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Classes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+
+    
+
+
+    <!-- https://songstopoems.github.io/STOP/stopfinal.owl#Anthology_Poem -->
+
+
+    <owl:Class rdf:about="https://songstopoems.github.io/STOP/stopfinal.owl#Anthology_Poem">
+        <rdfs:subClassOf rdf:resource="https://songstopoems.github.io/STOP/stopfinal.owl#Work"/>
+    </owl:Class>
+    
+
+
+    <!-- https://songstopoems.github.io/STOP/stopfinal.owl#Author -->
+
+
+    <owl:Class rdf:about="https://songstopoems.github.io/STOP/stopfinal.owl#Author"/>
+    
+
+
+    <!-- https://songstopoems.github.io/STOP/stopfinal.owl#Character -->
+
+
+    <owl:Class rdf:about="https://songstopoems.github.io/STOP/stopfinal.owl#Character"/>
+    
+
+
+    <!-- https://songstopoems.github.io/STOP/stopfinal.owl#CreativeWork -->
+
+
+    <owl:Class rdf:about="https://songstopoems.github.io/STOP/stopfinal.owl#CreativeWork"/>
+    
+
+
+    <!-- https://songstopoems.github.io/STOP/stopfinal.owl#Musical_Album -->
+
+
+    <owl:Class rdf:about="https://songstopoems.github.io/STOP/stopfinal.owl#Musical_Album">
+        <rdfs:subClassOf rdf:resource="https://songstopoems.github.io/STOP/stopfinal.owl#Work"/>
+    </owl:Class>
+    
+
+
+    <!-- https://songstopoems.github.io/STOP/stopfinal.owl#Poem -->
+
+
+    <owl:Class rdf:about="https://songstopoems.github.io/STOP/stopfinal.owl#Poem">
+        <rdfs:subClassOf rdf:resource="https://songstopoems.github.io/STOP/stopfinal.owl#Unit"/>
+    </owl:Class>
+    
+
+
+    <!-- https://songstopoems.github.io/STOP/stopfinal.owl#Song -->
+
+
+    <owl:Class rdf:about="https://songstopoems.github.io/STOP/stopfinal.owl#Song">
+        <rdfs:subClassOf rdf:resource="https://songstopoems.github.io/STOP/stopfinal.owl#Unit"/>
+    </owl:Class>
+    
+
+
+    <!-- https://songstopoems.github.io/STOP/stopfinal.owl#Topic -->
+
+
+    <owl:Class rdf:about="https://songstopoems.github.io/STOP/stopfinal.owl#Topic"/>
+    
+
+
+    <!-- https://songstopoems.github.io/STOP/stopfinal.owl#Unit -->
+
+
+    <owl:Class rdf:about="https://songstopoems.github.io/STOP/stopfinal.owl#Unit">
+        <rdfs:subClassOf rdf:resource="https://songstopoems.github.io/STOP/stopfinal.owl#CreativeWork"/>
+    </owl:Class>
+    
+
+
+    <!-- https://songstopoems.github.io/STOP/stopfinal.owl#Work -->
+
+
+    <owl:Class rdf:about="https://songstopoems.github.io/STOP/stopfinal.owl#Work">
+        <rdfs:subClassOf rdf:resource="https://songstopoems.github.io/STOP/stopfinal.owl#CreativeWork"/>
+    </owl:Class>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Individuals
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+
+    
+
+
+    <!-- https://songstopoems.github.io/STOP/stopfinal.owl#Aunt_Emily -->
+
+
+    <owl:NamedIndividual rdf:about="https://songstopoems.github.io/STOP/stopfinal.owl#Aunt_Emily">
+        <rdf:type rdf:resource="https://songstopoems.github.io/STOP/stopfinal.owl#Character"/>
+        <is_in rdf:resource="https://songstopoems.github.io/STOP/stopfinal.owl#The_Hill"/>
+        <have_name rdf:datatype="http://www.w3.org/2000/01/rdf-schema#Literal">Aunt Emily</have_name>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://songstopoems.github.io/STOP/stopfinal.owl#Bert -->
+
+
+    <owl:NamedIndividual rdf:about="https://songstopoems.github.io/STOP/stopfinal.owl#Bert">
+        <rdf:type rdf:resource="https://songstopoems.github.io/STOP/stopfinal.owl#Character"/>
+        <is_in rdf:resource="https://songstopoems.github.io/STOP/stopfinal.owl#Dormono_sulla_collina"/>
+        <is_in rdf:resource="https://songstopoems.github.io/STOP/stopfinal.owl#The_Hill"/>
+        <have_name rdf:datatype="http://www.w3.org/2000/01/rdf-schema#Literal">Bert</have_name>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://songstopoems.github.io/STOP/stopfinal.owl#Charley -->
+
+
+    <owl:NamedIndividual rdf:about="https://songstopoems.github.io/STOP/stopfinal.owl#Charley">
+        <rdf:type rdf:resource="https://songstopoems.github.io/STOP/stopfinal.owl#Character"/>
+        <is_in rdf:resource="https://songstopoems.github.io/STOP/stopfinal.owl#Dormono_sulla_collina"/>
+        <is_in rdf:resource="https://songstopoems.github.io/STOP/stopfinal.owl#The_Hill"/>
+        <have_name rdf:datatype="http://www.w3.org/2000/01/rdf-schema#Literal">Charley</have_name>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://songstopoems.github.io/STOP/stopfinal.owl#Church -->
+
+
+    <owl:NamedIndividual rdf:about="https://songstopoems.github.io/STOP/stopfinal.owl#Church">
+        <rdf:type rdf:resource="https://songstopoems.github.io/STOP/stopfinal.owl#Topic"/>
+        <appears_in rdf:resource="https://songstopoems.github.io/STOP/stopfinal.owl#Doctor_Siegfried_Iseman"/>
+        <have_name>Church</have_name>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://songstopoems.github.io/STOP/stopfinal.owl#Damnation -->
+
+
+    <owl:NamedIndividual rdf:about="https://songstopoems.github.io/STOP/stopfinal.owl#Damnation">
+        <rdf:type rdf:resource="https://songstopoems.github.io/STOP/stopfinal.owl#Topic"/>
+        <appears_in rdf:resource="https://songstopoems.github.io/STOP/stopfinal.owl#Un_giudice"/>
+        <appears_in rdf:resource="https://songstopoems.github.io/STOP/stopfinal.owl#Un_medico"/>
+        <appears_in rdf:resource="https://songstopoems.github.io/STOP/stopfinal.owl#Wendell_P._Bloyd"/>
+        <appears_in rdf:resource="https://songstopoems.github.io/STOP/stopfinal.owl#Un_blasfemo_(dietro_ogni_blasfemo_c&apos;è_un_giardino_incantato)"/>
+        <have_name>Damnation</have_name>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://songstopoems.github.io/STOP/stopfinal.owl#Dancing -->
+
+
+    <owl:NamedIndividual rdf:about="https://songstopoems.github.io/STOP/stopfinal.owl#Dancing">
+        <rdf:type rdf:resource="https://songstopoems.github.io/STOP/stopfinal.owl#Topic"/>
+        <appears_in rdf:resource="https://songstopoems.github.io/STOP/stopfinal.owl#Fiddler_Jones"/>
+        <appears_in rdf:resource="https://songstopoems.github.io/STOP/stopfinal.owl#Il_suonatore_Jones"/>
+        <have_name>Dancing</have_name>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://songstopoems.github.io/STOP/stopfinal.owl#Darkness_VS_Light -->
+
+
+    <owl:NamedIndividual rdf:about="https://songstopoems.github.io/STOP/stopfinal.owl#Darkness_VS_Light">
+        <rdf:type rdf:resource="https://songstopoems.github.io/STOP/stopfinal.owl#Topic"/>
+        <appears_in rdf:resource="https://songstopoems.github.io/STOP/stopfinal.owl#Dippold_the_optician"/>
+        <appears_in rdf:resource="https://songstopoems.github.io/STOP/stopfinal.owl#Frank_Drummer"/>
+        <appears_in rdf:resource="https://songstopoems.github.io/STOP/stopfinal.owl#Un_ottico"/>
+        <have_name>Darkness vs light</have_name>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://songstopoems.github.io/STOP/stopfinal.owl#Death -->
+
+
+    <owl:NamedIndividual rdf:about="https://songstopoems.github.io/STOP/stopfinal.owl#Death">
+        <rdf:type rdf:resource="https://songstopoems.github.io/STOP/stopfinal.owl#Topic"/>
+        <appears_in rdf:resource="https://songstopoems.github.io/STOP/stopfinal.owl#Dormono_sulla_collina"/>
+        <appears_in rdf:resource="https://songstopoems.github.io/STOP/stopfinal.owl#The_Hill"/>
+        <appears_in rdf:resource="https://songstopoems.github.io/STOP/stopfinal.owl#Un_matto(Dietro_ogni_scemo_c&apos;è_un_villaggio)"/>
+        <have_name>Death</have_name>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://songstopoems.github.io/STOP/stopfinal.owl#Devastation -->
+
+
+    <owl:NamedIndividual rdf:about="https://songstopoems.github.io/STOP/stopfinal.owl#Devastation">
+        <rdf:type rdf:resource="https://songstopoems.github.io/STOP/stopfinal.owl#Topic"/>
+        <appears_in rdf:resource="https://songstopoems.github.io/STOP/stopfinal.owl#Un_chimico"/>
+        <have_name>Devastation</have_name>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://songstopoems.github.io/STOP/stopfinal.owl#DippoldTheOptician -->
+
+
+    <owl:NamedIndividual rdf:about="https://songstopoems.github.io/STOP/stopfinal.owl#DippoldTheOptician">
+        <rdf:type rdf:resource="https://songstopoems.github.io/STOP/stopfinal.owl#Character"/>
+        <is_in rdf:resource="https://songstopoems.github.io/STOP/stopfinal.owl#Dippold_the_optician"/>
+        <have_name rdf:datatype="http://www.w3.org/2000/01/rdf-schema#Literal">Dippold, The Optician</have_name>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://songstopoems.github.io/STOP/stopfinal.owl#Dippold_the_optician -->
+
+
+    <owl:NamedIndividual rdf:about="https://songstopoems.github.io/STOP/stopfinal.owl#Dippold_the_optician">
+        <rdf:type rdf:resource="https://songstopoems.github.io/STOP/stopfinal.owl#Poem"/>
+        <schema:isPartOf rdf:resource="https://songstopoems.github.io/STOP/stopfinal.owl#Spoon_River_Anthology"/>
+        <has_character rdf:resource="https://songstopoems.github.io/STOP/stopfinal.owl#DippoldTheOptician"/>
+        <is_about rdf:resource="https://songstopoems.github.io/STOP/stopfinal.owl#Darkness_VS_Light"/>
+        <is_about rdf:resource="https://songstopoems.github.io/STOP/stopfinal.owl#Dream"/>
+        <is_about rdf:resource="https://songstopoems.github.io/STOP/stopfinal.owl#Night"/>
+        <is_about rdf:resource="https://songstopoems.github.io/STOP/stopfinal.owl#Sight"/>
+        <is_about rdf:resource="https://songstopoems.github.io/STOP/stopfinal.owl#Sky"/>
+        <have_name rdf:datatype="http://www.w3.org/2000/01/rdf-schema#Literal">Dippold, The Optician</have_name>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://songstopoems.github.io/STOP/stopfinal.owl#DoctorSiegfriedIseman -->
+
+
+    <owl:NamedIndividual rdf:about="https://songstopoems.github.io/STOP/stopfinal.owl#DoctorSiegfriedIseman">
+        <rdf:type rdf:resource="https://songstopoems.github.io/STOP/stopfinal.owl#Character"/>
+        <is_in rdf:resource="https://songstopoems.github.io/STOP/stopfinal.owl#Doctor_Siegfried_Iseman"/>
+        <have_name rdf:datatype="http://www.w3.org/2000/01/rdf-schema#Literal">Doctor Siegfried Iseman</have_name>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://songstopoems.github.io/STOP/stopfinal.owl#Doctor_Siegfried_Iseman -->
+
+
+    <owl:NamedIndividual rdf:about="https://songstopoems.github.io/STOP/stopfinal.owl#Doctor_Siegfried_Iseman">
+        <rdf:type rdf:resource="https://songstopoems.github.io/STOP/stopfinal.owl#Poem"/>
+        <schema:isPartOf rdf:resource="https://songstopoems.github.io/STOP/stopfinal.owl#Spoon_River_Anthology"/>
+        <has_character rdf:resource="https://songstopoems.github.io/STOP/stopfinal.owl#DoctorSiegfriedIseman"/>
+        <is_about rdf:resource="https://songstopoems.github.io/STOP/stopfinal.owl#Church"/>
+        <is_about rdf:resource="https://songstopoems.github.io/STOP/stopfinal.owl#Justice"/>
+        <is_about rdf:resource="https://songstopoems.github.io/STOP/stopfinal.owl#Knowledge"/>
+        <is_about rdf:resource="https://songstopoems.github.io/STOP/stopfinal.owl#Religion"/>
+        <is_about rdf:resource="https://songstopoems.github.io/STOP/stopfinal.owl#Suffering"/>
+        <have_name rdf:datatype="http://www.w3.org/2000/01/rdf-schema#Literal">Doctor Siegfried Iseman</have_name>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://songstopoems.github.io/STOP/stopfinal.owl#Dormono_sulla_collina -->
+
+
+    <owl:NamedIndividual rdf:about="https://songstopoems.github.io/STOP/stopfinal.owl#Dormono_sulla_collina">
+        <rdf:type rdf:resource="https://songstopoems.github.io/STOP/stopfinal.owl#Song"/>
+        <rdf:type rdf:resource="https://songstopoems.github.io/STOP/stopfinal.owl#Unit"/>
+        <schema:isPartOf rdf:resource="https://songstopoems.github.io/STOP/stopfinal.owl#Non_al_denaro_non_all&apos;amore_né_al_cielo"/>
+        <has_character rdf:resource="https://songstopoems.github.io/STOP/stopfinal.owl#Bert"/>
+        <has_character rdf:resource="https://songstopoems.github.io/STOP/stopfinal.owl#Charley"/>
+        <has_character rdf:resource="https://songstopoems.github.io/STOP/stopfinal.owl#Ella"/>
+        <has_character rdf:resource="https://songstopoems.github.io/STOP/stopfinal.owl#Elmer"/>
+        <has_character rdf:resource="https://songstopoems.github.io/STOP/stopfinal.owl#Herman"/>
+        <has_character rdf:resource="https://songstopoems.github.io/STOP/stopfinal.owl#JonesIlSuonatore"/>
+        <has_character rdf:resource="https://songstopoems.github.io/STOP/stopfinal.owl#Kate"/>
+        <has_character rdf:resource="https://songstopoems.github.io/STOP/stopfinal.owl#Lizzie"/>
+        <has_character rdf:resource="https://songstopoems.github.io/STOP/stopfinal.owl#Maggie"/>
+        <has_character rdf:resource="https://songstopoems.github.io/STOP/stopfinal.owl#Tom"/>
+        <is_about rdf:resource="https://songstopoems.github.io/STOP/stopfinal.owl#Death"/>
+        <is_about rdf:resource="https://songstopoems.github.io/STOP/stopfinal.owl#Eternal_Sleep"/>
+        <is_about rdf:resource="https://songstopoems.github.io/STOP/stopfinal.owl#Nature"/>
+        <related_to rdf:resource="https://songstopoems.github.io/STOP/stopfinal.owl#The_Hill"/>
+        <have_name rdf:datatype="http://www.w3.org/2000/01/rdf-schema#Literal">La collina</have_name>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://songstopoems.github.io/STOP/stopfinal.owl#Dream -->
+
+
+    <owl:NamedIndividual rdf:about="https://songstopoems.github.io/STOP/stopfinal.owl#Dream">
+        <rdf:type rdf:resource="https://songstopoems.github.io/STOP/stopfinal.owl#Topic"/>
+        <appears_in rdf:resource="https://songstopoems.github.io/STOP/stopfinal.owl#Dippold_the_optician"/>
+        <appears_in rdf:resource="https://songstopoems.github.io/STOP/stopfinal.owl#Frank_Drummer"/>
+        <appears_in rdf:resource="https://songstopoems.github.io/STOP/stopfinal.owl#Il_suonatore_Jones"/>
+        <appears_in rdf:resource="https://songstopoems.github.io/STOP/stopfinal.owl#Un_malato_di_cuore"/>
+        <appears_in rdf:resource="https://songstopoems.github.io/STOP/stopfinal.owl#Un_ottico"/>
+        <appears_in rdf:resource="https://songstopoems.github.io/STOP/stopfinal.owl#Un_blasfemo_(dietro_ogni_blasfemo_c&apos;è_un_giardino_incantato)"/>
+        <appears_in rdf:resource="https://songstopoems.github.io/STOP/stopfinal.owl#Un_matto(Dietro_ogni_scemo_c&apos;è_un_villaggio)"/>
+        <have_name>Dream</have_name>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://songstopoems.github.io/STOP/stopfinal.owl#Drinking -->
+
+
+    <owl:NamedIndividual rdf:about="https://songstopoems.github.io/STOP/stopfinal.owl#Drinking">
+        <rdf:type rdf:resource="https://songstopoems.github.io/STOP/stopfinal.owl#Topic"/>
+        <appears_in rdf:resource="https://songstopoems.github.io/STOP/stopfinal.owl#Francis_Turner"/>
+        <have_name>Drinking</have_name>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://songstopoems.github.io/STOP/stopfinal.owl#Edgar_Lee_Masters -->
+
+
+    <owl:NamedIndividual rdf:about="https://songstopoems.github.io/STOP/stopfinal.owl#Edgar_Lee_Masters">
+        <rdf:type rdf:resource="https://songstopoems.github.io/STOP/stopfinal.owl#Author"/>
+        <writes rdf:resource="https://songstopoems.github.io/STOP/stopfinal.owl#Spoon_River_Anthology"/>
+        <have_name rdf:datatype="http://www.w3.org/2000/01/rdf-schema#Literal">Edgar Lee Masters</have_name>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://songstopoems.github.io/STOP/stopfinal.owl#Edith -->
+
+
+    <owl:NamedIndividual rdf:about="https://songstopoems.github.io/STOP/stopfinal.owl#Edith">
+        <rdf:type rdf:resource="https://songstopoems.github.io/STOP/stopfinal.owl#Character"/>
+        <is_in rdf:resource="https://songstopoems.github.io/STOP/stopfinal.owl#The_Hill"/>
+        <have_name rdf:datatype="http://www.w3.org/2000/01/rdf-schema#Literal">Edith</have_name>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://songstopoems.github.io/STOP/stopfinal.owl#Ella -->
+
+
+    <owl:NamedIndividual rdf:about="https://songstopoems.github.io/STOP/stopfinal.owl#Ella">
+        <rdf:type rdf:resource="https://songstopoems.github.io/STOP/stopfinal.owl#Character"/>
+        <is_in rdf:resource="https://songstopoems.github.io/STOP/stopfinal.owl#Dormono_sulla_collina"/>
+        <is_in rdf:resource="https://songstopoems.github.io/STOP/stopfinal.owl#The_Hill"/>
+        <have_name rdf:datatype="http://www.w3.org/2000/01/rdf-schema#Literal">Ella</have_name>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://songstopoems.github.io/STOP/stopfinal.owl#Elmer -->
+
+
+    <owl:NamedIndividual rdf:about="https://songstopoems.github.io/STOP/stopfinal.owl#Elmer">
+        <rdf:type rdf:resource="https://songstopoems.github.io/STOP/stopfinal.owl#Character"/>
+        <is_in rdf:resource="https://songstopoems.github.io/STOP/stopfinal.owl#Dormono_sulla_collina"/>
+        <is_in rdf:resource="https://songstopoems.github.io/STOP/stopfinal.owl#The_Hill"/>
+        <have_name rdf:datatype="http://www.w3.org/2000/01/rdf-schema#Literal">Elmer</have_name>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://songstopoems.github.io/STOP/stopfinal.owl#Eternal_Sleep -->
+
+
+    <owl:NamedIndividual rdf:about="https://songstopoems.github.io/STOP/stopfinal.owl#Eternal_Sleep">
+        <rdf:type rdf:resource="https://songstopoems.github.io/STOP/stopfinal.owl#Topic"/>
+        <appears_in rdf:resource="https://songstopoems.github.io/STOP/stopfinal.owl#Dormono_sulla_collina"/>
+        <appears_in rdf:resource="https://songstopoems.github.io/STOP/stopfinal.owl#The_Hill"/>
+        <have_name>Eternal Sleep</have_name>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://songstopoems.github.io/STOP/stopfinal.owl#Fabrizio_De_Andrè -->
+
+
+    <owl:NamedIndividual rdf:about="https://songstopoems.github.io/STOP/stopfinal.owl#Fabrizio_De_Andrè">
+        <rdf:type rdf:resource="https://songstopoems.github.io/STOP/stopfinal.owl#Author"/>
+        <writes rdf:resource="https://songstopoems.github.io/STOP/stopfinal.owl#Non_al_denaro_non_all&apos;amore_né_al_cielo"/>
+        <have_name rdf:datatype="http://www.w3.org/2000/01/rdf-schema#Literal">Fabrizio De André</have_name>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://songstopoems.github.io/STOP/stopfinal.owl#Family -->
+
+
+    <owl:NamedIndividual rdf:about="https://songstopoems.github.io/STOP/stopfinal.owl#Family">
+        <rdf:type rdf:resource="https://songstopoems.github.io/STOP/stopfinal.owl#Topic"/>
+        <appears_in rdf:resource="https://songstopoems.github.io/STOP/stopfinal.owl#Trainor_the_druggist"/>
+        <have_name>Family</have_name>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://songstopoems.github.io/STOP/stopfinal.owl#FiddlerJones -->
+
+
+    <owl:NamedIndividual rdf:about="https://songstopoems.github.io/STOP/stopfinal.owl#FiddlerJones">
+        <rdf:type rdf:resource="https://songstopoems.github.io/STOP/stopfinal.owl#Character"/>
+        <is_in rdf:resource="https://songstopoems.github.io/STOP/stopfinal.owl#Fiddler_Jones"/>
+        <have_name rdf:datatype="http://www.w3.org/2000/01/rdf-schema#Literal">Fiddler Jones</have_name>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://songstopoems.github.io/STOP/stopfinal.owl#Fiddler_Jones -->
+
+
+    <owl:NamedIndividual rdf:about="https://songstopoems.github.io/STOP/stopfinal.owl#Fiddler_Jones">
+        <rdf:type rdf:resource="https://songstopoems.github.io/STOP/stopfinal.owl#Poem"/>
+        <schema:isPartOf rdf:resource="https://songstopoems.github.io/STOP/stopfinal.owl#Spoon_River_Anthology"/>
+        <has_character rdf:resource="https://songstopoems.github.io/STOP/stopfinal.owl#FiddlerJones"/>
+        <is_about rdf:resource="https://songstopoems.github.io/STOP/stopfinal.owl#Dancing"/>
+        <is_about rdf:resource="https://songstopoems.github.io/STOP/stopfinal.owl#Music"/>
+        <is_about rdf:resource="https://songstopoems.github.io/STOP/stopfinal.owl#Nature"/>
+        <is_about rdf:resource="https://songstopoems.github.io/STOP/stopfinal.owl#Sky"/>
+        <have_name rdf:datatype="http://www.w3.org/2000/01/rdf-schema#Literal">Fiddler Jones</have_name>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://songstopoems.github.io/STOP/stopfinal.owl#FrancisTurner -->
+
+
+    <owl:NamedIndividual rdf:about="https://songstopoems.github.io/STOP/stopfinal.owl#FrancisTurner">
+        <rdf:type rdf:resource="https://songstopoems.github.io/STOP/stopfinal.owl#Character"/>
+        <is_in rdf:resource="https://songstopoems.github.io/STOP/stopfinal.owl#Francis_Turner"/>
+        <have_name rdf:datatype="http://www.w3.org/2000/01/rdf-schema#Literal">Francis Turner</have_name>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://songstopoems.github.io/STOP/stopfinal.owl#Francis_Turner -->
+
+
+    <owl:NamedIndividual rdf:about="https://songstopoems.github.io/STOP/stopfinal.owl#Francis_Turner">
+        <rdf:type rdf:resource="https://songstopoems.github.io/STOP/stopfinal.owl#Poem"/>
+        <schema:isPartOf rdf:resource="https://songstopoems.github.io/STOP/stopfinal.owl#Spoon_River_Anthology"/>
+        <has_character rdf:resource="https://songstopoems.github.io/STOP/stopfinal.owl#FrancisTurner"/>
+        <is_about rdf:resource="https://songstopoems.github.io/STOP/stopfinal.owl#Drinking"/>
+        <is_about rdf:resource="https://songstopoems.github.io/STOP/stopfinal.owl#Nature"/>
+        <is_about rdf:resource="https://songstopoems.github.io/STOP/stopfinal.owl#Secret"/>
+        <is_about rdf:resource="https://songstopoems.github.io/STOP/stopfinal.owl#Suffering"/>
+        <have_name rdf:datatype="http://www.w3.org/2000/01/rdf-schema#Literal">Francis Turner</have_name>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://songstopoems.github.io/STOP/stopfinal.owl#FrankDrummer -->
+
+
+    <owl:NamedIndividual rdf:about="https://songstopoems.github.io/STOP/stopfinal.owl#FrankDrummer">
+        <rdf:type rdf:resource="https://songstopoems.github.io/STOP/stopfinal.owl#Character"/>
+        <is_in rdf:resource="https://songstopoems.github.io/STOP/stopfinal.owl#Frank_Drummer"/>
+        <have_name rdf:datatype="http://www.w3.org/2000/01/rdf-schema#Literal">Frank Drummer</have_name>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://songstopoems.github.io/STOP/stopfinal.owl#Frank_Drummer -->
+
+
+    <owl:NamedIndividual rdf:about="https://songstopoems.github.io/STOP/stopfinal.owl#Frank_Drummer">
+        <rdf:type rdf:resource="https://songstopoems.github.io/STOP/stopfinal.owl#Poem"/>
+        <schema:isPartOf rdf:resource="https://songstopoems.github.io/STOP/stopfinal.owl#Spoon_River_Anthology"/>
+        <has_character rdf:resource="https://songstopoems.github.io/STOP/stopfinal.owl#FrankDrummer"/>
+        <is_about rdf:resource="https://songstopoems.github.io/STOP/stopfinal.owl#Darkness_VS_Light"/>
+        <is_about rdf:resource="https://songstopoems.github.io/STOP/stopfinal.owl#Dream"/>
+        <is_about rdf:resource="https://songstopoems.github.io/STOP/stopfinal.owl#Memory"/>
+        <is_about rdf:resource="https://songstopoems.github.io/STOP/stopfinal.owl#Music"/>
+        <have_name rdf:datatype="http://www.w3.org/2000/01/rdf-schema#Literal">Frank Drummer</have_name>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://songstopoems.github.io/STOP/stopfinal.owl#Hate -->
+
+
+    <owl:NamedIndividual rdf:about="https://songstopoems.github.io/STOP/stopfinal.owl#Hate">
+        <rdf:type rdf:resource="https://songstopoems.github.io/STOP/stopfinal.owl#Topic"/>
+        <appears_in rdf:resource="https://songstopoems.github.io/STOP/stopfinal.owl#Judge_Selah_Lively"/>
+        <appears_in rdf:resource="https://songstopoems.github.io/STOP/stopfinal.owl#Un_giudice"/>
+        <appears_in rdf:resource="https://songstopoems.github.io/STOP/stopfinal.owl#Wendell_P._Bloyd"/>
+        <have_name>Hate</have_name>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://songstopoems.github.io/STOP/stopfinal.owl#Herman -->
+
+
+    <owl:NamedIndividual rdf:about="https://songstopoems.github.io/STOP/stopfinal.owl#Herman">
+        <rdf:type rdf:resource="https://songstopoems.github.io/STOP/stopfinal.owl#Character"/>
+        <is_in rdf:resource="https://songstopoems.github.io/STOP/stopfinal.owl#Dormono_sulla_collina"/>
+        <is_in rdf:resource="https://songstopoems.github.io/STOP/stopfinal.owl#The_Hill"/>
+        <have_name rdf:datatype="http://www.w3.org/2000/01/rdf-schema#Literal">Herman</have_name>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://songstopoems.github.io/STOP/stopfinal.owl#Il_suonatore_Jones -->
+
+
+    <owl:NamedIndividual rdf:about="https://songstopoems.github.io/STOP/stopfinal.owl#Il_suonatore_Jones">
+        <rdf:type rdf:resource="https://songstopoems.github.io/STOP/stopfinal.owl#Song"/>
+        <schema:isPartOf rdf:resource="https://songstopoems.github.io/STOP/stopfinal.owl#Non_al_denaro_non_all&apos;amore_né_al_cielo"/>
+        <has_character rdf:resource="https://songstopoems.github.io/STOP/stopfinal.owl#JonesIlSuonatore"/>
+        <is_about rdf:resource="https://songstopoems.github.io/STOP/stopfinal.owl#Dancing"/>
+        <is_about rdf:resource="https://songstopoems.github.io/STOP/stopfinal.owl#Dream"/>
+        <is_about rdf:resource="https://songstopoems.github.io/STOP/stopfinal.owl#Music"/>
+        <is_about rdf:resource="https://songstopoems.github.io/STOP/stopfinal.owl#Nature"/>
+        <is_about rdf:resource="https://songstopoems.github.io/STOP/stopfinal.owl#Suffering"/>
+        <related_to rdf:resource="https://songstopoems.github.io/STOP/stopfinal.owl#Fiddler_Jones"/>
+        <have_name rdf:datatype="http://www.w3.org/2000/01/rdf-schema#Literal">Il suonatore Jones</have_name>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://songstopoems.github.io/STOP/stopfinal.owl#JonesIlSuonatore -->
+
+
+    <owl:NamedIndividual rdf:about="https://songstopoems.github.io/STOP/stopfinal.owl#JonesIlSuonatore">
+        <rdf:type rdf:resource="https://songstopoems.github.io/STOP/stopfinal.owl#Character"/>
+        <is_in rdf:resource="https://songstopoems.github.io/STOP/stopfinal.owl#Dormono_sulla_collina"/>
+        <is_in rdf:resource="https://songstopoems.github.io/STOP/stopfinal.owl#Il_suonatore_Jones"/>
+        <have_name rdf:datatype="http://www.w3.org/2000/01/rdf-schema#Literal">Il suonatore Jones</have_name>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://songstopoems.github.io/STOP/stopfinal.owl#JudgeSelahLively -->
+
+
+    <owl:NamedIndividual rdf:about="https://songstopoems.github.io/STOP/stopfinal.owl#JudgeSelahLively">
+        <rdf:type rdf:resource="https://songstopoems.github.io/STOP/stopfinal.owl#Character"/>
+        <is_in rdf:resource="https://songstopoems.github.io/STOP/stopfinal.owl#Judge_Selah_Lively"/>
+        <have_name rdf:datatype="http://www.w3.org/2000/01/rdf-schema#Literal">Judge Selah Lively</have_name>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://songstopoems.github.io/STOP/stopfinal.owl#Judge_Selah_Lively -->
+
+
+    <owl:NamedIndividual rdf:about="https://songstopoems.github.io/STOP/stopfinal.owl#Judge_Selah_Lively">
+        <rdf:type rdf:resource="https://songstopoems.github.io/STOP/stopfinal.owl#Poem"/>
+        <schema:isPartOf rdf:resource="https://songstopoems.github.io/STOP/stopfinal.owl#Spoon_River_Anthology"/>
+        <has_character rdf:resource="https://songstopoems.github.io/STOP/stopfinal.owl#JudgeSelahLively"/>
+        <is_about rdf:resource="https://songstopoems.github.io/STOP/stopfinal.owl#Hate"/>
+        <is_about rdf:resource="https://songstopoems.github.io/STOP/stopfinal.owl#Justice"/>
+        <is_about rdf:resource="https://songstopoems.github.io/STOP/stopfinal.owl#Religion"/>
+        <have_name rdf:datatype="http://www.w3.org/2000/01/rdf-schema#Literal">Judge Selah Lively</have_name>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://songstopoems.github.io/STOP/stopfinal.owl#Justice -->
+
+
+    <owl:NamedIndividual rdf:about="https://songstopoems.github.io/STOP/stopfinal.owl#Justice">
+        <rdf:type rdf:resource="https://songstopoems.github.io/STOP/stopfinal.owl#Topic"/>
+        <appears_in rdf:resource="https://songstopoems.github.io/STOP/stopfinal.owl#Doctor_Siegfried_Iseman"/>
+        <appears_in rdf:resource="https://songstopoems.github.io/STOP/stopfinal.owl#Judge_Selah_Lively"/>
+        <appears_in rdf:resource="https://songstopoems.github.io/STOP/stopfinal.owl#Un_giudice"/>
+        <have_name>Justice</have_name>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://songstopoems.github.io/STOP/stopfinal.owl#Kate -->
+
+
+    <owl:NamedIndividual rdf:about="https://songstopoems.github.io/STOP/stopfinal.owl#Kate">
+        <rdf:type rdf:resource="https://songstopoems.github.io/STOP/stopfinal.owl#Character"/>
+        <is_in rdf:resource="https://songstopoems.github.io/STOP/stopfinal.owl#Dormono_sulla_collina"/>
+        <is_in rdf:resource="https://songstopoems.github.io/STOP/stopfinal.owl#The_Hill"/>
+        <have_name rdf:datatype="http://www.w3.org/2000/01/rdf-schema#Literal">Kate</have_name>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://songstopoems.github.io/STOP/stopfinal.owl#Knowledge -->
+
+
+    <owl:NamedIndividual rdf:about="https://songstopoems.github.io/STOP/stopfinal.owl#Knowledge">
+        <rdf:type rdf:resource="https://songstopoems.github.io/STOP/stopfinal.owl#Topic"/>
+        <appears_in rdf:resource="https://songstopoems.github.io/STOP/stopfinal.owl#Doctor_Siegfried_Iseman"/>
+        <appears_in rdf:resource="https://songstopoems.github.io/STOP/stopfinal.owl#Un_giudice"/>
+        <appears_in rdf:resource="https://songstopoems.github.io/STOP/stopfinal.owl#Un_medico"/>
+        <have_name>Knowledge</have_name>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://songstopoems.github.io/STOP/stopfinal.owl#Lizzie -->
+
+
+    <owl:NamedIndividual rdf:about="https://songstopoems.github.io/STOP/stopfinal.owl#Lizzie">
+        <rdf:type rdf:resource="https://songstopoems.github.io/STOP/stopfinal.owl#Character"/>
+        <is_in rdf:resource="https://songstopoems.github.io/STOP/stopfinal.owl#Dormono_sulla_collina"/>
+        <is_in rdf:resource="https://songstopoems.github.io/STOP/stopfinal.owl#The_Hill"/>
+        <have_name rdf:datatype="http://www.w3.org/2000/01/rdf-schema#Literal">Lizzie</have_name>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://songstopoems.github.io/STOP/stopfinal.owl#Love -->
+
+
+    <owl:NamedIndividual rdf:about="https://songstopoems.github.io/STOP/stopfinal.owl#Love">
+        <rdf:type rdf:resource="https://songstopoems.github.io/STOP/stopfinal.owl#Topic"/>
+        <appears_in rdf:resource="https://songstopoems.github.io/STOP/stopfinal.owl#Un_chimico"/>
+        <have_name>Love</have_name>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://songstopoems.github.io/STOP/stopfinal.owl#Maggie -->
+
+
+    <owl:NamedIndividual rdf:about="https://songstopoems.github.io/STOP/stopfinal.owl#Maggie">
+        <rdf:type rdf:resource="https://songstopoems.github.io/STOP/stopfinal.owl#Character"/>
+        <is_in rdf:resource="https://songstopoems.github.io/STOP/stopfinal.owl#Dormono_sulla_collina"/>
+        <is_in rdf:resource="https://songstopoems.github.io/STOP/stopfinal.owl#The_Hill"/>
+        <have_name rdf:datatype="http://www.w3.org/2000/01/rdf-schema#Literal">Maggie</have_name>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://songstopoems.github.io/STOP/stopfinal.owl#Major_Walker -->
+
+
+    <owl:NamedIndividual rdf:about="https://songstopoems.github.io/STOP/stopfinal.owl#Major_Walker">
+        <rdf:type rdf:resource="https://songstopoems.github.io/STOP/stopfinal.owl#Character"/>
+        <is_in rdf:resource="https://songstopoems.github.io/STOP/stopfinal.owl#The_Hill"/>
+        <have_name rdf:datatype="http://www.w3.org/2000/01/rdf-schema#Literal">Major Walker</have_name>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://songstopoems.github.io/STOP/stopfinal.owl#Marriage -->
+
+
+    <owl:NamedIndividual rdf:about="https://songstopoems.github.io/STOP/stopfinal.owl#Marriage">
+        <rdf:type rdf:resource="https://songstopoems.github.io/STOP/stopfinal.owl#Topic"/>
+        <appears_in rdf:resource="https://songstopoems.github.io/STOP/stopfinal.owl#Trainor_the_druggist"/>
+        <have_name>Marriage</have_name>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://songstopoems.github.io/STOP/stopfinal.owl#Memory -->
+
+
+    <owl:NamedIndividual rdf:about="https://songstopoems.github.io/STOP/stopfinal.owl#Memory">
+        <rdf:type rdf:resource="https://songstopoems.github.io/STOP/stopfinal.owl#Topic"/>
+        <appears_in rdf:resource="https://songstopoems.github.io/STOP/stopfinal.owl#Frank_Drummer"/>
+        <appears_in rdf:resource="https://songstopoems.github.io/STOP/stopfinal.owl#Un_matto(Dietro_ogni_scemo_c&apos;è_un_villaggio)"/>
+        <have_name>Memory</have_name>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://songstopoems.github.io/STOP/stopfinal.owl#Music -->
+
+
+    <owl:NamedIndividual rdf:about="https://songstopoems.github.io/STOP/stopfinal.owl#Music">
+        <rdf:type rdf:resource="https://songstopoems.github.io/STOP/stopfinal.owl#Topic"/>
+        <appears_in rdf:resource="https://songstopoems.github.io/STOP/stopfinal.owl#Fiddler_Jones"/>
+        <appears_in rdf:resource="https://songstopoems.github.io/STOP/stopfinal.owl#Frank_Drummer"/>
+        <appears_in rdf:resource="https://songstopoems.github.io/STOP/stopfinal.owl#Il_suonatore_Jones"/>
+        <have_name>Music</have_name>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://songstopoems.github.io/STOP/stopfinal.owl#Nature -->
+
+
+    <owl:NamedIndividual rdf:about="https://songstopoems.github.io/STOP/stopfinal.owl#Nature">
+        <rdf:type rdf:resource="https://songstopoems.github.io/STOP/stopfinal.owl#Topic"/>
+        <appears_in rdf:resource="https://songstopoems.github.io/STOP/stopfinal.owl#Dormono_sulla_collina"/>
+        <appears_in rdf:resource="https://songstopoems.github.io/STOP/stopfinal.owl#Fiddler_Jones"/>
+        <appears_in rdf:resource="https://songstopoems.github.io/STOP/stopfinal.owl#Francis_Turner"/>
+        <appears_in rdf:resource="https://songstopoems.github.io/STOP/stopfinal.owl#Il_suonatore_Jones"/>
+        <appears_in rdf:resource="https://songstopoems.github.io/STOP/stopfinal.owl#The_Hill"/>
+        <appears_in rdf:resource="https://songstopoems.github.io/STOP/stopfinal.owl#Un_chimico"/>
+        <have_name>Nature</have_name>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://songstopoems.github.io/STOP/stopfinal.owl#Night -->
+
+
+    <owl:NamedIndividual rdf:about="https://songstopoems.github.io/STOP/stopfinal.owl#Night">
+        <rdf:type rdf:resource="https://songstopoems.github.io/STOP/stopfinal.owl#Topic"/>
+        <appears_in rdf:resource="https://songstopoems.github.io/STOP/stopfinal.owl#Dippold_the_optician"/>
+        <have_name>Night</have_name>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://songstopoems.github.io/STOP/stopfinal.owl#Religion -->
+
+
+    <owl:NamedIndividual rdf:about="https://songstopoems.github.io/STOP/stopfinal.owl#Religion">
+        <rdf:type rdf:resource="https://songstopoems.github.io/STOP/stopfinal.owl#Topic"/>
+        <appears_in rdf:resource="https://songstopoems.github.io/STOP/stopfinal.owl#Doctor_Siegfried_Iseman"/>
+        <appears_in rdf:resource="https://songstopoems.github.io/STOP/stopfinal.owl#Judge_Selah_Lively"/>
+        <appears_in rdf:resource="https://songstopoems.github.io/STOP/stopfinal.owl#Un_giudice"/>
+        <appears_in rdf:resource="https://songstopoems.github.io/STOP/stopfinal.owl#Wendell_P._Bloyd"/>
+        <appears_in rdf:resource="https://songstopoems.github.io/STOP/stopfinal.owl#Un_blasfemo_(dietro_ogni_blasfemo_c&apos;è_un_giardino_incantato)"/>
+        <have_name>Religion</have_name>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://songstopoems.github.io/STOP/stopfinal.owl#Salvation -->
+
+
+    <owl:NamedIndividual rdf:about="https://songstopoems.github.io/STOP/stopfinal.owl#Salvation">
+        <rdf:type rdf:resource="https://songstopoems.github.io/STOP/stopfinal.owl#Topic"/>
+        <appears_in rdf:resource="https://songstopoems.github.io/STOP/stopfinal.owl#Un_chimico"/>
+        <appears_in rdf:resource="https://songstopoems.github.io/STOP/stopfinal.owl#Un_malato_di_cuore"/>
+        <appears_in rdf:resource="https://songstopoems.github.io/STOP/stopfinal.owl#Un_medico"/>
+        <appears_in rdf:resource="https://songstopoems.github.io/STOP/stopfinal.owl#Wendell_P._Bloyd"/>
+        <appears_in rdf:resource="https://songstopoems.github.io/STOP/stopfinal.owl#Un_blasfemo_(dietro_ogni_blasfemo_c&apos;è_un_giardino_incantato)"/>
+        <have_name>Salvation</have_name>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://songstopoems.github.io/STOP/stopfinal.owl#Secret -->
+
+
+    <owl:NamedIndividual rdf:about="https://songstopoems.github.io/STOP/stopfinal.owl#Secret">
+        <rdf:type rdf:resource="https://songstopoems.github.io/STOP/stopfinal.owl#Topic"/>
+        <appears_in rdf:resource="https://songstopoems.github.io/STOP/stopfinal.owl#Francis_Turner"/>
+        <have_name>Secret</have_name>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://songstopoems.github.io/STOP/stopfinal.owl#Sevigne_Houghton -->
+
+
+    <owl:NamedIndividual rdf:about="https://songstopoems.github.io/STOP/stopfinal.owl#Sevigne_Houghton">
+        <rdf:type rdf:resource="https://songstopoems.github.io/STOP/stopfinal.owl#Character"/>
+        <is_in rdf:resource="https://songstopoems.github.io/STOP/stopfinal.owl#The_Hill"/>
+        <have_name rdf:datatype="http://www.w3.org/2000/01/rdf-schema#Literal">Sevigne Houghton</have_name>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://songstopoems.github.io/STOP/stopfinal.owl#Sickness -->
+
+
+    <owl:NamedIndividual rdf:about="https://songstopoems.github.io/STOP/stopfinal.owl#Sickness">
+        <rdf:type rdf:resource="https://songstopoems.github.io/STOP/stopfinal.owl#Topic"/>
+        <appears_in rdf:resource="https://songstopoems.github.io/STOP/stopfinal.owl#Un_malato_di_cuore"/>
+        <appears_in rdf:resource="https://songstopoems.github.io/STOP/stopfinal.owl#Un_medico"/>
+        <have_name>Sickness</have_name>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://songstopoems.github.io/STOP/stopfinal.owl#Sight -->
+
+
+    <owl:NamedIndividual rdf:about="https://songstopoems.github.io/STOP/stopfinal.owl#Sight">
+        <rdf:type rdf:resource="https://songstopoems.github.io/STOP/stopfinal.owl#Topic"/>
+        <appears_in rdf:resource="https://songstopoems.github.io/STOP/stopfinal.owl#Dippold_the_optician"/>
+        <appears_in rdf:resource="https://songstopoems.github.io/STOP/stopfinal.owl#Un_ottico"/>
+        <have_name>Sight</have_name>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://songstopoems.github.io/STOP/stopfinal.owl#Sky -->
+
+
+    <owl:NamedIndividual rdf:about="https://songstopoems.github.io/STOP/stopfinal.owl#Sky">
+        <rdf:type rdf:resource="https://songstopoems.github.io/STOP/stopfinal.owl#Topic"/>
+        <appears_in rdf:resource="https://songstopoems.github.io/STOP/stopfinal.owl#Dippold_the_optician"/>
+        <appears_in rdf:resource="https://songstopoems.github.io/STOP/stopfinal.owl#Fiddler_Jones"/>
+        <appears_in rdf:resource="https://songstopoems.github.io/STOP/stopfinal.owl#Un_ottico"/>
+        <have_name>Sky</have_name>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://songstopoems.github.io/STOP/stopfinal.owl#Spoon_River_Anthology -->
+
+
+    <owl:NamedIndividual rdf:about="https://songstopoems.github.io/STOP/stopfinal.owl#Spoon_River_Anthology">
+        <rdf:type rdf:resource="https://songstopoems.github.io/STOP/stopfinal.owl#Anthology_Poem"/>
+        <rdf:type rdf:resource="https://songstopoems.github.io/STOP/stopfinal.owl#Work"/>
+        <schema:hasPart rdf:resource="https://songstopoems.github.io/STOP/stopfinal.owl#Dippold_the_optician"/>
+        <schema:hasPart rdf:resource="https://songstopoems.github.io/STOP/stopfinal.owl#Doctor_Siegfried_Iseman"/>
+        <schema:hasPart rdf:resource="https://songstopoems.github.io/STOP/stopfinal.owl#Fiddler_Jones"/>
+        <schema:hasPart rdf:resource="https://songstopoems.github.io/STOP/stopfinal.owl#Francis_Turner"/>
+        <schema:hasPart rdf:resource="https://songstopoems.github.io/STOP/stopfinal.owl#Frank_Drummer"/>
+        <schema:hasPart rdf:resource="https://songstopoems.github.io/STOP/stopfinal.owl#Judge_Selah_Lively"/>
+        <schema:hasPart rdf:resource="https://songstopoems.github.io/STOP/stopfinal.owl#The_Hill"/>
+        <schema:hasPart rdf:resource="https://songstopoems.github.io/STOP/stopfinal.owl#Trainor_the_druggist"/>
+        <schema:hasPart rdf:resource="https://songstopoems.github.io/STOP/stopfinal.owl#Wendell_P._Bloyd"/>
+        <inspires rdf:resource="https://songstopoems.github.io/STOP/stopfinal.owl#Non_al_denaro_non_all&apos;amore_né_al_cielo"/>
+        <is_written_by rdf:resource="https://songstopoems.github.io/STOP/stopfinal.owl#Edgar_Lee_Masters"/>
+        <have_name rdf:datatype="http://www.w3.org/2000/01/rdf-schema#Literal">Spoon River Anthology</have_name>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://songstopoems.github.io/STOP/stopfinal.owl#Suffering -->
+
+
+    <owl:NamedIndividual rdf:about="https://songstopoems.github.io/STOP/stopfinal.owl#Suffering">
+        <rdf:type rdf:resource="https://songstopoems.github.io/STOP/stopfinal.owl#Topic"/>
+        <appears_in rdf:resource="https://songstopoems.github.io/STOP/stopfinal.owl#Doctor_Siegfried_Iseman"/>
+        <appears_in rdf:resource="https://songstopoems.github.io/STOP/stopfinal.owl#Francis_Turner"/>
+        <appears_in rdf:resource="https://songstopoems.github.io/STOP/stopfinal.owl#Il_suonatore_Jones"/>
+        <appears_in rdf:resource="https://songstopoems.github.io/STOP/stopfinal.owl#Un_chimico"/>
+        <appears_in rdf:resource="https://songstopoems.github.io/STOP/stopfinal.owl#Un_malato_di_cuore"/>
+        <appears_in rdf:resource="https://songstopoems.github.io/STOP/stopfinal.owl#Un_medico"/>
+        <appears_in rdf:resource="https://songstopoems.github.io/STOP/stopfinal.owl#Un_ottico"/>
+        <have_name>Suffering</have_name>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://songstopoems.github.io/STOP/stopfinal.owl#The_Hill -->
+
+
+    <owl:NamedIndividual rdf:about="https://songstopoems.github.io/STOP/stopfinal.owl#The_Hill">
+        <rdf:type rdf:resource="https://songstopoems.github.io/STOP/stopfinal.owl#Poem"/>
+        <rdf:type rdf:resource="https://songstopoems.github.io/STOP/stopfinal.owl#Unit"/>
+        <schema:isPartOf rdf:resource="https://songstopoems.github.io/STOP/stopfinal.owl#Spoon_River_Anthology"/>
+        <has_character rdf:resource="https://songstopoems.github.io/STOP/stopfinal.owl#Aunt_Emily"/>
+        <has_character rdf:resource="https://songstopoems.github.io/STOP/stopfinal.owl#Bert"/>
+        <has_character rdf:resource="https://songstopoems.github.io/STOP/stopfinal.owl#Charley"/>
+        <has_character rdf:resource="https://songstopoems.github.io/STOP/stopfinal.owl#Edith"/>
+        <has_character rdf:resource="https://songstopoems.github.io/STOP/stopfinal.owl#Ella"/>
+        <has_character rdf:resource="https://songstopoems.github.io/STOP/stopfinal.owl#Elmer"/>
+        <has_character rdf:resource="https://songstopoems.github.io/STOP/stopfinal.owl#Herman"/>
+        <has_character rdf:resource="https://songstopoems.github.io/STOP/stopfinal.owl#Kate"/>
+        <has_character rdf:resource="https://songstopoems.github.io/STOP/stopfinal.owl#Lizzie"/>
+        <has_character rdf:resource="https://songstopoems.github.io/STOP/stopfinal.owl#Maggie"/>
+        <has_character rdf:resource="https://songstopoems.github.io/STOP/stopfinal.owl#Major_Walker"/>
+        <has_character rdf:resource="https://songstopoems.github.io/STOP/stopfinal.owl#Sevigne_Houghton"/>
+        <has_character rdf:resource="https://songstopoems.github.io/STOP/stopfinal.owl#Tom"/>
+        <has_character rdf:resource="https://songstopoems.github.io/STOP/stopfinal.owl#Towny_Kincaid"/>
+        <has_character rdf:resource="https://songstopoems.github.io/STOP/stopfinal.owl#Uncle_Isaac"/>
+        <is_about rdf:resource="https://songstopoems.github.io/STOP/stopfinal.owl#Death"/>
+        <is_about rdf:resource="https://songstopoems.github.io/STOP/stopfinal.owl#Eternal_Sleep"/>
+        <is_about rdf:resource="https://songstopoems.github.io/STOP/stopfinal.owl#Nature"/>
+        <have_name rdf:datatype="http://www.w3.org/2000/01/rdf-schema#Literal">The Hill</have_name>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://songstopoems.github.io/STOP/stopfinal.owl#Tom -->
+
+
+    <owl:NamedIndividual rdf:about="https://songstopoems.github.io/STOP/stopfinal.owl#Tom">
+        <rdf:type rdf:resource="https://songstopoems.github.io/STOP/stopfinal.owl#Character"/>
+        <is_in rdf:resource="https://songstopoems.github.io/STOP/stopfinal.owl#Dormono_sulla_collina"/>
+        <is_in rdf:resource="https://songstopoems.github.io/STOP/stopfinal.owl#The_Hill"/>
+        <have_name rdf:datatype="http://www.w3.org/2000/01/rdf-schema#Literal">Tom</have_name>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://songstopoems.github.io/STOP/stopfinal.owl#Towny_Kincaid -->
+
+
+    <owl:NamedIndividual rdf:about="https://songstopoems.github.io/STOP/stopfinal.owl#Towny_Kincaid">
+        <rdf:type rdf:resource="https://songstopoems.github.io/STOP/stopfinal.owl#Character"/>
+        <is_in rdf:resource="https://songstopoems.github.io/STOP/stopfinal.owl#The_Hill"/>
+        <have_name rdf:datatype="http://www.w3.org/2000/01/rdf-schema#Literal">Towny Kincaid</have_name>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://songstopoems.github.io/STOP/stopfinal.owl#TrainorTheDruggist -->
+
+
+    <owl:NamedIndividual rdf:about="https://songstopoems.github.io/STOP/stopfinal.owl#TrainorTheDruggist">
+        <rdf:type rdf:resource="https://songstopoems.github.io/STOP/stopfinal.owl#Character"/>
+        <is_in rdf:resource="https://songstopoems.github.io/STOP/stopfinal.owl#Trainor_the_druggist"/>
+        <have_name rdf:datatype="http://www.w3.org/2000/01/rdf-schema#Literal">Trainor, the druggist</have_name>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://songstopoems.github.io/STOP/stopfinal.owl#Trainor_the_druggist -->
+
+
+    <owl:NamedIndividual rdf:about="https://songstopoems.github.io/STOP/stopfinal.owl#Trainor_the_druggist">
+        <rdf:type rdf:resource="https://songstopoems.github.io/STOP/stopfinal.owl#Poem"/>
+        <schema:isPartOf rdf:resource="https://songstopoems.github.io/STOP/stopfinal.owl#Spoon_River_Anthology"/>
+        <has_character rdf:resource="https://songstopoems.github.io/STOP/stopfinal.owl#TrainorTheDruggist"/>
+        <is_about rdf:resource="https://songstopoems.github.io/STOP/stopfinal.owl#Family"/>
+        <is_about rdf:resource="https://songstopoems.github.io/STOP/stopfinal.owl#Marriage"/>
+        <have_name rdf:datatype="http://www.w3.org/2000/01/rdf-schema#Literal">Trainor, the druggist</have_name>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://songstopoems.github.io/STOP/stopfinal.owl#UnBlasfemo -->
+
+
+    <owl:NamedIndividual rdf:about="https://songstopoems.github.io/STOP/stopfinal.owl#UnBlasfemo">
+        <rdf:type rdf:resource="https://songstopoems.github.io/STOP/stopfinal.owl#Character"/>
+        <is_in rdf:resource="https://songstopoems.github.io/STOP/stopfinal.owl#Un_blasfemo_(dietro_ogni_blasfemo_c&apos;è_un_giardino_incantato)"/>
+        <have_name rdf:datatype="http://www.w3.org/2000/01/rdf-schema#Literal">Un blasfemo</have_name>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://songstopoems.github.io/STOP/stopfinal.owl#UnChimico -->
+
+
+    <owl:NamedIndividual rdf:about="https://songstopoems.github.io/STOP/stopfinal.owl#UnChimico">
+        <rdf:type rdf:resource="https://songstopoems.github.io/STOP/stopfinal.owl#Character"/>
+        <is_in rdf:resource="https://songstopoems.github.io/STOP/stopfinal.owl#Un_chimico"/>
+        <have_name rdf:datatype="http://www.w3.org/2000/01/rdf-schema#Literal">Un chimico</have_name>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://songstopoems.github.io/STOP/stopfinal.owl#UnGiudice -->
+
+
+    <owl:NamedIndividual rdf:about="https://songstopoems.github.io/STOP/stopfinal.owl#UnGiudice">
+        <rdf:type rdf:resource="https://songstopoems.github.io/STOP/stopfinal.owl#Character"/>
+        <is_in rdf:resource="https://songstopoems.github.io/STOP/stopfinal.owl#Un_giudice"/>
+        <have_name rdf:datatype="http://www.w3.org/2000/01/rdf-schema#Literal">Un giudice</have_name>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://songstopoems.github.io/STOP/stopfinal.owl#UnMalatoDiCuore -->
+
+
+    <owl:NamedIndividual rdf:about="https://songstopoems.github.io/STOP/stopfinal.owl#UnMalatoDiCuore">
+        <rdf:type rdf:resource="https://songstopoems.github.io/STOP/stopfinal.owl#Character"/>
+        <is_in rdf:resource="https://songstopoems.github.io/STOP/stopfinal.owl#Un_malato_di_cuore"/>
+        <have_name rdf:datatype="http://www.w3.org/2000/01/rdf-schema#Literal">Un malato di cuore</have_name>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://songstopoems.github.io/STOP/stopfinal.owl#UnMatto -->
+
+
+    <owl:NamedIndividual rdf:about="https://songstopoems.github.io/STOP/stopfinal.owl#UnMatto">
+        <rdf:type rdf:resource="https://songstopoems.github.io/STOP/stopfinal.owl#Character"/>
+        <is_in rdf:resource="https://songstopoems.github.io/STOP/stopfinal.owl#Un_matto(Dietro_ogni_scemo_c&apos;è_un_villaggio)"/>
+        <have_name rdf:datatype="http://www.w3.org/2000/01/rdf-schema#Literal">Un matto</have_name>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://songstopoems.github.io/STOP/stopfinal.owl#UnMedico -->
+
+
+    <owl:NamedIndividual rdf:about="https://songstopoems.github.io/STOP/stopfinal.owl#UnMedico">
+        <rdf:type rdf:resource="https://songstopoems.github.io/STOP/stopfinal.owl#Character"/>
+        <is_in rdf:resource="https://songstopoems.github.io/STOP/stopfinal.owl#Un_medico"/>
+        <have_name rdf:datatype="http://www.w3.org/2000/01/rdf-schema#Literal">Un medico</have_name>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://songstopoems.github.io/STOP/stopfinal.owl#UnOttico -->
+
+
+    <owl:NamedIndividual rdf:about="https://songstopoems.github.io/STOP/stopfinal.owl#UnOttico">
+        <rdf:type rdf:resource="https://songstopoems.github.io/STOP/stopfinal.owl#Character"/>
+        <is_in rdf:resource="https://songstopoems.github.io/STOP/stopfinal.owl#Un_ottico"/>
+        <have_name rdf:datatype="http://www.w3.org/2000/01/rdf-schema#Literal">Un ottico</have_name>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://songstopoems.github.io/STOP/stopfinal.owl#Un_chimico -->
+
+
+    <owl:NamedIndividual rdf:about="https://songstopoems.github.io/STOP/stopfinal.owl#Un_chimico">
+        <rdf:type rdf:resource="https://songstopoems.github.io/STOP/stopfinal.owl#Song"/>
+        <schema:isPartOf rdf:resource="https://songstopoems.github.io/STOP/stopfinal.owl#Non_al_denaro_non_all&apos;amore_né_al_cielo"/>
+        <has_character rdf:resource="https://songstopoems.github.io/STOP/stopfinal.owl#UnChimico"/>
+        <is_about rdf:resource="https://songstopoems.github.io/STOP/stopfinal.owl#Devastation"/>
+        <is_about rdf:resource="https://songstopoems.github.io/STOP/stopfinal.owl#Love"/>
+        <is_about rdf:resource="https://songstopoems.github.io/STOP/stopfinal.owl#Nature"/>
+        <is_about rdf:resource="https://songstopoems.github.io/STOP/stopfinal.owl#Salvation"/>
+        <is_about rdf:resource="https://songstopoems.github.io/STOP/stopfinal.owl#Suffering"/>
+        <related_to rdf:resource="https://songstopoems.github.io/STOP/stopfinal.owl#Trainor_the_druggist"/>
+        <have_name rdf:datatype="http://www.w3.org/2000/01/rdf-schema#Literal">Un chimico</have_name>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://songstopoems.github.io/STOP/stopfinal.owl#Un_giudice -->
+
+
+    <owl:NamedIndividual rdf:about="https://songstopoems.github.io/STOP/stopfinal.owl#Un_giudice">
+        <rdf:type rdf:resource="https://songstopoems.github.io/STOP/stopfinal.owl#Song"/>
+        <schema:isPartOf rdf:resource="https://songstopoems.github.io/STOP/stopfinal.owl#Non_al_denaro_non_all&apos;amore_né_al_cielo"/>
+        <has_character rdf:resource="https://songstopoems.github.io/STOP/stopfinal.owl#UnGiudice"/>
+        <is_about rdf:resource="https://songstopoems.github.io/STOP/stopfinal.owl#Damnation"/>
+        <is_about rdf:resource="https://songstopoems.github.io/STOP/stopfinal.owl#Hate"/>
+        <is_about rdf:resource="https://songstopoems.github.io/STOP/stopfinal.owl#Justice"/>
+        <is_about rdf:resource="https://songstopoems.github.io/STOP/stopfinal.owl#Knowledge"/>
+        <is_about rdf:resource="https://songstopoems.github.io/STOP/stopfinal.owl#Religion"/>
+        <related_to rdf:resource="https://songstopoems.github.io/STOP/stopfinal.owl#Judge_Selah_Lively"/>
+        <have_name rdf:datatype="http://www.w3.org/2000/01/rdf-schema#Literal">Un giudice</have_name>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://songstopoems.github.io/STOP/stopfinal.owl#Un_malato_di_cuore -->
+
+
+    <owl:NamedIndividual rdf:about="https://songstopoems.github.io/STOP/stopfinal.owl#Un_malato_di_cuore">
+        <rdf:type rdf:resource="https://songstopoems.github.io/STOP/stopfinal.owl#Song"/>
+        <schema:isPartOf rdf:resource="https://songstopoems.github.io/STOP/stopfinal.owl#Non_al_denaro_non_all&apos;amore_né_al_cielo"/>
+        <has_character rdf:resource="https://songstopoems.github.io/STOP/stopfinal.owl#UnMalatoDiCuore"/>
+        <is_about rdf:resource="https://songstopoems.github.io/STOP/stopfinal.owl#Dream"/>
+        <is_about rdf:resource="https://songstopoems.github.io/STOP/stopfinal.owl#Salvation"/>
+        <is_about rdf:resource="https://songstopoems.github.io/STOP/stopfinal.owl#Sickness"/>
+        <is_about rdf:resource="https://songstopoems.github.io/STOP/stopfinal.owl#Suffering"/>
+        <related_to rdf:resource="https://songstopoems.github.io/STOP/stopfinal.owl#Francis_Turner"/>
+        <have_name rdf:datatype="http://www.w3.org/2000/01/rdf-schema#Literal">Un malato di cuore</have_name>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://songstopoems.github.io/STOP/stopfinal.owl#Un_medico -->
+
+
+    <owl:NamedIndividual rdf:about="https://songstopoems.github.io/STOP/stopfinal.owl#Un_medico">
+        <rdf:type rdf:resource="https://songstopoems.github.io/STOP/stopfinal.owl#Song"/>
+        <schema:isPartOf rdf:resource="https://songstopoems.github.io/STOP/stopfinal.owl#Non_al_denaro_non_all&apos;amore_né_al_cielo"/>
+        <has_character rdf:resource="https://songstopoems.github.io/STOP/stopfinal.owl#UnMedico"/>
+        <is_about rdf:resource="https://songstopoems.github.io/STOP/stopfinal.owl#Damnation"/>
+        <is_about rdf:resource="https://songstopoems.github.io/STOP/stopfinal.owl#Knowledge"/>
+        <is_about rdf:resource="https://songstopoems.github.io/STOP/stopfinal.owl#Salvation"/>
+        <is_about rdf:resource="https://songstopoems.github.io/STOP/stopfinal.owl#Sickness"/>
+        <is_about rdf:resource="https://songstopoems.github.io/STOP/stopfinal.owl#Suffering"/>
+        <related_to rdf:resource="https://songstopoems.github.io/STOP/stopfinal.owl#Doctor_Siegfried_Iseman"/>
+        <have_name rdf:datatype="http://www.w3.org/2000/01/rdf-schema#Literal">Un medico</have_name>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://songstopoems.github.io/STOP/stopfinal.owl#Un_ottico -->
+
+
+    <owl:NamedIndividual rdf:about="https://songstopoems.github.io/STOP/stopfinal.owl#Un_ottico">
+        <rdf:type rdf:resource="https://songstopoems.github.io/STOP/stopfinal.owl#Song"/>
+        <schema:isPartOf rdf:resource="https://songstopoems.github.io/STOP/stopfinal.owl#Non_al_denaro_non_all&apos;amore_né_al_cielo"/>
+        <has_character rdf:resource="https://songstopoems.github.io/STOP/stopfinal.owl#UnOttico"/>
+        <is_about rdf:resource="https://songstopoems.github.io/STOP/stopfinal.owl#Darkness_VS_Light"/>
+        <is_about rdf:resource="https://songstopoems.github.io/STOP/stopfinal.owl#Dream"/>
+        <is_about rdf:resource="https://songstopoems.github.io/STOP/stopfinal.owl#Sight"/>
+        <is_about rdf:resource="https://songstopoems.github.io/STOP/stopfinal.owl#Sky"/>
+        <is_about rdf:resource="https://songstopoems.github.io/STOP/stopfinal.owl#Suffering"/>
+        <related_to rdf:resource="https://songstopoems.github.io/STOP/stopfinal.owl#Dippold_the_optician"/>
+        <have_name rdf:datatype="http://www.w3.org/2000/01/rdf-schema#Literal">Un ottico</have_name>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://songstopoems.github.io/STOP/stopfinal.owl#Uncle_Isaac -->
+
+
+    <owl:NamedIndividual rdf:about="https://songstopoems.github.io/STOP/stopfinal.owl#Uncle_Isaac">
+        <rdf:type rdf:resource="https://songstopoems.github.io/STOP/stopfinal.owl#Character"/>
+        <is_in rdf:resource="https://songstopoems.github.io/STOP/stopfinal.owl#The_Hill"/>
+        <have_name rdf:datatype="http://www.w3.org/2000/01/rdf-schema#Literal">Uncle Isaac</have_name>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://songstopoems.github.io/STOP/stopfinal.owl#WendellPBloyd -->
+
+
+    <owl:NamedIndividual rdf:about="https://songstopoems.github.io/STOP/stopfinal.owl#WendellPBloyd">
+        <rdf:type rdf:resource="https://songstopoems.github.io/STOP/stopfinal.owl#Character"/>
+        <is_in rdf:resource="https://songstopoems.github.io/STOP/stopfinal.owl#Wendell_P._Bloyd"/>
+        <have_name rdf:datatype="http://www.w3.org/2000/01/rdf-schema#Literal">Wendell P. Bloyd</have_name>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://songstopoems.github.io/STOP/stopfinal.owl#Wendell_P._Bloyd -->
+
+
+    <owl:NamedIndividual rdf:about="https://songstopoems.github.io/STOP/stopfinal.owl#Wendell_P._Bloyd">
+        <rdf:type rdf:resource="https://songstopoems.github.io/STOP/stopfinal.owl#Poem"/>
+        <schema:isPartOf rdf:resource="https://songstopoems.github.io/STOP/stopfinal.owl#Spoon_River_Anthology"/>
+        <has_character rdf:resource="https://songstopoems.github.io/STOP/stopfinal.owl#WendellPBloyd"/>
+        <is_about rdf:resource="https://songstopoems.github.io/STOP/stopfinal.owl#Damnation"/>
+        <is_about rdf:resource="https://songstopoems.github.io/STOP/stopfinal.owl#Hate"/>
+        <is_about rdf:resource="https://songstopoems.github.io/STOP/stopfinal.owl#Religion"/>
+        <is_about rdf:resource="https://songstopoems.github.io/STOP/stopfinal.owl#Salvation"/>
+        <have_name rdf:datatype="http://www.w3.org/2000/01/rdf-schema#Literal">Wendell P. Bloyd</have_name>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://songstopoems.github.io/STOP/stopfinal.owl#Writing -->
+
+
+    <owl:NamedIndividual rdf:about="https://songstopoems.github.io/STOP/stopfinal.owl#Writing">
+        <rdf:type rdf:resource="https://songstopoems.github.io/STOP/stopfinal.owl#Topic"/>
+        <appears_in rdf:resource="https://songstopoems.github.io/STOP/stopfinal.owl#Un_matto(Dietro_ogni_scemo_c&apos;è_un_villaggio)"/>
+        <have_name>Writing</have_name>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://songstopoems.github.io/STOP/stopfinal.owl#Non_al_denaro_non_all&apos;amore_né_al_cielo -->
+
+
+    <owl:NamedIndividual rdf:about="https://songstopoems.github.io/STOP/stopfinal.owl#Non_al_denaro_non_all&apos;amore_né_al_cielo">
+        <rdf:type rdf:resource="https://songstopoems.github.io/STOP/stopfinal.owl#Musical_Album"/>
+        <rdf:type rdf:resource="https://songstopoems.github.io/STOP/stopfinal.owl#Work"/>
+        <schema:hasPart rdf:resource="https://songstopoems.github.io/STOP/stopfinal.owl#Dormono_sulla_collina"/>
+        <schema:hasPart rdf:resource="https://songstopoems.github.io/STOP/stopfinal.owl#Il_suonatore_Jones"/>
+        <schema:hasPart rdf:resource="https://songstopoems.github.io/STOP/stopfinal.owl#Un_chimico"/>
+        <schema:hasPart rdf:resource="https://songstopoems.github.io/STOP/stopfinal.owl#Un_giudice"/>
+        <schema:hasPart rdf:resource="https://songstopoems.github.io/STOP/stopfinal.owl#Un_malato_di_cuore"/>
+        <schema:hasPart rdf:resource="https://songstopoems.github.io/STOP/stopfinal.owl#Un_medico"/>
+        <schema:hasPart rdf:resource="https://songstopoems.github.io/STOP/stopfinal.owl#Un_ottico"/>
+        <schema:hasPart rdf:resource="https://songstopoems.github.io/STOP/stopfinal.owl#Un_blasfemo_(dietro_ogni_blasfemo_c&apos;è_un_giardino_incantato)"/>
+        <schema:hasPart rdf:resource="https://songstopoems.github.io/STOP/stopfinal.owl#Un_matto(Dietro_ogni_scemo_c&apos;è_un_villaggio)"/>
+        <is_inspired_by rdf:resource="https://songstopoems.github.io/STOP/stopfinal.owl#Spoon_River_Anthology"/>
+        <is_written_by rdf:resource="https://songstopoems.github.io/STOP/stopfinal.owl#Fabrizio_De_Andrè"/>
+        <have_name rdf:datatype="http://www.w3.org/2000/01/rdf-schema#Literal">Non al denaro non all&apos;amore né al cielo</have_name>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://songstopoems.github.io/STOP/stopfinal.owl#Un_blasfemo_(dietro_ogni_blasfemo_c&apos;è_un_giardino_incantato) -->
+
+
+    <owl:NamedIndividual rdf:about="https://songstopoems.github.io/STOP/stopfinal.owl#Un_blasfemo_(dietro_ogni_blasfemo_c&apos;è_un_giardino_incantato)">
+        <rdf:type rdf:resource="https://songstopoems.github.io/STOP/stopfinal.owl#Song"/>
+        <schema:isPartOf rdf:resource="https://songstopoems.github.io/STOP/stopfinal.owl#Non_al_denaro_non_all&apos;amore_né_al_cielo"/>
+        <has_character rdf:resource="https://songstopoems.github.io/STOP/stopfinal.owl#UnBlasfemo"/>
+        <is_about rdf:resource="https://songstopoems.github.io/STOP/stopfinal.owl#Damnation"/>
+        <is_about rdf:resource="https://songstopoems.github.io/STOP/stopfinal.owl#Dream"/>
+        <is_about rdf:resource="https://songstopoems.github.io/STOP/stopfinal.owl#Religion"/>
+        <is_about rdf:resource="https://songstopoems.github.io/STOP/stopfinal.owl#Salvation"/>
+        <related_to rdf:resource="https://songstopoems.github.io/STOP/stopfinal.owl#Wendell_P._Bloyd"/>
+        <have_name rdf:datatype="http://www.w3.org/2000/01/rdf-schema#Literal">Un blasfemo (Dietro Ogni Blasfemo C&apos;è Un Giardino Incantato)</have_name>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://songstopoems.github.io/STOP/stopfinal.owl#Un_matto(Dietro_ogni_scemo_c&apos;è_un_villaggio) -->
+
+
+    <owl:NamedIndividual rdf:about="https://songstopoems.github.io/STOP/stopfinal.owl#Un_matto(Dietro_ogni_scemo_c&apos;è_un_villaggio)">
+        <rdf:type rdf:resource="https://songstopoems.github.io/STOP/stopfinal.owl#Song"/>
+        <schema:isPartOf rdf:resource="https://songstopoems.github.io/STOP/stopfinal.owl#Non_al_denaro_non_all&apos;amore_né_al_cielo"/>
+        <has_character rdf:resource="https://songstopoems.github.io/STOP/stopfinal.owl#UnMatto"/>
+        <is_about rdf:resource="https://songstopoems.github.io/STOP/stopfinal.owl#Death"/>
+        <is_about rdf:resource="https://songstopoems.github.io/STOP/stopfinal.owl#Dream"/>
+        <is_about rdf:resource="https://songstopoems.github.io/STOP/stopfinal.owl#Memory"/>
+        <is_about rdf:resource="https://songstopoems.github.io/STOP/stopfinal.owl#Writing"/>
+        <related_to rdf:resource="https://songstopoems.github.io/STOP/stopfinal.owl#Frank_Drummer"/>
+        <have_name rdf:datatype="http://www.w3.org/2000/01/rdf-schema#Literal">Un matto (Dietro Ogni Scemo C&apos;è Un Villaggio)</have_name>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // General axioms
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+
+    <rdf:Description>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDifferent"/>
+        <owl:distinctMembers rdf:parseType="Collection">
+            <rdf:Description rdf:about="https://songstopoems.github.io/STOP/stopfinal.owl#DippoldTheOptician"/>
+            <rdf:Description rdf:about="https://songstopoems.github.io/STOP/stopfinal.owl#UnOttico"/>
+        </owl:distinctMembers>
+    </rdf:Description>
+    <rdf:Description>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDifferent"/>
+        <owl:distinctMembers rdf:parseType="Collection">
+            <rdf:Description rdf:about="https://songstopoems.github.io/STOP/stopfinal.owl#DoctorSiegfriedIseman"/>
+            <rdf:Description rdf:about="https://songstopoems.github.io/STOP/stopfinal.owl#UnMedico"/>
+        </owl:distinctMembers>
+    </rdf:Description>
+    <rdf:Description>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDifferent"/>
+        <owl:distinctMembers rdf:parseType="Collection">
+            <rdf:Description rdf:about="https://songstopoems.github.io/STOP/stopfinal.owl#FiddlerJones"/>
+            <rdf:Description rdf:about="https://songstopoems.github.io/STOP/stopfinal.owl#JonesIlSuonatore"/>
+        </owl:distinctMembers>
+    </rdf:Description>
+    <rdf:Description>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDifferent"/>
+        <owl:distinctMembers rdf:parseType="Collection">
+            <rdf:Description rdf:about="https://songstopoems.github.io/STOP/stopfinal.owl#FrancisTurner"/>
+            <rdf:Description rdf:about="https://songstopoems.github.io/STOP/stopfinal.owl#UnMalatoDiCuore"/>
+        </owl:distinctMembers>
+    </rdf:Description>
+    <rdf:Description>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDifferent"/>
+        <owl:distinctMembers rdf:parseType="Collection">
+            <rdf:Description rdf:about="https://songstopoems.github.io/STOP/stopfinal.owl#FrankDrummer"/>
+            <rdf:Description rdf:about="https://songstopoems.github.io/STOP/stopfinal.owl#UnMatto"/>
+        </owl:distinctMembers>
+    </rdf:Description>
+    <rdf:Description>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDifferent"/>
+        <owl:distinctMembers rdf:parseType="Collection">
+            <rdf:Description rdf:about="https://songstopoems.github.io/STOP/stopfinal.owl#JudgeSelahLively"/>
+            <rdf:Description rdf:about="https://songstopoems.github.io/STOP/stopfinal.owl#UnGiudice"/>
+        </owl:distinctMembers>
+    </rdf:Description>
+    <rdf:Description>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDifferent"/>
+        <owl:distinctMembers rdf:parseType="Collection">
+            <rdf:Description rdf:about="https://songstopoems.github.io/STOP/stopfinal.owl#TrainorTheDruggist"/>
+            <rdf:Description rdf:about="https://songstopoems.github.io/STOP/stopfinal.owl#UnChimico"/>
+        </owl:distinctMembers>
+    </rdf:Description>
+    <rdf:Description>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDifferent"/>
+        <owl:distinctMembers rdf:parseType="Collection">
+            <rdf:Description rdf:about="https://songstopoems.github.io/STOP/stopfinal.owl#UnBlasfemo"/>
+            <rdf:Description rdf:about="https://songstopoems.github.io/STOP/stopfinal.owl#WendellPBloyd"/>
+        </owl:distinctMembers>
+    </rdf:Description>
+</rdf:RDF>
+
+
+
+<!-- Generated by the OWL API (version 5.1.18) https://github.com/owlcs/owlapi/ -->
+
+
