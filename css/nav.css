@@ -1,0 +1,110 @@
+@import url('https://fonts.googleapis.com/css2?family=Jost:wght@300&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Lora:wght@400;700&display=swap");
+ 
+html, body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Lora', sans-serif;
+}
+#navbar {
+    text-align: right;
+    width: 100%;
+    position: fixed;
+    z-index: 1000;
+}
+
+.navBg, .innerNav {
+    position: fixed;
+    top: 0;
+}
+
+.navBg ul, .innerNav ul {
+    padding-top: 12px;
+    padding-bottom: 10px;
+    background-color: #f7f7f7 !important;
+    border-bottom: #ffce00 solid 1pt;
+}
+
+.navBg ul li, .innerNav ul li, .innerNav a  {
+    color:rgba(51, 51, 51, 0.85) !important;
+}
+
+#navbar ul {
+    margin-top: 0px;
+    padding-right: 30px;
+    padding-top: 12px;
+    padding-bottom: 10px;
+    height: 42px;
+}
+
+#secondaryButton {
+    display: none;
+    font-size: 26px;
+    position: fixed;
+    color: white;
+    right: 22px;
+    top: 18px;
+    background-color: rgba(51, 51, 51, 0.3);
+    border-radius: 5px;
+    border: 1pt solid #f7f7f7;
+    padding: 0px 4px;
+}
+#logo, #logo a{
+    position: fixed;
+    left: 30px;
+    text-decoration: underline;
+    text-decoration-thickness: 6px;
+    text-decoration-color: #ffce00;
+    font-weight: bolder;
+}
+
+#navbar li {
+    display: inline-block;
+    opacity: 0;
+    color: rgba(255, 255, 255, 0.8);
+    padding: 8px;
+    font-size: 20px;
+    animation: appearing 2s forwards;
+}
+
+#navbar li:hover {
+    color: rgba(255, 255, 255, 1);
+}
+
+.activeList {
+    display: table !important;
+}
+
+#projectList {
+  display: table;
+  margin-top: 10px;
+  border: 0.1pt solid rgba(255, 255,255, 0.3);
+  border-radius: 5px;
+  position: fixed;
+  right: 125px;
+  padding-bottom: 0;
+  background-color: rgba(51, 51, 51, 0.7);
+}
+
+#projectList a {
+ text-decoration: none;
+ color: inherit;
+}
+
+#projectList > li{
+    display: block;
+    font-size: 85%;
+    border-bottom: 0.1pt solid rgba(255, 255, 255, 0.2);
+}
+.navBg #projectList > li:hover, .innerNav #projectList > li:hover {
+    background-color: rgba(255, 255, 255, 0.9);
+    z-index: 1000;
+}
+#projectList > li:hover {
+    background-color: rgba(51, 51, 51, 0.7);
+}
+    
+@keyframes appearing {
+    from {opacity: 0;}
+    to {opacity: 1;}
+}
